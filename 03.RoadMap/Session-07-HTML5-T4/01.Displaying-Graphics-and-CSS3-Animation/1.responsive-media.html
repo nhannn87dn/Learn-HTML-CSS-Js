@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .only-pc, .only-tablet, .only-mobile {
+    display: none;
+  }
+
+/**
+  Private Apply
+
+  Desktop: >= 1024px
+  Tablet: >= 740px and < 1024px
+  Mobile: < 740px
+**/
+
+@media screen and (min-width:1024px) {
+  .only-pc {
+    display: block;
+  }
+  
+ 
+}
+@media screen and (min-width:740px) and (max-width: 1023px) {
+ 
+  .only-tablet {
+    display: block;
+  }
+  
+}
+@media screen and (max-width: 740px) {
+  
+  .only-mobile {
+    display: block;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <h2 class="only-pc">Only Desktop</h2>
+  <h2 class="only-tablet">Only Tablet</h2>
+  <h2 class="only-mobile">Only Mobile</h2>
+</body>
+</html>
+
+

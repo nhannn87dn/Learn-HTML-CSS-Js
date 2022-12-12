@@ -1,0 +1,85 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #fafafafa;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.login-box {
+    margin: 0 auto;
+    width: 280px;
+}
+.login-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-header i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.input-control {
+    display: block;
+    position: relative;
+}
+.input-control i{
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 15px;
+}
+input {
+    width: 100%;
+    display: block;
+    outline: none;
+    background: #fff;
+    border:1px solid #EFEEF1;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px 30px 10px 10px;
+    margin: 10px 0;
+    height: 44px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+input:focus {
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+button {
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #081D45;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0A2558;
+}
+
+.error {
+    font-size: 13px;
+    margin: 10px 0;
+    color: brown;
+
+}
+.login-action button{
+    width: 100%;
+}

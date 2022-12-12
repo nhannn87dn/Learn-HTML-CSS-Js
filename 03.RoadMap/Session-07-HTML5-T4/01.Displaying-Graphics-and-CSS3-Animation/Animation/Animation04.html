@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      background-image: url('Images/chrome.png');
+      background-size: 100%;
+      position: relative;
+
+      /* Standard syntax */
+      animation-name: myfirst;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-play-state: running;
+    }
+
+    /* Standard syntax */
+    @keyframes myfirst {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ANIMATION WITH CSS3 #04</h1>
+  <div></div>
+</body>
+
+</html>

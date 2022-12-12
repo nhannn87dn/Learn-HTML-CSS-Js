@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 50px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      transition: width 2s;
+    }
+
+    /* Standard syntax */
+    #div1 {
+      transition-timing-function: linear;
+    }
+
+    #div2 {
+      transition-timing-function: ease;
+    }
+
+    #div3 {
+      transition-timing-function: ease-in;
+    }
+
+    #div4 {
+      transition-timing-function: ease-out;
+    }
+
+    #div5 {
+      transition-timing-function: ease-in-out;
+    }
+
+    div:hover {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+  <div id="div1">linear</div>
+  <div id="div2">ease</div>
+  <div id="div3">ease-in</div>
+  <div id="div4">ease-out</div>
+  <div id="div5">ease-in-out</div>
+
+  <p>Hover over the div elements above, to see the different transition effects.</p>
+</body>
+
+</html>

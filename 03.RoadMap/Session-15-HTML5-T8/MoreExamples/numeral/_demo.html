@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numeral</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <h1 id='total'></h1>
+
+  </div>
+  <script>
+    // load a locale
+    numeral.register('locale', 'vn', {
+      delimiters: {
+        thousands: ' ',
+        decimal: ','
+      },
+      abbreviations: {
+        thousand: 'k',
+        million: 'm',
+        billion: 'b',
+        trillion: 't'
+      },
+      ordinal: function (number) {
+        return number === 1 ? 'er' : 'ème';
+      },
+      currency: {
+        symbol: 'đ'
+      }
+    });
+
+    // switch between locales
+    numeral.locale('vn');
+
+
+
+    let myNumeral = numeral(21);
+
+    document.querySelector("#total").innerHTML = myNumeral.format('0$');
+
+  </script>
+</body>
+
+</html>

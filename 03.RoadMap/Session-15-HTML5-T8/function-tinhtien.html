@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var dongia = 500;
+    var soluong = 2;
+    var giamgia = 10;
+
+    var thanhtien = tinhtien(dongia, soluong, giamgia);
+    console.log('Thành tiền 1:', thanhtien);
+
+    var dongia2 = 700;
+    var soluong2 = 3;
+    var giamgia2 = 15;
+
+    var thanhtien2 = tinhtien(dongia2, soluong2, giamgia2);
+    console.log('Thành tiền 2:', thanhtien2);
+
+    // input:
+    //  + dongia: integer
+    //  + soluong: ..
+    //  + giamgia: ...
+    // output:
+    //  + thanhtien
+    function tinhtien(dongia, soluong, giamgia) {
+      var thanhtien = (dongia * soluong * (100 - giamgia)) / 100;
+      // output
+      return thanhtien;
+    }
+  </script>
+</html>

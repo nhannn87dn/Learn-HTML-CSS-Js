@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Javascript</title>
+</head>
+<body>
+    <input type="text" name="demo" id="demo" onkeyup="myKeyup()">
+     <p>Display: <span id="result"></span></p>
+    <button type="button" onclick="sayHello('Welcome to Aptech')">Press on Me</button>
+
+    <script>
+        /* search ajax */
+        function myKeyup() {
+            let x = document.getElementById("result");
+            x.value = x.value.toUpperCase();
+        }
+        function sayHello(msg) {
+            alert(msg);
+        }
+
+    </script>
+</body>
+</html>

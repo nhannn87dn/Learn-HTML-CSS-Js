@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var s = '{"name": "Peter"}';
+      var o = JSON.parse(s);
+      o.age = 34;
+
+      var newS = JSON.stringify(o);
+      console.log(s);
+      console.log(o);
+      console.log(newS);
+    </script>
+  </body>
+</html>

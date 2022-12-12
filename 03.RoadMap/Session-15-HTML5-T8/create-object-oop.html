@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FUNCTION</title>
+</head>
+
+<body></body>
+
+<script>
+  // Cách 2 (OOP):
+  // Định nghĩa 1 object thông qua hàm
+  function Human(name, age, address) {
+    this.name = name;
+    this.age = age;
+    this.address = address;
+  }
+
+  // Định nghĩa các hàm cho Human
+  Human.prototype.display = function () {
+    console.log('My name is: ', this.name, this.age, this.address);
+  };
+
+  // Khởi tạo các objects thông qua định nghĩa ở trên.
+  var h1 = new Human('Tung', '34', 'Danang');
+  var h2 = new Human('Khanh', '31', 'Hanoi');
+  var h3 = new Human('Viet', '29', 'HCM');
+
+  // Tạo mảng các objects
+  var array = new Array();
+  array.push(h1);
+  array.push(h2);
+  array.push(h3);
+
+  // Lặp qua và gọi hàm display
+  for (var i in array) {
+    array[i].display();
+  }
+</script>
+
+</html>

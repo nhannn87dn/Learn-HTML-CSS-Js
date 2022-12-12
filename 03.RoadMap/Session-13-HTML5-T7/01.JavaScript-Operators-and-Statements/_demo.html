@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #total {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <button> - </button>
+  <strong id='price'>10</strong>
+  <span> x </span>
+  <strong id='quantity'>1</strong>
+  <button onclick="increase()"> + </button>
+  <br />
+  <strong id='discount'>5</strong> %
+
+
+  <h1 id='total'>
+  </h1>
+
+  <script>
+    // Camel case
+    var price = 10;
+    var quantity = 1;
+    var discount = 0;
+
+    let customerType = 'vip';
+
+    // Discount: vip and total >= 1.000.000 : 10%
+
+    // AND
+    // if (price * quantity >= 10 && customerType === 'vip') {
+    //   discount = 10;
+    // }
+
+    // if (price * quantity >= 10 || customerType === 'eco') {
+    //   discount = 10;
+    // }
+
+
+    if (customerType === 'vip') {
+      discount = 10;
+    }
+    else {
+      discount = 5;
+    }
+
+    discount = customerType === 'vip' ? 10 : 5;
+
+
+
+
+
+    var total = (price * quantity) * (100 - discount) / 100;
+
+
+    var number = 5;
+    var text = "5";
+
+    let result = number == text;
+    console.log(result)
+
+    // $('#total')
+    document.querySelector('#total').innerHTML = total;
+
+
+
+
+    function increase() {
+      quantity = quantity + 1; // quantity = quantity + 1;\
+
+      var total = (price * quantity) * (100 - discount) / 100;
+      document.querySelector('#quantity').innerHTML = quantity;
+      document.querySelector('#total').innerHTML = total;
+    }
+
+  </script>
+</body>
+
+</html>

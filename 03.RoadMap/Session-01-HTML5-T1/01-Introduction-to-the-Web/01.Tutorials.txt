@@ -1,0 +1,35 @@
+1. Web Communication
+=============================
+ - Follow: Browser --> Server --> Browser
+=============================
+
+2. Static Web Pages ?
+=============================
+
+3. Dynamic Web Pages ?
+=============================
+
+4. History HTML
+=============================
+- HTML => HyperText Markup Language
+- Author: Tim Berners-Lee
+- HTML 1 : 1993 --> HTML 2 : 1995 --> HTML 3 : 1.1997 --> HTML 4: 12.1997 --> 28 - 10 - 2014 ==> HTML 5
+- New Features of HTML5:
+    + https://www.w3schools.com/tags/default.asp
+    + The <canvas> element is used for 2D drawing
+    + New html tags
+    + HTML5 has local storage
+    + The <audio> and <video> elements is available for media playback --> instead of Flash
+    + Validation form
+    + Game HTML5....
+    +  API ...
+=============================
+
+5. Layout of a Page in HTML5
+=============================
+- Use <div> instead of <table>
+- Basic Layout
+=============================
+
+6. What Css ?
+=============================
