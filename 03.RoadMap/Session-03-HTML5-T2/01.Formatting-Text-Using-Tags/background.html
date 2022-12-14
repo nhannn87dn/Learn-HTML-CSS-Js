@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<body>
+<!--
+    - background-clip: 
+        + Quyết định background color đổ từ ranh rới nào trong box model
+        + border-content | padding-box | border-box default
+    - background-origin: 
+        + Quyết định background image đổ từ ranh rới nào trong box model
+        + border-content | padding-box | border-box default
+    - background-position:
+    - background-repeat: 
+    - background-size: cách hiển thị size hình ảnh contain | cover
+        + contain: hình ko bị che khuất
+        + cover: hình chiếm trọn vùng chứa
+
+
+    -->
+    <style>
+    #example1 {
+        border: 10px dotted black;
+        padding: 15px;
+        background: red;
+        background-clip: border-box;  /* border-content | padding-box */
+    }
+    </style>
+    <h1>The background-clip Property</h1>
+
+    <p>The background-clip property defines how far the background should extend within an element.</p>
+
+    <p>background-clip: border-box (this is default):</p>
+    <div id="example1">
+        <p>The background extends behind the border.</p>
+    </div>
+</body>
+</html>

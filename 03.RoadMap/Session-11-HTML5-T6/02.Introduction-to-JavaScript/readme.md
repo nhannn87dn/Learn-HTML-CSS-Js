@@ -42,3 +42,39 @@
 - Có thể trộn lẫn Javascript Syntax và Jquery lại với nhau
 - Ajax with Jquery
 - Validation with Jquery
+
+Examplate Javascript
+
+```js
+// Lấy theo ID
+document.querySelector('#myElement');
+// Lấy theo Class
+document.querySelectorAll('.myElement');
+// Lấy theo tag
+document.querySelectorAll('div');
+
+```
+
+With Jquery
+
+```js
+// Lấy theo ID
+$('#myElement');
+// Lấy theo Class
+$('.myElement');
+// Lấy theo tag
+$('div');
+
+```
+
+Sự kiện click 
+```js
+//Jquery
+$('#myElement').on('click', function() {
+    console.log('I am handsome!');
+});
+//Javascript
+document.querySelector('#myElement').addEventListener('click', function() {
+    console.log('I am handsome!');
+});
+```
