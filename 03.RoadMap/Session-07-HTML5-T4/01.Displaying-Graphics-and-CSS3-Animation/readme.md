@@ -17,6 +17,7 @@
 - <https://animate.style/#best-practices>
 - <https://www.w3schools.com/css/css3_animations.asp>
 - <https://www.w3schools.com/cssref/css_animatable.php>
+- <https://michalsnik.github.io/aos/>
 
 ## ⭐ 3. CSS3 on Mobile devices (Responsive)
 
