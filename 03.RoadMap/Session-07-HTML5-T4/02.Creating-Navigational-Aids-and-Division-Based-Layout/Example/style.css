@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* #fe4a55 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fafafa;
+    height: 140px;
+    padding: 20px 0;
+}
+nav ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+    height: 45px;
+    background-color: #fe4a55;
+}
+nav ul li{
+    display: inline-block;
+    float: left;
+    background-color: #fe4a55;
+    padding: 0 15px;
+    cursor: pointer;
+    border-right: 1px solid rgba(155, 50, 50, 0.1);
+    position: relative;
+}
+nav ul li .navsub{
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 99;
+    display: none;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 37%);
+    min-width: 200px;
+}
+nav ul li .navsub a{
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #222;
+}
+nav ul li .navsub a:hover{
+    color: #e93b47;
+}
+
+nav ul li.has-child::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+nav ul li:hover{
+    background-color: #e93b47;
+}
+nav ul li:hover .navsub{
+    display: block;
+}
+nav ul li>a{
+    color: #fff;
+    line-height: 45px;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav ul li>a .icon{
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 16px;
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.icon-home {
+    background-position: 0 0;
+}
+.icon-about {
+    background-position: -20px 0;
+}
+.icon-services {
+    background-position: -36px 0;
+}
+
+.icon-blog {
+    background-position: -55px 0;
+    width: 20px !important;
+}
+.icon-contact {
+    background-position: -75px 0;
+    width: 20px !important;
+}
+
+nav ul li>a img{
+    vertical-align: middle;
+}
+
+section .container {
+    display: flex;
+    height: calc((100vh - 240px))
+}
+section .container aside {
+    flex-basis: 30%;
+    background-color: aquamarine;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container main {
+    flex: 1
+}
+footer {
+    padding: 40px 0 20px 0;
+    background-color: #212121;
+    color: #e6e6e6;
+    height: 100px;
+}

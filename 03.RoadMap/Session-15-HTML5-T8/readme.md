@@ -1,6 +1,6 @@
 # JavaScript Functions and Objects
 
-## Functions
+## ⭐ Functions
 
 - Cách Tạo một Function, chạy một Function, Tại sao lại cần tạo Function ?
 - Function có params
@@ -9,7 +9,7 @@
 - Promise, Async / await
 - Callback, callback hell
 
-## Objects
+## ⭐ Objects
 
 - Objects ?
 - Json: <https://www.w3schools.com/js/js_json.asp>
@@ -18,17 +18,17 @@
 - Rest Parameter Object ES6 ==> https://www.w3schools.com/js/js_es6.asp#mark_rest
 - Spread Object ES6 => https://www.w3schools.com/react/react_es6_spread.asp
 
-## Date Objects
+## ⭐ Date Objects
 
 - <https://www.w3schools.com/js/js_dates.asp>
 - <https://www.w3schools.com/js/js_date_methods.asp>
 - <https://www.w3schools.com/js/js_date_methods_set.asp>
 - Format day with moment
 
-## Modules
+## ⭐ Modules Javascript
 
 - Export and Import
 
-## Errors
+## ⭐ Errors
 
 - Throw, and Try...Catch...Finally

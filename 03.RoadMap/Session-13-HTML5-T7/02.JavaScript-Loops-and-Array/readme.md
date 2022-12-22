@@ -1,7 +1,7 @@
 # JavaScript-Loops-and-Array
 
 
-## 1. Array
+## ⭐ 1. Array
 
 - Array?
 - Why use Array ?
@@ -11,6 +11,6 @@
 
 
 
-## 2. Loops
+## ⭐ 2. Loops
 
 - if, for, for in, for of, while do

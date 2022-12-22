@@ -1,0 +1,40 @@
+.section-product {
+    display: flex;
+    width: 1200px;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+.section-product .item{
+    width: calc((1200px - 60px) / 4);
+    overflow: hidden;
+    position: relative;
+}
+.section-product .item label{
+    position: absolute;
+    z-index: 1;
+    top:10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.section-product .item label span{
+    padding: 5px 10px;
+    background-color: #08c;
+    color: #fff;
+    border-radius: 30px;
+    margin: 5px 0;
+
+}
+
+.section-product .item label span.discount {
+    background-color: red;
+}
+.section-product .item h3{
+    margin: 10px 0;
+}
+.section-product .item .price strong{
+    font-size: 30px;
+}
+.section-product .item .price del{
+    color: #888;
+}

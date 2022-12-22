@@ -36,7 +36,3 @@
 - display grid: <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids/>
 
 - Multiple-column layout: <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout/>
-
-- ::first-child
-- ::last-child
-- ::nth-child(n)

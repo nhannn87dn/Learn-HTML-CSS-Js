@@ -23,19 +23,26 @@
 
     -->
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
     #example1 {
         border: 10px dotted black;
         padding: 15px;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
         background: red;
-        background-clip: border-box;  /* border-content | padding-box */
+        background-clip: border-box;  /*border-box |  border-content | padding-box */
+         /* background-image: url(photo.png); */
+         /* background-origin: border-box;  border-box |  border-content | padding-box */ 
     }
     </style>
-    <h1>The background-clip Property</h1>
-
-    <p>The background-clip property defines how far the background should extend within an element.</p>
-
-    <p>background-clip: border-box (this is default):</p>
+   
     <div id="example1">
+        <p>background-clip: border-box (this is default):</p>
         <p>The background extends behind the border.</p>
     </div>
 </body>

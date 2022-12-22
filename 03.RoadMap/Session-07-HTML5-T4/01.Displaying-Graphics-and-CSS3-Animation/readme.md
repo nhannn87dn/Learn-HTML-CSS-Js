@@ -3,12 +3,14 @@
 ## ⭐ 1.Format Image Css in Content
 
 - image
-- Image with Article <article><img height=600 width=600 /></article>
-- Image iCon with Text inline: <p><img /></p>
+- Image with Article `<article><img height=600 width=600 /></article>`
+- Image iCon with Text inline: `<p><img /></p>`
 - Image with border, border-radius
 - opacity
 - image responsive
 - Example: <https://www.w3schools.com/css/css3_images.asp>
+
+- Overflow css
 
 ## ⭐ 2. CSS3 Animation
 
