@@ -10,7 +10,6 @@
 - image responsive
 - Example: <https://www.w3schools.com/css/css3_images.asp>
 
-- Overflow css
 
 ## ⭐ 2. CSS3 Animation
 
@@ -21,12 +20,8 @@
 - <https://www.w3schools.com/cssref/css_animatable.php>
 - <https://michalsnik.github.io/aos/>
 
-## ⭐ 3. CSS3 on Mobile devices (Responsive)
+## ⭐ 4. CSS3 on Mobile devices (Responsive)
 
 - <https://www.w3schools.com/css/css3_mediaqueries.asp>
 - <https://www.w3schools.com/css/css3_mediaqueries_ex.asp>
 
-## ⭐ 4. CSS Icon
-
-- <https://www.w3schools.com/css/css_icons.asp>
-- Font Awesome

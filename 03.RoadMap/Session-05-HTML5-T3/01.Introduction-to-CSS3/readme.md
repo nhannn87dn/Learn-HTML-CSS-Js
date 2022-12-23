@@ -1,22 +1,10 @@
 # Introduction-to-CSS3
 
-## ⭐ 1.CSS Syntax
+## ⭐ CSS Syntax
 
 Selector{property: value}
 
-## ⭐ 2.Length Measurement Units
-
-- <https://www.w3schools.com/css/css_units.asp>
-- Relative: %, rem, em, vw, vh, vmin, vmax, ch
-- Absolute: px, pt, cm, mm, inch, pc
-
-## ⭐ 3. Types of Style Sheets
-
-- Internal
-- External
-- Inline
-
-## ⭐ 4. Selectors
+## ⭐Css Selectors
 
 - Type selector
 - Class selector
@@ -24,18 +12,38 @@ Selector{property: value}
 - Universal selector
 - <https://www.w3schools.com/cssref/css_selectors.php>
 
-## ⭐ 5. Generic Cascading Order
+
+## ⭐ Length Measurement Units in Css
+
+- <https://www.w3schools.com/css/css_units.asp>
+- Relative: %, rem, em, vw, vh, vmin, vmax, ch
+- Absolute: px, pt, cm, mm, inch, pc
+
+## ⭐ Types of Style Sheets
+
+- Internal
+- External
+- Inline
+
+## ⭐ Generic Cascading Order
 
 - CSS Specificity: <https://www.w3schools.com/css/css_specificity.asp>
 
-## ⭐ 6. Comment in Css
+## ⭐ Comment in Css
 
-## ⭐ 7. Support multi browser ?
+## ⭐ Css Function
 
-- <https://caniuse.com/?search=sticky/>
-- Test Real browser: <https://www.browserstack.com/>
+## ⭐ CSS Colors Values
 
-## ⭐ 8. Pseudo Classes
+- Type: text-name, #hex, grb, grba
+- Doc: <https://www.w3schools.com/cssref/css_colors.php>
+
+## ⭐ CSS Default Values
+
+- Doc: <https://www.w3schools.com/cssref/css_default_values.php>
+- Why reset default css ?
+
+## ⭐ Pseudo Classes
 
 - :first-child
 - :last-child
@@ -43,7 +51,7 @@ Selector{property: value}
 - :empty
 - :nth-child(n)
 
-## ⭐ 9. Styles to Hyperlink
+## ⭐ Styles to Hyperlink
 
 - a
 - a:link
@@ -52,3 +60,9 @@ Selector{property: value}
 - a:active
 
 Example: <https://www.w3schools.com/cssref/tryit.php?filename=trycss_sel_visited>
+
+
+## ⭐ Support multi browser ?
+
+- <https://caniuse.com/?search=sticky/>
+- Test Real browser: <https://www.browserstack.com/>

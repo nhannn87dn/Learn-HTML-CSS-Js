@@ -2,8 +2,21 @@
 
 ## ⭐ 1.Text and Font Style
 
-- <https://www.w3schools.com/css/css_font.asp>
-- Google Font, CDN Font
+- Css Formatting Text
+    - color
+    - font-size
+    - font-weight
+    - font-style
+    - text-overflow
+    - text-transform
+    - text-align
+    - text-shadow
+    - text-index
+    - text-decoration
+    - line-height
+    - font-family
+- Google Font, CDN Font: <https://www.w3schools.com/css/css_font.asp>
+- Font icon
 
 ## ⭐ 2.CSS Box Model
 
@@ -14,6 +27,8 @@
 - long hand
 - border-radius
 - box-sizing
+- box-shadow
+- overflow
 
 ## ⭐ 3. Horizontal Alignment
 
@@ -22,17 +37,13 @@
 
 ## ⭐ 4. Vertical Alignment
 
+- Vertical Alignment a Image follow text
+- Vertical Alignment a Element follow Div Tag
+
 ## ⭐ 5. Display Property
 
-- display
-- float
-- clear
+- display: inline, inline-block, block
+- float: left, right, unset
+- clear: left, right, unset, both
 
-- display flex: <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#the_flex_model/>
-
-- flexbox cheat: <https://flex.eszter.space/>
-- flexbox cheat: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
-
-- display grid: <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids/>
-
-- Multiple-column layout: <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout/>
+## ⭐ 6. Display Flex
