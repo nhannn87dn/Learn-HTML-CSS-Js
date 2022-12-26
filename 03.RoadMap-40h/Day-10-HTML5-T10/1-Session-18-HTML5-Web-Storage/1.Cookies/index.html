@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- // CDN: 1 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    #ads {
+      height: 100px;
+      width: 100%;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='ads'>
+    KHOAN CẮT BÊ TÔNG
+  </div>
+
+  <script>
+    // Hàm tiện ích 
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    // Hàm tiện ích 
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    var x = getCookie('ads');
+    console.log(x);
+    if (!x) {
+      console.log('KO CÓ COOKIES');
+      $('#ads').show();
+      // show ads
+      setCookie('ads', true);
+    } else {
+      // ẩn quảng cáo
+      $('#ads').hide();
+    }
+
+    // document.querySelector("#username").innerHTML = c;
+    // console.log(c);
+
+
+  </script>
+</body>
+
+</html>

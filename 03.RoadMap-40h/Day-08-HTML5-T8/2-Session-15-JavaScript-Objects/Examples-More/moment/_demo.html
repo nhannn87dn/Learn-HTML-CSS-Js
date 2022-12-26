@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+</head>
+
+<body>
+
+  <h1 id='time'></h1>
+
+  <h1 id='deadline'></h1>
+  <script>
+    let today = moment();
+    let deadline = moment('2021-09-09 17:30');
+    document.querySelector('#time').innerHTML = today.format('ddd, DD MMMM YYYY hh:mm A')
+
+    var duration = moment.duration(deadline.diff(today));
+
+    document.querySelector('#deadline').innerHTML = numeral(duration.as('days')).format('0.00')
+  </script>
+</body>
+
+</html>

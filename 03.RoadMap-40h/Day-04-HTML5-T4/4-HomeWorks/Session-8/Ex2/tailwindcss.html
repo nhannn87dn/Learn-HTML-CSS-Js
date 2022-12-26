@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Session 08 - BT2 - Tailwindcss</title>
+
+  <!-- ICONS FONT -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- THAM KHẢO -->
+  <!-- https://fonts.google.com/icons?icon.query=home -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .block {
+      margin-bottom: 2rem;
+      /* max-width: 576px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container" class="m-4 grid grid-cols-1 2xl:grid-cols-6 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+    <section class="block mx-4">
+      <!-- AUTHOR -->
+      <section class="flex mt-4">
+        <div>
+          <img src="./images/img7.jpg" alt="" class="rounded-full h-10 w-10" />
+        </div>
+        <div class="mx-2">
+          <div class="text-green-400 font-semibold">Alex Teseira</div>
+          <div class="text-gray-500 text-sm">May 31 2017 - 5 min read</div>
+        </div>
+      </section>
+
+      <!-- IMAGE -->
+      <section class="mt-4">
+        <img src="./images//img1.jpg" alt="" class="w-full" />
+      </section>
+
+      <!-- CONTENT -->
+      <section class="mt-6">
+        <h1 class="text-3xl font-semibold">Exclusive interview with InVision's CEO</h1>
+        <p class="mt-4 text-justify">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company.</p>
+        <p class="text-green-400 mt-3">Read more...</p>
+      </section>
+
+      <hr class="my-4" />
+      <section class="flex flex-wrap justify-between">
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">favorite_border</span>
+          <span class="text-gray-500">5k</span>
+        </div>
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">message</span>
+          <span class="text-gray-500">10 Comments</span>
+
+          <span class="material-icons text-green-400 mr-1 ml-4">bookmark_border</span>
+          <span class="text-gray-500">Bookmark</span>
+        </div>
+      </section>
+      <hr class="my-4" />
+    </section>
+
+    <section class="block mx-4">
+      <!-- AUTHOR -->
+      <section class="flex mt-4">
+        <div>
+          <img src="./images/img7.jpg" alt="" class="rounded-full h-10 w-10" />
+        </div>
+        <div class="mx-2">
+          <div class="text-green-400 font-semibold">Alex Teseira</div>
+          <div class="text-gray-500 text-sm">May 31 2017 - 5 min read</div>
+        </div>
+      </section>
+
+      <!-- IMAGE -->
+      <section class="mt-4">
+        <img src="./images//img1.jpg" alt="" class="w-full" />
+      </section>
+
+      <!-- CONTENT -->
+      <section class="mt-6">
+        <h1 class="text-3xl font-semibold">Exclusive interview with InVision's CEO</h1>
+        <p class="mt-4 text-justify">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company.</p>
+        <p class="text-green-400 mt-3">Read more...</p>
+      </section>
+
+      <hr class="my-4" />
+      <section class="flex flex-wrap justify-between">
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">favorite_border</span>
+          <span class="text-gray-500">5k</span>
+        </div>
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">message</span>
+          <span class="text-gray-500">10 <span class="invisible sm:visible">Comments</span></span>
+
+          <span class="material-icons text-green-400 mr-1 ml-4">bookmark_border</span>
+          <span class="text-gray-500">Bookmark</span>
+        </div>
+      </section>
+      <hr class="my-4" />
+    </section>
+
+    <section class="block mx-4">
+      <!-- AUTHOR -->
+      <section class="flex mt-4">
+        <div>
+          <img src="./images/img7.jpg" alt="" class="rounded-full h-10 w-10" />
+        </div>
+        <div class="mx-2">
+          <div class="text-green-400 font-semibold">Alex Teseira</div>
+          <div class="text-gray-500 text-sm">May 31 2017 - 5 min read</div>
+        </div>
+      </section>
+
+      <!-- IMAGE -->
+      <section class="mt-4">
+        <img src="./images//img1.jpg" alt="" class="w-full" />
+      </section>
+
+      <!-- CONTENT -->
+      <section class="mt-6">
+        <h1 class="text-3xl font-semibold">Exclusive interview with InVision's CEO</h1>
+        <p class="mt-4 text-justify">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company.</p>
+        <p class="text-green-400 mt-3">Read more...</p>
+      </section>
+
+      <hr class="my-4" />
+      <section class="flex flex-wrap justify-between">
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">favorite_border</span>
+          <span class="text-gray-500">5k</span>
+        </div>
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">message</span>
+          <span class="text-gray-500">10 <span class="invisible sm:visible">Comments</span></span>
+
+          <span class="material-icons text-green-400 mr-1 ml-4">bookmark_border</span>
+          <span class="text-gray-500">Bookmark</span>
+        </div>
+      </section>
+      <hr class="my-4" />
+    </section>
+
+    <section class="block mx-4">
+      <!-- AUTHOR -->
+      <section class="flex mt-4">
+        <div>
+          <img src="./images/img7.jpg" alt="" class="rounded-full h-10 w-10" />
+        </div>
+        <div class="mx-2">
+          <div class="text-green-400 font-semibold">Alex Teseira</div>
+          <div class="text-gray-500 text-sm">May 31 2017 - 5 min read</div>
+        </div>
+      </section>
+
+      <!-- IMAGE -->
+      <section class="mt-4">
+        <img src="./images//img1.jpg" alt="" class="w-full" />
+      </section>
+
+      <!-- CONTENT -->
+      <section class="mt-6">
+        <h1 class="text-3xl font-semibold">Exclusive interview with InVision's CEO</h1>
+        <p class="mt-4 text-justify">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company.</p>
+        <p class="text-green-400 mt-3">Read more...</p>
+      </section>
+
+      <hr class="my-4" />
+      <section class="flex flex-wrap justify-between">
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">favorite_border</span>
+          <span class="text-gray-500">5k</span>
+        </div>
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">message</span>
+          <span class="text-gray-500">10 <span class="invisible sm:visible">Comments</span></span>
+
+          <span class="material-icons text-green-400 mr-1 ml-4">bookmark_border</span>
+          <span class="text-gray-500">Bookmark</span>
+        </div>
+      </section>
+      <hr class="my-4" />
+    </section>
+
+    <section class="block mx-4">
+      <!-- AUTHOR -->
+      <section class="flex mt-4">
+        <div>
+          <img src="./images/img7.jpg" alt="" class="rounded-full h-10 w-10" />
+        </div>
+        <div class="mx-2">
+          <div class="text-green-400 font-semibold">Alex Teseira</div>
+          <div class="text-gray-500 text-sm">May 31 2017 - 5 min read</div>
+        </div>
+      </section>
+
+      <!-- IMAGE -->
+      <section class="mt-4">
+        <img src="./images//img1.jpg" alt="" class="w-full" />
+      </section>
+
+      <!-- CONTENT -->
+      <section class="mt-6">
+        <h1 class="text-3xl font-semibold">Exclusive interview with InVision's CEO</h1>
+        <p class="mt-4 text-justify">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company.</p>
+        <p class="text-green-400 mt-3">Read more...</p>
+      </section>
+
+      <hr class="my-4" />
+      <section class="flex flex-wrap justify-between">
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">favorite_border</span>
+          <span class="text-gray-500">5k</span>
+        </div>
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">message</span>
+          <span class="text-gray-500">10 <span class="invisible sm:visible">Comments</span></span>
+
+          <span class="material-icons text-green-400 mr-1 ml-4">bookmark_border</span>
+          <span class="text-gray-500">Bookmark</span>
+        </div>
+      </section>
+      <hr class="my-4" />
+    </section>
+
+    <section class="block mx-4">
+      <!-- AUTHOR -->
+      <section class="flex mt-4">
+        <div>
+          <img src="./images/img7.jpg" alt="" class="rounded-full h-10 w-10" />
+        </div>
+        <div class="mx-2">
+          <div class="text-green-400 font-semibold">Alex Teseira</div>
+          <div class="text-gray-500 text-sm">May 31 2017 - 5 min read</div>
+        </div>
+      </section>
+
+      <!-- IMAGE -->
+      <section class="mt-4">
+        <img src="./images//img1.jpg" alt="" class="w-full" />
+      </section>
+
+      <!-- CONTENT -->
+      <section class="mt-6">
+        <h1 class="text-3xl font-semibold">Exclusive interview with InVision's CEO</h1>
+        <p class="mt-4 text-justify">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company.</p>
+        <p class="text-green-400 mt-3">Read more...</p>
+      </section>
+
+      <hr class="my-4" />
+      <section class="flex flex-wrap justify-between">
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">favorite_border</span>
+          <span class="text-gray-500">5k</span>
+        </div>
+        <div class="flex">
+          <span class="material-icons text-green-400 mr-1">message</span>
+          <span class="text-gray-500">10 <span class="invisible sm:visible">Comments</span></span>
+
+          <span class="material-icons text-green-400 mr-1 ml-4">bookmark_border</span>
+          <span class="text-gray-500">Bookmark</span>
+        </div>
+      </section>
+      <hr class="my-4" />
+    </section>
+  </div>
+</body>
+
+</html>

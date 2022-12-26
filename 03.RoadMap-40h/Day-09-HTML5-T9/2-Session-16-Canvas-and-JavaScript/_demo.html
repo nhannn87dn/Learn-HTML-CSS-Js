@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas id="mCanvas" width="800" height="600">
+  </canvas>
+
+  <script>
+    window.onload = function () {
+      var canvas = document.getElementById('mCanvas');
+      var ctext = canvas.getContext('2d');
+      // vẽ 1 hình chữ nhật tại tọa độ 18, 55, 
+      ctext.beginPath();
+      ctext.rect(18, 50, 200, 100);
+      ctext.fillStyle = "orange";
+      ctext.fill();
+      // vẽ 1 đường thẳng
+      ctext.beginPath();
+      ctext.moveTo(300, 150);
+      ctext.lineTo(500, 50);
+      ctext.lineWidth = 4;
+      ctext.strokeStyle = "red";
+      ctext.stroke();
+
+      //
+
+      var x = canvas.width / 2;
+      var y = canvas.height / 2;
+      var radius = 75;
+      var startAngle = 0 * Math.PI;
+      var endAngle = 2 * Math.PI;
+      var ctrClockwise = false;
+
+      ctext.beginPath();
+      ctext.arc(x, y, radius, startAngle, endAngle, ctrClockwise);
+      // line color
+
+      ctext.beginPath();
+      ctext.arc(x, y, radius, startAngle, endAngle, ctrClockwise);
+      // line color
+      ctext.fillStyle = "red";
+      ctext.fill();
+
+      ctext.moveTo(300, 130);
+      ctext.bezierCurveTo(250, 10, 300, 10, 500, 100);
+
+      ctext.moveTo(50, 150);
+      ctext.quadraticCurveTo(100, 0, 200, 150);
+
+      ctext.strokeStyle = "DarkGreen";
+      ctext.stroke();
+
+      ctext.font = "italic 30pt Calibri";
+      ctext.fillStyle = "MediumVioletRed";
+
+      ctext.fillText("Welcome to HTML5!", 40, 100);
+    }
+  </script>
+</body>
+
+</html>

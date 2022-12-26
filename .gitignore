@@ -1,11 +1,11 @@
 #no public now
 *.local*
-*.mp4
-*.wmv
-*.mepg
+# *.mp4
+# *.wmv
+# *.mepg
 # Deny directories
 # 05.Demo-Projects
-04.Slides/*
+# 04.Slides/*
 # Logs
 logs
 *.log

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
+    var request = indexedDB.open("CompanyDB", 1);
+    request.onsuccess = function (event) {
+        console.log("Success");
+    };
+    request.onerror = function (event) {
+        console.log("IndexedDB error: " + event.target.errorCode);
+    };
+
+</script>
+</html>

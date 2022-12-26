@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tinh tien mua hang (1)</title>
+    <script>
+      function tinhtien() {
+        var dongia = document.getElementById('input-dongia').value;
+        var soluong = document.getElementById('input-soluong').value;
+        var giamgia = document.getElementById('input-giamgia').value;
+
+        var thanhtien = soluong * dongia * ((100 - giamgia) / 100);
+
+        if (thanhtien >= 5000000) {
+          alert('Cua hang se tang ban 1 mon qua tri gia 1 trieu');
+        } else if (thanhtien >= 3000000) {
+          alert('Cua hang se tang ban 1 mon qua tri gia 500 ngan');
+        } else {
+          alert('Cua hang se tang ban 1 phieu giam gia 30% cho lan sau');
+        }
+        //document.write("Thanh tien la : " + thanhtien);
+        var span = document.getElementById('thanhtien');
+        span.innerHTML = "<span style='color: red'>" + thanhtien + '</span>';
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="Don gia" id="input-dongia" />
+    <input type="text" placeholder="So luong" id="input-soluong" />
+    <input type="text" placeholder="Giam gia" id="input-giamgia" />
+    <button onclick="tinhtien()">Tinh tien</button>
+    <span>Thanh tien: </span><span id="thanhtien"></span>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="moment"></h1>
+</body>
+<script src="moment.js"></script>
+<script>
+  var m = moment();
+  m.add(7, 'days');
+  document.getElementById('moment').innerHTML = m.format('MMMM Do YYYY, h:mm:ss a');
+</script>
+
+</html>

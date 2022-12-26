@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .element {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  -webkit-animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+          animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes pulse {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+@-webkit-keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(150px, 0);
+  }
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(150px, 0);
+  }
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  </style>
+</head>
+
+<body>
+  <h1>ANIMATION WITH CSS3 #02</h1>
+  <div class="element"></div>
+</body>
+
+</html>

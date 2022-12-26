@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let a = enterNumber("Enter a number (1st): ");
+    let b = enterNumber("Enter a number (2nd): ");
+    let c = enterNumber("Enter a number (3rd): ");
+
+    let result = sum(a, b, c);
+    document.writeln(result);
+
+    function enterNumber(message) {
+      let x = prompt(message, 0); // "5"
+      if (isNaN(x)) {
+        x = 0;
+      }
+      return parseInt(x);
+    }
+
+    function sum(x, y, z) {
+      return x + y + z;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Demo</title>
+</head>
+
+<body>
+  <script>
+    const product = {
+      name: "iPhone 12 Pro Max", // new String("iPhone 12 Pro Max");
+      price: 20000000,
+      discount: 5,
+      desc: "256 GB, Gold"
+    };
+
+    product.gift = "Case";
+    // methods
+    product.display = function () {
+      // template string
+      document.write(`<h1>${ this.name.replace("iPhone", "Apple iPhone") }</h1>`)
+      document.write(`<strong>Price: ${ this.price }</strong>`)
+      document.write(`<br />`)
+      document.write(`<strong>Discount: ${ this.discount }</strong>`)
+    }
+
+    product.display();
+
+    // const student = new Object();
+    // student.name = "Nguyen Van Dong";
+    // student.phone = "0905123456";
+    // student.code = "S-0987";
+
+    // console.log(student)
+
+
+    const products = [
+      {
+        name: "iPhone X",
+        price: 15000000
+      },
+      {
+        name: "iPhone 8",
+        price: 12000000
+      },
+      {
+        name: "Samsung Note 20",
+        price: 17000000
+      }
+    ];
+
+    products.forEach(function (p) {
+      console.log(p);
+    });
+
+    // Arrow function
+    products.forEach(p => {
+      console.log(p);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block UI 2</title>
+  <style>
+    .container {
+      width: 540px;
+      height: 300px;
+      margin: 0 auto;
+      background-color: aqua;
+    }
+
+    .row-picture {}
+
+    .image-bg {
+      height: 300px;
+      width: 100%;
+      background-image: url(images/bg.jpg);
+      background-size: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .image-bg>div {
+      display: flex;
+      padding: 32px;
+    }
+
+
+    .avatar {
+      height: 80px;
+      width: 80px;
+    }
+
+    .avatar>img {
+      border-radius: 40px;
+    }
+
+    .title {
+      margin-left: 24px;
+      color: white;
+    }
+
+    .title>h2 {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class='row-picture'>
+      <div class="image-bg">
+        <div>
+          <div class="avatar">
+            <img src="./images/avatar.jpg" width="80px" height="80px" />
+          </div>
+          <div class="title">
+            <h2>Joseph Max</h2>
+            <small>Web Designer</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

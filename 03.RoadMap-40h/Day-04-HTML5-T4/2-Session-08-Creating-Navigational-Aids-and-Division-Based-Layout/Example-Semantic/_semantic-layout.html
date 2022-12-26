@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senmatic Layout</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            color: #fff;
+        }
+        header, footer {
+            background-color: #212121;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+        }
+        nav {
+            background-color: brown;
+        }
+        nav ul {
+            display: flex;
+            column-gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+        nav ul li {
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            margin: 20px 0;
+        }
+        section {
+            background-color: #212121;
+            min-height: 50px;
+            margin: 20px 0;
+            color: #fff;
+            padding: 20px;
+        }
+        main {
+            flex: 1;
+            background-color: rgb(26, 166, 221);
+            padding: 20px;
+        }
+        aside {
+            flex-basis: 30%;
+            background-color: #ecf000;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Here is Header</h3>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Products</li>
+                <li>Blog</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h3>i am main tag</h3>
+            <section>
+                section tag
+            </section>
+            <section>
+                section tag
+            </section>
+        </main>
+        <aside>
+           <h3>i am an aside</h3>
+        </aside>
+    </div>
+    <footer>
+        <h3>i am a footer</h3>
+    </footer>
+</body>
+</html>

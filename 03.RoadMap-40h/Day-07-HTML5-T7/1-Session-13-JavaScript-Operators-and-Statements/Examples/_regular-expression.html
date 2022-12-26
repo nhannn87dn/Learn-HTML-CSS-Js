@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+  // Example 1: Regular Expressions
+
+  const string = 'Find me';
+  const pattern = /me/;
+
+  // search if the pattern is in string variable
+  const result1 = string.search(pattern);
+  console.log(result1); // 5
+
+  // replace the character with another character
+  const string1 = 'Find me';
+  string1.replace(pattern, 'found you'); // Find found you
+
+  // splitting strings into array elements
+  const regex1 = /[\s,]+/;
+  const result2 = 'Hello world! '.split(regex1);
+  console.log(result2); // ['Hello', 'world!', '']
+
+  // searching the phone number pattern
+  const regex2 = /(\d{3})\D(\d{3})-(\d{4})/g;
+  const result3 = regex2.exec('My phone number is: 555 123-4567.');
+  console.log(result3); // ["555 123-4567", "555", "123", "4567"]
+
+
+  let zipCodePattern = /^\d{10}$/;
+  let result = zipCodePattern.exec('0905157897');
+
+  console.log(result);
+
+  //Example 2: Regular Expression Modifier
+
+  const strings = 'Hello hello hello';
+
+// performing a replacement
+const result6 = strings.replace(/hello/, 'world');
+console.log(result6); // Hello world hello
+
+// performing global replacement
+const result7 = strings.replace(/hello/g, 'world');
+console.log(result7); // Hello world world
+
+// performing case-insensitive replacement
+const result8 = strings.replace(/hello/i, 'world');
+console.log(result8); // world hello hello
+
+// performing global case-insensitive replacement
+const result9 = strings.replace(/hello/gi, 'world');
+console.log(result9); // world world world
+
+
+    // regex pattern for email
+    const re = /\S+@\S+\.\S+/g;
+
+    // check if the email is valid
+    let result_email = re.test(email);
+    if (result_email) {
+        console.log('The email is valid.');
+    }
+
+
+  </script>
+</body>
+
+</html>
