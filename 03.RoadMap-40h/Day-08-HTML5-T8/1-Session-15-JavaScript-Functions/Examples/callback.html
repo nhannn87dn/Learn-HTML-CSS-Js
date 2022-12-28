@@ -11,23 +11,28 @@
     /**
      * 
      * Callback ?
-     * When to Use a Callback?
+     * Khi nào thì cần dùng Callback?
      * 
      */
     function myDisplayer(some) {
-    document.getElementById("demo").innerHTML = some;
+        console.log(some);
     }
 
     function myCalculator(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
+        let sum = num1 + num2;
+        // lấy kết quả phép tính trên để làm tham số đầu vào
+        // thực thi hàm myCallback()
+
+        myCallback(sum);
     }
 
     myCalculator(5, 5, myDisplayer);
 
     /**
-     * Callback hell
+     * Câu hỏi phỏng vấn kinh điển:
      * 
+     * Callback hell là gì ?
+     * Làm sao để tránh Callback hell ?
      * 
      */
     setTimeout(function(){

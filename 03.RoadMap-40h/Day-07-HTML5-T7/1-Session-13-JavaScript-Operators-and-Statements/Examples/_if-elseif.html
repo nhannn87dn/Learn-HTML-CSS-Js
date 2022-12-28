@@ -9,6 +9,7 @@
 
 <body></body>
 <script>
+  //Exp1: 
   var dtb = prompt('Nhập DTB:', 0);
   if (dtb >= 9) {
     alert('Hoc sinh xuat sac');
@@ -21,6 +22,19 @@
   } else {
     alert('Hoc sinh Yeu / Kem');
   }
+
+  //Exp2: Đủ tuổi nghĩa vụ quân sự
+  const age = 35;
+  if (age > 34) {
+    console.log("Qualified");
+  } else if (age >= 30 && age <= 34) {
+    console.log("Probation period!");
+  } else if (age === 29) {
+    console.log("Come next year");
+  } else {
+    console.log("Not qualified!");
+  }
+
 </script>
 
 </html>

@@ -1,15 +1,19 @@
 # Introduction-to-JavaScript
 
+Intro: <https://www.w3schools.com/js/js_versions.asp>
+
 ## 1. JavaScript Where To Html?
 
 ## 2. Variables JavaScript
 
+- Doc: <https://www.w3schools.com/js/js_variables.asp>
 - Declaring Variables and Scope (<https://www.w3schools.com/js/js_scope.asp>)
 - Variable Naming Rules
 
 ## 3. Data Types in JavaScript
 
 - boolean, null, number, string, array, object, function
+- Doc: <https://www.w3schools.com/js/js_datatypes.asp>
 
 ## 4. JavaScript Output
 
@@ -36,7 +40,6 @@
 
 ## 8. Intro Jquery
 
-- Học kỹ hơn vào session 19
 - JQuery giúp đơn giản việc theo tác với HTML DOM
 - <https://www.w3schools.com/js/js_htmldom.asp>
 - Có thể trộn lẫn Javascript Syntax và Jquery lại với nhau

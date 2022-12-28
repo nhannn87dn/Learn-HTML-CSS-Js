@@ -21,5 +21,5 @@ Intro result Project
 
 ## Step 4 - Code Bootcamp Session 9-10
 
-- Categories Page
 - Product Details Page
+- Checkout Page

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Value V2</title>
+  </head>
+  <body>
+    <input type="text" id="numA" value="" placeholder="Nhap vao so a" />
+    <input type="text" id="numB" value="" placeholder="Nhap vao so b" />
+
+    <input type="button" name="" value="Display" onclick="display()" />
+    <div style="color: red;" id="result"></div>
+  </body>
+  <script>
+    function display() {
+      var numA = document.getElementById('numA').value;
+      var numB = document.getElementById('numB').value;
+      var sum = parseInt(numA) + parseInt(numB);
+      var divResult = document.getElementById('result');
+      divResult.innerHTML = sum;
+      //alert("Tong cua 2 so a va b la: " + sum);
+    }
+  </script>
+</html>

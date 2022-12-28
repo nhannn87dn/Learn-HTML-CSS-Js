@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div style="text-align: center;">
+    <video id="video1" width="800" onclick="makeNormal()">
+      <source src="Video/Danang.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <br />
+    <br />
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeFullscreen()">Fullscreen</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeNormal()">Normal</button>
+    <button onclick="makeSmall()">Small</button>
+  </div>
+
+  <script>
+    var myVideo = document.querySelector('#video1');
+
+    function playPause() {
+      if (myVideo.paused) myVideo.play();
+      else myVideo.pause();
+    }
+
+    function makeFullscreen() {
+      myVideo.style.minWidth = '100%'; // minWidth: '100%'
+      myVideo.style.maxWidth = '100%';
+      myVideo.style.position = 'fixed';
+      myVideo.style.bottom = '0';
+      myVideo.style.right = '0';
+    }
+
+    function makeBig() {
+      myVideo.style = undefined;
+      myVideo.width = 768;
+    }
+
+    function makeSmall() {
+      myVideo.style = undefined;
+      myVideo.width = 320;
+    }
+
+    function makeNormal() {
+      myVideo.style = undefined;
+      myVideo.width = 420;
+    }
+  </script>
+</body>
+
+</html>

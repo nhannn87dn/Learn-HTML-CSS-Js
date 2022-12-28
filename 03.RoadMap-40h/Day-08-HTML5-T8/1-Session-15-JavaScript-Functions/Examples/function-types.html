@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Các loại function</h1>
+
+    <script>
+        /**
+         * 1. Declaration Function
+         *  Hàm truyền thống, có tên hàm
+         */
+        function name(param0, param1) {
+            console.log('i am happy !');
+        }
+
+        /**
+         * 2. Expression Function
+         *  Hàm không có tên
+         */
+        const getRectArea = function(width, height) {
+            return width * height;
+        };
+
+
+        /**
+         * 3. Arrow Function (ES6)
+         */
+
+        const sayHello = (name) => {
+            console.log(name);
+        }
+
+        // Shorter: return one line code;
+        const sayHola = name => console.log(name);
+
+    </script>
+</body>
+</html>

@@ -21,6 +21,7 @@
 ## ⭐ 2.CSS Box Model
 
 ### 2.1 Box Model ?
+
 ![box model](css_box_model.png)
 
 Demo boxmodel.html

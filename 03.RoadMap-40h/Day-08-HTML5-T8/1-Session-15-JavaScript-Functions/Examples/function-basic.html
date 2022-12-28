@@ -10,11 +10,28 @@
     <input type="text" name="numA" id="numA" value="1" />
     <input type="text" name="numB" id="numB" value="2" />
     <input type="text" name="numC" id="numC" value="3" />
-    <input type="button" name="" value="Click me!" onclick="alert(sum()); alert(check(sum()))" />
+    <input type="button" name="" value="Click me!" onclick="console.log(sum()); console.log(check(sum()))" />
   </form>
 </body>
 
 <script>
+
+  //function không tham số
+
+  function sayHappy(){
+      console.log('i am happy !');
+  }
+
+  // function có tham số
+  function sayHello(name){
+      console.log(`Hello ${name}`);
+  }
+
+  // function trả về một giá trị
+  function calTotal(x,y){
+    return x + y;
+  }
+
 
   // param default value ES5
   function  logger(msg){
