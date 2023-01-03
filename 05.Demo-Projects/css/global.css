@@ -1,6 +1,7 @@
 /* Common */
 :root{
  --main-color: #08C;
+ --gray-color:#777;
  --border-gray-color: #e7e7e7
 }
 * {

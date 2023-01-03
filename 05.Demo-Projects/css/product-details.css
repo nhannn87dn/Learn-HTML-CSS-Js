@@ -1,0 +1,198 @@
+.section-product {
+    margin: 30px 0;
+}
+.block-gallery {
+    width: 500px;
+}
+.block-info {
+    flex:  1;
+    margin-left: 30px;
+}
+
+#SwiperGallery {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#SwiperGallery .swiper-slide img{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+
+
+#SwiperThumb {
+    margin-top: 10px;
+}
+#SwiperThumb .swiper-slide img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+    border:1px solid #fafafa
+}
+#SwiperThumb .swiper-slide-thumb-active img{
+   border:1px solid var(--main-color)
+}
+
+#SwiperThumb .swiper-wrapper {
+    justify-content: space-between;
+}
+
+/* block-info */
+.block-info {
+    color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.6rem;
+}
+.product-name {
+    color: #111;
+    margin: 0;
+    
+}
+.product-price{
+    font-size: 2.8rem;
+}
+.product-price strong{
+    color: #111;
+    font-size: inherit;
+} 
+.product-price del{
+    font-size: 1.8rem;
+    color: #777;margin-left: 1rem;
+}
+.product-list .item .star{
+    width: 100%;
+    display: block;
+    height: 1.6rem;
+}
+.product-list .item .star::after{
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "FontAwesome";
+}
+
+.product-properties {
+    flex-direction: column;
+    gap: 15px;
+}
+.product-properties li {
+    display: flex;
+    align-items: center;
+}
+.product-properties li .p-label {
+    width: 100px;
+    font-weight: bold;
+}
+.product-properties li .p-values {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.product-properties li.item-colors .p-values span{
+    border: 1px solid var(--border-gray-color);
+    height: 36px;
+    width: 40px;
+    
+}
+.product-properties li.item-sizes .p-values span{
+    border: 1px solid var(--border-gray-color);
+    padding: 6px 10px;
+    
+}
+
+.product-properties li.item-sizes .p-values span.selected{
+    background-color: var(--main-color);
+    color: #fff;
+    
+}
+
+.product-actions {
+    margin: 20px 0;
+    border-top: 1px solid var(--border-gray-color);
+    border-bottom: 1px solid var(--border-gray-color);
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.product-actions input{
+    border-radius: 0;
+}
+.product-actions .button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.product-actions .button i{
+    margin-right: 15px;
+}
+
+.quanlity-wrapper span{
+    padding: 10px;
+    color: #333;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quanlity-wrapper .q-decrement {
+    border-radius: 3px 0 0 3px;
+    margin-right: -1px;
+}
+
+.quanlity-wrapper .q-increment {
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px;
+}
+
+
+.section-extra {
+    margin: 30px 0;
+}
+.section-product {
+    justify-content: space-between;
+}
+.extra-main {
+    width: 840px;
+    padding: 20px;
+}
+.extra-sidebar {
+    flex: 1;
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-gray-color);
+}
+.section-title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-more a{
+    font-weight: 600;
+}
+
+
+.news-list article {
+    display: block;
+    clear: both;
+    margin: 10px 0;
+}
+
+.extra-sidebar .thumb{
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.extra-sidebar .thumb img{
+    width: 100%;
+    height: auto;
+}
