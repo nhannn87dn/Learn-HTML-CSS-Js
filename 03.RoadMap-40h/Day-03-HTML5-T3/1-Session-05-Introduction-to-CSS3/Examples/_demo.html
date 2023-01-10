@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMO CSS3</title>
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      font-family: 'Arial';
+    }
+
+    /* SELECTOR: CLASS */
+    /* GROUP */
+    .square {
+      height: 100px;
+      width: 100px;
+      border-radius: 16px;
+    }
+
+    .square-red {
+      background-color: red;
+    }
+
+    /* SELECTOR: TAG */
+    /* ALL DIV */
+    div {
+      border: 4px dashed red;
+    }
+
+    /* SELECTOR: ID */
+    /* ONLY ONE ELEMENT */
+    #avatar {
+      background-color: gray;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      border: 4px solid yellow;
+    }
+  </style>
+
+  <!-- EXTERNAL CSS -->
+  <link href="_demo.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- INLINE CSS (1-3%) -->
+  <!-- RE-USE: NONE, SCOPE: ONE ELEMENT -->
+
+  <h1 style="color: red; font-size: 48px;">Welcome to CSS3</h1>
+  <div style="height: 100px; width: 100px; background-color: blue; border-radius: 16px;"></div>
+  <div style="height: 100px; width: 100px; background-color: blue; border-radius: 16px;"></div>
+
+  <!-- INTERNAL CSS (10%) -->
+  <!-- RE-USE: BAD, SCOPE: ONE PAGE -->
+  <div class='square square-red square-green'></div>
+  <div class='square square-red'></div>
+
+  <!-- EXTERNAL CSS (POPULAR) -->
+  <!-- RE-USE: GOOD -->
+  <div class='square-green'></div>
+
+  <div id="avatar"></div>
+</body>
+
+</html>
