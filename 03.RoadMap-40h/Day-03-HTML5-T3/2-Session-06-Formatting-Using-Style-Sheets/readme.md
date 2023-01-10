@@ -1,6 +1,6 @@
-# Formatting-Using-Style-Sheets
+# Session 6 - Định dạng sử dụng CSS
 
-## ⭐ 1.Text and Font Style
+## ⭐ 1.Kiểu chữ và Font chữ
 
 - Css Formatting Text
   - color
@@ -26,17 +26,8 @@
 
 Demo boxmodel.html
 
-### 2.2 Explanation of the different parts:
 
-**Content** - The content of the box, where text and images appear
-
-**Padding** - Clears an area around the content. The padding is transparent
-
-**Border** - A border that goes around the padding and content
-
-**Margin** - Clears an area outside the border. The margin is transparent
-
-### 2.3 Width and Height of an Element
+### 2.3 Width và  Height của một Element
 
 The total width of an element should be calculated like this:
 
@@ -46,8 +37,21 @@ The total height of an element should be calculated like this:
 
 > Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
 
+### 2.3 Khác nhau giữa các thành phần của Box Model:
 
-### 📌 padding
+**Content** - Là phần content của box
+
+**Padding** - Khoảng trống xung quanh box. Padding là trong suốt
+
+**Border** - là phần viền xung quanh padding và content
+
+**Margin** - Phần khoảng trống nằm ngoài  border. Margin là trong suốt
+
+================================
+
+Để thay được ta đi tìm hiểu chi tiết từng thành phần
+
+### 🌻 padding
 
 Syntax
 ```css
@@ -68,7 +72,7 @@ padding: 5px 1em 0 2em;
 ```
 Demo: padding-demo.html
 
-### 📌 Border
+### 🌻 Border
 
 Syntax:
 ```css
@@ -86,7 +90,7 @@ More example: Basic Example Folder
 
 Buider Online: <https://cssgenerator.org/border-css-generator.html>
 
-### 📌 margin
+### 🌻 margin
 
 Syntax
 
@@ -107,6 +111,7 @@ margin: 2px 1em 0 auto;
 ```
 Demo: margin-demo.html
 
+Một số thuộc tính thường dùng chung khác:
 
 ### 📌 box-sizing
 
@@ -185,14 +190,15 @@ overflow: hidden visible;
 Demo Online: <https://developer.mozilla.org/en-US/docs/Web/CSS/overflow>
 
 
-## ⭐ 3. Horizontal Alignment
+## ⭐ 3. Horizontal Alignment - Canh theo chiều ngang
 
-- text center
-- center container
+- text-align
+- margin: number auto;
 
-## ⭐ 4. Vertical Alignment
+## ⭐ 4. Vertical Alignment - Canh theo chiều dọc
 
 - Vertical Alignment a Image follow text
+- Vertical Alignment a text follow table cell
 - Vertical Alignment a Element follow Div Tag
 
 ## ⭐ 5. Display Property
