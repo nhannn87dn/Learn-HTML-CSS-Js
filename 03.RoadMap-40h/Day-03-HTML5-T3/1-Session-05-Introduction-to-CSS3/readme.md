@@ -53,6 +53,8 @@ Selector{property: value}
 - :focus
 - :checked
 
+List Pseudo Classes: <https://www.w3schools.com/css/css_pseudo_classes.asp>
+
 ## ⭐ Styles to Hyperlink
 
 - a
