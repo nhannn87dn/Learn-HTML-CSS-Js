@@ -1,0 +1,1 @@
+Sử dụng Font Awesome để nhúng iCon, hoặc bạn tự cắt lại hình mẫu và chèn như là thẻ img

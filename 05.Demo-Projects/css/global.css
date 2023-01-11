@@ -276,6 +276,7 @@ header .social-icon:not(:hover):not(:active):not(:focus) {
         border-right: 2px solid #333;
         content: '';
         height: 5px;
+        z-index: 2;
         position: absolute;
         transform: rotate(45deg);
         top: 20px;
@@ -312,6 +313,16 @@ header .social-icon:not(:hover):not(:active):not(:focus) {
 .main-nav ul>li.current{
     color: var(--main-color)
 }
+
+.main-nav ul>li.has-child.active>a{
+    color: var(--main-color)
+}
+
+.main-nav ul>li.has-child.active::before{
+    transform: rotate(225deg);
+    top: 23px;
+}
+.main-nav ul>li.has-child.active .nav-child{display: block;}
 
 .body-content {
     min-height: 600px;

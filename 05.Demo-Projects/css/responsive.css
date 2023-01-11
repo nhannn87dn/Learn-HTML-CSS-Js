@@ -15,15 +15,7 @@
     }
 }
 @media screen and (min-width: 766px){
-    .main-nav ul>li:hover>a{
-        color: var(--main-color)
-    }
-    
-    .main-nav ul>li:hover::before{
-        transform: rotate(225deg);
-        top: 23px;
-    }
-    .main-nav ul>li:hover .nav-child{display: block;}
+   
     
 }
 @media screen and (min-width: 1023px){

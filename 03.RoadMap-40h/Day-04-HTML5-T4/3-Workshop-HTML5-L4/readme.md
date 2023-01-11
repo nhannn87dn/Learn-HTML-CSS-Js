@@ -11,3 +11,5 @@
 
 
 ## Task 2: Responsive Flexbox
+
+Tạo responsive cho layout index ở folder Excercies-Responsive-Flexbox
