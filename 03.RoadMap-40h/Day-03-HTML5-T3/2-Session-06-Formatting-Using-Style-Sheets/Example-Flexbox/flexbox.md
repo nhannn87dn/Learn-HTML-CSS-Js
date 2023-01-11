@@ -1,17 +1,10 @@
 # Css Flex box ?
-Guide: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
-Cheat: <https://flex.eszter.space/>
-
-Flexbox Model (xem hình minh họa) -- <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#the_flex_model>
-
-Demo: <https://codepen.io/enxaneta/full/adLPwv/>
 
 Css properties:
 
 - **display**: flex | inline-flex
-- **display-direction**: row | column
-- **display-wrap**: no-wrap | wrap | wrap-reverse
+- **display-direction**: row | column | row-reverse | column-reverse
 - **display-wrap**: no-wrap | wrap | wrap-reverse
 - **display-basic**: `<length>`
 - **justify-content**: flex-start | flex-end | center | space-between | space-around
@@ -21,3 +14,13 @@ Css properties:
 - **flex-shrink**: `<number>`
 - **flex**: `<number>`
 - **order**: `<number>`
+
+Thao khảo minh họa từ các nguồn: 
+
+Guide: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+
+Cheat: <https://flex.eszter.space/>
+
+Demo: <https://codepen.io/enxaneta/full/adLPwv/>
+
+Flexbox Model (xem hình minh họa) -- <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#the_flex_model>

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+    background-color: #888;
+    padding: 50px;
+    width: calc((100% - 60px) / 4);
+    box-sizing: border-box;
+}

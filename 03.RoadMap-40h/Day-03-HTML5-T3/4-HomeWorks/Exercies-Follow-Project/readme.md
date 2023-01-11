@@ -2,6 +2,8 @@
 
 - Mô tả tình huống phía Developer BackEnd trả về nội dung bài viết như file index.html
 - Bạn đóng vai trò là một FrontEnd, Hãy định dạng bài viết này theo các yêu cầu sau:
+  - Nền của trang là màu xám: #fafafa
+  - Chiều rộng hiển thị của bài viết là 1200px, nền trắng, canh giữa màn hình.
   - Font: Google Roboto dùng chung toàn trang
   - Tiêu đề chính h1: font size 18px, màu đen, canh trái, chiều cao dòng gấp 1.2 lần.
   - Tác giả và ngày đăng: font size 14, màu xám nhạt, canh trái

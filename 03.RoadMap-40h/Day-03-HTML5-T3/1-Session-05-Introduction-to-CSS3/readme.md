@@ -1,5 +1,7 @@
 # Session 5 - Introduction to CSS3
 
+git pull origin main
+
 CSS là chữ viết tắt của Cascading Style Sheets, nó là một ngôn ngữ được sử dụng để tìm và định dạng lại các phần tử được tạo ra bởi các ngôn ngữ đánh dấu (HTML). Nói ngắn gọn hơn là ngôn ngữ tạo phong cách cho trang web. Bạn có thể hiểu đơn giản rằng, nếu HTML đóng vai trò định dạng các phần tử trên website như việc tạo ra các đoạn văn bản, các tiêu đề, bảng,…thì CSS sẽ giúp chúng ta có thể thêm style vào các phần tử HTML đó như đổi bố cục, màu sắc trang, đổi màu chữ, font chữ, thay đổi cấu trúc…
 
 ## ⭐ Cú pháp CSS
@@ -9,7 +11,10 @@ Selector{property: value}
 Ví dụ:
 
 ```css
-h1 {color: red}
+h1 {
+    color: red,
+    back
+}
 
 #div {width: 100px}
 ```

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padding demo</title>
+    <title>Margin Demo</title>
     <style>
         * {
         margin: 0;
@@ -12,13 +12,11 @@
         outline: 0;
     }
     body {
-        /* background-color: #212121; */
-        margin: 0;
-        padding: 0;
+        background-color: #212121;
     }
     .container {
-        width: 100%;
-        margin: 0 auto;
+        width: 1200px;
+        margin: 20px auto;
     }
     @media screen and (max-width: 425px){
         .container {
@@ -35,34 +33,27 @@
     #parent {
         width: 300px;
         height: auto;
-        border: solid 10px #ffc129;
-        /* margin: 10px; */
+        
+        margin: 10px;
         color: #fff;
         background-color: #212121;
         transition: all .3s ease-in;
-        
+        padding: 1rem;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        border:3px solid yellow
     }
-    #parent p {
-        /* text-align: center; */
-    }
-    .child {
-        border: dashed 1px #fff;
-        /* background-color:black ; */
-        /* padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px; */
-        padding: 10px 20px 5px 15px;
-    }
+   
+    
     </style>
    
 </head>
 <body>
     <div class="container">
         <div id="parent">
-            <div class="child">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta hic cupiditate laboriosam? Amet dicta obcaecati, laboriosam velit aliquid quae deleniti incidunt voluptates, asperiores magni eum dolorem nihil soluta possimus eaque.</p>
-            </div>
+           content
         </div>
     </div>
 </body>
