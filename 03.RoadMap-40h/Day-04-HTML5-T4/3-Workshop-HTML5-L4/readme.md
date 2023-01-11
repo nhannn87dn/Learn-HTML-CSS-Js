@@ -1,20 +1,13 @@
-# Create Ecommerce Website
+# Workshop Session 7
 
-Intro result Project
+## Task 1: Animation Basic
 
-## Step 1 - init Project
+- Tạo ra một thẻ div: Cao 100px, rộng 100px, nền Blue
+- Gán cho nó một Animation: Chạy từ trái - phải màn hình trong 5s
+    - 20% quảng đường đầu tiên: Đổi nền VÀNG, Hơi bo tròn 4 góc.
+    - 50% quảng đường: Đổi Nền ĐỎ, biến thành hình TRÒN
+    - 80% quảng đường: Đổi nền Violet, hơi bo tròn 4 góc
+    - 100 quảng đường: Về lại như ban đầu.
 
-> 1. structure folder
-> 2. css global, reset css
-> 3. layout common
 
-
-## Step 2 - Code Bootcamp Session 5-6
-
-- Header Top Block
-- Footer Block
-
-## Step 3 - Code Bootcamp Session 7-8
-
-- Header-Middle, Header Bottom
-- Index Page: Product List, Articles List
+## Task 2: Responsive Flexbox

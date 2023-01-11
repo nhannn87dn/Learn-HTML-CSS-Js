@@ -3,11 +3,32 @@
 
 <head>
   <style>
+    /**
+    //short hand
+    transition: 
+
+    // details
+    transition-property: tên thuộc tính cần tác động
+    transition-delay: độ trễ
+    transition-duration: thời gian thực hiện
+    transition-timing-function: phương thức hiệu ứng dịch chuyển
+
+    - 
+
+
+    */
     div {
       width: 100px;
       height: 100px;
       background-color: red;
-      transition: height 0.5s;
+
+      transition-property: height;
+      transition-duration: .5s;
+      transition-timing-function: ease;
+      transition-delay: 0;
+
+      /* shorthand */
+      transition: height 0.5s ease;
     }
 
     div:hover {
