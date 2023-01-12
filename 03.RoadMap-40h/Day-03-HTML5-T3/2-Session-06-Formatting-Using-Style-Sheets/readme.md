@@ -26,7 +26,6 @@
 
 Demo boxmodel.html
 
-
 ### 2.3 Width và  Height của một Element
 
 The total width of an element should be calculated like this:
@@ -37,7 +36,7 @@ The total height of an element should be calculated like this:
 
 > Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
 
-### 2.3 Khác nhau giữa các thành phần của Box Model:
+### 2.3 Khác nhau giữa các thành phần của Box Model
 
 **Content** - Là phần content của box
 
@@ -54,6 +53,7 @@ The total height of an element should be calculated like this:
 ### 🌻 padding
 
 Syntax
+
 ```css
 
 padding-left: 1em;
@@ -70,11 +70,13 @@ padding: 1em 2em 2em;
 /* top | right | bottom | left */
 padding: 5px 1em 0 2em;
 ```
+
 Demo: padding-demo.html
 
 ### 🌻 Border
 
 Syntax:
+
 ```css
 /* syntax details */
 border-left-with:1px;
@@ -86,6 +88,7 @@ border-left-style: solid;
 border: medium dashed green;
 border: 1px solid #ddd;
 ```
+
 More example: Basic Example Folder
 
 Buider Online: <https://cssgenerator.org/border-css-generator.html>
@@ -109,6 +112,7 @@ margin: 1em auto 2em;
 /* top | right | bottom | left */
 margin: 2px 1em 0 auto;
 ```
+
 Demo: margin-demo.html
 
 Một số thuộc tính thường dùng chung khác:
@@ -188,7 +192,6 @@ overflow: hidden visible;
 ```
 
 Demo Online: <https://developer.mozilla.org/en-US/docs/Web/CSS/overflow>
-
 
 ## ⭐ 3. Horizontal Alignment - Canh theo chiều ngang
 

@@ -9,13 +9,14 @@
 - Hình ảnh có responsive
 - Example: <https://www.w3schools.com/css/css3_images.asp>
 
+Công cụ chỉnh sửa ảnh Online: <https://pixlr.com>
 
 ## ⭐ 2. CSS3 Animation
 
-### 2.1 Transition -  dịch chuyển, chuyển động dạng trượt.
+### 2.1 Transition
 
 
-Transition hoạt động bằng cách thay đổi giá trị thuộc tính một cách trơn tru từ giá trị này sang giá trị khác trong khoảng thời gian nhất định. Các tham số thường được sử dụng:
+Transition hoạt động bằng cách thay đổi giá trị thuộc tính một cách trơn tru từ giá trị NÀY sang giá trị KHÁC trong khoảng thời gian nhất định. Các tham số thường được sử dụng:
 
 - transition-delay: khoảng thời gian dừng cho mỗi hiệu ứng chuyển đổi.
 - transition-duration: khoảng thời gian chuyển đổi diễn ra.
@@ -201,6 +202,7 @@ body{
     font-family: Roboto;
     line-height: 1.4
 }
+
 /*Smart phone nhỏ*/
 @media screen and (min-width: 320px){
     /*Áp dụng cho kích thước trình duyệt có chiều rộng tối thiểu >= 320px*/
@@ -252,6 +254,7 @@ body{
     font-family: Roboto;
     line-height: 1.4
 }
+
 /*Desktop (1200 x 768)*/
 @media screen and (max-width: 1199px){
     /*Áp dụng cho kích thước trình duyệt có chiều rộng tối đa <= 1200px */
