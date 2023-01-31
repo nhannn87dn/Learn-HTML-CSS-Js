@@ -9,24 +9,35 @@
   <style>
     table {
       border-collapse: collapse;
+      border: 1px dashed #333
     }
 
     th,
     td {
-      padding: 3px;
+      padding: 10px;
+      border: 1px solid #333
     }
+    th{
+      background-color: #01987A;
+      color: #fff;
+    }
+
+    table tr:nth-child(2n+2){
+      background-color: #777;
+    }
+
   </style>
 </head>
 
 <body>
-  <table border="1">
+  <table width="100%">
     <caption>Bảng xếp hạng</caption>
     <thead>
-      <tr>
-        <th>Club</th>
+      <tr> <!-- table row -->
+        <th style="width:100px">Club</th>
         <th>MP</th>
         <th>W</th>
-        <th>D</th>
+        <th >D</th>
         <th>L</th>
         <th>GF</th>
         <th>GA</th>
@@ -36,8 +47,8 @@
     </thead>
     <tbody>
       <tr>
-        <td>MU</td>
-        <td>1</td>
+        <td >MU</td>
+        <td align="right">1</td>
         <td>1</td>
         <td>0</td>
         <td>0</td>
@@ -57,8 +68,36 @@
         <td>2</td>
         <td>3</td>
       </tr>
+      <tr>
+        <td>Total</td>
+        <td colspan="8">1</td>
+      </tr>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="bottom">MC</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
     </tbody>
   </table>
+
+  
 </body>
 
 </html>

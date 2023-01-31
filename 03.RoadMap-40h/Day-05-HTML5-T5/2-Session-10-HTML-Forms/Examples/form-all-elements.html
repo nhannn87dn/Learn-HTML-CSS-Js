@@ -22,25 +22,44 @@
 
 <body>
  
-  <form>
+  <form name="MyForm">
     <h1>Input Types</h1>
     <input type="email" placeholder="Hãy nhập email" autofocus /> 
     <p>checkbox</p>
+    <input style="vertical-align: middle;" type="checkbox" checked />
     <input style="vertical-align: middle;" type="checkbox" />
+
+
     <p>radio</p>
-    <input type="radio" />
+    
+    <input type="radio" name="sex" value="0"  />Nữ 
+    <input value="1" type="radio" name="sex" /> Nam
+    <input value="3" type="radio" name="sex" checked /> Chưa chọn
+
+
+
+
+
     <p>color</p>
     <input type="color" />
+
+
     <p>Date</p>
     <input type="date" />
+
+
+
     <p>datetime-local</p>
     <input type="datetime-local" />
     <p>Email</p>
     <input type="email" />
     <p>File</p>
+
     <input type="file" />
+
     <p>Hidden</p>
-    <input type="hidden" />
+    <input type="hidden" value="1" />
+
     <p>Image</p>
     <input type="image" />
     <p>month</p>

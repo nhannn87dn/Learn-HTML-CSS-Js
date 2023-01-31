@@ -6,15 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
+  <style>
+    input[type='text'] {
+      padding: 12px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+    }
+    input[type='text']:required{
+      border: 1px solid red;
+    }
+  </style>
+
 </head>
 
 <body>
-  <form name="Login">
-    <label>Username</label>
-    <input type="text" name="username" />
-  </form>
+  
+ <form action="">
+   <label for="">
+    Username
+  </label>
+  <input tabindex="1" autofocus type="text" name="username" maxlength="5" required placeholder="Please Enter your username">
+  <hr><label for="">Age</label>
+  <input type="number" name="quanlity" min="1" max="10">
+  <hr>
+  <label><input type="radio"  value="0"> Nữ</label>
+  <label><input type="radio" value="1"> Nam</label>
+  <hr>
+  <textarea name="content" tabindex="2" id="" cols="10" rows="10" maxlength="">
+  </textarea>
 
+  <select name="Contry" id="">
+    <option value="">Chọn Quốc Gia</option>
+    <option value="vi">Viêt Nám</option>
+    <option value="us">Unite State</option>
+  </select>
 
+  <!-- <input type="submit" value="Submit"> -->
+  <input type="reset" value="Reset">
+  <button type="submit">Submit</button>
+ </form>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, sapiente quis doloribus corrupti temporibus ratione autem voluptates fugit, saepe quos eligendi cupiditate molestiae earum explicabo assumenda nostrum, eaque laborum iste?
 </body>
 
 </html>
