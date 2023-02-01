@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+</head>
+<body>
+    <!-- 
+        Cần tìm hiểu về jQuery Selectors
+    -->
+    <h1 id="h1">jQuery Set Values</h1>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <a class="link" href="https://aptech-danang.edu.vn/">Aptech Da nang</a>
+    </div>
+    <br>
+    <input type="text" id="number" name="number" data-number="2" value="2">
+    <br>
+    <input type="text" class="price" name="price" data-price="50" value="50">
+    <br>
+    Total: <strong id="total">100</strong>
+    <br>
+    <select name="country" id="country">
+        <option value="0">Select Country</option>
+        <option value="hanoi">Ha Noi</option>
+        <option value="danang" selected>Da Nang</option>
+        <option value="saigon">TP Ho Chi Minh</option>
+    </select>
+    <br>
+    is Hidden: <input type="checkbox" value="0" id="checkboxid">
+    <br>
+    <button type="button" onclick="updateData()">Update</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        function updateData(){
+
+        console.log('Dang chay Update Data');
+        
+        $("#h1").text("Hello jQuery");
+        $("div.container").append('<p>Javascript Basic</p>');
+        $("a").attr("href", "https://dev.to").text('dev.to');
+
+
+        $("#checkboxid").prop('checked', true);
+
+       $("input[name='number']").val(4);
+         // $("#number").data('number',4);
+       $("input.price").val(80);
+        // $(".price").data('price',80);
+
+        $("#total").text(320);
+
+        $("#country").val('saigon');
+        
+    
+
+        console.log('Da update xong');
+
+    }
+
+    </script>
+</body>
+</html>

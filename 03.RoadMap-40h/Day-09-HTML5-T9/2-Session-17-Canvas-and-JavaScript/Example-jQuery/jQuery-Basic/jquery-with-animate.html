@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ANIMATE WITH JQUERY</title>
+</head>
+
+<body>
+  <div id="div1" style="position: relative; left: 0xp; background-color: red; height: 100px; width: 200px;"></div>
+  <button id="button1">Click me</button>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $('#button1').click(function () {
+    $('#div1').animate(
+      {
+        opacity: 0.25,
+        left: '+=50',
+        height: 'toggle',
+      },
+      1000,
+      function () {
+        // Animation complete.
+      },
+    );
+  });
+</script>
+
+</html>

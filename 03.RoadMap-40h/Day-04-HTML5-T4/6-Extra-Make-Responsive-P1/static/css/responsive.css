@@ -1,0 +1,32 @@
+
+
+@media screen and (max-width: 1025px) {
+    .container{
+        max-width: 960px;
+        width: 960px;
+    }
+    #page-index .section-one-left {
+        width: 25%;
+    }
+    #page-index .section-one-right {
+        width: calc(100% - 25% - 20px);
+    }
+
+    
+
+    .d-flex {
+        width: 100%;
+        max-width: 100%;
+    }
+    .search-bar {
+        min-width: 420px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: none;
+        width:100%;
+        padding: 0 1.5rem;
+    }
+}
