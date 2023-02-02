@@ -12,26 +12,12 @@
 // Global scope
 //var x = 3;
 
-let y = 2;
-
-const z = 5;
-
-{
- //block scope
- let x = 1;
- //console.log(x);
-
- function myfun(){
-    console.log(x);
-
-    let a = 0;
- }
-
- myfun();
-
-}
+let y = 3;
+const z = 5; //constant
 
 
+// console.log('Hello World! \n This is my string');
+confirm("Hello World!")
 
 
 

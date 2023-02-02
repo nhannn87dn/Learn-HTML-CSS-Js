@@ -17,3 +17,15 @@
     3. A date
  * 
  */
+
+    let isAdmin = true; // boolean
+
+    let isNul = null;
+
+    let age = 18; //number
+
+    let stdName = 'Tony'; //string
+
+    let click = function abc()
+
+
