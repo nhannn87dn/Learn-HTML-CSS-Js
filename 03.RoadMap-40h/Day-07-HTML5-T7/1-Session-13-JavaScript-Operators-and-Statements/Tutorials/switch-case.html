@@ -19,7 +19,22 @@
      * - Default;
      * 
      */
-    
+    let level = 'MEMBER';
+
+    let discount = 1;
+
+    switch (level) {
+      case 'VIP':
+      case 'DIAMOND':
+        discount = 10;
+        break;
+      default:
+        discount = 0
+        break;
+    }
+
+    console.log(discount)
+
   </script>
 </body>
 

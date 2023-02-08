@@ -5,7 +5,8 @@
 - Tạo một input để nhập vào một số
 - Check số nhập vào xem đó là số chẳn hay lẻ
  + console.log()
- + onkeyup()
+ + onkeyup(
+ )
 
 
  ## Task 2:
