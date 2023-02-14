@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="result"></div>
+
+    <button onclick="addProduct()">Add</button>
+    <button onclick="getProducts()">getProducts</button>
+    <button onclick="clearStorage()">Clear All</button>
+    <script>
+        getProducts();
+        function addProduct(){
+            let value = {name: 'iPhone 14', price: 22000000};
+            addStore('products',value);
+        }
+
+
+        function getProducts(){
+            // Lay data len
+            let data = sessionStorage.getItem('products');
+            data = JSON.parse(data); //convert string to JSON
+
+
+            let html = '<ul>';
+            //Su dung vong lap de tao html hien thi
+            data.forEach(function (item, index){
+                html += `<li>${item.name} - ${item.price}</li>`;
+            });
+            html += '</ul>';
+            document.getElementById("result").innerHTML = html;
+        }
+
+       
+        function clearStorage(){
+            sessionStorage.clear();
+        }
+
+
+        function addStore(key = 'products',value = null){
+            // Check browser support
+            if (typeof (Storage) != "undefined") {
+              
+                // get data
+                let data = sessionStorage.getItem(key);
+                console.log('1',data);
+                //check ton tai
+                if(data) {
+                    data = JSON.parse(data); //convert string to JSON
+                    console.log('2',data);
+                    //Neu ton tai thi cap nhat gia tri moi vao
+                    data.push(value)
+                    //convert JSON to String before setItem
+                    sessionStorage.setItem(key,JSON.stringify(data))
+                }
+                // Neu chia thi them moi
+                else{
+                    let arr_data = [];
+                    arr_data.push(value); // add mot item vao mang [value]
+                    sessionStorage.setItem(key,JSON.stringify(arr_data))
+                }
+
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

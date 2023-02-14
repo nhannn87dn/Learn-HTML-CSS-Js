@@ -8,12 +8,19 @@
 	// Check browser support
 	if (typeof (Storage) != "undefined") {
 		// Store
-		// sessionStorage.setItem("Session-Storage", "Hello Session Storage");
+		//sessionStorage.setItem("Session-Storage", "Hello Session Storage");
 		// Retrieve
 		document.getElementById("result").innerHTML = sessionStorage.getItem("Session-Storage");
+		
+		//sessionStorage.removeItem("Session-Storage");
+
+		//sessionStorage.clear();
+
 	} else {
 		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 	}
+
+	
 </script>
 
 </html>
