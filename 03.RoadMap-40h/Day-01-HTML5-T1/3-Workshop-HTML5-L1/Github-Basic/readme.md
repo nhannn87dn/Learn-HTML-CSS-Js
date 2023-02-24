@@ -48,6 +48,10 @@ git clone https://github.com/user/repository.git
 Quy trình làm việc với Github xem Git Model tại link sau <https://nvie.com/posts/a-successful-git-branching-model/>
 
 ```bash
+git remote add origin <link repo>
+```
+
+```bash
 # danh sách branch hiện có
 git branch
 

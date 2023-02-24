@@ -1,7 +1,10 @@
 HTML là gì? Tìm hiểu về ngôn ngữ HTML từ A đến Z
+
 Năm 1991, trang web đầu tiên trên internet được hình thành bởi Tim Berners Lee và World Wide Web đã ra đời. Tim Berners Lee đã sử dụng HTML để viết nên các trang web và điều này giúp ông có thể chia sẻ dữ liệu với các nhà khoa học nội bộ. Bài viết này chúng ta sẽ tìm hiểu khái niệm HTML là gì và toàn bộ các nội dung liên quan đến HTML.
 
 HTML là gì?
+
+
 HTML là từ viết tắt của Hypertext Markup Language, là sự kết hợp của Hypertext và Markup, hay còn được gọi là ngôn ngữ siêu văn bản. HTML có chức năng giúp người dùng xây dựng và cấu trúc các phần trong trang web hoặc ứng dụng, thường được sử dụng trong phân chia các đoạn văn, heading, link, blockquotes,…
 
 ghi chu
