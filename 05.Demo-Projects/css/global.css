@@ -399,6 +399,7 @@ footer .tagcloud a {
     text-transform: capitalize;
     display: inline-block;
 }
+
 footer .social-icons {border-left: none;margin-top: 2rem;}
 footer .social-icon {
     border-radius: 50%;
