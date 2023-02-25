@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- BEGIN Meta tag Basic SEO -->
+    <title>Blog details | Aptech Ecommerce</title>
+    <meta name="description" content="Aptech Ecommerce">
+    <meta name="keywords" content="Aptech Ecommerce">
+    <!-- END Meta tag Basic SEO -->
+    <!-- BEGIN CSS -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+     <!-- Global CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/blog-details.css">
+    <link rel="stylesheet" href="css/article.css">
+    <!-- Responsive CSS put the end  -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="page-blog-details">
+    <div class="overlay"></div>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-left xs-hidden">FREE RETURNS. STANDARD SHIPPING ORDERS $99+</div>
+                <div class="header-top-right  sm-flex-full">
+                    <div class="header-menu d-flex md-hidden">
+                       
+                            <a href="#">My Account</a>
+                            <a href="#">Contact Us</a>
+                           <a href="#">Blog</a>
+                           <a href="#">My Wishlist</a>
+                            <a href="#">Cart</a>
+                          <a href="#" class="login-link">Log In</a>
+                       
+                    </div>
+                    <div class="header-menu social-icons">
+                        <a href="#" class="social-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+               
+                    <div class="header-middle-flex d-flex">
+                    <div class="lg-hidden mtoggle" id="mtoggle">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <div class="logo">
+                        <img src="img/logo-white.png" height="44" alt="logo">
+                    </div>
+                    <div class="search-bar xs-hidden">
+                        <form class="search-form clearfix" action="" method="GET">
+                            <input type="text" name="keywords" placeholder="Search keywords...">
+                            <button type="submit" aria-label="Search" title="Search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="header-contact d-flex sm-hidden">
+                        <img src="img/phone-white.png" height="30" width="30" alt="phone">
+                        <h6>CALL US NOW <a href="tel:#" class="font1">+123 5678 890</a></h6>
+                    </div>
+                    <div class="header-icon d-flex">
+                        <a class="sm-show" onclick="toggleSearchMobile()"  href="javascript:;" aria-label="Search" title="Search">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <a  href="#" aria-label="Login" title="Login">
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <a href="#" aria-label="Collect" title="Collect">
+                            <i class="fa fa-heart"></i>
+                        </a>
+                        <a id="cart"  href="#" aria-label="Cart" title="Cart">
+                            <em>0</em>
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="header-bottom md-hidden">
+            <nav class="container main-nav">
+                <span class="lg-hidden mclose" id="mclose">x</span>
+                <ul class="d-flex">
+                    <li class="current">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">Categories</a>
+                        <div class="nav-child">
+                            <a href="#">Fashion</a>
+                            <a href="#">Electronic</a>
+                            <a href="#">Watch</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="d-flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End breadcrumb -->
+    <main class="body-content">
+        <div class="container  d-flex">
+            <article class="main-content">
+                    <h1 style="color: red">HTML là gì? Tìm hiểu về ngôn ngữ HTML từ A đến Z</h1>
+                    <div class="status">
+                        <span><i class="fa fa-user"></i> Administator</span>
+                        <span><i class="fa fa-calendar"></i> 5 days ago</span>
+                        <span><i class="fa fa-comment"></i> 6 Views</span>
+                    </div>
+                    <div class="blog-content">
+                    <p>Năm 1991, trang web đầu tiên trên internet được hình thành bởi <b>Tim Berners Lee</b> và World Wide Web đã ra đời. Tim
+                        Berners Lee đã sử dụng HTML để viết nên các trang web và điều này giúp ông có thể chia sẻ dữ liệu với các nhà
+                        khoa học nội bộ. Bài viết này chúng ta sẽ tìm hiểu khái niệm <a href="https://en.wikipedia.org/wiki/HTML">HTML
+                            là gì</a> và toàn bộ các nội dung liên quan đến HTML.</p>
+                    <h2 style="color: blue">HTML là gì?</h2>
+                    <p>HTML là từ viết tắt của <strong>Hypertext Markup Language</strong>, là sự kết hợp của <u>Hypertext và Markup</u>, hay còn được gọi là
+                        ngôn ngữ siêu văn bản. <abbr title="HyperText Markup Language">HTML</abbr> có chức năng giúp người dùng xây dựng và cấu trúc các phần trong trang web hoặc ứng
+                        dụng, thường được sử dụng trong phân chia các đoạn văn, heading, link, blockquotes,…</p>
+                    <p><img src="https://fptcloud.com/wp-content/uploads/2021/12/cau-truc-html.jpg" alt="ghi chu"></p>
+                    <h2 style="color: blue">Lịch sử của ngôn ngữ HTML</h2>
+                    <ul>
+                        <li>Cha đẻ của HTML là Tim Berners Lee - nhà vật lý học, là người nghĩ ra ý tưởng dựa trên hệ thống <i>hypertext</i> trên nền internet.</li>
+                        <li>Năm 1991, xuất bản phiên bản đầu tiên của HTML gồm 18 tag HTML.</li>
+                        <li>Năm 1998, HTML phiên bản 4.01 ra đời.</li>
+                        <li>Năm 2000, các phiên bản HTML được thay thế bằng XHTML.</li>
+                        <li>Năm 2014, HTML được nâng cấp lên HTML5 với sự cải tiến rõ rệt.</li>
+                    </ul>
+                    <h2 style="color: blue">Các phần mềm sử dụng để lập trình HTML</h2>
+                    <ol>
+                        <li>
+                            <h4>Phần mềm Notepad ++</h4>
+                            <p>Phần mềm Notepad++ là phần mềm miễn phí được nhiều người ưa chuộng với. Ưu điểm của phần mềm này chính là tạo ra môi trường lập trình nhỏ gọn, tiện lợi đi cùng với nhiều tiện ích giúp người dùng tối ưu hóa trong xây dựng website, phần mềm. Hiện nay, phần mềm NotePad++ đã hỗ trợ được nhiều loại ngôn ngữ lập trình khác nhau như: PHP, CSS, C++, Java, C#, XML, HTML, Pascal,…</p>
+                            <p><a href="file.rar">Tải về</a></p>
+                        </li>
+                        <li>
+                            <h4>Phần mềm Sublime Text</h4>
+                        </li>
+                        <li>
+                            <h4>Phần mềm <a target="_blank" href="https://code.visualstudio.com/">Micosoft Visual Code</a></h4>
+                        </li>
+                    </ol>
+                    <h2 style="color: blue">Một số thuật ngữ HTML thường gặp</h2>
+                <p>Trong HTML có rất nhiều thuật ngữ khác nhau cần người dùng hiểu để có thể sử dụng một các dễ dàng và thuận lợi hơn. Sau đây, chúng ta sẽ tìm hiểu 3 thuật ngữ phổ biến thường xuyên xuất hiện trong tệp HTML, chính là Elements, Tags, Attributes.</p>
+                    <ul>
+                    <li>Elements</li>
+                    <li>Tags</li>
+                    <li>Attributes</li>
+                </ul>
+                <p><img src="https://fptcloud.com/wp-content/uploads/2021/12/so-sanh-giua-html-la-html5.jpg" alt=""></p>
+                <h2 style="color: blue">Mục tiêu khóa học</h2>
+                <ul style="list-style-type: lower-alpha">
+                    <li>Tạo web với HTML, HTML5</li>
+                    <li>Trình diễn, tạo các hiệu ứng trên trang WEB với CSS2, CSS3</li>
+                    <li>Xử lý các sự kiện, tương tác người dùng trên trang WEB với JavaScript</li>
+                    <li>Tăng tốc độ xử lý các sự kiện trên trang web với JQuery</li>
+                    <li>Thiết kế giao diện với Photoshop</li>
+                    <li>Cắt giao diện từ ảnh thiết kế thành HTML, CSS</li>
+                    <li>Thiết kế giao diện Web: (Bài tập theo nhóm)</li>
+                    <li>Tạo trang tin tức</li>
+                    <li>Tạo trang giới thiệu sản phẩm và bán sản phẩm trực tuyến</li>
+                </ul>
+                <h2 style="color: blue">Trung Tâm Đào Tạo Lập Trình Viên Softech Aptech</h2>
+                <ul style="list-style-type: circle">
+                    <li><address>38 Yên Bái, Quận Hải Châu, Thành Phố Đà Nẵng (Tòa nhà VNPT)</address></li>
+                    <li>Điện thoại: <a href="tel:02363779779">0236.3.779.779</a></li>
+                    <li>Email: <a href="mailto:tuyensinh@softech.vn">tuyensinh@softech.vn</a></li>
+                    <li>Fax: a 0236.3.779.555</li>
+                </ul>
+            </div><!-- end blog-content -->
+            </article>
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Categories</h3>
+                <ul class="cat-list">
+                    <li class="has-child show">
+                        <a href="#widget-category-1" >
+                            Accessories<span class="products-count">(3)</span>
+                            <span class="toggle"></span>
+                        </a>
+                        
+                            <ul class="collapse cat-sublist">
+                                <li>Caps<span class="products-count">(1)</span></li>
+                                <li>Watches<span class="products-count">(2)</span></li>
+                            </ul>
+                        
+                    </li>
+                    <li class="has-child">
+                        <a href="#widget-category-2" >
+                            Dress<span class="products-count">(4)</span>
+                            <span class="toggle"></span>
+                        </a>
+                        
+                            <ul class="collapse cat-sublist">
+                                <li>Clothing<span class="products-count">(4)</span></li>
+                            </ul>
+                        
+                    </li>
+                    <li class="has-child">
+                        <a href="#widget-category-3">
+                            Electronics<span class="products-count">(2)</span>
+                            <span class="toggle"></span>
+                        </a>
+                        
+                            <ul class="collapse cat-sublist">
+                                <li>Headphone<span class="products-count">(1)</span></li>
+                                <li>Watch<span class="products-count">(1)</span></li>
+                            </ul>
+                       
+                    </li>
+                    <li class="has-child">
+                        <a href="#widget-category-4" >
+                            Fashion<span class="products-count">(6)</span>
+                            <span class="toggle"></span>
+                        </a>
+                        
+                            <ul class="collapse cat-sublist">
+                                <li>Shoes<span class="products-count">(4)</span></li>
+                                <li>Bag<span class="products-count">(2)</span></li>
+                            </ul>
+                        
+                    </li>
+                    <li><a href="#">Music<span class="products-count">(2)</span></a></li>
+                </ul>
+                <h3 class="sidebar-title">News</h3>
+                <div class="news-list">
+                    <article>
+                        <div class="thumb">
+                            <img src="img/post-1.jpg" alt="news">
+                        </div>
+                        <div class="details">
+                            <h3>Top New Collection</h3>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non tellus sem. Aenean...</p>
+                            <div class="status">
+                                <span><i class="fa fa-user"></i> Administator</span>
+                                <span><i class="fa fa-calendar"></i> 5 days ago</span>
+                                <span><i class="fa fa-comment"></i> 6 Views</span>
+                            </div>
+                       </div>
+                    </article>
+                    <article>
+                        <div class="thumb">
+                            <img src="img/post-2.jpg" alt="news">
+                        </div>
+                        <div class="details">
+                            <h3>Fashion Trends</h3>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non tellus sem. Aenean...</p>
+                            <div class="status">
+                                <span><i class="fa fa-user"></i> Administator</span>
+                                <span><i class="fa fa-calendar"></i> 5 days ago</span>
+                                <span><i class="fa fa-comment"></i> 6 Views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="thumb">
+                            <img src="img/post-3.jpg" alt="news">
+                        </div>
+                        <div class="details">
+                            <h3>Etiam laoreet sem</h3>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non tellus sem. Aenean...</p>
+                            <div class="status">
+                                <span><i class="fa fa-user"></i> Administator</span>
+                                <span><i class="fa fa-calendar"></i> 5 days ago</span>
+                                <span><i class="fa fa-comment"></i> 6 Views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="thumb">
+                            <img src="img/post-4.jpg" alt="news">
+                        </div>
+                        <div class="details">
+                            <h3>Perfect Accessories</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non tellus sem. Aenean...</p>
+                            <div class="status">
+                                <span><i class="fa fa-user"></i> Administator</span>
+                                <span><i class="fa fa-calendar"></i> 5 days ago</span>
+                                <span><i class="fa fa-comment"></i> 6 Views</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </aside>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-row d-flex md-flex-wrap">
+                <div class="footer-col">
+                    <h4 class="widget-title">About Us</h4>
+                    <a href="#">
+                        <img src="img/logo-footer.png" alt="Logo" class="logo-footer">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus lacus. Duis nec vestibulum magna, et dapibus lacus.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon social-facebook" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-icon social-twitter" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-icon social-linkedin" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="widget-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <span class="contact-info-label">Address:</span>123 Street Name, City, England
+                        </li>
+                        <li>
+                            <span class="contact-info-label">Phone:</span><a href="tel:">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <span class="contact-info-label">Email:</span> <a href="mailto:mail@example.com">mail@example.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-info-label">Working Days/Hours:</span> Mon - Sun / 9:00 AM - 8:00 PM
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="widget-title">Customer Service</h4>
+                    <ul class="links">
+                        <li><a href="#">Help &amp; FAQs</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Shipping &amp; Delivery</a></li>
+                        <li><a href="#">Orders History</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="dashboard.html">My Account</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="demo1-about.html">About Us</a></li>
+                        <li><a href="#">Corporate Sales</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="widget-title">Poppular Tags</h4>
+                    <div class="tagcloud">
+                        <a href="#">Bag</a>
+                        <a href="#">Black</a>
+                        <a href="#">Blue</a>
+                        <a href="#">Clothes</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Hub</a>
+                        <a href="#">Jean</a>
+                        <a href="#">Shirt</a>
+                        <a href="#">Skirt</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Sweater</a>
+                        <a href="#">Winter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © Aptech eCommerce. 2022. All Rights Reserved
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+    
+    $('#mtoggle').click(function(){
+        $('header .header-bottom').removeClass('md-hidden');
+        $('.overlay').fadeIn();
+        $('body').addClass('fixbody');
+    });
+
+    $('#mclose').click(function(){
+        closeNav();
+    });
+
+
+    function closeNav(){
+        $('header .header-bottom').addClass('md-hidden');
+        $('.overlay').fadeOut();
+        $('body').removeClass('fixbody');
+    }
+
+    function toggleSearchMobile(){
+        $("header .search-bar").toggleClass('search-mobile');
+    }
+    </script>
+</body>
+</html>
