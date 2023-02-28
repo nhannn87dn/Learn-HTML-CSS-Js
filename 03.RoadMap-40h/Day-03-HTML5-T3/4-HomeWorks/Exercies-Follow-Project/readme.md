@@ -5,7 +5,7 @@
   - Nền của trang là màu xám: #fafafa
   - Chiều rộng hiển thị của bài viết là 1200px, nền trắng, canh giữa màn hình.
   - Font: Google Roboto dùng chung toàn trang
-  - Tiêu đề chính h1: font size 18px, màu đen, canh trái, chiều cao dòng gấp 1.2 lần.
+  - Tiêu đề chính h1: font size 38px, màu đen, canh trái, chiều cao dòng gấp 1.2 lần.
   - Tác giả và ngày đăng: font size 14, màu xám nhạt, canh trái
   - Các thẻ heading còn lại: font size lần lượt giảm 2px, màu đen
   - Heading 2: viết HOA,  chiều cao dòng gấp 1.2 lần.
