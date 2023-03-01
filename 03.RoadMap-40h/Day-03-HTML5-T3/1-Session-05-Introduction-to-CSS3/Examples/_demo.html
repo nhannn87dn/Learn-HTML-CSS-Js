@@ -5,66 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
- 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<style>  
-  @font-face {
-    font-family: 'Robto';
-    src:  url(fonts/Roboto-Regular_0.ttf) format('ttf'),
-          url(fonts/Roboto-Medium_0.tff) format('woff'),
-          url(fonts/Roboto-Regular_0.ttf) format('woff');
-  }
-
-  body{
+  <!-- CSS EXTERNAL -->
+  <link rel="stylesheet" href="_demo.css">
+  <!-- CSS INTERNAL -->
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      outline: none;
+    }
+    body{
       font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 25px;
     }
-
-    h1{
-      text-align: left;
-      background-color: aqua;
-      /* text-indent: 20px; */
-      
-      text-transform: lowercase;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 40px;
-
-      padding-left: 20px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-right: 30px;
-      /* shorthand 4 hướng = nhau */
-      padding: 30px;
-      /* x trên dưới, y là trái phải */
-      padding: 20px 30px;
-      /* border:5px solid red; */
-      border-left: 5px dotted transparent;
-
-    }
-
-    a{
-      text-decoration: none;
-    }
-    p{
-      word-spacing: 30px;
-    }
-    .isdiv{
-      margin-bottom: 30px;
-      margin-top: 100px;
-
+    div{
+      background-color: blueviolet;
+      color: #fff;
+      width: 600px;
+      /* shorthand */
+     margin-bottom: 20px;
+     padding: 10px;
+     /* border: 3px solid #000 */
+     
     }
   </style>
 </head>
 <body>
-  <h1>heading 1 <i class="fa fa-heart"></i> </h1>
-  <div class="isdiv">lorem <span style="color: brown;font-weight: bold;"> i am span</span></div>
-  <a href="">Hyperlink</a>
-  <p><span style="font-weight: bold;">Lorem</span>  ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eius. In laboriosam aliquam quis officiis cumque repudiandae, ratione eveniet debitis praesentium fugiat aspernatur delectus sapiente eos obcaecati sed aut nemo.</p>
-  <p><i class="fa fa-search"></i> <i class="fa-brands fa-facebook"></i> </p>
+  <div id="demo">Hello Heading 1 <i class="fa-brands fa-facebook"></i></div>
+  <div id="demo">Hello Heading 1</div>
 </body>
 </html>

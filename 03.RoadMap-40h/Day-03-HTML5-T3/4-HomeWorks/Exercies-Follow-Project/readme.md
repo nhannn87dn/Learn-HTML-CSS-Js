@@ -11,6 +11,6 @@
   - Heading 2: viết HOA,  chiều cao dòng gấp 1.2 lần.
   - Liên kết: màu xanh, ko gạch chân
   - Danh sách: ul thì hiển thị dạng disc, ol thì số
-  - Các thành phần p, div, heading nên có khoảng cách trống hợp lý, có chiều cao dòng cơ bản 22px
+  - Các thành phần p, div, heading nên có khoảng cách trống hợp lý
   - Hình ảnh: canh giữa
 
