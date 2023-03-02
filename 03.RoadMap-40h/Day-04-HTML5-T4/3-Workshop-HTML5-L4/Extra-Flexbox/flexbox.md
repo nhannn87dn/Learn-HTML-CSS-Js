@@ -4,8 +4,8 @@
 Css properties:
 
 - **display**: flex | inline-flex
-- **display-direction**: row | column | row-reverse | column-reverse
-- **display-wrap**: no-wrap | wrap | wrap-reverse
+- **display-direction**: row (default) | column | row-reverse | column-reverse
+- **display-wrap**: no-wrap (default | wrap | wrap-reverse
 - **display-basic**: `<length>`
 - **justify-content**: flex-start | flex-end | center | space-between | space-around
 - **justify-seft**: flex-start | flex-end | center
