@@ -10,6 +10,6 @@
     - 100 quảng đường: Về lại như ban đầu.
 
 
-## Task 2: Responsive Flexbox
+## Task 2: Tạo Navigation bar Basic như hình
 
-Tạo responsive cho layout index ở folder Excercies-Responsive-Flexbox
+![](navigation.png)

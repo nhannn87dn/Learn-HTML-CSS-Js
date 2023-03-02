@@ -1,25 +1,16 @@
-# Create Ecommerce Website
+# Workshop
 
-Intro result Project
+## Task 1: 
 
-## Step 1 - init Project
+Tạo một bảng với giao diện như hình dưới đây, để làm bảng thông số  cho sản phẩm.
 
-> 1. structure folder
-> 2. css global, reset css
-> 3. layout common
+![table](table-params.png)
 
 
-## Step 2 - Code Bootcamp Session 5-6
+## Task 2
 
-- Header Top Block
-- Footer Block
+Tạo form như demo
 
-## Step 3 - Code Bootcamp Session 7-8
+![](contact-form.jpg)
 
-- Header-Middle, Header Bottom
-- Index Page: Product List, Articles List
-
-## Step 4 - Code Bootcamp Session 9-10
-
-- Product Details Page
-- Checkout Page
+- name và email bắt buộc nhập, email phải đúng định dạng email, message tối thiểu 8 kí tự

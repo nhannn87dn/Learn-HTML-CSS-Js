@@ -1,31 +1,24 @@
-# Create Ecommerce Website
-
-Intro result Project
-
-## Step 1 - init Project DONE
-
-> 1. structure folder
-> 2. css global, reset css
-> 3. layout common
+# Thực hành bài học tại Lab
 
 
-## Step 2 - Code Bootcamp Session 5-6 DONE
+## Task 1: Lấy link một bài nhạc mp3 và nhúng vào website
 
-- Header Top Block
-- Footer Block
+## Task 2: Nhúng một video Youtube vào website
 
-## Step 3 - Code Bootcamp Session 7-8 DONE
+## Task 3:Thực hành lại kiến thức Javascript
 
-- Header-Middle, Header Bottom
-- Index Page: Product List, Articles List
+- Khai báo biến: 
++ Có 2 biến a và b
++ Gán giá trị cho biến đó
++ Xuất ra màn hình / console giá trị của biến
++ Thay đổi giá trị của biến a, b thành giá trị khác
++ Xuất ra màn hình / console giá trị của biến
 
-## Step 4 - Code Bootcamp Session 9-10 DONE
+## Task 4:
+Có một sinh viên tên là Nguyễn Văn A, Tuổi là 20, Giới tính: True là Nam, False Nữ.
 
-- Categories Page
-- Product Details Page
++  Các bạn tạo biến để thể hiện thông tin trên.
++ Xuất ra màn hình / console giá trị của biến
 
 
-## Step 5 - Code Bootcamp Session 11-12
-
-- Categories Post
-- Post Details Page
+## Task 5: Sử dụng Owl.Carousel để tạo Slide hình ảnh, sản phẩm
