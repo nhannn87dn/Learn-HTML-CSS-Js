@@ -1,15 +1,33 @@
 # Workshop Session 7
 
-## Task 1: Animation Basic
+## Task 1: Tạo một Layout sử dụng cá thẻ Semantic Tag Layout
 
-- Tạo ra một thẻ div: Cao 100px, rộng 100px, nền Blue
-- Gán cho nó một Animation: Chạy từ trái - phải màn hình trong 5s
-    - 20% quảng đường đầu tiên: Đổi nền VÀNG, Hơi bo tròn 4 góc.
-    - 50% quảng đường: Đổi Nền ĐỎ, biến thành hình TRÒN
-    - 80% quảng đường: Đổi nền Violet, hơi bo tròn 4 góc
-    - 100 quảng đường: Về lại như ban đầu.
+- header
+- nav
+- main
+- aside
+- footer
+- article
+- section
 
+Có sử dụng container để giới hạn chiều rộng hiển thị nội dung trang web trên màn hình có kích thước lớn.
 
-## Task 2: Tạo Navigation bar Basic như hình
+Layout giống hình sau:
 
-![](navigation.png)
+![layout1](layout-html5.png)
+
+---
+
+## Task 2: Tạo Navigation bar Basic như hình Demo trên
+
+---
+
+## Task 3
+
+Chia footer thành 4 cột bằng nhau, rồi add nội dung `lorem` vào 4 cột đó, khoảng trống giữ mỗi cột là 30px
+
+---
+
+## Task 4
+
+Chia section product thành 2 phần, phần bên trái 400px, khoảng cách trống giữa 2 phần là 30px

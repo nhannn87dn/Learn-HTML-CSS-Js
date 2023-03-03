@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+        .container{
+            width: 400px;
+            overflow-x: hidden;
+        }
+        article {
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        article .content {
+            margin-top: 15px;
+            display: flex;
+        }
+        article .content .thumbnail{
+            /* display: inline-block;
+            float: left; */
+            width: 40%;
+        }
+        article .content .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        article .content .description{
+            /* display: inline-block;
+            float: right; */
+            width: 60%;
+            padding-left: 15px;
+        }
+
+
+        /* first article */
+        article:first-child .thumbnail {
+            margin-bottom: -5px;
+        }
+        article:first-child .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        article:first-child .title{
+            background-color: #f80;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <div class="thumbnail">
+                <img src="images/galaxy_z_fold_3.jpg" alt="">
+            </div>
+            <h3 class="title">8 thế hệ Iphone độ camera</h3>
+        </article>
+        <article>
+            <h3 class="title">8 thế hệ Iphone độ camera</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="images/5a.jpg" alt="">
+                </div>
+                <div class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis libero tenetur voluptatum quo. Quas, porro mollitia voluptas, facilis, voluptates consectetur repudiandae laborum corporis numquam minus molestias ipsa sequi iste.
+                </div>
+            </div>
+        </article>
+        <article>
+            <h3 class="title">8 thế hệ Iphone độ camera</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="images/5a.jpg" alt="">
+                </div>
+                <div class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis libero tenetur voluptatum quo. Quas, porro mollitia voluptas, facilis, voluptates consectetur repudiandae laborum corporis numquam minus molestias ipsa sequi iste.
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

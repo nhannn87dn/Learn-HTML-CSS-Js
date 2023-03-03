@@ -8,16 +8,19 @@
         margin: 0 auto;
         background-color: red;
 
-
-        animation-name: stretch;
-        animation-duration: 1.5s; /* thơi gian thực hiện */
+        /* animation-name: stretch;
+        /* thơi gian thực hiện */
+        /* animation-duration: 3.5s; 
         animation-timing-function: ease-out; 
         animation-delay: 0;
         
         animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-fill-mode: none;
-        animation-play-state: running;
+        animation-play-state: running; */
+
+        animation: stretch 3.5s 3s ease-out alternate infinite
+
       }
       /* stretch là tên animation */
       @keyframes stretch {
@@ -25,7 +28,6 @@
           transform: scale(.3);
           background-color: red;
           border-radius: 100%;
-          top: 0
         }
         50% {
           background-color: orange;
