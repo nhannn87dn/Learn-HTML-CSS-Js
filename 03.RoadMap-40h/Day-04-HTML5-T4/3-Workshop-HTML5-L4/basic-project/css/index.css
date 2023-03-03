@@ -1,0 +1,20 @@
+/**
+ CSS dùng riêng cho index.html
+
+*/
+
+
+.body_wapper {
+    display: flex;
+}
+
+.body_wapper aside {
+    width: 30%;
+    background-color: yellow;
+}
+
+.body_wapper main {
+    flex: 1;
+    background-color: cyan;
+    min-height: 450px;
+}

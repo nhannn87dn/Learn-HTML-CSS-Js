@@ -1,0 +1,40 @@
+/**
+ CSS dùng chung
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header, footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul{
+    display: flex;
+}
