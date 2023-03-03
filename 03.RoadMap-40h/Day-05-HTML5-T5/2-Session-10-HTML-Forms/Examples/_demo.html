@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
+  <title>Document</title>
   <style>
-    input[type='text'] {
-      padding: 12px 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      outline: none;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    input[type='text']:required{
-      border: 1px solid red;
+    .registerForm {
+      max-width: 350px;
+    }
+    .input_row {
+      display: flex;
+      margin: 5px 0;
+    }
+    .input_row label{
+      width: 100px;
+      font-weight: bold;
+    }
+    .input_row input{
+      flex: 1;
     }
   </style>
-
 </head>
-
 <body>
-  
- <form action="">
-   <label for="">
-    Username
-  </label>
-  <input tabindex="1" autofocus type="text" name="username" maxlength="5" required placeholder="Please Enter your username">
-  <hr><label for="">Age</label>
-  <input type="number" name="quanlity" min="1" max="10">
-  <hr>
-  <label><input type="radio"  value="0"> Nữ</label>
-  <label><input type="radio" value="1"> Nam</label>
-  <hr>
-  <textarea name="content" tabindex="2" id="" cols="10" rows="10" maxlength="">
-  </textarea>
+    <div class="container">
+        <form class="registerForm" action="" name="registerForm">
+          <div class="input_row">
+            <label for="">Username</label>
+            <input  placeholder="Vui lòng nhập username" type="text" name="username" minlength="4" maxlength="200" >
+          </div>
+          <div class="input_row">
+            <label for="">URL</label>
+            <input type="url" name="url">
+          </div>
+          <div class="input_row">
+            <label for="">Email</label>
+            <input placeholder="Enter your email" type="email" name="email" >
+          </div>
+          <div class="input_row">
+            <label for="">Password</label>
+            <input type="password" name="password" >
+          </div>
+          <div class="input_row">
+            <label for="">Age</label>
+            <input type="number" name="age" max="100" min="13" >
+          </div>
+          <div class="input_row">
+            <label for="">Sex</label>
+            <input type="radio" name="sex" value="0"> Nữ 
+            <input type="radio" name="sex" value="1" checked> Nam
+            <input type="radio" name="sex" value="3" > Chưa xác định
+          </div>
+          <div class="input_row">
+            <label for="">Mobile</label>
+            <input required pattern="/^0988([0-9]+){6,6}/" type="text" name="mobile">
+          </div>
+          <div class="input_row">
+            <label for="">Sở thích</label>
+            <input type="checkbox" name="sothic" value="travel"> Travel
+            <input type="checkbox" name="sothic" value="sport"> Sport
+            <input type="checkbox" name="sothic" value="food"> Food
+          </div>
+          <div class="input_row">
+            <label for="">Tĩnh/TP</label>
+            <select name="city" id="city">
+                <option value="">--Vui lòng chọn Tỉnh/TP--</option>
+                <option value="0">Hà Nội</option>
+                <option value="1" selected>Hồ chí minh</option>
+                <option value="3">Hà Nội</option>
+                <option value="ha-noi">Hà Nội</option>
+                <option value="ha-noi">Hà Nội</option>
+            </select>
+          </div>
 
-  <select name="Contry" id="">
-    <option value="">Chọn Quốc Gia</option>
-    <option value="vi">Viêt Nám</option>
-    <option value="us">Unite State</option>
-  </select>
+          <div class="form_action">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+       
 
-  <!-- <input type="submit" value="Submit"> -->
-  <input type="reset" value="Reset">
-  <button type="submit">Submit</button>
- </form>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, sapiente quis doloribus corrupti temporibus ratione autem voluptates fugit, saepe quos eligendi cupiditate molestiae earum explicabo assumenda nostrum, eaque laborum iste?
+    </div>
 </body>
-
 </html>
