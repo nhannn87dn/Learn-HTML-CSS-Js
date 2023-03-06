@@ -97,6 +97,23 @@
     .job-description {
       flex: 3
     }
+    .flex{
+      display: flex;
+    }
+    .skill_name {
+      width: 120px;
+    }
+    .sill_levels {
+      height: 20px;
+      flex: 1;
+    }
+    .skill_percent {
+      background-color: #111;
+    }
+    .skill_empty {
+      background-color: #c5c5c5;
+      flex: 1
+    }
   </style>
 </head>
 
@@ -148,8 +165,18 @@
                 Làm ở công ty cổ phần Softech
               </div>
             </div>
-            <div></div>
+            <h2>SKILLS</h2>
+            <div class="skill_wrapper flex">
+                <div class="skill_name">
+                   <label>Photoshop</label>
+                </div>
+                <div class="sill_levels flex">
+                    <div class="skill_percent" style="width: 80%;"></div>
+                    <div class="skill_empty"></div>
+                </div>
+            </div>
           </div>
+          
         </div>
       </div>
     </section>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <!-- Vùng làm việc của Javascript -->
+        <input type="text" name="username" id="username" onkeyup="onKeyUp()">
+    <script>
+        function onKeyUp(){
+           let username =  document.getElementById("username").value; //javascript
+
+           let username2 = $("#username").val();//jQuery
+
+           console.log(username);
+
+        }
+        // Tên biến đặt theo quy tắc camelCase
+        let myNameStudent = "Nguyen Van A Nguyen Van B";
+
+        let name = 'Javascript'; //string
+
+        let age = '123'; //number
+
+        let isAdmin  = true; // false ==> Boolean
+
+        console.log(age);
+
+        let isJob = null;
+
+        let user = {name: 'Nguyen van A', age: 18};
+
+        let myFunction = function(){
+            //day la function
+        }
+
+        let arrs = [0,2,3,4,5]; //Arrays
+
+        /** comment nhiều dòng
+         * 
+         * 
+         * 
+         */
+        document.writeln(myNameStudent);
+        document.writeln(name);
+
+        // let isname = prompt();
+
+        console.log(isname);
+       
+
+    </script>
+</body>
+</html>

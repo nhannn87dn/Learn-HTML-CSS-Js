@@ -1,111 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      table {
-        border: 1px solid #000;
-        border-collapse: collapse;
-        width: 800px;
-      }
-      table tr th,
-      table tr td {
-        border: 1px solid #000;
-        padding: 10px;
-      }
-      table tr th,
-      table tr td:first-child,
-      table tr td:nth-child(3) {
-        text-align: center;
-      }
-      table tr:nth-child(even) td{
-        background-color: #e0e0e0;
-      }
-      table tr td:nth-child(3).alginment {
-        vertical-align: center;
-        text-align: center;
-      }
-      .table-responsive {
-        overflow-x: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="table-responsive">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  table {
+    border: 1px solid #111;
+    border-collapse: collapse;
+  }
+  table th, table td{
+    border: 1px solid #111;
+    padding: 10px;
+  }
+  table tr td:first-child {
+    text-align: center;
+  }
+  .only_html {
+    vertical-align: middle;
+  }
+  table tr:nth-child(2n+2) td{
+    background-color: #c3c3c3
+  }
+</style>
+<body>
+  <div class="container">
       <table>
-        <!-- table row -->
-        <thead>
           <tr>
-            <!-- th là table header -->
-            <th>STT</th>
-            <th>Họ và Tên</th>
-            <th>Khóa học</th>
-            <th>Khóa học</th>
-            <th>Khóa học</th>
+            <th>SST</th>
+            <th>Name</th>
+            <th>Khoa Hoc</th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
             <td>1</td>
-            <td>Nguyễn Văn DŨng</td>
-            <td>HTML</td>
-            <td>HTML</td>
-            <td>HTML</td>
+            <td>Nguyen Van DUng</td>
+            <td class="only_html" rowspan="2">HTML</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Diệu Thảo</td>
-            <td rowspan="2" class="alginment">Java fullstack</td>
-            <td>HTML</td>
-            <td>HTML</td>
+            <td>Nguyen Van Thao</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Nguyễn Văn Thắng</td>
-            <td>HTML</td>
-            <td>HTML</td>
+            <td>Nguyen Van DUng</td>
+            <td>CSS</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>Nguyễn Văn Việt</td>
-            <td>ADSE</td>
-            <td>HTML</td>
-            <td>HTML</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Nguyễn Văn Thắng</td>
-            <td>.Net fullstack</td>
-            <td>HTML</td>
-            <td>HTML</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Nguyễn Văn Thắng</td>
-            <td>Java fullstack</td>
-            <td>HTML</td>
-            <td>HTML</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Nguyễn Văn Thắng</td>
-            <td>Java fullstack</td>
-            <td>HTML</td>
-            <td>HTML</td>
+            <td>4</td>
+            <td>Nguyen Van Thao</td>
+            <td>Java</td>
           </tr>
           <tr>
             <td colspan="2">Total</td>
-            <td>100</td>
-            <td>HTML</td>
-            <td>HTML</td>
+            <td>4</td>
           </tr>
-        </tbody>
       </table>
-    </div>
-    </div>
-  </body>
+  </div>
+</body>
 </html>

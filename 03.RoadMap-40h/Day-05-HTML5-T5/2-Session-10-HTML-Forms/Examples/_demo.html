@@ -6,82 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
     .container {
-      max-width: 1200px;
+      width: 1200px;
       margin: 0 auto;
     }
-    .registerForm {
-      max-width: 350px;
-    }
-    .input_row {
+    .input_control {
       display: flex;
-      margin: 5px 0;
+      margin: 10px 0;
     }
-    .input_row label{
+    .input_control label{
       width: 100px;
-      font-weight: bold;
-    }
-    .input_row input{
-      flex: 1;
     }
   </style>
 </head>
 <body>
     <div class="container">
-        <form class="registerForm" action="" name="registerForm">
-          <div class="input_row">
-            <label for="">Username</label>
-            <input  placeholder="Vui lòng nhập username" type="text" name="username" minlength="4" maxlength="200" >
-          </div>
-          <div class="input_row">
-            <label for="">URL</label>
-            <input type="url" name="url">
-          </div>
-          <div class="input_row">
-            <label for="">Email</label>
-            <input placeholder="Enter your email" type="email" name="email" >
-          </div>
-          <div class="input_row">
-            <label for="">Password</label>
-            <input type="password" name="password" >
-          </div>
-          <div class="input_row">
-            <label for="">Age</label>
-            <input type="number" name="age" max="100" min="13" >
-          </div>
-          <div class="input_row">
-            <label for="">Sex</label>
-            <input type="radio" name="sex" value="0"> Nữ 
-            <input type="radio" name="sex" value="1" checked> Nam
-            <input type="radio" name="sex" value="3" > Chưa xác định
-          </div>
-          <div class="input_row">
-            <label for="">Mobile</label>
-            <input required pattern="/^0988([0-9]+){6,6}/" type="text" name="mobile">
-          </div>
-          <div class="input_row">
-            <label for="">Sở thích</label>
-            <input type="checkbox" name="sothic" value="travel"> Travel
-            <input type="checkbox" name="sothic" value="sport"> Sport
-            <input type="checkbox" name="sothic" value="food"> Food
-          </div>
-          <div class="input_row">
-            <label for="">Tĩnh/TP</label>
-            <select name="city" id="city">
-                <option value="">--Vui lòng chọn Tỉnh/TP--</option>
-                <option value="0">Hà Nội</option>
-                <option value="1" selected>Hồ chí minh</option>
-                <option value="3">Hà Nội</option>
-                <option value="ha-noi">Hà Nội</option>
-                <option value="ha-noi">Hà Nội</option>
-            </select>
+        
+       <form action="" method="GET" name="registerForm">
+          <div class="input_control">
+            <label for="">User Name</label>
+            <input minlength="4" maxlength="260" required placeholder="Enter your name" type="text" name="user_name">
           </div>
 
-          <div class="form_action">
-            <button type="submit">Submit</button>
+          <div class="input_control">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
           </div>
-        </form>
-       
+
+          <div class="input_control">
+            <label for="password">Password</label>
+            <input type="password" name="Toitengi1823">
+          </div>
+          <div class="input_control">
+            <label for="age">Age</label>
+            <input type="number" name="age">
+          </div>
+          <div class="input_control">
+            <label for="age">Sex</label>
+            <input type="radio" name="sex" value="0"> Female
+            <input type="radio" name="sex" value="1"> Male
+          </div>
+          <div class="input_control">
+            <label for="age">So Thich</label>
+            <input type="checkbox" name="sothich[]" value="0"> Travel
+            <input type="checkbox" name="sothich[]" value="1"> Shoping
+          </div>
+          <div class="input_control">
+            <label for="">City</label>
+            <select name="city" id="">
+                <option value="">Ha Noi</option>
+                <option value="">Ho Chi Minh</option>
+                <option value="">Da Nang</option>
+            </select>
+          </div>
+          <div class="input_control">
+            <label for="">Content</label>
+            <textarea name="content"  cols="30" rows="3"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+       </form>
+      
 
     </div>
 </body>
