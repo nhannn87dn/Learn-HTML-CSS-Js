@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascipt</h1>
+
+    <script>
+        /**
+         * Toán tử số học
+         * + - * / % 
+         */
+        let a = '3'; //string
+        let b = 5; // number
+
+
+        /**
+         * Toán tử số học
+         * >, < >=, <=, ==, !=, ===, !==
+         */
+
+
+         /**
+         * Toán tử LOGIC
+         * && (AND) , ! (NOT), || (OR)
+         */
+        // if(a === 2 || b === 5){
+        //     console.log(" CÓ ")
+        // }else{
+        //     console.log(" KHÔNG ")
+        // }
+
+        let text = "The best things in life are free";
+        let pattern1 = /\w+\s/g;
+        // Trả về true nếu tìm thấy
+        let result = pattern1.test(text);
+        
+
+       /* Trả về index tức là vị trí của kí tự được nếu tìm thấy */
+        let result2 = pattern1.exec(text);
+
+        const myArray = text.match(pattern1);
+
+        console.log(myArray);
+
+    </script>
+</body>
+</html>

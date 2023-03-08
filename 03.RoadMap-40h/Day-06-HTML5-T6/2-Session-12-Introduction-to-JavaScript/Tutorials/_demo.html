@@ -11,52 +11,39 @@
     </style>
 </head>
 <body>
-    <h1>Javascript</h1>
-    <!-- Vùng làm việc của Javascript -->
-        <input type="text" name="username" id="username" onkeyup="onKeyUp()">
+    <h1 id="header">Javascript</h1>
+     <input type="text" class="price" id="price" name="price" value="1000">
+     <input type="text" id="soluong" name="soluong" value="2">
+      <div><strong id="total">0</strong></div>
+     
     <script>
-        function onKeyUp(){
-           let username =  document.getElementById("username").value; //javascript
+        let h1 = document.getElementById('header').innerHTML;
 
-           let username2 = $("#username").val();//jQuery
+        document.getElementById('header').innerHTML = "CSS";
 
-           console.log(username);
+        console.log(h1);
 
-        }
-        // Tên biến đặt theo quy tắc camelCase
-        let myNameStudent = "Nguyen Van A Nguyen Van B";
 
-        let name = 'Javascript'; //string
-
-        let age = '123'; //number
-
-        let isAdmin  = true; // false ==> Boolean
-
-        console.log(age);
-
-        let isJob = null;
-
-        let user = {name: 'Nguyen van A', age: 18};
-
-        let myFunction = function(){
-            //day la function
-        }
-
-        let arrs = [0,2,3,4,5]; //Arrays
-
-        /** comment nhiều dòng
-         * 
-         * 
-         * 
-         */
-        document.writeln(myNameStudent);
-        document.writeln(name);
-
-        // let isname = prompt();
-
-        console.log(isname);
+       let price =  document.getElementById('price').value;
+       let soluong =  document.getElementById('soluong').value;
        
+       const total= parseInt(price)*parseInt(soluong);
+        
+       
+       
+       // Thay thế nội dung bên trong 1 thẻ html bằng nội dung mới
+        document.getElementById('total').innerHTML = total;
+        // Thay thế giá trị input = giá trị mới
+        document.getElementById('price').value = 2000;
 
+
+        let price2 =  document.getElementById('price').value;
+        let soluong2 =  document.getElementById('soluong').value;
+       
+       const total2= parseInt(price2)*parseInt(soluong2);
+       document.getElementById('total').innerHTML = total2;
+
+       console.log(total2);
     </script>
 </body>
 </html>
