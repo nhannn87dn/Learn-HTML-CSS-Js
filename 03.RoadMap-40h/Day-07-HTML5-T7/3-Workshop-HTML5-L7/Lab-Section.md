@@ -9,7 +9,7 @@
 ## Task 2
 
 - Sử dụng prompt() để nhận đầu vào
-- Cho các ngày trong tuần là 2,3,4,5,6,7,8
+- Cho các ngày trong tuần là 2,3,4,5,6,7,8  
 - Check xem số nhập vào:
   - Nếu 2,3 thì in ra hôm nay là đầu tuần
   - Nếu 3,4,5 thì in ra hôm nay là giữa tuần

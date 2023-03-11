@@ -29,42 +29,15 @@ git config --global user.email "username@gmail.com"
 
 **Step 4**: Thiết lập Git cho dự án
 
-```bash
-# Add git cho một dự án mới
-# Tại cửa thư mục chứa dự án, Mở Terminal
+Add git cho một dự án mới
 
+Tại cửa thư mục chứa dự án, Mở Terminal
+
+```bash
 git init
-
-## Dự án đã tồn tại trên Github
-
-git clone [url repository]
-# ex
-git clone https://github.com/user/repository.git
-
+git remote add origin https://github.com/user/repository.git
 ```
 
-### Cách lệnh Git thường dùng
-
-Quy trình làm việc với Github xem Git Model tại link sau <https://nvie.com/posts/a-successful-git-branching-model/>
-
-```bash
-git remote add origin <link repo>
-```
-
-```bash
-# danh sách branch hiện có
-git branch
-
-# Để tạo mới một branch
-git branch <name_branch>
-
-# Tạo branch mới và chuyển đến
-git checkout -b <name_branch>
-
-# Chuyển đến một branch với tên
-git checkout <name_branch>  
-
-```
 
 Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,… Bạn cần phải cập nhật lên Staging Area. Để cập nhật hết các files:
 
@@ -84,18 +57,36 @@ Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local 
 git push origin <name_branch>
 ```
 
-Ngoài ra, nếu chưa tồn tại remote trên server thì bạn cần phải add mới một remote trước rồi mới push:
+
+
+### Cách lệnh Git thường dùng
+
+Quy trình làm việc với Github xem Git Model tại link sau <https://nvie.com/posts/a-successful-git-branching-model/>
 
 ```bash
-git remote add origin <remote_url>
-git push origin <name_branch>
+git clone https://github.com/user/repository.git
+
 ```
 
-Sau một thời gian cập nhật các file và push lên git trên branch mới, bây giờ mình cần ghép (merge) code lại vào nhánh gốc (master). Trước tiên, cần phải checkout ra khỏi branch hiện tại cần gộp để vào branch master, sau đó thì dùng lệnh merge để ghép branch mới vào master:
+Add remote repository git
 
 ```bash
-git checkout master
-git merge <new_branch>
+git remote add origin <link repo>
+```
+
+```bash
+# danh sách branch hiện có
+git branch
+
+# Để tạo mới một branch
+git branch <name_branch>
+
+# Tạo branch mới và chuyển đến
+git checkout -b <name_branch>
+
+# Chuyển đến một branch với tên
+git checkout <name_branch>  
+
 ```
 
 Xem lại lịch sử commit
@@ -122,10 +113,11 @@ Gộp commit
 
 Sau dấu ~ là số commit bạn muốn gộp. Sau khi gõ lệnh này một cửa sổ trình soạn thảo hiện ra. Thay đổi ký tự pick của dòng các dòng sau dòng đầu thành s rồi lưu lại/kết thúc. Khi đó, trình soạn thảo để chỉnh sửa giải thích commit thiết lập cho commit sau khi đã tổng hợp sẽ được hiển thị, nên hãy chỉnh sửa lưu lại/kết thúc.
 
-Pull từ remote repository
+
+Đồng bộ thay đổi từ remote repository về local
 
 ```bash
-git pull origin master
+git pull origin main
 ```
 
 Lệnh trên sẽ gộp những thay đổi mới kéo về từ máy chủ từ xa với nhánh hiện tại trên máy local.
