@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="link" href="https://24h.com.vn">Link</a>
+    <img id="photo"  src="./Light/Images/lighton.gif" alt="lighton">
+    <input id="age" type="text" name="age" value="18">
+
+    <script>
+        //Tùy vào đặc tính của mỗi element 
+        //Javascript cho phép chúng ta thay đổi giá trị của các thuộc tính element 
+        
+        //Selector tới thẻ a có ID link
+        let link = document.getElementById('link');
+        //Lấy được giá trị của thuộc tính href hiện tại
+        console.log(link.href);
+        //Thay đổi giá trị thuộc tính href bằng một giá trị mới
+        link.href = 'https://tinhte.vn';
+
+        //Selector tới thẻ img có ID photo
+        let img = document.getElementById('photo');
+         //Lấy được giá trị của thuộc tính src hiện tại
+         console.log(img.src);
+        //Thay đổi giá trị thuộc tính src bằng một giá trị mới
+        img.src = './Light/Images/lightoff.gif';
+
+
+        //Selector tới thẻ img có ID age
+        let inputAge = document.getElementById('age');
+        //Lấy được giá trị của thuộc tính src hiện tại
+        console.log(inputAge.value);
+        //Thay đổi input với value bằng một giá trị mới
+        inputAge.value = 20;
+
+    </script>
+</body>
+</html>
