@@ -74,6 +74,12 @@ Add remote repository git
 git remote add origin <link repo>
 ```
 
+Check remote repository
+
+```bash
+git remote -v
+```
+
 ```bash
 # danh sách branch hiện có
 git branch
