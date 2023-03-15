@@ -7,42 +7,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <!-- // CDN: 1 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- // OWN SERVER: 1 + 1 + 1 -->
-  <!-- <script src="./jquery.min.js"></script> -->
-
-  <style>
-    #my-div {
-      height: 100px;
-      width: 100px;
-      background-color: yellow;
-    }
-
-    .square-green {
-      height: 100px;
-      width: 100px;
-      background-color: green;
-    }
-  </style>
 </head>
 
 <body>
-  <div id="my-div"></div>
-  <div class="square-green"></div>
-  <div class="square-green"></div>
-  <div class="square-green"></div>
+  <a id="link" class="link" href="https://24h.com.vn">Link</a>
+    <img id="photo"  src="./Light/Images/lighton.gif" alt="lighton">
+    <input id="age" type="text" name="age" value="18">
 
-  <button id="my-button">Hide</button>
+    <div id="result">
 
+
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    $(document).ready(function () {
-      $("#my-button").click(function () {
-        $("#my-div").hide(500);
+    //Jquery Selector == Css selector
+    let a = $("#link");
+    a.attr('href');//get value attribute
+    a.attr('id', 'links');
+    a.html('<strong>Link</strong');
+    
 
-        $(".square-green").fadeOut(2000);
-      });
-    });
+    let getUsers = async()=>{
+      let users =  await fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(json => json);
+      return users;
+    }
+    
+    
+    html = '';
+   let userArr = getUsers();
+
+   console.log(userArr);
+
+    for (let index = 0; index < userArr.length; index++) {
+      html += '<li>' + users[index].name + '</li>';
+    }
+
+    $('#result').html(html);
+
+
+
+    //link.attr('class', 'link');
+   // link.attr('href', 'https://tinhte.vn'); //update value single attribute
+    //link.attr({href: 'https://tinhte.vn', class: 'links links'});//update value multi attribute
   </script>
 </body>
 

@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a id="link" href="https://24h.com.vn">Link</a>
-    <img id="photo"  src="./Light/Images/lighton.gif" alt="lighton">
+    <a id="link" class="link" href="https://24h.com.vn">Link</a>
+    <img id="photo"  src="Light/Images/lighton.gif" alt="lighton">
     <input id="age" type="text" name="age" value="18">
 
     <script>
@@ -16,12 +16,13 @@
         //Javascript cho phép chúng ta thay đổi giá trị của các thuộc tính element 
         
         //Selector tới thẻ a có ID link
-        let link = document.getElementById('link');
+        let a = document.getElementById('link'); 
+        console.log(link);
         //Lấy được giá trị của thuộc tính href hiện tại
-        console.log(link.href);
+        console.log(a.href); //get
         //Thay đổi giá trị thuộc tính href bằng một giá trị mới
-        link.href = 'https://tinhte.vn';
-
+        a.href = 'https://tinhte.vn'; //set
+        
         //Selector tới thẻ img có ID photo
         let img = document.getElementById('photo');
          //Lấy được giá trị của thuộc tính src hiện tại
@@ -29,7 +30,7 @@
         //Thay đổi giá trị thuộc tính src bằng một giá trị mới
         img.src = './Light/Images/lightoff.gif';
 
-
+        
         //Selector tới thẻ img có ID age
         let inputAge = document.getElementById('age');
         //Lấy được giá trị của thuộc tính src hiện tại

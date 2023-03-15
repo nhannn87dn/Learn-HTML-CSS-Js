@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/assets/owl.theme.default.min.css">
+    <style>
+        .owl-carousel {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+                <img src="Images/b1.jpg" alt="">
+        </div>
+        <div class="item">
+                <img src="Images/b2.jpg" alt="">
+        </div>
+        <div class="item">
+                <img src="Images/b3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="Images/b4.jpg" alt="">
+    </div>
+        
+    </div>
+
+
+
+    <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+
+        <swiper-slide>
+            <img src="Images/b1.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="Images/b2.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="Images/b4.jpg" alt="">
+        </swiper-slide>
+        
+      </swiper-container>
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            margin:10,
+            nav:true,
+            dots: true
+        })
+    </script>
+</body>
+</html>

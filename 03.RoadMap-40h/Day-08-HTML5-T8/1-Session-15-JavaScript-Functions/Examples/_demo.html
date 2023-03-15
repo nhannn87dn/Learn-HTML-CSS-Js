@@ -11,37 +11,58 @@
 <body>
   <script>
     
+    let x = 1;
+    let y = 2;
+    //console.log(x+y);
 
-    let a = 9;
-    let b = 5;
-    let total = a + b;
-    //document.writeln(total);
-
-    let c = 19;
-    let d = 6;
-    total = c + d;
-    //.writeln(total);
-
-    
-
-    // Call a function / Invoke a function
-    sum(6, 9);
-    sum(8, 4);
-
-    //displayHello();
-    
+    let a = 3;
+    let b = 4;
+    //console.log(a+b);
 
 
-    // Declare and Define
-    function sum(x, y) {
-      let total = x + y;
-      document.writeln(total);
+    let i = 5;
+    let j = 6;
+    //.log(i+j);
+
+    //Định một function truyền thống
+    function sayHello(){
+      console.log('hello');
+    }
+    // ĐỊnh nghĩa một fun như là biến
+    const myFunction = function(){
+      console.log('myFunction');
     }
 
-
-    function displayHello() {
-      document.writeln('Hello Function');
+    //myFunction();
+    // arrow function
+    const myFunction2 = ()=>{
+      console.log('myFunction2');
     }
+    //myFunction2();
+
+    //gọi function // call function
+    //sayHello();
+
+    function sayHelloWithName(x,age=20){
+      console.log(`Hello ${x}, mình ${age} tuổi`);
+    }
+   // sayHelloWithName('Diem',18);
+
+    function tinhTong(a,b){
+      if(a == 0){
+        return false;
+      }
+      else if(b == 0){
+        return false;
+      }
+
+      return a+b;
+    }
+
+    let total = tinhTong(1,0);
+
+    console.log(total);
+
 
   </script>
 </body>

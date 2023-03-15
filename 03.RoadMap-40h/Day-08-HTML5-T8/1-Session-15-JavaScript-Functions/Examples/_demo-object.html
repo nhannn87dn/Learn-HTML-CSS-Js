@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Object: properties //thuộc tính
+        //Định nghĩa một Object
+
+        let car = {wheels: 4,color: 'white',brand:'Kia',weight:'80'}
+        let car2 = {wheels: 16,color: 'Balck',brand:'Toyota',weight:'160'}
+        //truy cập tới thuộc tính của object
+       console.log(car.wheels);
+        //Update value of key object
+        car.weight = 90;
+
+
+        //console.log({...car,weight:190,color:'Black',abs: true});
+
+        let person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            age: 25,
+            ssn: '123-456-2356'
+        };
+
+
+        let job = {
+            jobTitle: 'JavaScript Developer',
+            location: 'USA'
+        };
+
+        let employee = {
+            ...person,
+            ...job
+        };
+
+        //console.log(employee);
+
+        let mystr = new String('Hello world!');
+        console.log(mystr.concat('-'));
+    </script>
+</body>
+</html>
