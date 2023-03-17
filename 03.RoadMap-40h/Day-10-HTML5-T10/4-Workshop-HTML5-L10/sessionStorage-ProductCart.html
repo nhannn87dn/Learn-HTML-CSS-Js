@@ -14,9 +14,10 @@
     <button onclick="getProducts()">getProducts</button>
     <button onclick="clearStorage()">Clear All</button>
     <script>
-        getProducts();
+        // getProducts();
+
         function addProduct(){
-            let value = {name: 'iPhone 14', price: 22000000};
+            let value = {name: 'iPhone 14', price: 22000000, quantity: 1};
             addStore('products',value);
         }
 
@@ -49,7 +50,7 @@
                 // get data
                 let data = sessionStorage.getItem(key);
                 console.log('1',data);
-                //check ton tai
+                //check ton tai, lan thu 2 tro di
                 if(data) {
                     data = JSON.parse(data); //convert string to JSON
                     console.log('2',data);
@@ -58,7 +59,7 @@
                     //convert JSON to String before setItem
                     sessionStorage.setItem(key,JSON.stringify(data))
                 }
-                // Neu chia thi them moi
+                // Neu chua thi them moi == lan dau
                 else{
                     let arr_data = [];
                     arr_data.push(value); // add mot item vao mang [value]
