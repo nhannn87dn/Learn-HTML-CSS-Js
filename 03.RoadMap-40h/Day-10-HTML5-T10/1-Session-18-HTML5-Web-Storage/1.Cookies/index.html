@@ -29,6 +29,12 @@
 
   <script>
     // Hàm tiện ích 
+    /**
+     * 
+     * @param cname {string} tên của cookie
+     * @param cvalue any giá trị của cookie
+     * @param exdays number số ngày cookie có hiệu lực
+     */
     function setCookie(cname, cvalue, exdays) {
       const d = new Date();
       d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -37,6 +43,7 @@
     }
 
     // Hàm tiện ích 
+    // lấy lên giá trị của một cookie có name
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
@@ -53,17 +60,23 @@
       return "";
     }
 
-    var x = getCookie('ads');
-    console.log(x);
-    if (!x) {
-      console.log('KO CÓ COOKIES');
-      $('#ads').show();
-      // show ads
-      setCookie('ads', true);
-    } else {
-      // ẩn quảng cáo
-      $('#ads').hide();
-    }
+    setCookie('name', 'aftech', 1);
+
+    let name = getCookie('name');
+
+    console.log(name);
+
+    // var x = getCookie('ads');
+    // console.log(x);
+    // if (!x) {
+    //   console.log('KO CÓ COOKIES');
+    //   $('#ads').show();
+    //   // show ads
+    //   setCookie('ads', true);
+    // } else {
+    //   // ẩn quảng cáo
+    //   $('#ads').hide();
+    // }
 
     // document.querySelector("#username").innerHTML = c;
     // console.log(c);

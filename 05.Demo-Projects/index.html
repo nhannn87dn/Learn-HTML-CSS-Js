@@ -367,8 +367,19 @@
             margin:0,
             nav:false,
             dot:true
-        })
+        });
+        
     });
+
+    $(window).scroll(function fix_element() {
+        $('.header-bottom').css(
+        $(window).scrollTop() > 100
+            ? { 'position': 'fixed', 'top': '0', 'left': '0', 'right': '0', 'z-index': '9999' }
+            : { 'position': 'relative', 'top': 'auto' }
+        );
+        return fix_element;
+    }());
+
 
     $('nav ul>li.has-child').click(function(){
         $(this).toggleClass('active');
