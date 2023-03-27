@@ -68,10 +68,22 @@ git clone https://github.com/user/repository.git
 
 ```
 
-Add remote repository git
+Thêm link repository git
 
 ```bash
 git remote add origin <link repo>
+```
+
+Xóa link repository git
+
+```bash
+git remote remove origin
+```
+
+Thay đổi link repository git
+
+```bash
+git remote set-url origin git://new.url.here
 ```
 
 Check remote repository
