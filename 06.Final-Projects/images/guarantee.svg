@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <filter id="b8xasabkba" width="100.4%" height="100.3%" x="-.2%" y="-.2%" filterUnits="objectBoundingBox">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" result="shadowMatrixInner1" values="0 0 0 0 0.949019608 0 0 0 0 0.949019608 0 0 0 0 0.949019608 0 0 0 1 0"/>
+            <feOffset dx="-1" dy="-1" in="SourceAlpha" result="shadowOffsetInner2"/>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner2"/>
+            <feColorMatrix in="shadowInnerInner2" result="shadowMatrixInner2" values="0 0 0 0 0.949019608 0 0 0 0 0.949019608 0 0 0 0 0.949019608 0 0 0 1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"/>
+                <feMergeNode in="shadowMatrixInner2"/>
+            </feMerge>
+        </filter>
+        <rect id="zag69cnwtb" width="240" height="328" x="0" y="0" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#EEE" d="M0 0H3400V6156H0z" transform="translate(-1382 -4878)"/>
+            <g>
+                <path fill="#FFF" d="M0 0H256V344H0z" transform="translate(-1382 -4878) translate(1264 4638)"/>
+                <g transform="translate(-1382 -4878) translate(1264 4638) translate(8 8)">
+                    <use fill="#000" filter="url(#b8xasabkba)" xlink:href="#zag69cnwtb"/>
+                    <g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path fill="#0D5CB6" d="M2.5 0H15c1.38 0 2.5 1.12 2.5 2.5V15c0 1.38-1.12 2.5-2.5 2.5H2.5C1.12 17.5 0 16.38 0 15V2.5C0 1.12 1.12 0 2.5 0zm0 .938c-.863 0-1.563.7-1.563 1.562V15c0 .863.7 1.563 1.563 1.563H15c.863 0 1.563-.7 1.563-1.563V2.5c0-.863-.7-1.563-1.563-1.563H2.5z" transform="translate(0 224) translate(80) translate(30 8) translate(1.25 1.25)"/>
+                                    <path fill="#E2EBF6" d="M2.5.938c-.863 0-1.563.7-1.563 1.562V15c0 .863.7 1.563 1.563 1.563H15c.863 0 1.563-.7 1.563-1.563V2.5c0-.863-.7-1.563-1.563-1.563H2.5z" transform="translate(0 224) translate(80) translate(30 8) translate(1.25 1.25)"/>
+                                    <path fill="#0D5CB6" d="M7.892 10.38L5.538 8.068c-.197-.193-.514-.19-.707.007-.194.197-.19.513.006.707l2.75 2.7c.212.207.556.187.741-.045l4.49-5.625c.172-.216.137-.53-.08-.703-.215-.172-.53-.137-.702.08L7.892 10.38z" transform="translate(0 224) translate(80) translate(30 8) translate(1.25 1.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

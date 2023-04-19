@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+header {
+    background-color: #1abc9c;
+    padding: 10px;
+    position: relative;
+}
+.header_wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+.main_nav ul{
+    list-style: none;
+    column-gap: 15px;
+}
+.main_nav ul>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo {
+    color: #fff;
+}
+main {
+    min-height: 450px;
+}
+footer {
+    background-color: #212121;
+}
+.footer_col {
+    /* flex: 1; */
+    width: 25%;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #ddd;
+    padding: 20px;
+}
+.main_content {
+   width: calc(100% - 30%);
+   /* flex: 1 */
+}
+.product_list {
+    margin: 30px 0;
+    gap: 10px
+}
+.product_list .item{
+    width: calc((100% - 40px) / 5);
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding:20px ;
+}
+#toggleMobile {
+    display: none;
+}
+
+
+/* Desktop first */
+/* max-width = breakpoint + 1 */
+@media screen and (max-width: 769px){
+    .product_list, .footer_wrapper {
+        flex-wrap: wrap;
+    }
+    .product_list .item{
+        width: calc((100% - 20px) / 3);
+    }
+    .footer_col {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 426px){
+    main {
+        flex-wrap: wrap;
+    }
+    .main_content, .sidebar {
+        width: 100%;
+    }
+
+    .product_list .item{
+        width: calc((100% - 10px) / 2);
+    }
+
+    .footer_col {
+        width: 100%;
+    }
+    .main_nav  ul{
+        display: none;
+    }
+    #toggleMobile {
+        display: inline-block;
+        color: #fff;
+    }
+    .main_nav  ul.show{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60px;
+        background-color: #fff;
+    }
+    .main_nav  ul.show>li>a{
+        color: black;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .product_list .item{
+        width: 100%;
+    }
+}

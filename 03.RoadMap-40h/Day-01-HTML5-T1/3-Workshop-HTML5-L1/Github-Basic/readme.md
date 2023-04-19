@@ -54,7 +54,7 @@ git commit -m "Update nội dung gì đó"
 Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository. Nếu muốn cập nhật lên server thì bạn phải sử dụng câu lệnh push:
 
 ```bash
-git push origin <name_branch>
+git push -u origin <name_branch>
 ```
 
 
@@ -62,6 +62,14 @@ git push origin <name_branch>
 ### Cách lệnh Git thường dùng
 
 Quy trình làm việc với Github xem Git Model tại link sau <https://nvie.com/posts/a-successful-git-branching-model/>
+
+Video đề xuất: <https://www.youtube.com/watch?v=vQgcl8VouLU>
+
+
+```bash
+git status 
+```
+Xem trạng thái của git hiện tại
 
 ```bash
 git clone https://github.com/user/repository.git
