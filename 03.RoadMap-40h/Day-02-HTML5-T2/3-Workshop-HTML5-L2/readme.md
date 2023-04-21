@@ -43,4 +43,4 @@ Tiêu đề: Danh sách yêu cầu (dùng thẻ `h1`)
 9. An HTML a mailto link with a subject
 10. An HTML a skype chat link
 11. An HTML a skype call link
-12. An HTML a yahoo chat link
+12. An HTML a zalo chat link
