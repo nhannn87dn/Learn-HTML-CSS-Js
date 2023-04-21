@@ -15,6 +15,7 @@ Download:
 - Bracket Pair Colorizer 2
 - Color Highlight
 - Dracula Official (theme)
+- open in browser (TechER)
 
 ## Session 02 - Practice & Homeworks
 

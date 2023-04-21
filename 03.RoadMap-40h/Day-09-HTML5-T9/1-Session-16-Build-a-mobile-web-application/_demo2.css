@@ -27,6 +27,7 @@ header {
 .logo {
     color: #fff;
 }
+
 main {
     min-height: 450px;
 }
@@ -122,3 +123,5 @@ footer {
         width: 100%;
     }
 }
+
+
