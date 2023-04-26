@@ -1,0 +1,30 @@
+
+/*
+Kết luận
+có 3 kiểu style sheet
+
+1. inline
+2. internal
+3. external
+
+*/
+
+/* 
+
+Thứ tự ưu tiên trong CSS 
+
+1. Giảm dần từ trên xuống dưới
+2. Giảm dần Từ internal --> inline
+
+*/
+
+p{
+    color: violet
+}
+
+.button {
+    background-color: rgb(255, 0, 89);
+    color: #fff;
+    border:none;
+    padding: 5px
+}
