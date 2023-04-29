@@ -6,59 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .bar {
+        :root{
+            --color-green: #4FD365;
+            --color-red: #F25753
+        }
+        .bg-green{
+            background-color: var(--color-green)
+        }
+        .bg-red{
+            background-color: var(--color-red)
+        }
+        .skill_bar {
             display: flex;
-            margin: 30px 0;
         }
-        .bar>div{
-            height: 45px;
-            background-color: #e3e3e3;
-        }
-        .bar .label{
-            width: 150px;
-            background-color: #de4646;
+        .skill_bar .label_icon {
+            width: 30px;
+            height: 30px;
             color: #fff;
-            line-height: 45px;
-            text-align: center;
+            border-radius: 2px;
+            
         }
-        .bar .process{
+        .skill_bar .label {
+            width: 120px;
+        }
+        .skill_process {
             flex: 1;
+            background-color: #ddd;
+            height: 10px;
+            border-radius: 2px;
+            display: flex;
         }
-        .bar .process .percent{
-            width: 20%;
-            background-color: #ef5b5b;
-            color: #fff;
-            height: 100%;
-        }
-        .bar .process .empty{
-            flex: 1;
-        }
-        .bar-storage .label{
-            background-color: blue;
-        }
-        .bar-storage .process .percent{
-            background-color: rgb(62, 62, 250);
-        }
+       
     </style>
 </head>
 <body>
-    <div class="bar">
+    <div class="skill_bar">
         <div class="label">
-            Banwidth
+            <span class="label_icon bg-green">icon</span>
+            <span class="label_name">Html</span>
         </div>
-        <div class="process">
-            <div class="percent">20%</div>
-            <div class="empty"></div>
+        <div class="skill_process">
+            <div class="percent bg-green" style="width: 60%;"></div>
         </div>
     </div>
 
-    <div class="bar bar-storage">
+    
+    <div class="skill_bar">
         <div class="label">
-            Banwidth
+            <span class="label_icon bg-red">icon</span>
+            <span class="label_name">Html</span>
         </div>
-        <div class="process">
-            <div class="percent" style="width: 50%;">50%</div>
-            <div class="empty"></div>
+        <div class="skill_process">
+            <div class="percent bg-red" style="width: 40%;"></div>
         </div>
     </div>
 </body>

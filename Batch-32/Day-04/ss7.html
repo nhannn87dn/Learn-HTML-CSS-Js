@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-responsive {
+            width: 100%;
+            height: auto;
+        }
+        h3{
+            /* transition-property: color;
+            transition-duration: 0.3s;
+            transition-timing-function: linear; */
+
+            transition: color 0.3s linear;
+
+        }
+        h3:hover{
+            color: red;
+        }
+        .box{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            animation-name: box_animation;
+            animation-duration: 3.5s; 
+            animation-timing-function: ease-out; 
+            animation-delay: 0;
+            
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+
+        @keyframes box_animation {
+            0%{
+                background-color: red;
+                left: 0;
+            }
+            50% {
+                border-radius: 50px;
+                left: 50%;
+            }
+            100% {
+                background-color: yellow;
+                left: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align: left;">
+        <figure>
+            <img width="160" height="160" src="samsung-galaxy-s21-5g-P4305-2.jpg" alt="samsung galaxy s21">
+            <figcaption>This diagram shows the logo of a product.</figcaption>
+        </figure>
+    </p>
+    <div class="">
+        <img height="300" class="img-responsive" src="https://btb-electric.com/cdn/data/afficheimg/banner-1679737148.jpg" alt="">
+    </div>
+    <h3>hello transition</h3>
+
+    <div class="box">box</div>
+</body>
+</html>

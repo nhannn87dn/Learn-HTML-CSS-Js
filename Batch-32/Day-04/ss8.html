@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav>ul{
+            display: flex;
+            list-style: none;
+            column-gap: 20px;
+            background-color: #08c;
+            height: 45px;
+            margin: 0;
+           
+        }
+        nav>ul>li {
+            height: 45px;
+            position: relative;
+        }
+        nav>ul>li>a{
+            color: #fff;
+            cursor: pointer;
+            line-height: 45px;
+            padding: 0 10px;
+        }
+        nav>ul>li:hover{
+            background-color: rgb(0, 121, 181);
+        }
+        .childs {
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+            min-width: 180px;
+        }
+        nav>ul>li:hover .childs{
+            display: block;
+        }
+        nav>ul>li:hover .childs a{
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            cursor: pointer;
+            padding: 0 10px;
+        }
+        nav>ul>li:hover .childs a:hover{
+            color: #08c;
+        }
+        .fixed {
+            position: fixed;
+            z-index: 1;
+            right: 20px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li>
+                    <a>Category</a>
+                    <ul class="childs">
+                        <a>child 1</a>
+                        <a>child 2</a>
+                        <a>child 3</a>
+                    </ul>
+                </li>
+                <li><a>Product</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="height: 3000px;">
+        <section>
+            main content
+        </section>
+        <aside>
+            slidebar
+        </aside>
+        <div class="fixed">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/upload/files/social/call.png" alt="">
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+         $(window).scroll(function fix_element() {
+        $('nav').css(
+        $(window).scrollTop() > 90
+            ? { 'position': 'fixed', 'top': '0', 'left': '0', 'right': '0', 'z-index': '9999' }
+            : { 'position': 'relative', 'top': 'auto' }
+        );
+        return fix_element;
+    }());
+    </script>
+</body>
+</html>
