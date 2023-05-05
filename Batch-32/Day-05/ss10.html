@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .input-row{
+            display: flex;
+            margin: 5px 0;
+        }
+        .input-row>label{
+            min-width: 120px
+        }
+
+        form input, form select, form textarea{
+            border: 1px solid #c2c2c2;
+            border-radius: 4px;
+            padding: 5px 10px;
+        }
+        .input-file {
+            border: none;
+        }
+        button, .btn{
+            background-color: #ddd;
+            color: #111;
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid #b1b1b1;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .btn-submit {
+            background-color: #f80;
+            color: #fff;
+            border: 1px solid #f80;
+        }
+
+        .vertical-form .input-row {
+            flex-direction: column;
+            row-gap: 5px;
+        }
+        .vertical-form .input-row.input-inline {
+            flex-direction: row;
+        }
+        .input-error input{
+            border: 1px solid red;
+        }
+
+        .input-error .input-msg{
+            color: red;
+            display: block;
+            clear: both;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>Horizonltal Form</h2>
+    <form action="" method="post">
+        <div class="input-row">
+            <label for="username">Tên đăng nhập</label>
+            <input autocomplete="on" type="text" id="username" name="username" placeholder="Tên Đăng nhập">
+        </div>
+        
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <p class="input-msg">Message eror</p>
+        </div>
+        <div class="input-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password của bạn">
+        </div>
+        <div class="input-row">
+            <label for="tel">Mobile</label>
+            <input type="tel" id="tel" name="tel" placeholder="Mobile">
+        </div>
+        <div class="input-row">
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="">Vui lòng chọn tĩnh/TP</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">TP HCM</option>
+                <option value="3">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="input-row">
+            <label for="desc">Giới thiệu</label>
+            <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input-row input-inline">
+            <label for="">
+                <input type="radio" name="gender"> Nam
+            </label>
+            <label for="">
+                <input type="radio" name="gender"> Nữ
+            </label>
+            <label for="">
+                <input type="radio" name="gender"> Chưa xác định
+            </label>
+        </div>
+        <div class="input-row input-inline">
+            <label for="">
+                <input type="checkbox" name="sothich"> Sport
+            </label>
+            <label for="">
+                <input type="checkbox" name="sothich"> Travel
+            </label>
+            <label for="">
+                <input type="checkbox" name="sothich"> Shopping
+            </label>
+        </div>
+        <div class="input-row">
+            <label for="rule"><input type="checkbox" name="rule" id="rule" value="1"> Tôi đã đọc và đồng ý các điều khoản sử dụng.</label>
+        </div>
+        <input class="input-file" type="file" name="photo" id="photo">
+        <div class="form_action">
+            <button class="btn btn-submit" type="submit">Đăng ký</button>
+            <button class="btn" type="reset">Reset</button>
+        </div>
+    </form>
+
+    <h2>Vertical Form</h2>
+    <form action="" method="post" class="vertical-form">
+        <div class="input-row">
+            <label for="username">Tên đăng nhập</label>
+            <input tabindex="1" autofocus minlength="4" maxlength="120" required type="text" id="username" name="username" placeholder="Tên Đăng nhập">
+        </div>
+        <div class="input-row">
+            <label for="age">Age</label>
+            <input tabindex="3" min="18" max="100" required type="number" id="age" name="age" placeholder="Age">
+        </div>
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input tabindex="2" required type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-row">
+            <label for="password">Password</label>
+            <input pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$" type="text" id="password" name="password" placeholder="Password của bạn">
+        </div>
+        <div class="input-row">
+            <label for="tel">Mobile</label>
+            <input pattern="^([0-9]){10,10}" type="tel" id="tel" name="tel" placeholder="Mobile">
+        </div>
+        <div class="input-row">
+            <label for="city">City</label>
+            <select name="city" id="city" multiple>
+                <option value="">Vui lòng chọn tĩnh/TP</option>
+                <option value="1" selected>Hà Nội</option>
+                <option value="2">TP HCM</option>
+                <option value="3">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="input-row">
+            <label for="desc">Giới thiệu</label>
+            <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input-row input-inline">
+            <label for="">
+                <input type="radio" name="gender"> Nam
+            </label>
+            <label for="">
+                <input type="radio" name="gender"> Nữ
+            </label>
+            <label for="">
+                <input type="radio" name="gender" checked> Chưa xác định
+            </label>
+        </div>
+        <div class="input-row input-inline">
+            <label for="">
+                <input type="checkbox" name="sothich"> Sport
+            </label>
+            <label for="">
+                <input type="checkbox" name="sothich" checked> Travel
+            </label>
+            <label for="">
+                <input type="checkbox" name="sothich"> Shopping
+            </label>
+        </div>
+        <div class="input-row">
+            <label for="rule"><input type="checkbox" name="rule" id="rule" value="1"> Tôi đã đọc và đồng ý các điều khoản sử dụng.</label>
+        </div>
+        <input class="input-file" type="file" name="photo" id="photo">
+        <div class="form_action">
+            <button class="btn btn-submit" type="submit">Đăng ký</button>
+            <button class="btn" type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
