@@ -1,3 +1,4 @@
+var c = 10;
 /*
   1. Tạo sao khai báo biến
   2. Cách khai báo một biến
@@ -16,9 +17,13 @@ let y = 3;
 const z = 5; //constant
 console.log("C1", c);
 y = 34;
+
+
 {
-  var c = 10;
+  
   console.log(y, z);
 }
+
+
 
 console.log("C2", c);
