@@ -1,5 +1,26 @@
 # Bài tập về Javascript, jQuery
 
+
+## Task 1 - Render danh sách
+
+Cho một biến danh sách hãng xe hơi
+
+```js
+ const cars = ['Toyota', 'Honda', 'Kia', 'BMW', 'Audi', 'Mitsubishi'];
+
+```
+và một đoạn code html
+
+```html
+<div id="car_list"></div>
+```
+
+Hãy hiển thị danh sách hãng xe ra thẻ div cho ở trên.
+
+
+
+## Task 2 - Bill tính tiền
+
 Bạn có thể thực hiện bằng Javascript, hoặc jQuery
 
 **Yêu cầu:**
@@ -11,6 +32,6 @@ Bạn có thể thực hiện bằng Javascript, hoặc jQuery
     600.000đ
     + Quần Jean Nam Size 30 , 1 sản phẩm, giá 350.
     
-- Dùng mảng và vòng lặp để tạo giao diện bill, có ô số lượng để thay đổi số lượng.
-- Tạo chương trình tổng giá trị bill, khi thay đổi số lượng tổng tiền phải thay đổi.
-- In giá trị tổng vào cuối bill
+- Dùng mảng và vòng lặp để tạo giao diện bill
+- Tạo thêm cột thành tiên cho từng dòng bằng số lượng x đơn  giá
+- In giá trị tổng tiền vào cuối bill
