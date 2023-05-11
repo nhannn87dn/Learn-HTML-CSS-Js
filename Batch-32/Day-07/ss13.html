@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* Toán tử số học */
+        let x = '2';
+        let y = 2; //number
+
+        console.log(x + y, x * y, x - y, x / y, x % y);
+        
+
+        /* Toán tử so sánh */
+
+        if( x !== y){
+            console.log('Dung');
+            
+        }else{
+            console.log('Sai');
+        }
+
+
+
+
+
+         /* Toán tử Logic == trả về true | false */
+        
+        let customer_level = 'VIP';
+        let amount = 400;
+     
+        let result = customer_level === 'VIP' || amount >= 500;
+
+        if(result) {
+            let discount = 10;
+        }else{
+            let discount = 0;
+        }
+        // Toán tử 3 ngôi
+        let discount = result === true ? 10 : 0;
+
+        console.log(result,discount);
+
+        console.log(typeof y);
+        
+        
+    let zipCodePattern = /^\d{10}$/;
+    let results = zipCodePattern.test('0905157897');
+
+    if(!results){
+        console.log('Số ĐT ko hop le')
+    }else{
+        console.log('Số ĐT  hop le')
+    }
+
+    let text = "The rain in SPAIN stays mainly in the plain";
+    let result3 = text.match("ain");
+
+    console.log(result3);
+    
+    
+    const validateEmail = (email) => {
+    let pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    return pattern.test(email);
+    };
+
+    let res = validateEmail('aptechgmail.com');
+
+    /* if else */
+
+    if(x === y){
+        console.log('Nếu điều kiện đúng thì khối lệnh trong này thực thi');
+        
+    }
+    else{
+        console.log('ko bang');
+        
+    }
+    let discount_l = 5;
+
+    if(customer_level === 'VIP' && amount >= 500){
+        discount_l = 10;
+    }
+    else if(customer_level === 'DIAMOND' && amount >= 500){
+        discount_l = 15;
+    }
+    else if(customer_level === 'GOLD' && amount >= 500){
+        discount_l = 20;
+    }
+    
+    switch (customer_level) {
+        case 'VIP':
+            discount_l = 10;
+            break;
+        case 'DIAMOND':
+        case 'GOLD':
+            discount_l = 15;
+            break;
+        default:
+            break;
+    }
+    
+
+    </script>
+</body>
+</html>
