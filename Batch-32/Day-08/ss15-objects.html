@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        /* Object-oriented programming (OOP) */
+        function student(name, age, email, address) {
+            this.name = name;
+            this.email = email;
+            this.age = age;
+            this.address = address;
+        }
+
+        let studentA = new student('Hùng', 22, 'hung@gmail.com', 'Đà Nẵng');
+
+        let studentB = new student('Tuấn', 25, 'tuan@fpt.com.vn', 'Quảng Nam');
+
+        console.log(studentA,studentA.name);
+        console.log(studentB);
+
+
+        
+        /* Cách thứ 2 */
+
+        let studentC = {name: 'Minh',age: 26, email: 'minh@gmail.com',address: 'Hà Nội', gender: 'male'}
+        let studentD = {name: 'Minh2',age: 32, email: 'minh2@gmail.com', password: 'kjdskdskdj'};
+        
+        /* truy cập vào phần tử của object */
+        console.log(studentC.name);
+
+        /* destructuring */
+        let {name, age} = studentD;
+        console.log("destructuring",name, age);
+
+        /* lấy và loại trừ */
+        let {password, ...infoStudentD} = studentD;
+        /* infoStudentD sẽ mất đi phần password */
+        console.log("infoStudentD",infoStudentD);
+        
+
+        /* Thay đổi giá trị của một phần tử */
+        studentC.age = 23;
+        studentC = {...studentC,age: 23} //thay đổi giá trị age
+        //Thêm một phần từ vào cuối object
+        let copystudentC = {...studentC,mobile: '19001098'} //thêm mới khi chưa có thuộc tính mobile
+
+        let moreObject = {name: 'parent', level: 1, child: {name: 'child 1'}};
+        //Thay đổi giá trị phần tử của một nested object
+        moreObject = {...moreObject, child: {...moreObject.child,name: 'child 2'}};
+
+        console.log('moreObject',moreObject);   
+        
+
+        /* Math object */
+        console.log(Math.PI);
+
+        /* location */
+        //location.href = 'https://24h.com.vn';
+
+        //Array Object
+        let users = [
+            {id: 1, name: 'Nguyen Van A'},
+            {id: 2, name: 'Nguyen Van B'},
+            {id: 3, name: 'Nguyen Van C'}
+        ];
+
+        let html = '<table>';
+        html += '<tr><th>ID</th><th>Name</th></tr>';
+        for (let index = 0; index < users.length; index++) {
+           html += '<tr><td>' + users[index].id + '</td><td>' + users[index].name + '</td></tr>';
+        } 
+        html += '</table>';
+
+       document.querySelector("#result").innerHTML = html;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        /* Cách định nghĩa một function */
+        function sum(a, b){
+            console.log(a+b);
+        }
+        
+        sum(4,7);
+
+        sum(1,9);
+
+        sum(8,3);
+    
+        /* funtion không có tham số, không return */
+        function sayHello(){
+            console.log('Hello Guy !');
+        }
+
+        //Gọi function
+        sayHello();
+
+        /* function có tham số */
+        function helloName(name){
+            console.log(`Hello ${name}`);
+        }
+
+        helloName('Duc');
+        helloName('Tuan');
+
+         /* function có nhiều tham số */
+        function whoIAm(name, age){
+            console.log(`Xin chao, toi la ${name}, toi da ${age} tuoi`);
+        }
+
+        whoIAm('Minh',18);
+
+        /* function với tham số mặc định */
+        function goodBye(name = 'Somebody') {
+            console.log(`Goodbye ${name}`);
+        }
+
+        goodBye();
+        // tham số với giá trị mặc định
+        function cal(a,b, type='sum'){
+            if(type === 'subtract'){
+                return a-b
+            }else if(type === 'multiply'){
+                return a*b
+            }else if(type === 'sum'){
+                return a+b
+            }
+            //...
+            //return a+b
+        }
+        //es5
+        let cal5 = function(a,b,type='sum'){
+
+        }
+        //arrow function es6*/
+        let cal = (a,b,type='sum') =>{
+
+        }
+        
+        let totalTwo = (a,b) => a+b;
+
+        let getCal = cal(2,6, 'multiply');
+        console.log('getCal',getCal);
+
+        /* function có return kết quả trả về */
+
+        function letTotal(a,b,c){
+            console.log('run letTotal');
+            return a+b+c;
+        }
+
+        let total = letTotal(1,2,3);
+        console.log(total);
+        
+        function getDiscount(level, amount){
+            if(level === 'VIP' && amount >= 500){
+                return 10;
+            }else if(level === 'GOLD' && amount >= 500){
+                return 7;
+            }
+            return 2;
+           
+        }
+
+        let discountCustommerA = getDiscount('VIP', 10000);
+        console.log("discountCustommerA",discountCustommerA);
+        
+       
+    </script>
+</body>
+</html>
