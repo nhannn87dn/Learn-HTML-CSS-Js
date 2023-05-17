@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive HTML Css</title>
+    <link rel="stylesheet" href="ss16.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-middle">
+        <div class="container">
+          <div class="header-middle-container d-flex">
+            <div class="logo">E-Commerce</div>
+            <nav class="main-navigation"  id="showNav">
+              <ul class="d-flex">
+                <li><a href="javacript:;">Home</a></li>
+                <li><a href="javacript:;">Categories</a></li>
+                <li><a href="javacript:;">Product</a></li>
+                <li><a href="javacript:;">Contact</a></li>
+                
+              </ul>
+              <span id="toggle-button" onclick="toggleNav()">
+                <span class="ibar"></span>
+                <span class="iclose">X</span>
+              </span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main-container d-flex">
+          <aside>
+            <ul>
+              <li>Categories 1</li>
+              <li>Categories 2</li>
+              <li>Categories 3</li>
+              <li>Categories 4</li>
+            </ul>
+          </aside>
+          <div class="main-content">
+            <div class="products-wrapper d-flex">
+                <div class="item">
+                    1
+                </div>
+                <div class="item">
+                    2
+                </div>
+                <div class="item">
+                    3
+                </div>
+                <div class="item">
+                    4
+                </div>
+                <div class="item">
+                    5
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-container d-flex">
+          <div class="footer-col">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum architecto error consectetur quod, unde eum labore iusto accusamus laudantium a voluptatum aspernatur fugiat sequi blanditiis perspiciatis atque! Amet, quaerat illum!
+          </div>
+          <div class="footer-col">Col 2</div>
+          <div class="footer-col">Col 3</div>
+          <div class="footer-col">Col 4</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+        function toggleNav(){
+            console.log("Toggle");
+            document.querySelector("#showNav").classList.toggle('actived');
+        }
+    </script>
+  </body>
+</html>

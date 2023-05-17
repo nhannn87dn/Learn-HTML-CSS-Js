@@ -19,6 +19,11 @@
 * https://www.chartjs.org
 
 
+## Validations
+
+
+
+
 ## Fetch data in javascript
 
 ## Lấy thông tin từ API

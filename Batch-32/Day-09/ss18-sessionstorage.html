@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(typeof (Storage) != "undefined") {
+            let product = {id: 1, name: 'iphone 4'}
+            console.log("Có hỗ trợ");
+            //sessionStorage.setItem("name", "Nhan");
+            // sessionStorage.setItem("isAdmin", true);
+
+            // sessionStorage.setItem("product", JSON.stringify(product));
+            
+            
+            /* Lấy lên */
+            // let name = sessionStorage.getItem("name");
+            // let getproduct = sessionStorage.getItem("product");
+            
+            // //convert json string to object
+            // getproduct = JSON.parse(getproduct);
+            
+            // document.writeln(name);
+
+            // document.writeln(getproduct.name);
+
+            /* Xóa */
+           // sessionStorage.removeItem('isAdmin');
+            /* xóa all */
+            //sessionStorage.clear();
+        }
+
+    </script>
+</body>
+</html>
