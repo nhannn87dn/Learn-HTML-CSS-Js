@@ -1,4 +1,25 @@
-# Fetch data in javascript
+# Tiện ích thường dùng khi làm Front End
+
+## Carousel
+
+* Owl Carousel
+* Swiperjs
+
+## Gallery Product
+
+* CloudZoom
+* Magiczoom Plus
+
+## Animation
+
+* https://animate.style/
+
+## Reports
+
+* https://www.chartjs.org
+
+
+## Fetch data in javascript
 
 ## Lấy thông tin từ API
 
