@@ -21,20 +21,13 @@
 
 ## Validations
 
-
+https://webdesign.tutsplus.com/tutorials/easy-form-validation-with-jquery--cms-33096
 
 
 ## Fetch data in javascript
 
 ## Lấy thông tin từ API
 
-- Lấy thông in thời tiết
-
-Đà Nẵng: 
-
-* https://api.open-meteo.com/v1/forecast?latitude=16.0694&longitude=108.22&current_weather=true
-
-* https://openweathermap.org/api/one-call-3
 
 - Lấy thông tin sản phẩm
 
