@@ -1,20 +1,5 @@
 # GitHub Cơ Bản
 
-Sau đây là flow cơ bản khi bạn sử dụng Git:
-
-- 1. Clone project từ server về Local Repository
-
-- 2. Check-out 1 nhánh từ Local Repository về Working Space
-
-- 3. Bạn sẽ làm việc (thêm, sửa, xoá tại Working Space)
-
-- 4. Add : xác nhận sự thay đổi của các files (đưa đến vùng Staging Area)
-
-- 5. Commit: cập nhật sự thay đổi lên Local Repository
-
-Về cơ bản đến đây là bạn đã hoàn thành 1 chu trình sử dụng Git.
-
-Lúc này, nếu như bạn muốn cập nhật sự thay đổi này lên server thì bạn sẽ dùng lệnh push để đẩy chúng lên server.
 
 **Step 1**: Tạo một tài khoản github
 
@@ -65,11 +50,12 @@ Quy trình làm việc với Github xem Git Model tại link sau <https://nvie.c
 
 Video đề xuất: <https://www.youtube.com/watch?v=vQgcl8VouLU>
 
+Xem trạng thái của git hiện tại
 
 ```bash
 git status 
 ```
-Xem trạng thái của git hiện tại
+Clone, sao chép code từ một remote git
 
 ```bash
 git clone https://github.com/user/repository.git
@@ -130,14 +116,6 @@ git diff
 ```
 
 Lệnh này giúp bạn biết những gì đã được thay đổi giữa nhánh hiện tại và nhánh trước nó.
-
-Gộp commit
-
-```bash
- git rebase -i HEAD~
-```
-
-Sau dấu ~ là số commit bạn muốn gộp. Sau khi gõ lệnh này một cửa sổ trình soạn thảo hiện ra. Thay đổi ký tự pick của dòng các dòng sau dòng đầu thành s rồi lưu lại/kết thúc. Khi đó, trình soạn thảo để chỉnh sửa giải thích commit thiết lập cho commit sau khi đã tổng hợp sẽ được hiển thị, nên hãy chỉnh sửa lưu lại/kết thúc.
 
 
 Đồng bộ thay đổi từ remote repository về local
