@@ -3,7 +3,11 @@
 
 **Step 1**: Tạo một tài khoản github
 
-**Step 2**: Cài đặt github <https://git-scm.com/downloads>
+**Step 2**: 
+
+Cài đặt github <https://git-scm.com/downloads>
+
+Với Mac: bạn có thể tham khảo cách cài đặt trên hoặc dùng Tool <https://sourceforge.net/projects/git-osx-installer/>
 
 **Step 3**: Thiết lập chứng thực cá nhân
 
