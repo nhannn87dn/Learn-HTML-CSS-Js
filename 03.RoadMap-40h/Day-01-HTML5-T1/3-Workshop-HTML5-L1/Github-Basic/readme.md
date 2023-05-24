@@ -7,7 +7,10 @@
 
 Cài đặt github <https://git-scm.com/downloads>
 
-Với Mac: bạn có thể tham khảo cách cài đặt trên hoặc dùng Tool <https://sourceforge.net/projects/git-osx-installer/>
+Với Mac: 
+
+* Hoặc dùng Tool <https://sourceforge.net/projects/git-osx-installer/>
+* Hoặc xem bài viết: https://gist.github.com/kamermanpr/23bc20180dc277bc8043558f0c22f8a9
 
 **Step 3**: Thiết lập chứng thực cá nhân
 
