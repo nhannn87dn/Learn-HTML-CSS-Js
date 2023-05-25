@@ -22,9 +22,7 @@ Chuyển nội dung sau sang kiểu danh sách có kí tự đầu dòng như b�
 
 ## Task 2: Tạo một danh sách từ 1 - 10 bài hát mà bạn yêu thích
 
-- Yêu cầu ký tự đầu dòng là hình ♥ (Html Code: `&#9829;`)
-
-- Yêu cầu ký tự đầu dòng là hình ♥ (Html Code: `&#9829;`)
+- Đánh số từ 1 - 10
 
 ## Task 3: Sử dụng kiến thức session 3, 4
 
