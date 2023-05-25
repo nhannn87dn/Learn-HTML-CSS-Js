@@ -51,7 +51,7 @@ Bạn đang có một domain trỏ đến thư mục root. Khi đó khi đó m�
  <p>Lorem example links <a href="https://domain.com/contact-us.html">Contact page</a></p>
 ```
 
-==> **Đường dẫn tuyệt đối** (là một chuỗi đầy đủ bao gổm http://, tên miền của trang web, đường dẫn đến tập tin)
+==> **Đường dẫn tuyệt đối** (là một chuỗi đầy đủ bao gồm http://, tên miền của trang web, đường dẫn đến tập tin)
 
 4. Liên kết tương đối
 
