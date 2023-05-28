@@ -1,0 +1,92 @@
+/* Reset css mặc định của trình duyệt */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.session_six {
+    text-align: center;
+    text-decoration:line-through
+}
+p {
+    /* text-indent: 30px; */
+    /* word-spacing: 30px;
+    line-height: 30px; */
+}
+
+#main-heading {
+    text-transform: capitalize;
+}
+
+.font-size {
+    font-size: 36px;
+    font-style:italic
+}
+.font-size {
+    font-style:normal;
+}
+
+.btn-tragop {
+    background-color: #fff;
+    color: #0a65d7;
+    
+    border-top: 1px dotted #0a65d7;
+    border-right: 1px dotted #0a65d7;
+    border-bottom: 1px dotted #0a65d7;
+    border-left: 1px dotted #0a65d7;
+
+    /* short hand*/
+    /* border: 1px dotted #0a65d7; */
+    
+    border-radius: 50px;
+    text-transform: uppercase;
+
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px; */
+    /* short hand*/
+    padding: 5px 10px 5px 10px;
+    /* gọn hơn khi trên dưới = nhau, trái phải = nhau */
+    padding: 5px 10px;
+
+
+    text-align: center;
+
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* short hand*/
+    margin:20px 0 30px 30px;
+}
+.box li {
+    width: 80px ;
+    height: 80px;
+    background-color: yellow;
+    color: #111;
+    display: block;
+    border:1px solid red;
+    margin-bottom: 10px;
+}
+
+.article-item img,
+.article-item p{
+    display: inline-block;
+    float: left;
+}
+.article-item img {
+    width: 120px;
+    height: auto;
+}
+
+.article-item p {
+    margin-left: 10px;
+    width: calc(100% - 130px);
+}
