@@ -1,5 +1,9 @@
 # Bài Kết thúc môn
 
+Hạn 3/6 nộp bài.
+Tạo folder Day-15 làm bài trong đó rồi push lên github
+Inbox riêng link git cho giáo viên
+
 ## Công nghệ
 
 Bất kỳ làm sao mà ra được sản phẩm như hình.
@@ -27,4 +31,4 @@ SLide có phần nội dung chữ nằm trên hình như Demo
 Bạn có thể sử dụng công cụ Snipping tool để cắt ra từ hình screen shot đề bài
 
 
-![demo](sceen-shoot-project.local.jpg)
+![demo](sceen-shoot-project.jpg)
