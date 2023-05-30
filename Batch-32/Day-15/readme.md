@@ -2,7 +2,7 @@
 
 Hạn 3/6 nộp bài.
 Tạo folder Day-15 làm bài trong đó rồi push lên github
-Inbox riêng link git cho giáo viên
+Inbox riêng link git cho giáo viên hoặc zip code lại gửi về email nhannn@softech.vn
 
 ## Công nghệ
 
