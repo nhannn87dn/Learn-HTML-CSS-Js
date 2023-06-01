@@ -12,14 +12,18 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        nav>ul, main{
+        nav>ul, main, .header-middle{
             display: flex;
         }
-
+        .header-middle {
+            align-items: center;
+            justify-content: space-between;
+        }
         nav>ul {
             background-color: #FFD400;
             list-style: none;
             column-gap: 15px;
+            margin: 0;
         }
         nav>ul>li{
             padding: 0 10px;
@@ -84,23 +88,28 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="dien-thoai">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    Mobile
-                </a></li>
-                <li class="has-child">
-                    <a href="dien-thoai"><i class="fa-solid fa-laptop"></i> Laptop</a>
-                    <div class="nav_sub">
-                        <a href="dien-thoai">Laptop Dell</a>
-                        <a href="dien-thoai">Laptop HP</a>
-                        <a href="dien-thoai">Laptop Asus</a>
-                    </div>
-                </li>
-                <li><a href="dien-thoai"> <img src="icon-services.png" alt=""> Tablet</a></li>
-            </ul>
-        </nav>
+        <div class="header-middle">
+            <div class="logo">
+                Magezine
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dien-thoai">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Mobile
+                    </a></li>
+                    <li class="has-child">
+                        <a href="dien-thoai"><i class="fa-solid fa-laptop"></i> Laptop</a>
+                        <div class="nav_sub">
+                            <a href="dien-thoai">Laptop Dell</a>
+                            <a href="dien-thoai">Laptop HP</a>
+                            <a href="dien-thoai">Laptop Asus</a>
+                        </div>
+                    </li>
+                    <li><a href="dien-thoai"> <img src="icon-services.png" alt=""> Tablet</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
