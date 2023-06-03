@@ -34,19 +34,19 @@ Với x, y là kết quả phép tính
 
 
 
-## Task 4
-
-- Tạo ra một thẻ div và định dạng nó thành một hình vuông màu vàng
-- Khi rê chuột lên nó hãy tạo một message trong console.log(): "Bạn đã rê chuột lên hình vuông"
-
-
 ## Task 5
 
-- Tạo ra một button
-- Khi kích chuột lên nó hãy tạo một message trong console.log(): "Bạn đã kích chuột vào button"
+- Sử dụng hàm prompt() để lấy giá trị đầu vào của cho biến getInput
+- Kiểm tra xem getInput có phải là số không
 
 
 ## Task 6
+
+- Tạo ra một button Thêm vào giỏ hàng
+- Khi kích chuột lên nó hãy hiển thị một lới nhắn thông báo: "Bạn đã thêm vào giỏ hàng thành công !"
+
+
+## Task 7
 
 - Tạo ra một Input có type là text
 - Khi nhập nội dung vào input này hãy bắt sự kiện người dùng nhấn phím onkeypress, onkeyup, onkeydown
