@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic</title>
+    <style>
+        div {
+            padding: 30px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="console.log('Bạn đã rê chuột vào tôi')">
+        my Div
+    </div>
+    <input id="firstName" onkeyup="display()" type="password" placeholder="firstName">
+   <button onclick="console.log('Bạn đã click vào tôi')">Submit</button>
+
+<script>
+    function display(){
+       let value =  document.querySelector("#firstName").value;
+       console.log(value);
+    }
+    /**
+     * Cách đặt biến theo kiểu camelCase
+     * myName, mySchool, myStudentGender
+     * 
+     * */
+   //string
+    
+   let _myAge = 35; //number
+
+   const isAdmin = true; //boolean true / false
+
+//    isAdmin = false; //wrong
+
+   console.log("<< isAdmin >>>", isAdmin);
+
+   let myService = null; //null
+
+   let myCar; //undefined
+
+  let student = {name: 'Student name', age: 18,email: 'Student email'} //object
+  
+  let myFunc = function Sum(a,b){return a + b} //function
+ 
+  let myArr = ['Honda', 'BMW', 'Kia']; //Array
+
+  /* Methods display information */
+
+  document.writeln('Hello Javascript');
+  document.writeln('Hello CSS');
+
+  let a = 3;
+  let b = 5;
+  let sum = a+b; //output 8
+  
+  sum = 2; //gán LẠI một giá trị mới
+
+  console.log("<<<< sum >>>>>>",sum+"\n"+"hi");
+  
+  /* Scope  - Phạm vi sử dụng biến */
+
+  
+  var myName = 'Tom';
+
+  //Khối, block
+  {
+    console.log(myName);
+    console.log(_myAge);
+    console.log(isAdmin);
+    /* Khai báo trong khối */
+
+    let hello = 'new hello';
+    const myRule = 'hello';
+    
+    var myVar = 'hello';
+  }
+  //https://www.w3schools.com/js/js_hoisting.asp
+  //Var dùng được bên ngoài khối
+  console.log(myVar);
+
+
+  /* Built in functions */
+
+  //alert('Hello Alert!');
+
+//   const isConfirm = confirm('Are you sure you want to delete this user ?');
+//   console.log("<< isConfirm >>",isConfirm);
+//   if(isConfirm === true){
+//     console.log('Deleted successfully');
+//   }
+
+// const myEmail = prompt("Please enter your email address");
+// console.log("<< myEmail >>",myEmail);
+
+
+// const c = prompt("Please enter c variable");//string '3' ==> 3 với parseInt()
+// const d = prompt("Please enter d variable");//string '5' ==> 5
+// console.log("<< c >>",c);
+// console.log("<< d >>",d);
+
+// console.log(parseInt(c) + parseInt(d));
+
+
+    /* Events*/
+    // Tương tác của người dùng lên giao diện (UI)
+    //1. Click chuột vào một cái gì đó trên web ==> onclick
+
+    /* Events Handing */ // Phản hổi lại sự kiện người dùng console.log()
+
+</script>
+</body>
+</html>

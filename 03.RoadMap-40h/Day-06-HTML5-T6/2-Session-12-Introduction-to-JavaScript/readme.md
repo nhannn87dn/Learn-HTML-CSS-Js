@@ -36,6 +36,7 @@ Intro: <https://www.w3schools.com/js/js_versions.asp>
 ## 7. JavaScript Events and Event Handlers
 
 - <https://www.w3schools.com/js/js_events.asp>
+- <https://www.w3schools.com/jsref/dom_obj_event.asp>
 - eBook Section 12
 
 ## 8. Intro Jquery
@@ -46,7 +47,7 @@ Intro: <https://www.w3schools.com/js/js_versions.asp>
 - Ajax with Jquery
 - Validation with Jquery
 
-Examplate Javascript
+Example Javascript
 
 ```js
 // Lấy theo ID
@@ -71,6 +72,7 @@ $('div');
 ```
 
 Sự kiện click 
+
 ```js
 //Jquery
 $('#myElement').on('click', function() {

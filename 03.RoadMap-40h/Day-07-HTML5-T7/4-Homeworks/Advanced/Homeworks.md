@@ -73,6 +73,7 @@ Viết chương trình mô phỏng máy rút tiền tự đông ATM. Giả sử 
 HD: sử dụng prompt để lấy dữ liệu đầu vào và Switch-case để cho phép chọn chức năng.
 
 ```
+
 Ví dụ:
 VIRTUAL ATM
 An N: De nop tien

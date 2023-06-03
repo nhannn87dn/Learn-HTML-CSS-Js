@@ -9,29 +9,23 @@ Cho một biến danh sách hãng xe hơi
  const cars = ['Toyota', 'Honda', 'Kia', 'BMW', 'Audi', 'Mitsubishi'];
 
 ```
-và một đoạn code html
 
-```html
-<div id="car_list"></div>
-```
-
-Hãy hiển thị danh sách hãng xe ra thẻ div cho ở trên.
+Hãy hiển thị danh sách hãng xe ra màn hình bằng thẻ ul li với document.write và console.log()
 
 
 
 ## Task 2 - Bill tính tiền
 
-Bạn có thể thực hiện bằng Javascript, hoặc jQuery
-
 **Yêu cầu:**
 
-- Hãy tạo một giao diện tính tiền cho một cửa hàng bằng Html, Css với những sản phẩm khách hàng đã mua: 
+- Tính huống thực tế có một danh sách sản phẩm khách hàng đã mua: 
 
     + Áo bull Size M, 2 sản phẩm, giá 160.000đ
     + Áo khoác gió NorthFace Size L, 1 sản phẩm - giá 
     600.000đ
     + Quần Jean Nam Size 30 , 1 sản phẩm, giá 350.
     
-- Dùng mảng và vòng lặp để tạo giao diện bill
+- Hãy Dùng mảng và vòng lặp để code thể hiện đơn hàng trên
+- In ra màn hình sách sản phẩm với thẻ table bằng document.write
 - Tạo thêm cột thành tiên cho từng dòng bằng số lượng x đơn  giá
 - In giá trị tổng tiền vào cuối bill
