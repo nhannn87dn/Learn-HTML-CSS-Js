@@ -12,16 +12,18 @@
 - Cho các ngày trong tuần là 2,3,4,5,6,7,8  
 - Check xem số nhập vào:
   - Nếu 2 hoặc 3 thì in ra hôm nay là đầu tuần
-  - Nếu 4 hoặc 5 hoặc6 thì in ra hôm nay là giữa tuần
+  - Nếu 4 hoặc 5 hoặc 6 thì in ra hôm nay là giữa tuần
   - Nếu 7 hoặc 8 hôm nay là cuối tuần
   - Các trường hợp còn lại là không hợp lệ
 
 ## Task 3
 
-- Tạo một chương trình tính toán đơn giản với 2 số.
-- Sử dụng các phép tính: cộng, trừ, nhân, chia
-- Bằng cách tạo giao diện html với:
-  - input có name: a
-  - input có name: b
-  - select có name: op (với quy ước add = cộng, subtract = trừ, multiply = nhân, divide = chia, modulus = chia lấy dư)
-  - In ra kết quả của phép tính
+Cho một mảng sau:
+
+```js
+let myArr = ['Thứ 2', 'Thứ y', 'Thứ 3', 'Thứ x', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+```
+* Thêm vào mảng trên ngày: 'Chủ nhật' ở cuối mảng
+* Sửa ngày: `Thứ x` lại thành tên đúng là  `Thứ 4`
+* Xóa ngày `Thứ y` ra khỏi mảng trên.
+* Hiển thị danh sách các ngày trên ra màn hình.

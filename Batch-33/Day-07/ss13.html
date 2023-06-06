@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Toán tử số học */
+        // +
+        // -
+        // * Nhân
+        // % Chia lấy số dư
+        // / Chia
+
+        let a = 5; //number
+        let b = 2;
+        let e = `5`; //string
+
+        let total = a + parseInt(b);
+
+        let mod = a % b;
+
+    console.log('<<=== Total ===>>', total);
+           
+    console.log('<<=== mod ===>>', mod);
+
+    /* Increment and decrement */
+    //let c = ++a; //Tăng lên 1 đơn vị
+    let d = a + 1; //Nên dùng kiểu này
+    console.log('<<=== d ===>>',d);
+    
+    /* Toán tử so sánh ==> biểu thức LOGIC true/false */
+    // === nó so sánh cả về giá trị lẫn kiểu dữ liệu
+    let compare =  a === e;
+    console.log('<<===compare===>>',compare);
+    
+     /* TOán tử LOGIC */
+    let amountOrder  = 300;
+    let levelCustomer = 'GOLD';
+    let user = null;
+    
+    // && AND
+    if(amountOrder === 500 && levelCustomer === 'VIP') {
+        console.log('discount 10%');
+    }
+
+
+    // ! NOT
+    if(!user) {
+        console.log('User not found');
+    }
+
+
+    // || OR  chỉ cần 1 trong 2 điều kiện được đáp ứng
+    if(amountOrder === 500 || levelCustomer === 'VIP') {
+        console.log('discount 10%');
+    }
+
+    /* Toán tử Gán */
+    //cộng dồn
+    let sum = 0;
+    sum += 1; // = sum + 1
+    sum += 1;
+    sum += 1;
+    sum += 1;
+
+    console.log('<<=== sum ===>>',sum);
+    
+    //Nối chuỗi
+    let html = '<ul>';
+   
+    html += `<li>Hello world</li>`;
+    
+    html += `</ul>`;
+
+    document.write(html);
+    console.log('<<=== html ===>>', html);
+    
+    /* Special Operators */
+    console.log(typeof e); //kiểm tra kiểu dữ liệu của biến
+    
+    /* Regular Expressions */
+    
+    let string = '@#@#';
+    //regex pattern
+    let regex = /^[a-zA-Z0-9]/g; //Kiểm tra string có đúng định dạng 
+    let result = regex.test(string);
+    //test ==> return true/false
+    console.log(result);
+    
+    /* Kiểm tra số mobile có đúng định dạng */
+    //Chỉ chứa các con số 0 -9 và độ dài 10 kí tự
+    let mobileNumber = '098807766';
+    let regexMobile = /^([0-9]){10}$/;
+
+    let resultMobile = regexMobile.test(mobileNumber);
+    console.log(resultMobile);  
+    
+
+    let myEmail = 'test@example.com';
+    let regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    
+    let resultEmail = regexEmail.exec(myEmail);
+    console.log(resultEmail);  
+    
+
+
+    let myURL = 'product/1';
+    let urlRegex = /^([a-z]+)\/([0-9]+)$/;
+    let resultURL = urlRegex.test(myURL);
+    console.log(resultURL); 
+    
+    /* Statements */
+    let discount = 0;
+
+    if (levelCustomer === 'VIP'){
+        discount = 10;
+    }
+
+    else if (levelCustomer === 'DIAMOND'){
+        discount = 7;
+    }
+    else if (levelCustomer === 'GOLD'){
+        
+        if(amountOrder >= 500){
+            discount = 5;
+            
+        }else{
+            discount = 3;
+        }
+        
+    }
+    else{
+        console.log('ko hop le');
+    }
+
+    console.log('discount',discount);
+
+    let userName = prompt('Enter your name');
+
+    if(userName === 'nhan'){
+        console.log('Đã Đănng nhập thành công');
+    }else{
+        console.log('Tên không hợp lệ');
+    }
+
+    /* switch */
+    let offer = '';
+    switch (levelCustomer) {
+        case 'VIP':
+            offer = 'Bộ Nồi 5 đáy';
+            break;
+        case 'DIAMOND':
+        case 'GOLD':
+            offer = 'Bộ Nồi 3 đáy';
+            break;
+        default:
+            offer = '1 Chén';
+            break;
+    }
+
+    </script>
+</body>
+</html>
