@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    custom.code.code-snippets
+    <script>
+        //Khai báo một function
+        // helloName = tên function
+        function helloName(){
+            //thực các lệnh trong khối ngoặc nhọn này
+            console.log('Hello Minh');
+            document.write("Hello Loc")
+        }
+        //Gọi function, khởi chạy
+        //helloName();
+
+        let a = 3;
+        let b = 2;
+       // console.log(a+b);
+
+        console.log('<<=== a ===>>',a);
+
+        let c = 1;
+        let d = 9;
+       // console.log(c+d);
+
+
+        let x = 5;
+        let y = 2;
+        //console.log(x+y);
+
+        //j, i khi định nghĩa ở hàm, thì j và i được gọi là parameter (Đối số)
+        function calSum(i,j){
+            console.log(i+j);
+        }
+        //3,2 gọi là tham số 
+        //calSum(3,2);
+        //calSum(1,9);
+       // calSum(5,2); //calSum(x,y);
+
+        //Hàm có return
+        function calSumVer2(g,h){
+            return g+h;
+        }
+        let sum = calSumVer2(x,y); //
+        console.log(sum);
+
+        let level = 'GOLD';
+
+
+        function getDiscount (level){
+            if(level === 'VIP'){
+                return 10;
+            }else if(level === 'GOLD'){
+                return 7;
+            }
+            return 5;
+        }
+
+        let resultDiscount = getDiscount(level);
+        console.log("resultDiscount", resultDiscount);
+
+
+
+
+        function helloNameVer2(name){
+            //console.log('Hello ' + name);
+            console.log(`Hello ${name}`);
+        }
+
+        // helloNameVer2('Minh');
+        // helloNameVer2('Phuoc');
+
+        //function với role có giá trị mặc định
+        function user(name, role = 'user'){
+            console.log('<<=== Name ===>>',name, role);
+        }
+
+        user('Minh', 'admin');
+
+
+    </script>
+</body>
+</html>

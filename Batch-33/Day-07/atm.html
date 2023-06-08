@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soDu = 1000000;
+
+        document.write('<h1>Vui long chon tinh nang</h1>');
+        document.write('<p>An N: De nop tien</p>');
+        document.write('<p>An R: De rut tien</p>');
+        document.write('<p>An X: De xem so du</p>');
+
+        let action = prompt('Vui long chon chuc nang')
+        
+        //Chuyen thanh chu thuong
+        action = action.toLowerCase(action);
+        
+        switch (action) {
+            case 'r':
+                let money = prompt('Nhap so tien can rut');
+                money = parseInt(money);
+                if(money < soDu && (soDu % 50000 === 0)){
+                    soDu = soDu - money;
+                    console.log('Ban da rut thanh cong so tien: '+money);
+                }
+
+                break;
+            case 'n':
+                //
+                break;
+            
+            case 'x':
+                //
+                break;
+        
+            default:
+                console.log('Khong hop le');
+                break;
+        }
+    
+    </script>
+</body>
+</html>

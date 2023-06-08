@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading" id="head"><span>Hello World</span></h1>
+    <a id="link" href="http://24h.com.vn">24h.com.vn</a>
+
+    <script>
+        /**
+         * querySelector
+         * nó dùng tất cả các kiểu selector giống css
+         * 
+         */
+        //let text = document.querySelector('h1').innerHTML;
+        let text = document.querySelector('#head').innerHTML;
+        //let text = document.querySelector('.heading').innerHTML;
+        console.log('<<=== text ===>>',text);
+
+        //Lấy lên
+        let h1 = document.querySelector('.heading');
+        console.log('<<=== class ===>>',h1.classList);
+        console.log('<<=== ID ===>>',h1.id);
+        h1.innerHTML = '<p>Hello Minh!</p>';
+
+         //Lấy lên
+         //
+        let a = document.querySelector('#link');
+        console.log(typeof a);
+        console.log('<<=== href ===>>',a.href);
+
+        //Thay đổi
+        a.href = 'tinhte.vn';
+        a.classList = 'link text';
+        a.style.color = 'red';
+        a.style.fontSize = '40px';
+
+    </script>
+</body>
+</html>

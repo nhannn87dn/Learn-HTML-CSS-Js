@@ -23,7 +23,9 @@ Cho một mảng sau:
 ```js
 let myArr = ['Thứ 2', 'Thứ y', 'Thứ 3', 'Thứ x', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
 ```
+
 * Thêm vào mảng trên ngày: 'Chủ nhật' ở cuối mảng
 * Sửa ngày: `Thứ x` lại thành tên đúng là  `Thứ 4`
 * Xóa ngày `Thứ y` ra khỏi mảng trên.
 * Hiển thị danh sách các ngày trên ra màn hình.
+
