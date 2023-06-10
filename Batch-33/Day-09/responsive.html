@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- dat cuoi cung -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-middle flex justify-between">
+                <div class="logo">LOGO</div>
+                <nav class="header-nav" id="header-nav">
+                    <ul class="flex">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <div id="toggle-mobile" onclick="toggleMobile()">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-content-wrapper flex justify-between">
+                <div class="main-content">
+                    <div class="article-list">
+                        <article class="flex">
+                            <div class="photo">
+                                <img src="http://via.placeholder.com/200x200.png" alt="">
+                            </div>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, ipsam qui asperiores fuga consectetur ipsa? Expedita enim tempora dolor, quo eius pariatur eveniet rem inventore odio distinctio obcaecati ab qui!
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-list flex justify-between">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                    </div>
+                </div>
+                <aside>
+                    Sidebar
+                </aside>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper flex">
+                <div class="footer-col">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem necessitatibus beatae hic ab voluptates temporibus iste esse, provident magni sunt ipsam natus aut ut voluptatibus veniam dolor ullam deleniti!
+                </div>
+                <div class="footer-col">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id aperiam et animi aliquid. Repellat asperiores laboriosam neque dolorum quidem adipisci aliquid ex dolores commodi necessitatibus voluptatum, repellendus sapiente. Eligendi.
+                </div>
+                <div class="footer-col">
+                    3
+                </div>
+                <div class="footer-col">
+                    4
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobile(){
+            console.log('<<=== 🚀 Ok ===>>');
+            document.querySelector('#header-nav').classList.toggle("actived");
+        }
+    </script>
+</body>
+</html>

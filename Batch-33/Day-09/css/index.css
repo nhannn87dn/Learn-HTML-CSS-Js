@@ -1,0 +1,8 @@
+
+
+.product-list .item {
+    background-color: #e1e1e1;
+    width: calc((100% - 30px) / 4);
+    height: 280px;
+}
+

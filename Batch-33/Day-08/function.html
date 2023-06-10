@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        tr td.name {
+            white-space: nowrap;
+        }
+    </style>
 </head>
-
+<div id="table">
+    
+</div>
 <body>
     custom.code.code-snippets
     <script>
@@ -21,10 +28,11 @@
         //helloName();
 
         let a = 3;
+        console.log("🚀 ~ file: function.html:24 ~ a:", a)
         let b = 2;
        // console.log(a+b);
 
-        console.log('<<=== a ===>>',a);
+        console.log('<<=== 🚀 a ===>>',a);
 
         let c = 1;
         let d = 9;
@@ -83,6 +91,14 @@
         }
 
         user('Minh', 'admin');
+
+        function formatCurrent(number){
+            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number)
+        }
+                //Dinh Dang Tien VND
+        console.log(formatCurrent(1000)); //1.000 đ
+
+        console.log(formatCurrent(2000)); //2.000 đ
 
 
     </script>
