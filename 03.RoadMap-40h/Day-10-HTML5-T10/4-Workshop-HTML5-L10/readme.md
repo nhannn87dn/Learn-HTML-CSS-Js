@@ -18,3 +18,8 @@ let product = {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
 - Mỗi lần click là lưu xuống và thành một mảng object
 
 - Sau đó lấy tất cả sản phẩm từ localStorage hiển thị ra màn hình
+
+## Task 3
+
+- Tạo một carousel Banner
+- Tạo một carousel Sản phẩm
