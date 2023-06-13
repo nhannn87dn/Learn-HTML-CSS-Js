@@ -13,6 +13,13 @@ Thực hành tạo key tên mình và lưu xuống localStorage, sessionStorage
 
 ```js
 let product = {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
+
+//Tạo thành một mảng như dưới
+let products = [
+    {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
+    {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
+    {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
+];
 ```
 
 - Mỗi lần click là lưu xuống và thành một mảng object
