@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        /* Tồn tại cho đến khi xóa */
+        //Check xem trình duyệt có hỗ trợ không
+        if(typeof Storage !== "undefined"){
+            console.log('Have Support');
+            
+            /* thêm mới */
+            localStorage.setItem('name', 'Minh');
+
+            /* Lấy value của một key */
+            // let value = localStorage.getItem('name');
+            // console.log('<<=== 🚀 value ===>>',value);
+            
+            // document.querySelector("#result").innerHTML = `My name is ${value}`;
+
+            /* Xóa một key */
+            //localStorage.removeItem('name');
+            /* Xóa all key */
+            //localStorage.clear();
+        }
+
+    </script>
+</body>
+</html>
