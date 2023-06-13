@@ -4,7 +4,8 @@
 ## Task 1
 
 Thực hành tạo key tên mình và lưu xuống localStorage, sessionStorage
-- Sau đó Xóa đi
+- Tạo một Button Add: CLick vào cái lưu tên mình xuống
+- Tạo một Button Delete: CLick vào cái xóa tên đó đi
 
 ## Task 2
 
