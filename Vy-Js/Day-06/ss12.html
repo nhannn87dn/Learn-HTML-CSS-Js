@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="console.log('Bạn đã click vào div box')" onmouseout="console.log('Bạn đã rê chuột ra khỏi thẻ div box')" onmouseover="console.log('Bạn đã rê chuột lên thẻ div box')">
+        box Div
+    </div>
+
+    <input onkeyup="console.log('onkeyup')" type="text">
+
+    <script>
+        //3 cách khai báo biến
+        //Cách đặt tên biến theo quy tắc camelCase
+        var myName = 'Vy'; //string
+        let age = 30; //number = định nghĩa biến age
+        const mobile = '19001080'; //string
+        
+        document.writeln(myName);
+        document.writeln(age);
+        //let myHtml = '<div class="heading">' + myName + '</div>';
+        //document.writeln(myHtml);
+
+        age = 40; //thay đổi giá trị của biến age
+        console.log(age);
+
+        //const là hằng số, bất biến, không thay đổi được giá trị
+        //mobile = '19008198';
+        //console.log(mobile);
+       
+
+        const isAdmin = true; //boolean
+
+        let myData = null;
+
+        let studentA = {id: 1, name: 'Student'} //Object
+
+        let myFunction = function sum(){
+
+        } //Function
+
+        let myArr = []; //Array
+
+        /* 
+         Phân biệt var | let | const 
+         1.Phạm vi sử dụng biến
+         2. Cách thay đổi giá trị, khai báo lại giá trị của biên
+        */
+
+        //block = khối
+        {
+            //trong khối
+            console.log('mobile',mobile);
+            let myInside = true;
+            const isInside = false;
+            var varInside = false;
+        }
+        //Dùng ngoài khối
+        console.log('varInside',varInside);
+
+        /* Builtin functions */
+        //alert('Bạn đã nhập sai password');
+        //const isConfirm = confirm('Bạn có chắc chắn muốn xóa sản phẩm này không ?');
+        //console.log('<<=== 🚀 isConfirm ===>>',isConfirm);
+
+        //let a = prompt('Vui lòng nhập vào giá trị cho biến a'); //a = '1'
+        //let b = prompt('Vui lòng nhập vào giá trị cho biến b'); //b = '3'
+
+        //console.log('<<=== 🚀 a+b ===>>',parseInt(a)+parseInt(b));
+        let e = eval('2/2');
+        console.log(e);
+    </script>
+
+    
+</body>
+</html>

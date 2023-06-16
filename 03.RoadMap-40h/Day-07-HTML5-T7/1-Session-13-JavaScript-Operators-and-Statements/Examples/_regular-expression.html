@@ -61,10 +61,11 @@ console.log(result9); // world world world
 
 
     // regex pattern for email
-    const re = /\S+@\S+\.[com|vn|com.vn]+/g;
+    const regexEmail = /\S+@\S+\.[com|vn|com.vn]+/g;
     // abc@d.nnn
     // check if the email is valid
-    let result_email = re.test(email);
+    let myEmail = 'abc@gmail.com';
+    let result_email = regexEmail.test(myEmail);
     if (result_email) {
         console.log('The email is valid.');
     }
