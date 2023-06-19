@@ -45,7 +45,18 @@ git config --global user.email "username@gmail.com"
 4. `git merge <branch_name>`: Hợp nhất (merge) các thay đổi từ nhánh `<branch_name>` vào nhánh hiện tại.
 5. `git push origin <branch_name>`: Đẩy (push) một nhánh lên repository từ máy cục bộ lên máy chủ từ xa.
 
-## VI. Giải quyết xung đột (conflict)
-- Khi hai người cùng thay đổi cùng một phần của một file, xung đột có thể xảy ra.
-- Git cung cấp các công cụ để giải quyết xung đột bằng cách cho phép người dùng chọn phiên bản thích hợp hoặc kết hợp các thay đổi.
+## VI. Các quy trình làm việc với Git
 
+Tạo một kho mới:
+a. Tạo kho trống trên máy tính: git init hoặc
+b. Sao chép kho từ một nguồn từ xa: git clone <url>.
+
+Làm việc với các tệp:
+a. Thay đổi tệp trong working directory.
+b. Kiểm tra trạng thái của kho: git status.
+c. Đưa các tệp vào staging area: git add <file>.
+d. Commit các thay đổi: git commit -m "<message>".
+
+Tương tác với remote repository:
+a. Đẩy các commit từ local repository lên remote repository: git push.
+b. Kéo các thay đổi từ remote repository về local repository: git pull.
