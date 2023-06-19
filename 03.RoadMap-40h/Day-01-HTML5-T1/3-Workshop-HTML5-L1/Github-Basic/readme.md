@@ -1,134 +1,51 @@
-# GitHub Cơ Bản
+# Cách sử dụng Git cơ bản
 
+## I. Giới thiệu
+- Git là một hệ thống quản lý phiên bản phân tán (distributed version control system) được sử dụng rộng rãi trong quản lý mã nguồn của dự án phần mềm.
+- Git cho phép nhiều người làm việc trên cùng một dự án mà không gây xung đột và dễ dàng hợp nhất (merge) các thay đổi.
+- Git lưu trữ dữ liệu dự án trong các repository, mỗi người có thể sao chép (clone) một repository và làm việc độc lập.
 
-**Step 1**: Tạo một tài khoản github
+## II. Cài đặt Git
+- Truy cập trang chủ Git (https://git-scm.com) và tải xuống phiên bản phù hợp với hệ điều hành của bạn.
+- Cài đặt Git theo hướng dẫn trên trang web.
 
-**Step 2**: 
-
-Cài đặt github <https://git-scm.com/downloads>
-
-Với Mac: 
-
-* Hoặc dùng Tool <https://sourceforge.net/projects/git-osx-installer/>
-* Hoặc xem bài viết: https://gist.github.com/kamermanpr/23bc20180dc277bc8043558f0c22f8a9
-
-**Step 3**: Thiết lập chứng thực cá nhân
+**Cấu hình**
 
 ```bash
 git config --global user.name "User Name"
 git config --global user.email "username@gmail.com"
 ```
 
-**Step 4**: Thiết lập Git cho dự án
+## III. Tạo repository
+1. Tạo repository trên máy cục bộ:
+   - Mở Terminal hoặc Command Prompt.
+   - Di chuyển đến thư mục dự án của bạn bằng lệnh `cd <đường_dẫn_đến_thư_mục>`.
+   - Gõ lệnh `git init` để khởi tạo một repository Git mới.
 
-Add git cho một dự án mới
+2. Tạo repository trên GitHub (hoặc dịch vụ tương tự):
+   - Truy cập trang GitHub (https://github.com) và đăng nhập vào tài khoản của bạn.
+   - Click vào nút "New repository".
+   - Đặt tên cho repository, chọn các cài đặt khác (public/private) và nhấp vào nút "Create repository".
 
-Tại cửa thư mục chứa dự án, Mở Terminal
+### IV. Các lệnh cơ bản của Git
+1. `git add <file>`: Thêm file vào staging area để chuẩn bị commit.
+2. `git commit -m "<message>"`: Tạo một commit với message mô tả thay đổi đã thực hiện.
+3. `git push`: Đẩy (push) các commit lên repository từ máy cục bộ lên repository trên máy chủ từ xa (ví dụ: GitHub).
+4. `git pull`: Lấy (pull) các commit mới nhất từ repository trên máy chủ từ xa về máy cục bộ.
+5. `git clone <repository_url>`: Sao chép (clone) một repository từ máy chủ từ xa về máy cục bộ.
+6. `git status`: Hiển thị trạng thái hiện tại của repository.
+7. `git log`: Hiển thị danh sách các commit đã thực hiện.
 
-```bash
-git init
-git remote add origin https://github.com/user/repository.git
-```
+## V. Các phương thức làm việc với nhánh (branching)
+1. `git branch`: Liệt kê các nhánh hiện có trong repository.
+2. `git branch <branch_name>`: Tạo một nhánh mới với tên là `<branch_name>`.
+3. `git checkout <branch_name>`
 
+: Chuyển đổi sang nhánh có tên là `<branch_name>`.
+4. `git merge <branch_name>`: Hợp nhất (merge) các thay đổi từ nhánh `<branch_name>` vào nhánh hiện tại.
+5. `git push origin <branch_name>`: Đẩy (push) một nhánh lên repository từ máy cục bộ lên máy chủ từ xa.
 
-Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,… Bạn cần phải cập nhật lên Staging Area. Để cập nhật hết các files:
+## VI. Giải quyết xung đột (conflict)
+- Khi hai người cùng thay đổi cùng một phần của một file, xung đột có thể xảy ra.
+- Git cung cấp các công cụ để giải quyết xung đột bằng cách cho phép người dùng chọn phiên bản thích hợp hoặc kết hợp các thay đổi.
 
-```bash
-git add .
-```
-
-Sau lệnh add, bạn cần sử dụng câu lệnh Commit để đây thông tin thay đổi lên Local Respository
-
-```bash
-git commit -m "Update nội dung gì đó"
-```
-
-Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository. Nếu muốn cập nhật lên server thì bạn phải sử dụng câu lệnh push:
-
-```bash
-git push -u origin <name_branch>
-```
-
-
-
-### Cách lệnh Git thường dùng
-
-Quy trình làm việc với Github xem Git Model tại link sau <https://nvie.com/posts/a-successful-git-branching-model/>
-
-Video đề xuất: <https://www.youtube.com/watch?v=vQgcl8VouLU>
-
-Xem trạng thái của git hiện tại
-
-```bash
-git status 
-```
-Clone, sao chép code từ một remote git
-
-```bash
-git clone https://github.com/user/repository.git
-
-```
-
-Thêm link repository git
-
-```bash
-git remote add origin <link repo>
-```
-
-Xóa link repository git
-
-```bash
-git remote remove origin
-```
-
-Thay đổi link repository git
-
-```bash
-git remote set-url origin git://new.url.here
-```
-
-Check remote repository
-
-```bash
-git remote -v
-```
-
-```bash
-# danh sách branch hiện có
-git branch
-
-# Để tạo mới một branch
-git branch <name_branch>
-
-# Tạo branch mới và chuyển đến
-git checkout -b <name_branch>
-
-# Chuyển đến một branch với tên
-git checkout <name_branch>  
-
-```
-
-Xem lại lịch sử commit
-
-```bash
-git log
-```
-
-Lệnh git log sẽ cho bạn biết về người commit, ngày giờ, message của những lần commit đó.
-
-Xem thay đổi trước khi push
-
-```bash
-git diff
-```
-
-Lệnh này giúp bạn biết những gì đã được thay đổi giữa nhánh hiện tại và nhánh trước nó.
-
-
-Đồng bộ thay đổi từ remote repository về local
-
-```bash
-git pull origin main
-```
-
-Lệnh trên sẽ gộp những thay đổi mới kéo về từ máy chủ từ xa với nhánh hiện tại trên máy local.
