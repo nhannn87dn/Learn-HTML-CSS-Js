@@ -26,6 +26,9 @@ git config --global user.name "User Name"
 git config --global user.email "username@gmail.com"
 ```
 
+Thay Username thành tên các bạn
+Thay username@gmail.com thành email mà bạn đã đăng ký tài khoản github
+
 ## III. Tạo repository
 1. Tạo repository trên máy cục bộ:
    - Mở Terminal hoặc Command Prompt.
