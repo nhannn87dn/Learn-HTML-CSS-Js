@@ -48,15 +48,23 @@ git config --global user.email "username@gmail.com"
 ## VI. Các quy trình làm việc với Git
 
 Tạo một kho mới:
+
 a. Tạo kho trống trên máy tính: git init hoặc
+
 b. Sao chép kho từ một nguồn từ xa: git clone <url>.
 
 Làm việc với các tệp:
+
 a. Thay đổi tệp trong working directory.
+
 b. Kiểm tra trạng thái của kho: git status.
+
 c. Đưa các tệp vào staging area: git add <file>.
+
 d. Commit các thay đổi: git commit -m "<message>".
 
 Tương tác với remote repository:
+
 a. Đẩy các commit từ local repository lên remote repository: git push.
+
 b. Kéo các thay đổi từ remote repository về local repository: git pull.
