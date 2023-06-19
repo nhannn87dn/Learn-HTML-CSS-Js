@@ -8,6 +8,16 @@
 ## II. Cài đặt Git
 - Truy cập trang chủ Git (https://git-scm.com) và tải xuống phiên bản phù hợp với hệ điều hành của bạn.
 - Cài đặt Git theo hướng dẫn trên trang web.
+- Để biết máy mình cài thành công chưa
+
+Đối với windows: nhấn phím Lá cờ + R ==> cmd Enter
+Sau đó nhập
+
+```bash
+git -v
+```
+
+Nếu thấy có nội dùng: git version 2.39.2.windows.1 thì thành công
 
 **Cấu hình**
 
