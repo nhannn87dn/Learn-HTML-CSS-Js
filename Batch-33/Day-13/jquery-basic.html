@@ -45,6 +45,18 @@
     <script src="jquery-3.7.0.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
     <script>
+        console.log('1');
+        $(document).ready(function(){
+
+            //Mọi thứ
+            //chạy sau khi page được load xong hết
+            console.log('3');
+            //chạy những thứ mà ko dùng đến event
+            $("ul#list>li:nth-child(2)").css('color', 'red');
+        });
+
+        console.log('2');
+
         let html = document.querySelector("#heading").innerHTML;
         //output:Jquery
         let jhtml = $("#heading").html()
@@ -63,7 +75,7 @@
 
         //$("ul#list>li:nth-child(2)").addClass('is-red');
         //$("ul#list>li:nth-child(2)").attr('class', 'is-red');
-        $("ul#list>li:nth-child(2)").css('color', 'red')
+        
 
         $("p").click(function(){
             // action goes here!!
