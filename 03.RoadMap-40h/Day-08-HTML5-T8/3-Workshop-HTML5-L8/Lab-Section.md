@@ -13,7 +13,7 @@ Tạo các hàm tính các phép tính + - * / hai số mong muốn. In ra màn 
   - input có name: a
   - input có name: b
   - select có name: op (với quy ước add = cộng, subtract = trừ, multiply = nhân, divide = chia, modulus = chia lấy dư)
-  - In ra kết quả của phép tính
+  - In  kết quả của phép tính ra một thẻ div#result
 
 
 ## Task 3
