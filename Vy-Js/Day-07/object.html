@@ -1,0 +1,70 @@
+<script>
+    //1.Cách định nghĩa một object - Object-oriented programming (OOP)
+    function student(name, age, gender, email, mobile){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.email = email;
+        this.mobile = mobile;
+    }
+
+    let studentA = new student('Tuan', 18, 'male','tuan@gmail.com', '0988777666')
+    let studentB = new student('Tuan B')
+
+
+
+    //Cách thứ 2:
+    //khai bao kiểu free type
+    let studentC = {name: 'Tuan C', age: 22};
+    let studentD = {name: 'Tuan D', age: 30, email: 'tuand@gmail.com', car: true};
+
+    //Merge 2 objects
+    let newObject = {...studentC, ...studentD};
+
+    //Truy cập đến phần tử của object
+    console.log(studentC.age);
+    console.log(studentD.car);
+
+    //Thay đổi giá trị của một phần tử trong object
+    studentD.car = false;
+    console.log(studentD);
+
+    //Thêm 1 phần từ vào object
+    studentC.email = 'tuanc@gmail.com';
+    ///console.log('<<=== 🚀 studentC ===>>',studentC);
+    //es6 spread operator
+    studentC = {...studentC,car: true};
+    console.log(studentC);
+
+    studentC = {...studentC,age: 40}; //là update giá trị của age
+    console.log(studentC);
+
+    //
+    const object = { a: 1, b: 2, c: 3 };
+    console.log(object.a);
+    for (const item in object) {
+        console.log(item, object[item]); //item là key của object
+        //object[item] = giá trị của item đó trong object
+    }
+
+    //String Object - https://www.w3schools.com/jsref/jsref_obj_string.asp
+    repeat()	Returns a new string with a number of copies of a string
+    replace()	Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+    search()	Searches a string for a value, or regular expression, and returns the index (position) of the match
+    slice()	Extracts a part of a string and returns a new string
+    split()	Splits a string into an array of substrings
+    startsWith()	Checks whether a string begins with specified characters
+    substr()	Extracts a number of characters from a string, from a start index (position)
+    substring()	Extracts characters from a string, between two specified indices (positions)
+    toLocaleLowerCase()	Returns a string converted to lowercase letters, using the host's locale
+    toLocaleUpperCase()	Returns a string converted to uppercase letters, using the host's locale
+    toLowerCase()	Returns a string converted to lowercase letters
+    toString()	Returns a string or a string object as a string
+    toUpperCase()	Returns a string converted to uppercase letters
+    trim()
+
+    //Math Object - https://www.w3schools.com/jsref/jsref_obj_math.asp
+    min, max, floor, round, random
+
+    ///Date - https://www.w3schools.com/jsref/jsref_obj_date.asp
+</script>

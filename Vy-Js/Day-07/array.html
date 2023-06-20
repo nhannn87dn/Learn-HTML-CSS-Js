@@ -1,0 +1,45 @@
+
+
+<script>
+    //1. Khai báo mảng -- 1 chiều
+    let emptyArr = [];
+    let singleArray = ['Banana', 'Tomato', 'Lemon', true, 24];
+    //console.log(singleArray);
+    //Mảng đa chiều:
+    let singleArrays = [id => 1, name => 'Banana', age => 24]
+    
+    //2: Truy cập đến phần tử của mảng
+    console.log(singleArray[1]); //dựa vào index của mảng
+
+    //3: Làm sao biết mảng có bao nhiêu phần tử
+    console.log(singleArray.length);
+
+    //4: Thêm phần tử vào mảng
+    emptyArr[0] = '1';
+    emptyArr[1] = '2';
+    emptyArr.push('3'); //Thêm vào cuối mảng 1 phần tử mới
+    console.log(emptyArr);
+
+    //5. Thay đổi giá trị của một phần tử trong mảng
+    singleArray[4] = 30;
+    console.log('singleArray',singleArray);
+
+    //6. Các phương thức tương tác với mảng
+    //Xem thêm: https://www.w3schools.com/js/js_array_methods.asp
+
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const myChildren = myGirls.concat(myBoys);
+    console.log('<<=== 🚀 myChildren ===>>',myChildren);
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"]; //array
+    //let result = fruits.toString();
+
+    fruits.pop();
+
+    console.log(fruits);
+    
+
+
+
+</script>
