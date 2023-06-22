@@ -6,31 +6,52 @@
 - Git lưu trữ dữ liệu dự án trong các repository, mỗi người có thể sao chép (clone) một repository và làm việc độc lập.
 
 ## II. Cài đặt Git
-- Truy cập trang chủ Git (https://git-scm.com) và tải xuống phiên bản phù hợp với hệ điều hành của bạn.
-- Cài đặt Git theo hướng dẫn trên trang web.
-- Để biết máy mình cài thành công chưa
 
-Đối với windows: nhấn phím Lá cờ + R ==> cmd Enter
-Sau đó nhập
+Để biết máy mình cài Git chưa
+
+Nhập lệnh sau vào cửa sổ terminal hoặc command line
 
 ```bash
-git -v
+git --version
 ```
 
 Nếu thấy có nội dùng: git version 2.39.2.windows.1 thì thành công
 
-**Cấu hình**
+Nếu chưa thì cài đặt như sau:
+
+- Truy cập trang chủ Git (https://git-scm.com/download) và tải xuống phiên bản phù hợp với hệ điều hành của bạn.
+- Cài đặt Git theo hướng dẫn trên trang web.
+
+
+Đối với MacOs: nếu chưa cài thì có thể cài bằng xCode hoặc brew
+
+```bash
+brew install git
+```
+
+Nếu chưa cào brew thì cài bằng cách dán đoạn sau vào terminal
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+## II. Cấu hình Git 
+
+Sau khi cài xong git bạn cấu hình.
+
+Trước tiên Truy cập trang GitHub (https://github.com) tạo một tài khoản sau đó mở Terminal hoặc Command Prompt
 
 ```bash
 git config --global user.name "User Name"
 git config --global user.email "username@gmail.com"
 ```
 
-Thay Username thành tên các bạn
-Thay username@gmail.com thành email mà bạn đã đăng ký tài khoản github
+- Thay Username thành tên các bạn
+- Thay username@gmail.com thành email mà bạn đã đăng ký tài khoản github
 
 ## III. Tạo repository
-1. Tạo repository trên máy cục bộ:
+1. Tạo repository trên máy tính của bạn:
    - Mở Terminal hoặc Command Prompt.
    - Di chuyển đến thư mục dự án của bạn bằng lệnh `cd <đường_dẫn_đến_thư_mục>`.
    - Gõ lệnh `git init` để khởi tạo một repository Git mới.
@@ -45,7 +66,7 @@ Thay username@gmail.com thành email mà bạn đã đăng ký tài khoản gith
 2. `git commit -m "<message>"`: Tạo một commit với message mô tả thay đổi đã thực hiện.
 3. `git push`: Đẩy (push) các commit lên repository từ máy cục bộ lên repository trên máy chủ từ xa (ví dụ: GitHub).
 4. `git pull`: Lấy (pull) các commit mới nhất từ repository trên máy chủ từ xa về máy cục bộ.
-5. `git clone <repository_url>`: Sao chép (clone) một repository từ máy chủ từ xa về máy cục bộ.
+5. `git clone <url của repository>`: Sao chép (clone) một repository từ máy chủ từ xa về máy cục bộ.
 6. `git status`: Hiển thị trạng thái hiện tại của repository.
 7. `git log`: Hiển thị danh sách các commit đã thực hiện.
 
@@ -60,24 +81,82 @@ Thay username@gmail.com thành email mà bạn đã đăng ký tài khoản gith
 
 ## VI. Các quy trình làm việc với Git
 
-Tạo một kho mới:
+Ví dụ bạn có một thư mục ở trên máy tính
 
-a. Tạo kho trống trên máy tính: git init hoặc
+```html
+homeworks/
+├─ day-01/
+│  ├─ index.html
+├─ day-02/
+│  ├─ index.html
+```
 
-b. Sao chép kho từ một nguồn từ xa: git clone <url>.
+Và bạn muốn đưa code trong thư mục `homeworks` lên github online.
 
-Làm việc với các tệp:
+### Bước 1
 
-a. Thay đổi tệp trong working directory.
+Mở thư mục homeworks bằng Terminal hoặc Command Promp, hoặc mở trong VS Code rồi chọn new Terminal ở thanh Menu
 
-b. Kiểm tra trạng thái của kho: git status.
 
-c. Đưa các tệp vào staging area: git add <file>.
+Tạo respo ở local: 
 
-d. Commit các thay đổi: git commit -m "<message>".
+```bash
+git init
+```
+
+### Bước 2
+
+Thiết lập nhánh mặc định
+
+```bash
+git brand -M main
+```
+
+Kết nối local với git Remote
+
+```bash
+git remote add origin <link github repository>
+```
+
+Check lại đã add được chưa bằng lệnh
+
+```bash
+git remote -v
+```
+
+### Bước 3
+
+Chỉnh sửa, thêm mới ... sau đó dùng lệnh
+
+```bash
+git add .
+```
+
+Để Đưa các tệp vào staging area
+
+### Bước 4
+
+Commit các thay đổi: 
+
+```bash
+git commit -m "<message>"
+```
 
 Tương tác với remote repository:
 
-a. Đẩy các commit từ local repository lên remote repository: git push.
 
-b. Kéo các thay đổi từ remote repository về local repository: git pull.
+a. Đẩy các commit từ local repository lên remote repository: 
+
+Ví dụ bạn đang ở nhánh main ở local, và muốn đồng bộ lên remote repository
+
+```bash
+git push -u origin main
+```
+
+Lưu ý: nếu nhánh master thì đổi tên lại thôi
+
+b. Kéo các thay đổi từ remote repository về local repository: 
+
+```bash
+git pull origin main
+```
