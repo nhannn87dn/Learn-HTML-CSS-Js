@@ -73,10 +73,10 @@ git config --global user.email "username@gmail.com"
 ## V. Các phương thức làm việc với nhánh (branching)
 1. `git branch`: Liệt kê các nhánh hiện có trong repository.
 2. `git branch <branch_name>`: Tạo một nhánh mới với tên là `<branch_name>`.
-3. `git checkout <branch_name>`
+3. `git checkout <branch_name>`: Chuyển đổi sang nhánh có tên là `<branch_name>`.
 
-: Chuyển đổi sang nhánh có tên là `<branch_name>`.
 4. `git merge <branch_name>`: Hợp nhất (merge) các thay đổi từ nhánh `<branch_name>` vào nhánh hiện tại.
+
 5. `git push origin <branch_name>`: Đẩy (push) một nhánh lên repository từ máy cục bộ lên máy chủ từ xa.
 
 ## VI. Các quy trình làm việc với Git
