@@ -11,6 +11,7 @@
 - Tiêu đề in đậm, font size 32px, màu đen #111 cách danh sách bên dưới 1 khoảng 50px
 - Nội dung các dòng: font size 14px, màu đen #333
 - Tạo khoảng trống giữa các dòng để nhìn thoáng hơn.
+- Tạo ra một thẻ a (hyperlink)
 - Khi rê chuột lên link thì đổi màu xanh #06F
 - Thay đổi màu chữ dòng số 4 thành ĐỎ
 - Thay đổi màu chữ dòng số đầu tiên thành BLUE
