@@ -1,10 +1,6 @@
 :root {
     --main-color: #1FA290;
 }
-.header-middle .logo img {
-    max-height: 30px !important;
-    width: auto;
-}
 
 .header-middle  .cart-number {
     width: 20px;
