@@ -16,7 +16,7 @@
 - Thay đổi màu chữ dòng số 4 thành ĐỎ
 - Thay đổi màu chữ dòng số đầu tiên thành BLUE
 - Thay đổi màu chữ dòng số cuối cùng thành ĐỎ
-- Thay đổi màu nền thành #fafafa cho các dòng chẳn
+- Thay đổi màu nền thành #f80 cho các dòng chẳn
 
 ## Task 2: 
 

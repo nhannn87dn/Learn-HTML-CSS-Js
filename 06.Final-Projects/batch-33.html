@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            outline: none;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html { font-size: 62.5%; } /* =10px */
+        body {
+            font-size: 1.6rem; /* =14px */
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            line-height: 2.7rem;
+            background-color: #f3f3f3;
+        }
+        a {
+            text-decoration: none;
+            transition: all 0.3s;
+            color: #333;
+        }
+        ol, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6{
+            margin-bottom: 1.8rem;
+            color: #111;
+            font-weight: 700;
+        }
+        input[type='text'],
+        input[type='tel'],
+        input[type='number'],
+        input[type='email'],
+        input[type='password'],
+        select,
+        textarea {
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #bbbbbb;
+            border-radius: 3px;
+            appearance: none;
+        }
+        .select-options {
+            display: inline-flex;
+            position: relative;
+        }
+        .select-options::after {
+            border-bottom: 2px solid #333;
+            border-right: 2px solid #333;
+            content: '';
+            height: 5px;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 5px;
+            z-index: 2;
+        }
+        button, .btn {
+            padding: 12px 16px;
+            background-color: #f80;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            appearance: none;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        * html .clearfix             { zoom: 1; } /* IE6 */
+        *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+        .collapse:not(.show) {
+            display: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        .container:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .flex{
+            display: flex;
+        }
+        .flex-column{
+            display: flex;
+            flex-direction: column;
+        }
+        .inline-flex{
+            display: inline-flex;
+        }
+        .flex-full{
+            flex: 1;
+        }
+
+        .form-wrapper {
+            margin: 50px auto 0 auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .form-title {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 22px;
+        }
+        form .input-row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        form .input-row>label{
+            min-width: 160px;
+        }
+        form .input-row input,
+        form .input-row select{
+            flex: 1
+        }
+        form .input-group .input-row:nth-child(n+2)>label{
+            min-width: 100px
+        }
+        form .input-action {
+            margin-top: 30px;
+            text-align: center;
+        }
+        form .input-action button {
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h2 class="form-title">Create a new Customer</h2>
+           <form action="">
+                <div class="input-row">
+                    <label>Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="input-group flex" style="column-gap: 20px;">
+                    <div class="input-row flex-full">
+                        <label>Mobile</label>
+                        <input type="text" name="mobile">
+                    </div>
+                    <div class="input-row flex-full">
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <label>Address</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="input-row">
+                    <label>Age</label>
+                    <input type="text" name="age">
+                </div>
+                <div class="input-row">
+                    <label>Gender</label>
+                    <label><input checked type="radio" name="gender" value="male"> male</label>
+                    <label><input type="radio" name="gender" value="female"> female</label>
+                </div>
+                <div class="input-row">
+                    <label for="province">Province/City</label>
+                    <select name="province" id="province">
+                        <option value="">-- Please Choice --</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">TP HCM</option>
+                        <option value="3">Đà Nẵng</option>
+                    </select>
+                </div>
+                <div class="input-action">
+                    <button type="submit">Submit</button>
+                </div>
+           </form>
+        </div>
+    </div>
+</body>
+</html>
