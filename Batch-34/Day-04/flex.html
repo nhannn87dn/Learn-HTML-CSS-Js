@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: #f3f3f3; */
+        }
+        .parent {
+            height: 200px;
+            background-color: bisque;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            /* canh theo main-axis - truc x */
+            justify-content: center;
+             /* canh theo cross-axis - truc y*/
+            align-items: end;
+            flex-wrap: nowrap;
+        }
+        .child {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+        }
+        .child2 {
+            background-color: yellow;
+        }
+        .child3 {
+            background-color: red;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        .item {
+            background-color: #fff;
+            width: calc((100% - 40px) / 5);
+          
+        }
+        .skill-item {
+            display: flex;
+            margin: 10px 0;
+        }
+        .skill-name {
+            width: 30%;
+        }
+        .skill-bar {
+            width: calc(100% - 30%);
+            /* flex: 1; */
+           
+        }
+        .process-bar {
+            height: 30px;
+            background-color: #f3f3f3;
+        }
+        .percent {
+            background-color: #212121;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child3">4</div>
+        <div class="child child3">5</div>
+    </div>
+    <div class="product-list">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h3>Personal Skills</h3>
+    <div class="skill-item">
+        <div class="skill-name">
+            Photoshop
+        </div>
+        <div class="skill-bar">
+            <div class="process-bar">
+                <div class="percent" style="width: 50%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="skill-item">
+        <div class="skill-name">
+            Css
+        </div>
+        <div class="skill-bar">
+            <div class="process-bar">
+                <div class="percent" style="width: 65%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="skill-item">
+        <div class="skill-name">
+            HTML
+        </div>
+        <div class="skill-bar">
+            <div class="process-bar">
+                <div class="percent" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

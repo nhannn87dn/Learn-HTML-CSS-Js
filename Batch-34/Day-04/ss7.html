@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img responsive */
+        .photo {
+            width: 300px;
+            height: auto;
+        }
+        a{
+            transition-delay: 0; 
+            transition-property: color;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+        }
+        a:hover{
+            color: red;
+        }
+        .thumbnail {
+            width: 260px;
+            height: auto;
+            overflow: hidden;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+
+            transition-delay: 0; 
+            transition-property: transform;
+            transition-duration: .5s;
+            transition-timing-function: ease-in-out;
+        }
+        .thumbnail:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <a href="#">24h.com.vn</a>
+    <div class="thumbnail">
+        <img src="https://ecshopvietnam.com/ecshoptravel/cdn/images/202103/thumb_img/tour-da-nang-4n3d-hcm-da-nang-ba-na-hoi-an-hue-quang-binh-thumb-G1-1616929191426.png" alt="">
+    </div>
+    <p style="display: flex; justify-content: center;">
+        <img class="photo" src="https://ecshopvietnam.com/ecshoptravel/cdn/upload/files/themes-meta/bgtravel.jpg" alt="">
+    </p>
+</body>
+</html>

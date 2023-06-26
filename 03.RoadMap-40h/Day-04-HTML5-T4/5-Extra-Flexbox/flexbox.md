@@ -4,9 +4,9 @@
 Css properties:
 
 - **display**: flex | inline-flex
-- **display-direction**: row (default) | column | row-reverse | column-reverse
-- **display-wrap**: no-wrap (default | wrap | wrap-reverse
-- **display-basic**: `<length>`
+- **flex-direction**: row (default) | column | row-reverse | column-reverse
+- **flex-wrap**: no-wrap (default | wrap | wrap-reverse
+- **flex-basic**: `<length>`
 - **justify-content**: flex-start | flex-end | center | space-between | space-around
 - **justify-seft**: flex-start | flex-end | center
 - **align-content**: flex-start | flex-end | center

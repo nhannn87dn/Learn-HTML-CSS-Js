@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: #f3f3f3;
+            width: 500px;
+            height: 200px;
+            position: relative;
+        }
+        .box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            opacity: 1;
+
+
+            animation-name: box;
+            animation-duration: 3.5s; 
+            animation-timing-function: ease-out; 
+            animation-delay: 0;
+            
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+
+        @keyframes box {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                background-color: yellow;
+                border-radius: 50%;
+                top: 0;
+                left: 250px;
+            }
+            50% {
+                background-color: red;
+                color: #fff;
+                top: 250px;
+                left: 250px;
+                opacity: 0;
+            }
+           75% {
+                background-color: blue;
+                color: #fff;
+                top: 250px;
+                left: 0;
+                opacity: 1;
+            }
+            100% {
+                top: 0;
+                left: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">
+            box
+           </div>
+    </div>
+   
+</body>
+</html>

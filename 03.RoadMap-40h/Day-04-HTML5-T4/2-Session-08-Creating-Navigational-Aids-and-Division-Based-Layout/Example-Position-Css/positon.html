@@ -47,7 +47,7 @@
 		margin: 15px 0;
 	}
 	#box-container {
-		position: sticky;
+		position: relative;
 		text-align: left;
         border: 2px dashed yellow;
 	}
@@ -63,18 +63,10 @@
     .box2 {
         border: solid red 2px;
 		background-color: yellow;
-        /* width: 100%; */
-        /* change value here */
-		/* position: static; */
-		/* position: relative; */
-		/* cần đi chung với top, left, right, bottom */
-		/* position: absolute; */
-		/* top: 40px; left: 40px; */
-
-		/* position: sticky;
-		top: 20px; */
-        position: sticky;
-       
+        position: absolute;
+        right: 20px;
+        top: 0;
+        z-index: 1;
     }
    
     </style>
@@ -87,9 +79,9 @@
         <div id="parent">
 			<p>In this demo you can control the position property for the yellow box.</p>
             <div id="box-container">
-				<div class="box box1"></div>
-				<div class="box box2"></div>
-				<div class="box box3"></div>
+				<div class="box box1">1</div>
+				<div class="box box2">2</div>
+				<div class="box box3">3</div>
 			</div>
 			<p>To see the effect of sticky positioning, select the position: sticky option and scroll this container.</p>
 			<p>The element will scroll along with its container, until it is at the top of the container (or reaches the offset specified in top), and will then stop scrolling, so it stays visible.</p>
