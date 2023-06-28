@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        main {
+            display: flex;
+        }
+
+        main .main-content {
+            /* background-color: #f3f3f3; */
+            width: 70%;
+            height: 300px;
+        }
+        main aside {
+            background-color: yellow;
+            width: 30%;
+            height: 300px;
+        }
+       section {
+        background-color: #333;
+        color: #fff;
+        padding: 30px;
+        margin-bottom: 10px;
+       }
+       .footer-wapper, .product-list {
+            display: flex;
+       }
+       .footer-wapper .footer-child {
+          width: 25%; /* chia đều cho all */
+       }
+       .product-list {
+            justify-content: space-between;
+       }
+       .product-list .item {
+            background-color: #f3f3f3;
+            width: calc( (100% - 30px) / 4);
+       }
+
+       .product-list .item .thumbnail {
+
+       }
+
+       .product-list .item h3{
+
+       }
+       .product-list .price strong {
+        color: red;
+       }
+    </style>
+</head>
+<body>
+   <header>
+        <nav></nav>
+        <div class="footer-child">1</div>
+   </header>
+   <div class="container">
+        <main>
+            <div class="main-content">
+                    <section>
+                        Phần 1
+                    </section>
+                    <section>
+                        Phần 2
+                    </section>
+                    <section>
+                        Phần 3
+                    </section>
+
+                    <div class="product-list">
+                        <div class="item">
+                            <span class="discount">-5%</span>
+                            <div class="thumb">
+                                <img src="" alt="">
+                            </div>
+                            <h3>Tên sản phẩm</h3>
+                            <div class="price">
+                                <strong>12.990.000đ</strong>
+                                <del>14.590.000đ</del>
+                            </div>
+                        </div>
+                        <div class="item">
+                            2
+                        </div>
+                        <div class="item">
+                            3
+                        </div>
+                        <div class="item">
+                            4
+                        </div>
+                    </div>
+            </div>
+            <aside>
+                slide bar
+            </aside>
+    </main>
+   </div>
+   
+   <footer style="margin-top: 40px;">
+        <div class="container">
+            <div class="footer-wapper">
+                <div class="footer-child">1</div>
+                <div class="footer-child">2</div>
+                <div class="footer-child">3</div>
+                <div class="footer-child">4</div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>

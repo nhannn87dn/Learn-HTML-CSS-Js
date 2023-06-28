@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.local.css" />
+    <link rel="stylesheet" href="css/blog.local.css" />
+    <link rel="stylesheet" href="css/responsive.local.css" />
+  </head>
+  <body id="page_blog">
+    <header>
+      <div class="container">
+        <div class="header-main flex">
+          <div class="header-logo">
+            <a href="" class="logo">Magazines</a>
+          </div>
+          <nav class="header-nav inline-flex">
+            <ul class="flex">
+              <li ><a href="index.local.html">Home</a></li>
+              
+              <li class="has-child actived">
+                <a href="blog.local.html">Blog</a>
+                <div class="nav-child">
+                  <a href="">Tech</a>
+                  <a href="">Sport</a>
+                  <a href="">Fashion</a>
+                </div>
+              </li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="product.local.html">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              
+            </ul>
+            <div class="header-cart">
+              <i class="fa fa-shopping-cart"></i>
+              <span>0</span>
+            </div>
+          </nav>
+          
+          <div id="toggle_nav">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+          <ul class="breadcrumbs">
+              <li>
+                <a href="javascript:;"><span>Home</span></a>
+              </li>
+              <li>
+                <a href="javascript:;"><span>Blog</span></a>
+              </li>
+          </ul>
+          <section class="main_wrapper flex">
+              <div class="col_main">
+                <h1 class="section_title">Post Lasted</h1>
+                  <div class="article_list clearfix">
+                    <article>
+                      <img
+                        class="photo"
+                        alt="Lighting Upgrades"
+                        src="images/lighting-upgrades-thumb-G3.jpg"
+                      />
+                      <div class="content">
+                        <h3>
+                          <a href="lighting-upgrades" title="Lighting Upgrades"
+                            >Lighting Upgrades</a
+                          >
+                        </h3>
+                        <div class="dates">
+                          23 Nov, 2019, Posted by: admin, 2 Comments
+                        </div>
+                        <p class="section_desc">
+                          Electrical panel maintenance, therefore, should be part of
+                          your regular routine.
+                        </p>
+                        <div class="section_btn">
+                          <a
+                            class="readmore"
+                            href="lighting-upgrades"
+                            title="Lighting Upgrades"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        class="photo"
+                        alt="Electrical repairs"
+                        src="images/electrical-repairs-thumb-G1.jpg"
+                      />
+                      <div class="content">
+                        <h3>
+                          <a href="electrical-repairs" title="Electrical repairs"
+                            >Electrical repairs</a
+                          >
+                        </h3>
+                        <div class="dates">
+                          23 Nov, 2019, Posted by: admin, 2 Comments
+                        </div>
+                        <p class="section_desc">
+                          Electrical repairs should always be handled by a professional
+                          electrician
+                        </p>
+                        <div class="section_btn">
+                          <a
+                            class="readmore"
+                            href="electrical-repairs"
+                            title="Electrical repairs"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        class="photo ls-is-cached lazyloaded"
+                        alt="Surge Protection"
+                        src="images/surge-protection-thumb-G4.jpg"
+                      />
+                      <div class="content">
+                        <h3>
+                          <a href="surge-protection" title="Surge Protection"
+                            >Surge Protection</a
+                          >
+                        </h3>
+                        <div class="dates">
+                          23 Nov, 2019, Posted by: admin, 2 Comments
+                        </div>
+                        <p class="section_desc">
+                          An electrical surge can happen for a number of reasons,
+                          including lightning strikes.
+                        </p>
+                        <div class="section_btn">
+                          <a
+                            class="readmore"
+                            href="surge-protection"
+                            title="Surge Protection"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+              </div>
+              <div class="col_sidebar">
+                  <section class="section_categories">
+                    <h2 class="section_subtitle">Categories</h2>
+                     <ul class="categories">
+                        <li><a href="">Baseboard Heating</a></li>
+                        <li><a href="">Electrical Repairs</a></li>
+                        <li><a href="">Generator Repair</a></li>
+                        <li><a href="">Install a Ceiling Fan</a></li>
+                        <li><a href="">Panel Upgrades</a></li>
+                        <li><a href="">Surge Protection</a></li>
+                     </ul>
+                  </section>
+                  <section class="sections section_form">
+                    <h2 class="section_subtitle">Subscribe to Our Newsletter</h2>
+                    <p class="section_desc">
+                      Do not want to miss news, updates, note and any offer on our
+                      products, then please subscriber to our mailling list.
+                    </p>
+                    <form class="subscribe_form flex-column" action="" method="GET">
+                      <input required type="text" placeholder="Your name" name="name" />
+                      <input required type="text" placeholder="Your Mobile phone" name="mobile" />
+                      <input
+                        type="email"
+                        placeholder="Your email address"
+                        name="email"
+                        class="input"
+                        required
+                      />
+                      <button type="submit" class="button">
+                        <i class="fa fa-envelope-o"></i> Subscribe email list
+                      </button>
+                    </form>
+                  </section>
+              </div>
+          </section>
+        </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-row flex md-flex-wrap">
+          <div class="footer-col">
+            <h4 class="widget-title">About Us</h4>
+            <a href="#"><span>Electrician</span></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec
+              vestibulum magna, et dapibus lacus. Duis nec vestibulum magna, et
+              dapibus lacus.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4 class="widget-title">Contact Info</h4>
+            <ul class="contact-info">
+              <li>
+                <span class="contact-info-label">Address:</span>123 Street Name,
+                City, England
+              </li>
+              <li>
+                <span class="contact-info-label">Phone:</span
+                ><a href="tel:">(123) 456-7890</a>
+              </li>
+              <li>
+                <span class="contact-info-label">Email:</span>
+                <a href="mailto:mail@example.com">mail@example.com</a>
+              </li>
+              <li>
+                <span class="contact-info-label">Working Days/Hours:</span> Mon
+                - Sun / 9:00 AM - 8:00 PM
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="widget-title">Customer Service</h4>
+            <ul class="links">
+              <li><a href="#">Help &amp; FAQs</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Shipping &amp; Delivery</a></li>
+              <li><a href="#">Orders History</a></li>
+              <li><a href="#">Advanced Search</a></li>
+              <li><a href="#">Corporate Sales</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="widget-title">Poppular Tags</h4>
+            <div class="tagcloud">
+              <a href="#">Bag</a>
+              <a href="#">Black</a>
+              <a href="#">Blue</a>
+              <a href="#">Clothes</a>
+              <a href="#">Fashion</a>
+              <a href="#">Hub</a>
+              <a href="#">Jean</a>
+              <a href="#">Shirt</a>
+              <a href="#">Skirt</a>
+              <a href="#">Sports</a>
+              <a href="#">Sweater</a>
+              <a href="#">Winter</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            © Aptech eCommerce. 2022. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
