@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Link tìm hiểu HTML DOM events</a>
+    <div class="box" onmouseout="console.log('Bạn đã rê chuột ra khỏi div')" onmouseover="console.log('Bạn đã rê chuột lên div')">
+        div
+    </div>
+    <button onclick="console.log('Bạn đã click vào button')">Button</button>
+
+    <!-- Đặt trước thẻ body đóng -->
+    <script>
+        //document.write('Hello world !');  ==> single line 
+
+        document.writeln('Hello')
+        document.writeln('world !')
+
+        /*  Multiline comment
+        1. Cú pháp khai báo/ĐỊNH nghĩa 1 biến 
+        dskdsldksl
+        kdskdsl
+        dkjsldks
+        */
+
+        //TỪ KHÓA TÊN BIẾN = GIÁ TRỊ
+        var name = 'Tùng'; //string  = chuỗi
+        let age = 35; //number
+        let _underline = 'ok';
+        const isTeacher = true; //boolean true/false
+        const user = null; //null
+
+        //Thay đổi giá trị của biến
+        name = 'Trọng';
+        age = 40;
+        //isTeacher = false;
+
+        //Phạm vi sử dụng - block = khối
+        //Khai báo ngoài, trong dùng được
+        //Dọc: https://www.w3schools.com/js/js_scope.asp
+        {
+            //trong khối
+            console.log("block",name, age, user);
+            //Khai báo bên trong
+            let letInslide = 1; //ko được
+            var varInslide =  2; //được ==> đọc https://www.w3schools.com/js/js_hoisting.asp
+            const constInslide = 3;//ko được
+
+        }
+        //DÙng bên ngoài
+        console.log("DÙng bên ngoài",varInslide);
+
+        console.log(name,age,isTeacher);
+
+        /* 2.Vì sao lại cần đặt biến */
+        // Tái sử dụng
+        // Dễ bảo trì, sửa đổi code
+        
+         /* 3.Quy tắc đặt tên biến */
+        // Keywords javascript: https://www.w3schools.com/js/js_reserved.asp
+        //Nên đặt theo kiểu camle Case
+        //Từ đầu tiên viết thường
+        //Kí tự đầu tiên của từ thứ 2 trở đi thì viết HOA
+        let myPassword = false;
+        let getUserByEmal = true;
+        
+        /* 4.Kiểu dữ liệu của biến */
+        let myProfile = {id: 1, name: 'John', email: "John@example.com"}; //Object
+
+        //function
+        let myFun = function(){
+            console.log('Hello');
+        }
+        
+        //array
+        let myArray = ["Banana", "John", "Tim"];
+
+        //undefined
+        let myUndefined; //chưa gán giá trị
+
+        console.log(myUndefined);
+
+        console.log('Hello \n world!');
+
+        //Lưu ý: trông chuỗi và biến
+        console.log('Tôi tên là ' + name);
+        console.log(`Tôi tên là ${name}`);
+
+        // 5. Builtin functions
+        //alert('Vui lòng nhập password'); //đưa ra một lời nhắn = message
+
+    //const isConfirm = confirm('Bạn có chắc muốn xóa sản phẩm này không ?');
+
+    //console.log("isConfirm",isConfirm);
+    //nếu = true --> xóa
+    //nếu false --> ko xóa
+    //console.log(name);
+    //console.log('<<=== 🚀 name ===>>',name);
+    
+    //let myName = prompt('Vui lòng nhập vào tên của bạn: ');
+    //console.log('<<=== 🚀 myName ===>>',myName);
+     
+    // let a = prompt('Vui lòng nhập vào giá trị cho biến a: ');
+    // let b = prompt('Vui lòng nhập vào giá trị cho biến b: ');
+
+    // //Kiểm tra kiểu dữ liệu của biến
+    // console.log(typeof a); // a = '2' string
+    // console.log(typeof b); // a = '3' string
+    
+    // console.log(eval('2 + 3'));
+
+    // console.log('a + b',parseInt(a) + parseInt(b));
+   
+    </script>
+</body>
+</html>
