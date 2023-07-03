@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let customerLevel = 'MEM';
+
+        /*
+            kiểm tra customerLevel
+            nếu = VIP thì discount 10
+            nếu = GOLD thì discount 7
+            còn lại     2
+        */
+
+        switch (customerLevel) {
+            case 'VIP': //1 lần chỉ kiểm tra được 1 điều kiện
+                console.log(10);
+                break;
+            case 'MEM':
+            case 'GOLD': //so so sánh bằng
+                console.log(7);
+                break;
+            default:
+                console.log(2);
+                break;
+        }
+        // chuyển từ switch thành if else, else if
+        if(customerLevel == 'VIP'){
+            console.log(10);
+        }else if(customerLevel == 'MEM' || customerLevel == 'GOLD'){
+            console.log(7);
+        }else{
+            console.log(2);
+        }
+
+    </script>
+</body>
+</html>
