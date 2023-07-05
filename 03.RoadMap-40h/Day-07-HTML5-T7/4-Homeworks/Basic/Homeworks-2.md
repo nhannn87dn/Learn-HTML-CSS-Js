@@ -27,5 +27,5 @@ Hãy hiển thị danh sách hãng xe ra màn hình bằng thẻ ul li với doc
     
 - Hãy Dùng mảng và vòng lặp để code thể hiện đơn hàng trên
 - In ra màn hình sách sản phẩm với thẻ table ra thẻ div#result
-- Tạo thêm cột thành tiên cho từng dòng bằng số lượng x đơn  giá
+- Tạo thêm cột thành tiền cho từng dòng bằng số lượng x đơn  giá
 - In giá trị tổng tiền vào cuối bill
