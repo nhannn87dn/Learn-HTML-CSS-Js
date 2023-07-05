@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Hello Javascript</h1>
+    <a class="link" href="https://24h.com.vn">24h.com.vn</a>
+    <img id="photo" height="50" src="https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="Realme-9i">
+
+    <input type="text" name="username" id="username" value="nguyenvana">
+
+    <ul id="list">
+        <li>child 1</li>
+        <li>child 2</li>
+        <li>child 3</li>
+        <li>child 4</li>
+    </ul>
+
+    <script>
+        //HTML DOM Object
+        //3 cách để truy cập tời DOM element
+        let h1 = document.getElementById("head");
+        let h1Tag = document.getElementsByTagName("h1");
+        let h1Selector = document.querySelector("#head"); //dùng kiểu selector CSS
+
+        console.log(h1); //túm được element h1
+
+        console.log(typeof h1); //object
+
+        console.log(typeof h1Selector); //object
+
+        //lấy ID
+        console.log(h1.id);
+        //Lấy nội dung ở giữa thẻ h1
+        console.log(h1.innerHTML);
+
+        let a = document.querySelector("a.link");
+        //lấy href
+        console.log(a.href);
+
+        //lấy giá trị từ input form
+        let input = document.querySelector("input#username");
+        let username = input.value;
+
+        console.log(username);
+
+        //selector đến thẻ li thứ 2
+        let child2 = document.querySelector("#list>li:nth-child(2)");
+        //thuộc tính css
+        child2.style.color = 'red';
+        child2.style.fontSize = '29px'; //font-size ==> fontSize
+        child2.style.backgroundColor = 'yellow'; //background-color ==> backgroundColor
+    </script>
+</body>
+</html>

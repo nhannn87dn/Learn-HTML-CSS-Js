@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+
+    <input type="text" name="username" id="username" value="nguyenvana">
+
+    <script>
+        const products = [
+            {name: 'Áo bull Size M', quality: 2, price : 160},
+            {name: 'Áo khoác gió NorthFace Size L', quality: 1, price : 100},
+            {name: 'Quần Jean Nam Size 30', quality: 1, price : 160}
+        ];
+
+        let htmlOrder = '<table>';
+        let totalOrder = 0;
+        htmlOrder += `<tr><td>Tên SP</td><td>SL</td><td>Giá</td><td>Thành tiền</td></tr>`;
+        for (let index = 0; index < products.length; index++) {
+            const element = products[index];
+
+            let subAmount = element.quality * element.price;
+            totalOrder += subAmount;
+            
+
+            htmlOrder += `<tr><td>${element.name}</td><td>${element.quality}</td><td>${element.price}</td><td>${subAmount}</td></tr>`;
+            
+        }
+        htmlOrder += `<tr><td colspan="3">Total</td><td>${totalOrder}</td></tr>`;
+        htmlOrder += '</table>';
+
+        console.log(htmlOrder);
+
+        //đưa nội dùng vào giữa thẻ div#result
+        document.querySelector("#result").innerHTML = htmlOrder;
+
+        //nhắm tới input
+        let input = document.querySelector("input#username");
+       
+
+        input.value = 'nguyen van b';
+        console.log(input.value);
+
+        
+        let ab = {name: 'nguyen van a'}
+        ab.name = 'nguyen van b';
+    </script>
+</body>
+</html>

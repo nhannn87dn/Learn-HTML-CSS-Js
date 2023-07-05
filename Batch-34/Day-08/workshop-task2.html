@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="text" name="a">
+    <input id="b" type="text" name="b">
+    <select name="pheptinh" id="pheptinh">
+        <option value="add">Cộng</option>
+        <option value="subtract">Trừ</option>
+        <option value="multiply">Nhân</option>
+        <option value="divide">Chia</option>
+    </select>
+    <button onclick="cal()">Tính Kết quả</button>
+    <div id="result"></div>
+
+    <script>
+        function cal(){
+            console.log('Tính');
+            let a = document.querySelector("input#a").value; //str
+            let b = document.querySelector("input#b").value; //str
+            let pheptinh = document.querySelector("#pheptinh").value;
+
+            console.log(a,b,pheptinh);
+
+            a = parseInt(a);
+            b = parseInt(b);
+
+            let result = 0;
+            if(pheptinh === 'add'){
+                result = a + b
+            }
+            else if(pheptinh === 'subtract'){
+                result = a - b;
+            }
+
+            console.log(result);
+            
+            document.querySelector("#result").innerText = result;
+        }
+       
+
+       
+
+    </script>
+</body>
+</html>
