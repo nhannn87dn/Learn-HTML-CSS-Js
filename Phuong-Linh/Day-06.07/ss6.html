@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* sử dụng chung cho toàn trang */
+            font-family:'Arial', Helvetica, sans-serif
+        }
+        h1{
+            text-align: left;
+            background-color: yellow;
+            /* padding: 30px; 4 hướng */
+            /* padding: 10px 5px 10px 4px; trên phải dưới trái  */ 
+            padding: 5px 10px; /* trên/dưới - trái/phải
+            text-transform: uppercase;
+            /* chỉ dùng cho thẻ h1 */
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        a{
+            text-decoration: none;
+            font-style:normal
+        }
+        p{
+            text-indent: 40px;
+            word-spacing: 30px;
+        }
+        .parent>div{
+            display: inline-block;
+            background-color: blue;
+        }
+        .parent>div:first-child {
+            width: 300px;
+            margin-right: 40px;
+        }
+
+        h2>span{
+            display: inline-block;
+            width: 300px;
+            background-color: yellow;
+        }
+
+        .box {
+            padding: 40px;
+            width: 100px;
+            text-align: center;
+            /* border-top: 3px solid black;
+            border-bottom: 3px solid black; */
+
+            border: 3px solid black;
+            border-radius: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Css 3 <h2>dsds</h2></h1>
+    <h2>Hello h2 <span>Im span</span></h2>
+    <a href="#">Css</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui culpa adipisci provident ad maiores hic nulla fugiat, id nisi deserunt? Iusto corrupti, officiis minus ipsa ut unde eaque perspiciatis?</p>
+
+    <div class="parent">
+        <div>Col 1</div>
+        <div>Col 2</div>
+    </div>
+
+    <div class="box">
+        div
+    </div>
+
+</body>
+</html>
