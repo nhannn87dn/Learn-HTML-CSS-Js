@@ -1,0 +1,25 @@
+/* CSS Dùng Chung */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #111;
+    transition: all 0.3 linear;
+}
+ul,ol{
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    color: #111;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
