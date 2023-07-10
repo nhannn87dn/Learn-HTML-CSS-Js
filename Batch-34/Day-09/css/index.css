@@ -1,1 +1,20 @@
 /* CSS riêng cho phần thân của trang index */
+section {
+    margin: 30px 0;
+}
+.our-services {
+    justify-content: space-between;
+}
+.our-services>div{
+    width: calc((100% - 30px) / 2);
+    background-color: #f3f3f3;
+    min-height: 150px;
+}
+.product-list {
+    justify-content: space-between;
+}
+.product-list .item{
+    width: calc((100% - 30px) / 4);
+    background-color: #f3f3f3;
+    min-height: 150px;
+}

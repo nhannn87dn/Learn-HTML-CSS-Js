@@ -1,4 +1,9 @@
 /* CSS Dùng Chung */
+:root{
+    /* đặt biến trong css */
+ --main-color: #ff6700;
+ --white-color: #fff
+}
 *{
     padding: 0;
     margin: 0;
@@ -22,4 +27,46 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.flex{
+    display: flex
+}
+
+
+/* header */
+header {
+    padding: 20px 0;
+    background-color: var(--main-color);
+}
+header .header-middle {
+    justify-content: space-between;
+}
+
+header .logo,
+header nav>ul>li>a{
+    color: var(--white-color);
+}
+
+nav>ul {
+    column-gap: 15px;
+}
+
+main {
+    min-height: 502px;
+}
+/* footer */
+
+footer {
+    background-color: #212121;
+    color: var(--white-color);
+    padding: 30px 0;
+}
+footer .footer-wrapper .item{
+    width: calc(100% / 4);
+    /* flex: 1 */
+}
+
+#toogle-mobile {
+    display: none;
 }

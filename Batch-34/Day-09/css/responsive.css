@@ -1,0 +1,109 @@
+/* breakpoint */
+/* media queries */
+/* desktop first */
+
+/* Tablet 768px = breakpoint */
+@media screen and (max-width: 769px) {
+    .container {
+        padding: 0 10px;
+    }
+    header .header-middle {
+        flex-direction: column
+    }
+    .our-services {
+        flex-direction: column-reverse;
+    }
+    .our-services {
+        row-gap: 10px
+    }
+    .our-services>div{
+        width: 100%;
+    }
+    .product-list {
+        flex-wrap: wrap;
+        row-gap: 10px
+    }
+    .product-list .item{
+        width: calc((100% - 20px) / 3);
+    }
+    footer .footer-wrapper {
+        flex-wrap: wrap;
+    }
+    footer .footer-wrapper .item{
+        width: calc(100% / 2);
+    }
+}
+/* Mobile layout */
+@media screen and (max-width: 426px) {
+    header .main-navigation ul{
+        display: none;
+    }
+    header .main-navigation.actived ul{
+        display: block;
+    }
+    .product-list .item{
+        width: calc((100% - 10px) / 2);
+    }
+    footer .footer-wrapper {
+        row-gap: 20px;
+    }
+    footer .footer-wrapper .item{
+        width: 100%
+    }
+
+    header .header-middle {
+        flex-direction: row
+    }
+
+    #toogle-mobile {
+        display: block;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    #toogle-mobile,
+    #toogle-mobile::before,
+    #toogle-mobile::after {
+        background-color:var(--white-color);
+        height: 3px;
+        width: 30px;
+    }
+    #toogle-mobile::before,
+    #toogle-mobile::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+    #toogle-mobile::before {
+        top: -8px;
+    }
+    #toogle-mobile::after {
+        bottom: -8px;
+    }
+    header {
+        position: relative;
+        height: 48px;
+    }
+
+    header .main-navigation ul {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+    }
+    header .main-navigation ul>li>a{
+        color: #111;
+    }
+}
+    
+
+   
+
+
+/* mobile first */
+/* @media screen and (min-width: 767px) {
+    
+} */
