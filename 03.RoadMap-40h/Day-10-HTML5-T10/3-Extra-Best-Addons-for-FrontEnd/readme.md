@@ -10,6 +10,9 @@
 * CloudZoom
 * Magiczoom Plus
 
+
+## lazyload
+
 ## Animation
 
 * https://animate.style/
