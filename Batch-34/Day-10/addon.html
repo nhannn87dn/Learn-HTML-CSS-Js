@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #banner-home {
+            position: relative;
+        }
+        #banner-home .owl-nav {
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #banner-home .owl-nav .owl-prev,
+        #banner-home .owl-nav .owl-next{
+            background-color: rgba(0, 0, 0, .4);
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            overflow: hidden;
+        }
+        #banner-home .owl-nav .owl-prev span,
+        #banner-home .owl-nav .owl-next span{
+            color: #fff;
+            font-size: 40px;
+            margin-top: -5px;
+        }
+        #banner-home .item {
+            position: relative;
+        }
+        #banner-home .item .content {
+            position: absolute;
+            z-index: 2;
+        }
+        #product-carousel, #product-thumbnail {
+            width: 400px;
+        }
+        #product-thumbnail .item img{
+            width: 80px;
+            height: auto;
+        }
+
+        .tab-header {
+            display: flex;
+            column-gap: 30px;
+        }
+        .tab-body .tab-content {
+            display: none;
+        }
+
+        .tab-body .tab-content.actived{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>OWL Carousel</h2>
+
+    <div class="owl-carousel owl-theme" id="banner-home">
+        <div class="item">
+            <div class="content">
+                <h3>New Look <br>Fashion 2007</h3>
+            </div>
+            <img src="http://theme.nileforest.com/html/philos/img/slide-img/slide_bg2.jpg" alt="">
+            
+        </div>
+        <div class="item">
+            <div class="content">
+                <h3 class="animate__animated animate__fadeInUp">New Look <br>Fashion 2008</h3>
+            </div>
+            <img src="http://theme.nileforest.com/html/philos/img/slide-img/slide_bg1.jpg" alt="">
+        </div>
+        <div class="item">
+            <div class="content">
+                <h3>New Look <br>Fashion 2009</h3>
+            </div>
+            <img src="https://theme.nileforest.com/html/philos/img/slide-img/slide_bg3.jpg" alt="">
+        </div>
+        
+    </div>
+
+    <div class="owl-carousel owl-theme" id="product-carousel">
+        <div class="item">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202103/goods_img/samsung-galaxy-s21-5g-P4305-1615367860405.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202103/goods_img/samsung-galaxy-s21-5g-P4305-1615367782874.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202103/goods_img/samsung-galaxy-s21-5g-P4305-1615367860159.jpg" alt="">
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme" id="product-thumbnail">
+        <div class="item">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202103/goods_img/samsung-galaxy-s21-5g-P4305-1615367860405.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202103/goods_img/samsung-galaxy-s21-5g-P4305-1615367782874.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202103/goods_img/samsung-galaxy-s21-5g-P4305-1615367860159.jpg" alt="">
+        </div>
+    </div>
+
+    <h2>Carousel Products</h2>
+    <div id="product" class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://baochauelec.com/cdn1/images/202305/thumb_img/dan-karaoke-denon-nhat-20-denon-dp-c10-bksound-dka-5500-thumb-G8350-1683342564086.webp" alt="">
+            <h3>Loa sub điện Alto TX212S (bass 30)</h3>
+        </div>
+        <div class="item">
+            2
+        </div>
+        <div class="item">
+            3
+        </div>
+        <div class="item">
+            4
+        </div>
+        <div class="item">
+            5
+        </div>
+        <div class="item">
+            6
+        </div>
+    </div>
+
+    <h2>Tab Html CSS</h2>
+
+    <div class="tab-wrapper">
+        <div class="tab-header">
+            <div class="tab-item" data-id="1">Tab 1</div>
+            <div class="tab-item" data-id="2">Tab 2</div>
+            <div class="tab-item" data-id="3">Tab 3</div>
+        </div>
+        <div class="tab-body">
+            <div class="tab-content tab-content-1 actived">
+                <p>Content 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus quis ullam obcaecati, quia esse. Sapiente ad, eius aperiam sequi aliquam animi a ratione nam, fuga distinctio suscipit blanditiis recusandae!</p>
+            </div>
+            <div class="tab-content tab-content-2">
+                <p>Content 2 -  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus quis ullam obcaecati, quia esse. Sapiente ad, eius aperiam sequi aliquam animi a ratione nam, fuga distinctio suscipit blanditiis recusandae!</p>
+            </div>
+            <div class="tab-content tab-content-3">
+                <p>Content 3 -  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus quis ullam obcaecati, quia esse. Sapiente ad, eius aperiam sequi aliquam animi a ratione nam, fuga distinctio suscipit blanditiis recusandae!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(".tab-item").on("click", function(){
+            console.log('click');
+            let id = $(this).data("id");
+            console.log(id);
+            //Tìm content đã actvied thì ẩn đi
+            $(".tab-body .actived").removeClass("actived");
+            //đi active tab-content được chọn
+            $(".tab-body .tab-content-"+id).addClass("actived");
+        });
+        
+        //đặt sau thư viện owl-carousel
+        $('#banner-home').owlCarousel({
+            loop:true, //lặp vòng tròn
+            items: 1, //số lượng item / 1 màn hình
+            margin:10, //khoảng cách giữa mỗi item
+            nav:true, // nút next và prev
+            dots: false// navigation, phân trang
+        });
+
+        $('#product').owlCarousel({
+            loop:true, //lặp vòng tròn
+            items: 5, //số lượng item trên 1 slide
+            nav:true, //next/prev
+            dots: true,
+            margin: 10
+            
+        })
+
+    var sync1 = $("#product-carousel");
+    var sync2 = $("#product-thumbnail");
+    var slidesPerPage = 4;
+    var syncedSecondary = true;
+
+    sync1.owlCarousel({items : 1, slideSpeed : 2000, lazyLoad:true, nav: false, autoplay: true, dots: false, loop: true, responsiveRefreshRate : 200, navText: ['‹','›'], }).on('changed.owl.carousel', syncPosition);
+    sync2 .on('initialized.owl.carousel', function () {sync2.find(".owl-item").eq(0).addClass("current"); }) .owlCarousel({items : slidesPerPage, dots: false, nav: false, smartSpeed: 200, slideSpeed : 500, slideBy: slidesPerPage, responsiveRefreshRate : 100 }).on('changed.owl.carousel', syncPosition2);
+
+    function syncPosition(el) {
+        var count = el.item.count-1;
+        var current = Math.round(el.item.index - (el.item.count/2) - .5);
+
+        if(current < 0) {current = count; }
+        if(current > count){current = 0; }
+        sync2 .find(".owl-item") .removeClass("current") .eq(current) .addClass("current");
+        var onscreen = sync2.find('.owl-item.active').length - 1;
+        var start = sync2.find('.owl-item.active').first().index();
+        var end = sync2.find('.owl-item.active').last().index();
+
+        if (current > end) {
+          sync2.data('owl.carousel').to(current, 100, true);
+        }
+        if (current < start) {
+          sync2.data('owl.carousel').to(current - onscreen, 100, true);
+        }
+      }
+
+    function syncPosition2(el) {
+        if(syncedSecondary) {
+          var number = el.item.index;
+          sync1.data('owl.carousel').to(number, 100, true);
+        }
+      }
+
+    sync2.on("click", ".owl-item", function(e){
+        e.preventDefault();
+        var number = $(this).index();
+        sync1.data('owl.carousel').to(number, 300, true);
+    });
+
+    
+    </script>
+
+</body>
+</html>

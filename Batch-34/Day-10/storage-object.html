@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objects array
+        let products = [
+            {id: 1, name: 'Product name 1', price: 100, quality: 1},
+            {id: 2, name: 'Product name 2', price: 200, quality: 2},
+            {id: 3, name: 'Product name 3', price: 300, quality: 1}
+        ];
+
+        if(typeof (Storage) != "undefined"){
+            document.write('Có hỗ trợ Web Storage');
+
+            //object
+            let product = {id: 1, name: 'Product name', price: 100, quality: 1}
+            console.log(typeof product, 'before ');
+            //convert to json string
+            product = JSON.stringify(product);
+            console.log(typeof product, 'after');
+
+            //localStorage.setItem('product', product);
+
+            //2. Lấy một json string từ local lên để dùng
+            let jsonProduct = localStorage.getItem('product');
+            console.log(typeof jsonProduct);
+
+            //convert json string to Object
+            let objectProduct = JSON.parse(jsonProduct);
+            console.log(typeof objectProduct, objectProduct, objectProduct.id);
+
+        }else{
+            document.write('Không hỗ trợ Web Storage')
+        }
+
+       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lazy, .lazyload {
+    opacity: 0;
+}
+.lazy.lazyOwl {
+    opacity: 1;
+    transition: all 300ms ease
+}
+
+.lazyloading {
+    opacity: 1;
+    transition: opacity 300ms;
+    background: #f7f7f7 url(loader.gif) no-repeat center center;
+}
+.lazyloaded, .lazy.lazyOwl {
+    opacity: 1;
+    transition: opacity 300ms
+}
+img.lazyload:not([src]) {
+    visibility: hidden;
+}
+    </style>
+</head>
+<body>
+    <p>https://github.com/aFarkas/lazysizes</p>
+    <img src="https://ngocnguyen.vn/cdn/data/afficheimg/dell-xps-1685948895.png" alt="">
+    <div style="height: 800px;">
+        div
+    </div>
+    <img class="lazyload"  data-src="https://ngocnguyen.vn/cdn/data/afficheimg/tivi-xiaomi-1684672111.png" alt="">
+    <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+</body>
+</html>

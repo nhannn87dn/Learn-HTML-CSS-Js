@@ -12,6 +12,7 @@
 
 
 ## lazyload
+https://github.com/aFarkas/lazysizes
 
 ## Animation
 

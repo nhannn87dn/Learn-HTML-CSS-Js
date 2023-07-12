@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input-row {
+            display: flex;
+            margin: 5px 0;
+        }
+        .input-row label{
+            min-width: 120px;
+        }
+
+        /* input:required:invalid
+        {
+            outline: 1px red solid;
+        }
+        input:required:valid
+        {
+            outline: none;
+        } */
+    </style>
+</head>
+<body>
+    <form action="" method="GET" name="register">
+        <div class="input-row">
+            <label for="fullname">Full Name</label>
+            <input minlength="4" maxlength="30" autofocus required id="fullname" type="text" name="fullname">
+        </div>
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input required placeholder="Ví dụ: yourname@gmail.com" id="email" type="email" name="email">
+        </div>
+        <div class="input-row">
+            <label for="age">Age</label>
+            <input min="18" max="65" id="age" type="number" name="age">
+        </div>
+        <div class="input-row">
+            <label for="tel">Tel</label>
+            <input required pattern="^0([0-9]+){9}$" id="tel" type="tel" name="tel">
+        </div>
+        <div class="input-row">
+            <label for="password">Password</label>
+            <input required placeholder="Nhập tối thiểu 8 kí tự" id="password" type="password" name="password">
+        </div>
+        <div class="input-row">
+            <label>Gender</label>
+            <label><input checked type="radio" name="gender" value="no"> Dấu</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> FeMale</label>
+        </div>
+        <div class="input-row">
+            <label>Sở thích</label>
+            <label><input checked type="checkbox" name="sothich" value="travel"> travel</label>
+            <label><input type="checkbox" name="sothich" value="shop"> Shopping</label>
+            <label><input type="checkbox" name="sothich" value="movie"> Movie</label>
+        </div>
+        <div class="input-row">
+            <label for="province">Province</label>
+            <select  name="province" id="province">
+                <option value="">Vui lòng chọn Tỉnh/Thành phố</option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="danang">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="input-row">
+            <label for="content">Content</label>
+            <textarea placeholder="Vui lòng nhập tiếng việt có dấu" name="content" id="content" cols="80" rows="5"></textarea>
+        </div>
+        <div class="input-row">
+            <label for="content">Avatar</label>
+            <input type="file" name="avatar" id="avatar">
+        </div>
+        <div class="input-row">
+            <button  type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
