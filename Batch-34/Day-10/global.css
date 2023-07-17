@@ -65,7 +65,7 @@ nav>ul>li{
     align-items: center;
 }
 
-nav>ul>li.has-child:after {
+nav>ul>li.has-child>a:after {
     content: '';
     width: 0;
     height: 0;

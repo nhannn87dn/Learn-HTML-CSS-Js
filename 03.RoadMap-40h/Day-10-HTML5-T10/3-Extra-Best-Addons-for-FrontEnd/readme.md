@@ -17,6 +17,7 @@ https://github.com/aFarkas/lazysizes
 ## Animation
 
 * https://animate.style/
+* https://michalsnik.github.io/aos/
 
 ## Reports
 
