@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <style>
+    body {
+        background-color: #f3f3f3;
+    }
+
+    .product_name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+        width: 150px;
+    }
+   </style>
+</head>
+  <body>
+    <div class="container">
+        <h1>Hello Bootstrap 5x</h1>
+        <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+        
+        <p>
+            <img class="img-fluid" src="https://ecshopvietnam.com/ecshoptravel/cdn/upload/files/themes-meta/bgtravel.jpg" alt="">
+        </p>
+        <p>
+            <img class="rounded" src="https://ecshopvietnam.com/ecshopmi/cdn/images/202204/thumb_img/xiaomi-11t-5g-128gb-thumb-G4312-1650508234109.jpg" alt="">
+        </p>
+        <table class="table table-striped">
+            <!-- table header-->
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Môn học</th>
+              </tr>
+            </thead>
+      
+            <!-- table body-->
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Nguyễn Công Thịnh</td>
+                <td>React Js & Node Js</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Nguyễn Công Phước</td>
+                <td>HTML &React JS</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Mai Anh Quốc Minh</td>
+                <td>HTML</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Võ Khắc Thắng</td>
+                <td rowspan="2" class="rowspan">React Js & Node Js</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Nguyễn Lê Minh</td>
+              </tr>
+              <tr>
+                  <td colspan="2">Total</td>
+                  <td>5</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <h2>vStack</h2>
+          display: flex, flex-direction: column
+          <div class="vstack  gap-5">
+            <div>lorrem 1</div>
+            <div>lorrem 2</div>
+            <div>lorrem 3</div>
+          </div>
+
+          <h2>Text Truncate</h2>
+          <p class="text-truncate" style="max-width: 150px;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe distinctio iure molestias nostrum molestiae. Porro fugit quibusdam dolore debitis unde quaerat accusantium aut ab. Et quae consequatur sed pariatur explicabo.
+          </p>
+          <h3 class="product_name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe distinctio</h3>
+    
+          <h2>Display Bootstrap</h2>
+          <div class="d-block d-md-none">Only Mobile</div>
+          <div class="d-none d-md-block d-lg-none">Only Tablet</div>
+          <div class="d-none d-lg-block">Only Desktop</div>
+
+          <h2>Flex Bootstrap</h2>
+
+          <div class="product-list flex-column flex-md-row  d-flex">
+              <div class="item">1</div>
+              <div class="item">2</div>
+              <div class="item">3</div>
+              <div class="item">4</div>
+          </div>
+          <h2>Spacing responsive</h2>
+          <p class="p-2 p-md-4 p-lg-5">Padding</p>
+          <p class="m-2 m-md-4 m-lg-5">margin</p>
+    </div>  
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
