@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+</head>
+<body>
+    <h1>Hello jQuery</h1>
+    <h2 class="heading"><span>h2</span></h2>
+    <ul>
+        <li>child 1</li>
+        <li>child 2</li>
+        <li>child 3</li>
+    </ul>
+    <a id="link" class="link link2" href="https://24h.com.vn" target="_blank">24h.com.vn</a>
+
+    <form id="myForm">
+        <input type="text" id="username" name="username" value="" />
+        <input type="text" id="pass" name="pass" value="" />
+        <input type="checkbox" checked name="isAdmin" value="1"> Yes
+        <input type="checkbox"  name="isAdmin" value="0"> No
+        <button type="submit">Submit</button>
+    </form>
+    <div class="product_item" data-id="123" data-price="200" data-name="iPhone 14 Pro Max">
+    ...</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // let h1 = document.querySelector('h1');
+    // let content = h1.innerHTML; //Lấy được: Hello jQuery
+
+    let inSlide = document.querySelector('h1').innerHTML;
+
+    let h1Content = $('h1').html(); //selector tag name
+
+    let h2Content = $('.heading').html(); //selector class
+
+    let childContent = $('ul>li:nth-child(2)').text();
+
+    console.log(h2Content);
+
+    console.log(1);
+
+    //Nó sẽ chạy khi trang load xong hoàn toàn
+    $(document).ready(function(){
+        // console.log("Hello, jQuery!");
+        // console.log(3);
+
+    });
+
+    console.log(2);
+
+    /* get Html attributes */
+    let a = document.querySelector("#link");
+    console.log(typeof a);
+    let href = a.href;
+    console.log(href);
+
+    let aJquery = $("#link"); //tương đương line 46
+    let hrefJ = aJquery.attr("href"); //tương đương line 48
+    let className = aJquery.attr("class"); // lấy ra danh sách class
+    console.log(className);
+
+    /* jQuery form */
+    let jvUsername = document.querySelector("#username").value;
+    console.log(jvUsername);
+    let username = $("#username").val(); //tương đương line 64
+    console.log(username);
+
+    $("#myForm").submit(function(event){
+        //Ngăn form submit theo mặc định
+        event.preventDefault();
+
+        // Lấy lên thì phải tạo một biến để hứng kết quả
+        let username = $("#username").val(); 
+        //output : Nguyễn Văn A
+
+        let pass = $("#pass").val(); 
+
+        console.log(username,pass);
+
+        if(username.length == 0 || pass.length == 0){
+            alert("Vui lòng điền đầy đủ thông tin")
+        }
+
+        let isAdmin = $("input[name=isAdmin]:checked").val(); 
+        //output : 1
+        //selector bằng tên của input 
+
+        // Xử lý dữ liệu ở đây (ví dụ: gửi dữ liệu đến server)
+        //console.log(username,isAdmin);
+
+        // Reset biểu mẫu sau khi gửi thành công
+        //$("#myForm")[0].reset();
+
+
+    });
+
+    //data attributes
+    let id = $('div.product_item').data('id');
+    let myid = $('div.product_item').attr('data-id');
+
+    console.log(id, myid);
+</script>
+</html>
