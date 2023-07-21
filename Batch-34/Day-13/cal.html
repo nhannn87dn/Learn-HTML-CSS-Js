@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myCal">
+        <input type="text" name="a">
+        <input type="text" name="b">
+        <select name="op" id="op">
+            <option value="">Chọn phép tính</option>
+            <option value="add">Cộng</option>
+            <option value="mul">Nhân</option>
+        </select>
+        <button type="submit">Tính</button>
+    </form>
+    <div id="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script>
+         $("#myCal").submit(function(event){
+            event.preventDefault();
+            let a = $("#myCal input[name='a']").val();
+            let b = $("#myCal input[name='b']").val();
+            let op = $("#myCal select[name='op']").val();
+            
+            
+            if (a == '' || b == '' || op == ''){
+                alert('Vui lòng điên đầy đủ thông tin');
+            }
+            //Vượt qua được báo lỗi
+            console.log(a,b,op);
+            a = parseInt(a);
+            b = parseInt(b);
+            let result = 0;
+            switch (op) {
+                case 'add':
+                    result = a +b
+                    break;
+                case 'mul':
+                    result = a * b
+                    break;
+                default:
+                    alert('Unsupported operation')
+                    break;
+            }
+
+            $("#result").html(result)
+
+                
+         });
+    </script>
+</body>
+</html>

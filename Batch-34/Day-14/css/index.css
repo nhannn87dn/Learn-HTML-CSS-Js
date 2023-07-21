@@ -1,0 +1,24 @@
+.photo-second img{
+    transition: all 0.3s linear;
+}
+.photo-second:hover img{
+    transform: scale(1.1);
+}
+
+.photo-second span{
+    bottom: 20px;
+    left: 20px;
+}
+.recomend-filters span{
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.recomend-filters .current,
+.recomend-filters span:hover{
+    background-color: #212121;
+    color: #fff;
+}
+.products-list .item .discount{
+    background-color: var(--green-light);
+    font-size: 12px;
+}
