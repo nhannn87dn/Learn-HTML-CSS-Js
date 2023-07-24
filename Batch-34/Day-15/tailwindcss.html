@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto">
+     <h1 class="font-bold text-6xl">Hello Tailwindcss</h1>
+     <h2 class="font-bold text-4xl">Columns</h2>
+     <div class="columns-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam in magni molestias ratione doloribus. Est ut reiciendis delectus obcaecati possimus debitis eveniet, animi corrupti illum! Recusandae earum labore dolorum dignissimos.
+     </div>
+     <h2 class="font-bold text-4xl">Chia Layout thành 8 - 4</h2>
+     <div class="grid grid-cols-12">
+        <div class="col-span-12 lg:col-span-8">8</div>
+        <div class="col-span-12 lg:col-span-4">4</div>
+     </div>
+     <h2 class="font-bold text-4xl">Chia Layout Lưới Sản phẩm</h2>
+     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
+        <div>
+            <div class="item bg-slate-400">1</div>
+        </div>
+        <div>
+            <div class="item bg-slate-400">2</div>
+        </div>
+        <div>
+            <div class="item bg-slate-400">3</div>
+        </div>
+        <div>
+            <div class="item bg-slate-400">4</div>
+        </div>
+        <div>
+            <div class="item bg-slate-400">5</div>
+        </div>
+        <div>
+            <div class="item bg-slate-400">6</div>
+        </div>
+     </div>
+     <h2 class="font-bold text-4xl">Image responsive</h2>
+     <div>
+        <img class="w-full h-auto" src="https://ecshopvietnam.com/ecshopmi/cdn/data/afficheimg/tron-bo-camera-khuyen-mai-gia-soc-desktop-1650356548.jpg" alt="">
+     </div>
+     <h2>Tự tạo một button</h2>
+     <button class="bg-orange-500 rounded  hover:bg-orange-600 lg:bg-sky-500 lg:hover:bg-sky-600 text-white py-1 px-3">Login</button>
+     <h2>Hover thẻ cha, Tác động lên thẻ con</h2>
+     <p>1. Hover lên li, đổi màu thẻ a</p>
+     <ul>
+        <li><a href="">Home</a></li>
+        <li class="group">
+            <a class="group-hover:text-orange-500" href="">Blog</a>
+            <div class="sub-child hidden group-hover:flex">
+                <a href="">Child 1</a>
+                <a href="">Child 2</a>
+                <a href="">Child 3</a>
+            </div>
+        </li>
+        <li><a href="">Contact</a></li>
+     </ul>
+  </div>
+</body>
+</html>
