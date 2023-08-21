@@ -1,0 +1,216 @@
+.section {
+    margin: 4rem 0;
+}
+.section-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-one .categories {
+    width: 25%;
+    border: 1px solid var(--border-gray-color);
+}
+.categories .cat-title{
+    padding: 1.5rem 2rem;
+    margin-bottom: 0;
+    background: #f6f7f9;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.side-menu {
+    padding: 0 2rem;
+}
+.side-menu li>a {
+    border-bottom: 1px solid var(--border-gray-color);
+    color: #555;
+    font-weight: 600;
+    display: flex;
+    padding: 0 0 1px 2px;
+    align-items: center;
+    height: 47px;
+    letter-spacing: 0.01em;
+    transition: 0.35s;
+}
+.side-menu li:hover>a {
+    color: var(--main-color);
+}
+
+
+.side-menu i {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+.categories .btn-sale {
+    margin: 1rem 2rem;
+    display: flex;
+    padding: 15px 10px;
+    font-size: 1.6rem;
+}
+.section-one {
+    margin-top: 2rem;
+}
+
+.section-one .banner-main {
+    width: calc( 100% - 25% - 20px);
+    position: relative;
+}
+.banner-main .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-main .owl-theme .owl-dots .owl-dot.active span, 
+.banner-main .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--main-color);
+}
+
+/* section two */
+.section-two {
+    border: 1px solid var(--border-gray-color);
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.section-two .info-box {
+    border-right: 1px solid var(--border-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+}
+.section-two .info-box:last-child {
+    border-right: none;
+}
+.section-two .info-box i {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-gray-color);
+}
+.section-title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-more a{
+    font-weight: 600;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.product-list .item {
+    width: calc((100% - 6rem) / 4);
+    overflow: hidden;
+    transition: all 0.3;
+    position: relative;
+}
+.product-list .item .thumb {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.product-list .item .thumb img{
+    transition: all 0.3s;
+    width: 100%;
+    height: auto;
+}
+.product-list .item:hover .thumb img{
+    transform: scale(1.1);
+}
+.product-list .item .cate{
+    color: #666;
+    margin: 1rem 0;
+}
+.product-list .item .price{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+.product-list .item .price del{
+    font-size: 1.4rem;
+    color: #777;margin-right: 1rem;
+}
+.product-list .item .star{
+    width: 100%;
+    display: block;
+    height: 1.6rem;
+}
+.product-list .item .star::after{
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "FontAwesome";
+}
+.product-list .label-fixed{
+    position: absolute;
+    top: 1rem;
+    left:  1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: .5rem;
+    z-index: 2;
+}
+.label-fixed .badge{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 1px 8px;
+    font-size: 13px;
+}
+.label-fixed .badge-discount{
+    background-color: #da5555;
+}
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.news-list article {
+    width: calc((100% - 6rem) / 4);
+    overflow: hidden;
+}
+.news-list article .thumb {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.news-list article .thumb img{
+    transition: all 0.3s;
+    width: 100%;
+    height: auto;
+}
+.news-list article:hover .thumb img{
+    transform: scale(1.1);
+}
+.news-list article h3 {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.news-list article p{
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.news-list article .post-comment{
+    color: #777;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
