@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+<script>
+  // Cách 1: Khởi tạo nhanh
+let human = {};
+
+  human.name = 'Peter';
+  human.age = 34;
+
+ // Cách 2: 
+  let car = {
+    model: 'Toyota',
+    price: 54000,
+  };
+
+
+   // Cách 2: 
+  let model = 'Toyota';
+  let price = 54000;
+  
+  let normalObject = {
+    model: model,
+    price: price
+  }
+  //Object Literal ES6
+  let shortObject = {
+    model,
+    price
+  }
+
+// string, number, function, object, boolean
+  let Math = {
+    name: 'iPhone X',
+    price: 1000,
+    discount: 5,
+    isDiscount: false,
+    //method in object
+    calculate: function () {
+      return (this.price * (100 - this.discount)) / 100;
+    },
+    shortCal () {
+      return (this.price * (100 - this.discount)) / 100;
+    },
+
+    random: function () {
+      console.log(this.name, this.price, this.calculate());
+    },
+  };
+
+
+  console.log(Math.random());
+</script>
+
+</html>

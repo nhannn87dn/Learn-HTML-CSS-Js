@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 1200px;
+        margin: 20px auto;
+    }
+    @media screen and (max-width: 425px){
+        .container {
+        width: 100%;
+        max-width: 640px;
+        }
+    }
+    .container::after, .product-list::after{
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    .product-list {
+        background-color: #D60208;
+        padding: 10px;
+    }
+    .item {
+        /* Đưa tất cả item lên cùng 1 hàng */
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #000;
+        /* Tinh chieu rong cua moi item */
+        width: calc((100% - 40px) / 5);
+        height: 300px;
+        padding: 10px;
+        
+    }
+    .item:nth-child(5n+5){
+        margin-right: 0;
+    }
+    .item img{
+        width: 100%;
+    }
+    .item a {
+        text-decoration: none;
+    }
+    .item  h3 {
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .item a:hover h3{
+        color: #288ad6;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-list">
+            <div class="item">
+                <a href="" title="iPhone 14 Pro Max 128GB" aria-label="iPhone 14 Pro Max 128GB">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/TimerThumb/iphone-14-pro-max-(20).jpg" alt="">
+                    <h3>iPhone 14 Pro Max 128GB</h3>
+                </a>
+            </div>
+            <div class="item">
+                <a href="" title="iPhone 14 Pro Max 128GB" aria-label="iPhone 14 Pro Max 128GB">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/TimerThumb/iphone-14-pro-max-(20).jpg" alt="">
+                    <h3>iPhone 14 Pro Max 128GB</h3>
+                </a>
+            </div>
+            <div class="item">
+                <a href="" title="iPhone 14 Pro Max 128GB" aria-label="iPhone 14 Pro Max 128GB">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/TimerThumb/iphone-14-pro-max-(20).jpg" alt="">
+                    <h3>iPhone 14 Pro Max 128GB</h3>
+                </a>
+            </div>
+            <div class="item">
+                <a href="" title="iPhone 14 Pro Max 128GB" aria-label="iPhone 14 Pro Max 128GB">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/TimerThumb/iphone-14-pro-max-(20).jpg" alt="">
+                    <h3>iPhone 14 Pro Max 128GB</h3>
+                </a>
+            </div>
+            <div class="item">
+                <a href="" title="iPhone 14 Pro Max 128GB" aria-label="iPhone 14 Pro Max 128GB">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/TimerThumb/iphone-14-pro-max-(20).jpg" alt="">
+                    <h3>iPhone 14 Pro Max 128GB</h3>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

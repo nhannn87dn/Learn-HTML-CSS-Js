@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.19/lodash.min.js"></script>
+
+<script>
+  var users = [
+    { user: 'barney', age: 36, active: true },
+    { user: 'fred', age: 40, active: false },
+    { user: 'pebbles', age: 1, active: true },
+  ];
+
+  var result = _.find(users, function (o) {
+    return o.age < 40;
+  });
+
+  console.log(result);
+</script>
+
+</html>

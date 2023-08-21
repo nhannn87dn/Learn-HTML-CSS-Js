@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MORE ELEMENTS OF HTML FORM</title>
+</head>
+
+<body>
+  <form>
+    <h1>MORE ELEMENTS OF HTML FORM</h1>
+    <label> Select the technical: </label>
+    <input type="text" name="technical" list="technical-list" />
+    <datalist id="technical-list">
+      <option value=".NET"></option>
+      <option value="JAVA"></option>
+      <option value="C / C++"></option>
+      <option value="C#"></option>
+      <option value="PHP"></option>
+      <option value="JAVASCRIPT"></option>
+    </datalist>
+
+    <br />
+    <br />
+
+    <label> Technical level: </label>
+    <progress name="level" value="50" min="0" max="100"></progress>
+
+    <br />
+    <br />
+
+    <label> Total score of marks: </label>0 &nbsp; <meter name="score" min="0" max="400" value="180"
+      title="numbers scored" low="120" high="300"></meter> &nbsp; 400<br />
+
+    <input type="submit" value="submit" />
+  </form>
+</body>
+
+</html>

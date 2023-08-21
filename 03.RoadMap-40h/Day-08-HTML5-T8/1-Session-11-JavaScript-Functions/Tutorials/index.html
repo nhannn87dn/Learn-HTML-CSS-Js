@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h1>Hello Javascript</h1>
+
+    <script>
+        //Định nghĩa một function
+
+        function helloWorld() {
+            console.log("Hello JavaScript");
+        }
+        //Gọi một function
+       // helloWorld();
+
+        //Hàm có tham số
+        function helloBody(name = 'Softech') {
+            console.log(`Hello ${name}`);
+        }
+
+        ///helloBody()
+
+        //Hàm có return
+        function sum(a,b){
+            return a + b;
+        }
+
+        //ES5
+        let sumCal = function(a,b){
+            return a + b;
+        }
+
+        //Arrow function ES6
+
+        let sumCallArrow = (a,b)=>{
+            return a + b;
+        }
+
+        let total = sum(2,5);
+
+        console.log(total);
+
+        //Cách 1
+        let sutudenA = {name: 'Tuan', age: 28, address: 'Da Nang'};
+
+        let sutudenB = {name: 'Hung', gender: 'Male'};
+
+        //Truy cập tới các phần tử của object
+        console.log(sutudenA.age);
+
+        //Thêm một phần tử vào object nếu chưa có
+
+        //ES6 Spread Operator
+        sutudenB = {...sutudenB, age: 18}
+
+        console.log(sutudenB);
+
+        //Muốn thay đổi giá trị của một phần tử
+        sutudenB = {...sutudenB, gender: 'Female'};
+        console.log(sutudenB);
+
+        console.log(Math.round(1.56));
+
+    </script>
+</body>
+</html>

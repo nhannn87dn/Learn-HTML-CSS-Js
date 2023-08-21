@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Testing Support for Geolocation in Browsers</title>
+    <script>
+        function display_location_enabled() {
+            // Default message
+            var str = "Geolocation is not supported in this browser";
+            if (window.navigator.geolocation) {
+                str = "Geolocation is supported in this browser";
+            }
+            alert(str);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Geolocation Support" onClick="display_location_enabled()"></input>
+</body>
+
+</html>

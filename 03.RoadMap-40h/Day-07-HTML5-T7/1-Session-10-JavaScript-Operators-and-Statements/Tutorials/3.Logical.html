@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical</title>
+</head>
+<body>
+    <h1>Logical operators</h1>
+    <script>
+     /** Toán Logic
+     && (AND)  -- và
+     ! (NOT)   -- phủ định
+     || (OR)   -- hoặc
+    */
+    
+
+    let amount = 400;
+    let level = 'VIP';
+    /* Nếu biểu thức thỏa điều kiện
+        thì lấy giá trị sau dấu ?
+        còn không thì lấy giá trị sau dấu :
+
+    */
+    let discount =  amount >= 400 ? 5: 0;
+
+    if(amount >= 400 || level === 'VIP'){
+        if(level === 'VIP'){
+            discount = 7;
+        }else{
+            discount = 5;
+        }
+        
+    }
+    else if(amount >= 1000){
+        discount = 10;
+        if(level === 'VIP'){
+            discount = 12;
+        }else{
+            discount = 10;
+        }
+    }
+
+
+
+
+    console.log(discount);
+   
+
+    </script>
+</body>
+</html>
