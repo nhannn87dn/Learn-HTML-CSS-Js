@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if(Điều kiện đúng ==true){
+        //     chạy câu lệnh trong ngoặc nhọn này
+        //     chạy câu lệnh trong ngoặc nhọn này
+        //     chạy câu lệnh trong ngoặc nhọn này
+        //     chạy câu lệnh trong ngoặc nhọn này
+        //     chạy câu lệnh trong ngoặc nhọn này
+        // }
+        let x  = 8;
+        if(x === 10){//  ==> TRUE
+            console.log('x = 10');
+            console.log('x = 10');
+            console.log('x = 10');
+            console.log('x = 10');
+        }
+
+        //if else
+        if(x === 10){ // ==> FALSE
+            //KHối lệnh này thực thi khi điều kiện ĐÚNG
+            console.log('x = 10');
+            console.log('x = 10');
+            console.log('x = 10');
+            console.log('x = 10');
+        }else{
+            //KHối lệnh này thực thi khi điều kiện sai
+            console.log('x khong =  10');
+            console.log('x khong =  10');
+            console.log('x khong =  10');
+        }
+
+        let level = 'GOLD';
+
+        if(level === 'VIP') {
+            console.log('Là thành viên VIP');
+        }
+        else if(level === 'GOLD'){
+            console.log('Là thành viên GOLD');
+        }
+        else if(level === 'DIAMOND'){
+            console.log('Là thành viên DIAMOND');
+        }
+        else{
+            console.log('Là thành viên thân thiết');
+        }
+
+        //function
+        function helloWorld(){
+            console.log('câu lệnh 1');
+            console.log('câu lệnh 2');
+            console.log('câu lệnh 3');
+        }
+
+        //helloWorld();
+
+        //function là không tên
+        const helloWorldV2 = function(){
+            console.log('câu lệnh 1');
+            console.log('câu lệnh 2');
+            console.log('câu lệnh 3');
+        };
+
+        //helloWorldV2();
+
+        //Arrow function
+        const helloWorldV3 = ()=>{
+            console.log('câu lệnh 1');
+            console.log('câu lệnh 2');
+            console.log('câu lệnh 3');
+        }
+        helloWorldV3();
+
+        //function có tham số
+        //name được gọi là tham số
+        const sayHello = (name = 'Aptech') => {
+            console.log('Say Hello ' + name);
+        }
+
+        //'Phát'
+        myname = 'Phát';
+        // ==> Biến/ giá trị truyền vào khi gọi hàm ==> đối số
+        sayHello(myname);
+        sayHello();
+
+        //hàm có return
+        const calSum = (a, b) =>{
+            return a + b
+        }
+
+        //TÍnh tổng 3 và 2
+        let result = calSum(2,3);
+
+        console.log(result);
+
+        //Vòng lặp
+       // nam, trung, Duc, Tuan 
+        
+        let users = ['Nam', 'Trung', 'Tuan'];
+
+        let usersObject = {
+            0 : {name: 'Nam'},
+            1 : {name: 'Trung'}
+        }
+
+       console.log('usersObject', usersObject[0].name);
+
+
+        console.log(users[0]);
+        /* 3 vế ngắn cách bởi dấu ;
+         vế 1: điểm bắt đầu chạy
+         vế 2: điểm dừng, quan trọng ==> để tránh lặp vô hạn
+         vế 3: bước nhảy index++ , 1 lần tăng 1 giá trị
+        */
+        //users.length ==> độ dài của mảng users, tức là users này có bao nhiêu phần tử
+        const limit = users.length; //==> 3
+        
+        //Vòng lặp for, nó duyệt qua index của mảng
+        for (let index = 0; index < limit; index++) {
+            console.log(index, users[index]);
+        }
+
+        let profiles = {id: 1, name: 'John', age: 18}
+        //profiles.id
+        for (const key in profiles) {
+            console.log(key,profiles[key]);
+        }
+
+    </script>
+</body>
+</html>
