@@ -1,33 +1,24 @@
 
 # Workshop
 
-## Task 1
 
-Thực hành tạo key tên mình và lưu xuống localStorage, sessionStorage
-- Tạo một Button Add: CLick vào cái lưu tên mình xuống
-- Tạo một Button Delete: CLick vào cái xóa tên đó đi
+## Task1
 
-## Task 2
+Tạo một Header gồm 2 phần: Logo và Giỏ hàng
 
-- Tạo ra một button tên: Thêm vào giỏ hàng
-- Khi click vào button này thì lưu xuống localStorage một object
 
-```js
-let product = {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
+## Task2 - Responsive UI
 
-//Tạo thành một mảng như dưới
-let products = [
-    {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
-    {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
-    {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
-];
-```
+Tạo ra một giao diện hiển thị danh sách 8 sản phẩm
 
-- Mỗi lần click là lưu xuống và thành một mảng object
-
-- Sau đó lấy tất cả sản phẩm từ localStorage hiển thị ra màn hình
+* Desktop:  Hiển thị 4 sản phẩm trên 1 hàng
+* Tablet: Hiển thị 3 sản phẩm trên 1 hàng
+* Mobile: Hiển thị 2 sản phẩm trên một hàng
 
 ## Task 3
 
-- Tạo một carousel Banner
-- Tạo một carousel Sản phẩm
+* Trên mỗi sản phẩm làm thêm một button **Thêm vào giỏ hàng**
+* Nếu click vào thì lấy tên, giá, số lượng 1 lưu vào localStorage, đồng thời số lượng trên giỏ hàng tăng lên 1
+* Rê chuột lên giỏ hàng thì hiển thị danh sách sản phẩm đã thêm giỏ hàng ra. (Lấy lên từ localStorage)
+
+Nếu chưa hoàn thiện thì làm tiếp như bài tập về nhà

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+<script>
+  const cars = ["Saab", "Volvo", "BMW"];
+
+  /* for với điều kiện đúng */
+  let text = '';
+  let max = cars.length; // = 3 đếm mảng có bn phần tử
+ 
+  for (let i = 0; i < max; i++) {
+    text += cars[i] + "<br>";
+  }
+
+  
+
+
+  document.write('<h1>' + text + '</h1>');
+  
+  
+  /* for/in lặp qua key của đối tượng */
+
+  const person = {fname:"John", lname:"Doe", age:25};
+
+  let name = "";
+  for (let x in person) {
+    name += person[x];
+  }
+  document.write('<h1>' + name + '</h1>');
+   
+  /* for/of lặp qua value của đối tượng */
+
+  let str = "";
+  for (let x of cars) {
+    str += x;
+  }
+  // for of with Object
+  // for (let x of Object.value(person)) {
+  //   str += x;
+  // }
+
+
+  document.write('<h1>' + str + '</h1>');
+ 
+  
+</script>
+
+</html>

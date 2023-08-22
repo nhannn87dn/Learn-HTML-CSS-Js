@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+
+      /* Standard syntax */
+      animation-name: myfirst;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-play-state: running;
+       /* Shorthand syntax */
+      /* animation: myfirst 5s linear 2s infinite alternate running; */
+    }
+
+    /* Standard syntax */
+    @keyframes myfirst {
+      0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ANIMATION WITH CSS3 #03</h1>
+  <div></div>
+</body>
+
+</html>

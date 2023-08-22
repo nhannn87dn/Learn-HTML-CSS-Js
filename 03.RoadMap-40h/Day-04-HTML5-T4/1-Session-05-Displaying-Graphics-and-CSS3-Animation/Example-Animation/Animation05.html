@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      .container {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+      }
+
+      .block {
+        display: flex;
+        margin-bottom: 24px;
+        width: 600px;
+        height: 60px;
+        background-color: #ecf0f1;
+      }
+
+      .left-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 160px;
+        height: inherit;
+      }
+
+      .right-block {
+        display: flex;
+        flex: 1;
+        height: inherit;
+      }
+
+      .left-block span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: white;
+        margin-right: 24px;
+      }
+
+      .right-block {
+        display: flex;
+        height: inherit;
+      }
+
+      .right-block span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: white;
+        margin-left: 24px;
+      }
+
+      .right-block-percent {
+        display: flex;
+        height: inherit;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .left-block-bandwidth {
+        background-color: #c62828;
+      }
+
+      .right-block-percent-bandwidth {
+        width: 20%;
+        background-color: #f44336;
+        animation-name: bandwidth;
+        animation-duration: 3s;
+      }
+
+      @keyframes bandwidth {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 20%;
+        }
+      }
+
+      .left-block-storage {
+        background-color: #0097a7;
+      }
+
+      .right-block-percent-storage {
+        width: 50%;
+        background-color: #00bcd4;
+        animation-name: storage;
+        animation-duration: 3s;
+      }
+
+      @keyframes storage {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- BEGIN: BLOCK BANDWIDTH -->
+      <div class="block">
+        <div class="left-block left-block-bandwidth">
+          <span>BANDWIDTH</span>
+        </div>
+        <div class="right-block">
+          <div class="right-block-percent right-block-percent-bandwidth">
+            <span>20%</span>
+          </div>
+        </div>
+      </div>
+      <!-- END: BLOCK BANDWIDTH -->
+
+      <!-- BEGIN: BLOCK STORAGE -->
+      <div class="block">
+        <div class="left-block left-block-storage">
+          <span>STORAGE</span>
+        </div>
+        <div class="right-block">
+          <div class="right-block-percent right-block-percent-storage">
+            <span>50%</span>
+          </div>
+        </div>
+      </div>
+      <!-- END: BLOCK STORAGE -->
+    </div>
+  </body>
+</html>

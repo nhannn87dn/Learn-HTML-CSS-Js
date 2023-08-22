@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 3px;
+    }
+
+    td.mark {
+      text-align: right;
+    }
+
+    th.max-width {
+      width: 100%;
+    }
+
+    th.no-wrap {
+      white-space: nowrap;
+    }
+
+    .table-header {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1">
+    <thead class="table-header">
+      <tr>
+        <th>TT</th>
+        <th class="max-width">Name</th>
+        <th class="no-wrap">Mark (Math)</th>
+        <th class="no-wrap">Mark (English)</th>
+        <th class="no-wrap">Mark (Sport)</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>Nguyen Van Tuan</td>
+        <td class="mark">10</td>
+        <td class="mark">9</td>
+        <td class="mark">6</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Nguyen Thanh Tam</td>
+        <td class="mark">10</td>
+        <td class="mark">8</td>
+        <td class="mark">9</td>
+        <td>Good</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

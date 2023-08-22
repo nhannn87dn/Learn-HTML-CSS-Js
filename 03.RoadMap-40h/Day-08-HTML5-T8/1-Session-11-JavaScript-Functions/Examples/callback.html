@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Js</title>
+</head>
+<body>
+    <script>
+    /**
+     * 
+     * Callback ?
+     * Khi nào thì cần dùng Callback?
+     * 
+     */
+    function myDisplayer(some) {
+        console.log(some);
+    }
+
+    function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        // lấy kết quả phép tính trên để làm tham số đầu vào
+        // thực thi hàm myCallback()
+
+        myCallback(sum);
+    }
+
+    myCalculator(5, 5, myDisplayer);
+
+    /**
+     * Câu hỏi phỏng vấn kinh điển:
+     * 
+     * Callback hell là gì ?
+     * Làm sao để tránh Callback hell ?
+     * 
+     */
+    setTimeout(function(){
+        console.log('step 1');
+        setTimeout(function(){
+            console.log('step 2');
+            setTimeout(function(){
+                console.log('step 3');
+                setTimeout(function(){
+                    console.log('step 4');
+                },1000);
+            },1000);
+        },1000);
+    },1000);
+    
+    </script>
+</body>
+</html>

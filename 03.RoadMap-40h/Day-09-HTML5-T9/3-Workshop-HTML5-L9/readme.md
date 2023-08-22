@@ -1,33 +1,29 @@
-# Create Ecommerce Website
+# Thực hành bài học tại Lab
 
-- init Project
 
-> 1. structure folder
-> 2. css global, reset css
-> 3. layout
+## Task 1
 
-Continue
+Thực hành tạo key tên mình và lưu xuống localStorage, sessionStorage
+- Tạo một Button Add: CLick vào cái lưu tên mình xuống
+- Tạo một Button Delete: CLick vào cái xóa tên đó đi
 
-- Header Block
-- Footer Block
-- Index Page
+## Task 2
 
-Continue
+- Tạo ra một button tên: Thêm vào giỏ hàng
+- Khi click vào button này thì lưu xuống localStorage một object
 
-- Product Details
-- Blog -> Post List
+```js
+let product = {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
 
-Continue
+//Tạo thành một mảng như dưới
+let products = [
+    {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
+    {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
+    {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
+];
+```
 
-- Blog -> Post Details
-- Contact Us
+- Mỗi lần click là lưu xuống và thành một mảng object
 
-Continue
+- Sau đó lấy tất cả sản phẩm từ localStorage hiển thị ra màn hình
 
-- Checkout Page
-- Login Page
-- Register Page
-
-Continue
-
- - Building-a-Responsive-Mobile-Web

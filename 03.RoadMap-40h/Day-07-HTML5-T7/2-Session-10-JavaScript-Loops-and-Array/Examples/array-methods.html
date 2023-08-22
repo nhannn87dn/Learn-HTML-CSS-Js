@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript - Array</title>
+</head>
+
+<body>
+  <script>
+    // toString() Converting Arrays to Strings
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const mystr = fruits.toString();
+    console.log(mystr);
+
+    // Joins all elements of an array into a string
+    //const mystr = fruits.join(" * ");
+    //console.log(mystr);
+
+    //pop() removes the last element from an array
+    fruits.pop();
+
+    //The push() method adds a new element to an array (at the end):
+    fruits.push("Kiwi");
+
+    //The splice() method can be used to add new items to an array:
+    fruits.splice(2, 0, "Lemon", "Kiwi");
+    //Using splice() to Remove Elements
+    fruits.splice(0, 1);
+
+    //The slice() method slices out a piece of an array into a new array
+    const citrus = fruits.slice(1);
+    //The slice() method can take two arguments like
+    //const citrus = fruits.slice(1, 3);
+
+  </script>
+</body>
+
+</html>

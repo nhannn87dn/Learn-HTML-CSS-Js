@@ -1,5 +1,13 @@
 # Thực hành bài học tại Lab
 
+## Task 0: 
+
+Tạo một bảng với giao diện như hình dưới đây, để làm bảng thông số  cho sản phẩm.
+
+![table](table-params.png)
+
+
+
 ## Task 1: Thực hành lại kiến thức Javascript
 
 - Khai báo biến:

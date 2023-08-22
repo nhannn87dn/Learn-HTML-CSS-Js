@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>EVENT SAMPLES</title>
+</head>
+
+<body>
+  <h1>EVENT SAMPLES</h1>
+  <input type="text" value="" onblur="hideStyle(this)" onfocus="setStyle(this)" />
+  <input type="button" value="Focus me" onfocus="setStyle(this)" />
+  <input type="button" onclick="displayMessage()" value="Click me" />
+</body>
+<script>
+  function displayMessage() {
+    alert('Hello event handling');
+  }
+
+  function setStyle(element) {
+    element.style.backgroundColor = 'yellow';
+  }
+
+  function hideStyle(element) {
+    element.style.backgroundColor = '#FFFFFF';
+  }
+</script>
+
+</html>
