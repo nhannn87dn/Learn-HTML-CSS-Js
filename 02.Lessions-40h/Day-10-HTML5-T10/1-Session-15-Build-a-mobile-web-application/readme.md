@@ -85,7 +85,3 @@ Dưới đây là một số ví dụ về sử dụng Media Queries:
 
 Với Media Queries, bạn có thể tạo ra nhiều điều kiện và áp dụng các kiểu CSS tùy chỉnh cho từng điều kiện đó. Điều này cho phép bạn tạo ra trang web responsive, thích ứng với các thiết bị và kích thước màn hình khác nhau.
 
-## Build a responsive website
-
-- Code thực chiến: Lấy một Demo code sẵn chưa làm Responsive --> Make Responsive
-- Example: <https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_website>
