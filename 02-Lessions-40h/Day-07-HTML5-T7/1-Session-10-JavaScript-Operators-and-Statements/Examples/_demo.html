@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascipt</h1>
+
+    <script>
+        /**
+         * Toán tử số học
+         * + - * / % 
+         */
+        let a = 4; //string
+        let b = 5; // number
+
+        let c = 5; // Điểm trung bình môn
+        
+        /**
+         * Toán tử số học
+         * >, < >=, <=, ==, !=, ===, !==
+         */
+
+
+         /**
+         * Toán tử LOGIC
+         * && (AND) , ! (NOT), || (OR)
+         */
+        if ( c >= 8 && c < 10 ){
+            console.log(" GIOI ")
+        }
+        else if (c >= 7 && c < 8){
+            console.log(" KHA ")
+        }
+        else{
+            console.log(" TB ")
+        }
+
+        let level = 'SILVER';
+        
+        let discount = 0;
+
+        switch (level) {
+            case 'DIAMOND':
+            case 'SILVER':
+                discount = 10;
+                break;
+            default:
+                discount = 2;
+                break;
+        }
+
+        console.log(discount);
+
+
+
+
+        let text = "The best things in life are free";
+        let pattern1 = /\w+\s/g;
+        // Trả về true nếu tìm thấy
+        let result = pattern1.test(text);
+        
+
+       /* Trả về index tức là vị trí của kí tự được nếu tìm thấy */
+        let result2 = pattern1.exec(text);
+        
+        // Tìm khớp với định dạng của pattern
+        const myArray = text.match(pattern1);
+
+
+        let email_tr = 'nhann@softech.vn';
+        const validateEmail = (email) => {
+            return String(email)
+                .toLowerCase()
+                .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                );
+        };
+
+        // console.log(validateEmail(email_tr));
+
+    </script>
+</body>
+</html>

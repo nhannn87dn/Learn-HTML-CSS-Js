@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  table {
+    border: 1px solid #111;
+    border-collapse: collapse;
+  }
+  table th, table td{
+    border: 1px solid #111;
+    padding: 10px;
+  }
+  table tr td:first-child {
+    text-align: center;
+  }
+  .only_html {
+    vertical-align: middle;
+  }
+  table tr:nth-child(2n+2) td{
+    background-color: #c3c3c3
+  }
+</style>
+<body>
+  <div class="container">
+      <table>
+          <tr>
+            <th>SST</th>
+            <th>Name</th>
+            <th>Khoa Hoc</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Nguyen Van DUng</td>
+            <td class="only_html" rowspan="2">HTML</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Nguyen Van Thao</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nguyen Van DUng</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Nguyen Van Thao</td>
+            <td>Java</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>4</td>
+          </tr>
+      </table>
+  </div>
+</body>
+</html>

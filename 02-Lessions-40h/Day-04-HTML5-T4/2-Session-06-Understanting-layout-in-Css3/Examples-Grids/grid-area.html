@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+        }
+        
+        .item-header {
+            /* cho item một cái tên */
+            grid-area: header
+        }
+        .item-main {
+            grid-area: main
+        }
+        .item-menu {
+            grid-area: menu
+        }
+        .item-right {
+            grid-area: right
+        }
+        .item-footer {
+            grid-area: footer
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+            text-align: center;
+            max-width: 900px;
+            /*
+            Sử dụng grid-template-areas để tạo lưới
+            mỗi hàng bọc trong cặp nháy đơn
+            mỗi cột cách nhau 1 khoảng trắng
+            và phân bổ các item theo tên vào
+            */
+            grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Css Grid Area</h1>
+
+
+    <div class="grid-container">
+        <div class="item item-header">
+            <h3>Header</h3>
+        </div>
+        <div class="item item-menu">
+            <h3>Menu</h3>
+        </div>
+        <div class="item item-main">
+            <h3>Main</h3>
+        </div>
+        <div class="item item-right">
+            <h3>Right</h3>
+        </div>
+        <div class="item item-footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+
+</html>

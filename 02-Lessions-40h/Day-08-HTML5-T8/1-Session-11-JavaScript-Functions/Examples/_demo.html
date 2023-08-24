@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Demo</title>
+</head>
+
+<body>
+  <script>
+    
+    let x = 1;
+    let y = 2;
+    //console.log(x+y);
+
+    let a = 3;
+    let b = 4;
+    //console.log(a+b);
+
+
+    let i = 5;
+    let j = 6;
+    //.log(i+j);
+
+    //Định một function truyền thống
+    function sayHello(){
+      console.log('hello');
+    }
+    // ĐỊnh nghĩa một fun như là biến
+    const myFunction = function(){
+      console.log('myFunction');
+    }
+
+    //myFunction();
+    // arrow function
+    const myFunction2 = ()=>{
+      console.log('myFunction2');
+    }
+    //myFunction2();
+
+    //gọi function // call function
+    //sayHello();
+
+    function sayHelloWithName(x,age=20){
+      console.log(`Hello ${x}, mình ${age} tuổi`);
+    }
+   // sayHelloWithName('Diem',18);
+
+    function tinhTong(a,b){
+      if(a == 0){
+        return false;
+      }
+      else if(b == 0){
+        return false;
+      }
+
+      return a+b;
+    }
+
+    let total = tinhTong(1,0);
+
+    console.log(total);
+
+
+  </script>
+</body>
+
+</html>

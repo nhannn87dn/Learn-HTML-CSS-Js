@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM ELEMENTS</title>
+	<style type="text/css" media="screen">
+		input:required {
+			outline: 1px red solid;
+			color: green;
+		}
+
+		input[type="text"] {
+			border: 1px yellow solid;
+		}
+	</style>
+</head>
+
+<body>
+	<form name="myForm">
+		<input type="text" required placeholder="Hay nhap ten nguoi dung" name="fullname">
+		<hr />
+		<input type="radio" name="gender" value="Male" placeholder="">Nam
+		<input type="radio" name="gender" value="Female" placeholder="">Nu
+		<hr />
+		<input type="date" required placeholder="hay nhap ngay sinh" name="birthday">
+		<hr />
+		<input type="checkbox" name="sport" value="Sport">Sport
+		<input type="checkbox" name="music" value="Music">Music
+		<input type="checkbox" name="travel" value="Music">Travel
+		<hr />
+		<select name="Nation">
+			<option value="VN">Viet Nam</option>
+			<option value="US">USA</option>
+			<option value="JP">Japan</option>
+		</select>
+		<hr />
+		<select name="Language" multiple>
+			<option value="VN">Vietnamese</option>
+			<option value="JP">Japanese</option>
+		</select>
+		<hr />
+		<input type="submit" name="submit" value="Submit">
+		<input type="reset" name="reset" value="Reset">
+	</form>
+</body>
+
+</html>

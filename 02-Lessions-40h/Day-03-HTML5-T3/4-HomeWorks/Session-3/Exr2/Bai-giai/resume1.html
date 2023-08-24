@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alab Walker</title>
+  <style>
+    .container {
+      width: 1000px;
+      height: 100vh;
+      margin: 0 auto;
+      background-color: aquamarine;
+    }
+
+    .row-header {
+      display: flex;
+      height: 120px;
+      background-color: blue;
+
+    }
+
+    .row-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 120px;
+      background-color: violet;
+
+    }
+
+    .row-content {
+      display: flex;
+    }
+
+    .column-left {
+      flex: 1;
+      display: flex;
+      min-height: 120px;
+      background-color: black;
+      align-items: flex-end;
+      color: white;
+    }
+
+    .column-right {
+      display: flex;
+      flex: 3;
+      height: 120px;
+      background-color: white;
+    }
+
+    .column-left>h1 {
+      margin-left: 12px;
+      font-size: 24px;
+    }
+
+    .row-title>h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 54px;
+    }
+
+    .row-title>span {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+
+    .column-left-container {
+      padding: 24px;
+    }
+
+    .column-right-container {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .job {
+      display: flex;
+      flex: 1;
+    }
+
+    .job-time {
+      flex: 1;
+      font-weight: 700;
+      white-space: nowrap;
+      margin-right: 24px;
+    }
+
+    .job-description {
+      flex: 3
+    }
+    .flex{
+      display: flex;
+    }
+    .skill_name {
+      width: 120px;
+    }
+    .sill_levels {
+      height: 20px;
+      flex: 1;
+    }
+    .skill_percent {
+      background-color: #111;
+    }
+    .skill_empty {
+      background-color: #c5c5c5;
+      flex: 1
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row-header">
+        <div class="column-left">
+          <h1>RESUME</h1>
+        </div>
+        <div class="column-right"></div>
+      </div>
+      <div class="row-title">
+        <h2>Alan Walker</h2>
+        <span>Graphic Designer</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="row-content">
+        <div class="column-left">
+          <div class="column-left-container">
+            <img src="../Images/photo.png" width="100%" />
+            <h3>PROFILE</h3>
+            <!-- NAME -->
+            <section>
+              <h3>
+                <strong>Name</strong>
+              </h3>
+              <em>Alan Walker</em>
+            </section>
+            <!-- DATE OF BIRTH -->
+            <section>
+              <h3>
+                <strong>Date of Birth</strong>
+              </h3>
+              <em>10/10/1994</em>
+            </section>
+          </div>
+        </div>
+        <div class="column-right">
+          <div class="column-right-container">
+            <h2>JOB EXPERIENCES</h2>
+            <div class="job">
+              <div class="job-time">
+                2015-2016
+              </div>
+              <div class="job-description">
+                Làm ở công ty cổ phần Softech
+              </div>
+            </div>
+            <h2>SKILLS</h2>
+            <div class="skill_wrapper flex">
+                <div class="skill_name">
+                   <label>Photoshop</label>
+                </div>
+                <div class="sill_levels flex">
+                    <div class="skill_percent" style="width: 80%;"></div>
+                    <div class="skill_empty"></div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

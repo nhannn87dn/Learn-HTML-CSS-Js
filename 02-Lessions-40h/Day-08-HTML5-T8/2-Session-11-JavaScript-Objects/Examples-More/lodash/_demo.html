@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lodash Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <script>
+    const fruits = ["Apple", "Banana", "Orange", "Lemon"];
+    // console.log(_.head(fruits))
+    // console.log(_.last(fruits))
+
+    // console.log(_.join(fruits, ' / '))
+
+    // console.log(_.reverse(fruits))
+
+    // console.log(_.takeRight(fruits, 2))
+
+    var array = [1, 2, 3, 4];
+    var evens = _.remove(array, function (n) {
+      return n % 2 == 0;
+    });
+
+    console.log(array);
+
+    // collection
+    var users = [
+      { user: 'barney', age: 36, active: true },
+      { user: 'fred', age: 40, active: false },
+      { user: 'pebbles', age: 1, active: true }
+    ];
+
+    const x = _.filter(users, function (u) {
+      return u.age < 40;
+    });
+    console.log(x)
+
+
+    const name = _.capitalize('FreD');
+    console.log(name)
+// => 'Fred'
+
+
+  </script>
+</body>
+
+</html>

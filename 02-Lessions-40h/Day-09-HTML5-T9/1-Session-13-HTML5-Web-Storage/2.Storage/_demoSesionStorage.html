@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="remove('name')">Remove</button>
+    <button onclick="removeAll()">Remove All</button>
+    <script>
+
+    function remove(key) {
+        let result = sessionStorage.getItem(key);
+        if(result !== 'undefined'){
+            sessionStorage.removeItem(key);
+            console.log(`Đã xóa key ${key}`);
+        }
+    }
+
+    function removeAll() {
+        sessionStorage.clear();
+    }
+        // Check browser support
+	if (typeof (Storage) != "undefined") {
+        console.log("Có hỗ trợ");
+        //Set một sessionStorage
+        //key = name
+        //value = Sarah
+        sessionStorage.setItem('name','Sarah');
+        sessionStorage.setItem('age',18);
+
+        //Lấy một sessionStorage
+
+        let name = sessionStorage.getItem('name');
+        console.log(name);
+
+
+        let age = sessionStorage.getItem('age');
+        console.log(age);
+
+
+    }
+
+
+    </script>
+</body>
+</html>

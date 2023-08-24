@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color-green: #4FD365;
+            --color-red: #F25753
+        }
+        .bg-green{
+            background-color: var(--color-green)
+        }
+        .bg-red{
+            background-color: var(--color-red)
+        }
+        .skill_bar {
+            display: flex;
+        }
+        .skill_bar .label_icon {
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            border-radius: 2px;
+            
+        }
+        .skill_bar .label {
+            width: 120px;
+        }
+        .skill_process {
+            flex: 1;
+            background-color: #ddd;
+            height: 10px;
+            border-radius: 2px;
+            display: flex;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="skill_bar">
+        <div class="label">
+            <span class="label_icon bg-green">icon</span>
+            <span class="label_name">Html</span>
+        </div>
+        <div class="skill_process">
+            <div class="percent bg-green" style="width: 60%;"></div>
+        </div>
+    </div>
+
+    
+    <div class="skill_bar">
+        <div class="label">
+            <span class="label_icon bg-red">icon</span>
+            <span class="label_name">Html</span>
+        </div>
+        <div class="skill_process">
+            <div class="percent bg-red" style="width: 40%;"></div>
+        </div>
+    </div>
+</body>
+</html>

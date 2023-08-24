@@ -1,0 +1,1 @@
+Làm theo như demo: xem video ImageSlider.wmv

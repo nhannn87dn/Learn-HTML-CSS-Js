@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent .box{
+            position: relative;
+        }
+        .box img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* width: 50px;
+            height: 50px; */
+           
+            /* border: 5px solid violet;
+            border-radius: 50px;  */
+
+            /* animation-name: runbox;
+            animation-duration: 1.5s; 
+            animation-timing-function: linear; 
+            animation-delay: 0;
+            
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-play-state: running;  */
+
+            animation: runbox 1.5s linear alternate infinite running;
+        }
+
+        
+
+        @keyframes runbox {
+            0% {
+                left: 0
+            }
+            50% {
+                left: 20px
+            }
+            100% {
+                left: 50px
+            }
+      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">
+            <img src="https://ace.aptech.io/images/bulb.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

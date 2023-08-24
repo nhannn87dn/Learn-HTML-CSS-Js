@@ -1,0 +1,25 @@
+:root {
+    --main-color: #fe4a55;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body {
+    line-height: 1.4;
+    font-size: 16px;
+    background-color: #212121;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* #fe4a55 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #212121;
+    padding: 20px 0;
+}

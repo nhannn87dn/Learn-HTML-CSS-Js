@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+
+header .header-middle{
+    background-color: #1abc9c;
+    min-height: 100px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header nav{
+    background-color: #212121;
+    height: 45px;
+}
+header nav>ul{
+    display: flex;
+    list-style: none;
+}
+header nav>ul>li>a{
+    color: #fff;
+    padding: 0 20px;
+    line-height: 45px;
+    text-decoration: none;
+}
+header nav>ul>li:hover{
+    background-color: #ddd;
+
+}
+
+header nav>ul>li:hover a{
+    color: #212121;
+}
+
+/* footer style */
+
+footer{
+    background-color: #ddd;
+    color: #212121;
+    padding: 40px 0;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+/* body */
+
+main .wrapper_main {
+    display: flex;
+}
+main .main {
+    flex: 1;
+    min-height: 360px;
+    padding: 20px;
+}
+main .sidebar {
+    flex-basis: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* article style */
+
+.post_item {
+    margin-bottom: 30px;
+}
+
+.post_item .post_title {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.post_item .post_time{
+    margin: 20px 0;
+}
+.post_item .post_thumbnail {
+    width: 100%;
+    min-height: 160px;
+    background-color: #666;
+    margin-bottom: 15px;
+}
+.product_wrapper {
+    display: flex;
+    gap: 10px;
+}
+.product_wrapper .item{
+    background-color: #212121;
+    color: #fff;
+    width: calc((100% - 40px) / 5);
+    min-height: 200px;
+}
+
+.footer_wrapper {
+    display: flex;
+}
+
+.footer_item {
+    width: calc(100% / 4);
+}
+
+#toggle_navbar {
+    display: none;
+}
+/* Responsive */
+/* 768px mình gọi nó là Breakpoint */
+@media screen and (max-width: 768px) {
+    .product_wrapper, .footer_wrapper {
+        flex-wrap: wrap;
+    }
+    .product_wrapper .item {
+        width: calc((100% - 20px) / 3);
+    }
+
+    .footer_item {
+        width: calc(100% / 2);
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    main .wrapper_main {
+        flex-direction: column;
+    }
+
+    .product_wrapper .item {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .footer_item {
+        width: 100%
+    }
+    header nav{
+        display: none;
+    }
+        
+    #toggle_navbar {
+        display: block;
+        height: 2px;
+        width: 32px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 2;
+        top: 30px;
+        right: 10px;
+        cursor: pointer;
+    }
+    #toggle_navbar::before, #toggle_navbar::after{
+        content: "";
+        height: 2px;
+        width: 32px;
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        left: 0;
+    }
+
+    #toggle_navbar::before {
+        top: -5px;
+    }
+
+    #toggle_navbar::after {
+        bottom: -5px;
+    }
+    header nav.show{
+        display: block;
+    }
+
+}

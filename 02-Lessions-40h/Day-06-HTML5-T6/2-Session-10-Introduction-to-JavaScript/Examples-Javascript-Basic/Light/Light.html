@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light On / Off</title>
+  <style>
+    img {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <img id="myImage" onclick="changeImage()" src="Images/lightoff.gif" width="100" height="180" />
+</body>
+
+<script>
+  function changeImage() {
+    // object / element
+    let image = document.querySelector('#myImage');
+
+    if (image.src.match('lighton')) {
+      image.src = 'Images/lightoff.gif';
+    } else {
+      image.src = 'Images/lighton.gif';
+    }
+  }
+</script>
+
+</html>

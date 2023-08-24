@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Value V2</title>
+  </head>
+  <body>
+    <input type="text" id="numA"  name="a" value=""   placeholder="Nhap vao so a" />
+    <input type="text" id="numB" name="b" value=""  placeholder="Nhap vao so b" />
+
+    <input type="button" name="" value="Display" onclick="display()" />
+    <div style="color: red;" id="result">
+      11
+    </div>
+  </body>
+  <script>
+    function display() {
+      var numA = document.getElementById('numA').value;
+      var numB = document.getElementById('numB').value;
+      console.log('<<=== numA ===>>',numA);
+      console.log('<<=== numB ===>>',numB);
+      //let sum = numA + numB;
+      var sum = parseInt(numA) + parseInt(numB);
+      console.log('<<=== sum ===>>',sum);
+      var divResult = document.getElementById('result').innerHTML = sum;
+      
+    
+      
+    }
+  </script>
+</html>
