@@ -1,0 +1,67 @@
+/* Định nghĩa ra các lớp, và sắp xếp thứ tự ưu tiên từ thấp đến cao */
+@layer reset, defaults, components, utilities;
+
+
+/* import stylesheets từ bên ngoài đến một layer (cú pháp dấu . thể hiện sự lồng nhau) */
+@import url('framework.css') layer(components.framework);
+
+/* 
+Bạn có thể đặt utilities trước reset
+Thứ tự này không được chấp nhận về ưu tiên
+*/
+@layer utilities {
+    .py-5{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .px-5{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+/* Thêm styles cho layer */
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    button{
+        appearance: none;
+        outline: none;
+        border: 0;
+    }
+}
+
+@layer defaults {
+    /* set style mặc định cho một button */
+    button{
+       padding: 10px 12px;
+       background-color: #fff;
+       border: 1px solid #333;
+       border-radius: 4px;
+       color: #333;
+       font-weight: bold;
+       cursor: pointer;
+    }
+}
+
+
+@layer components {
+    /* set style biến thể cho một button */
+    .btn-primary{
+       background-color: indigo;
+       border: none;
+       color: #fff;
+    }
+    .btn-primary:hover{
+        background-color: rgb(85, 1, 144);
+     }
+}
+
+/* Các styles nằm ngoài layer sẽ có mức độ ưu tiên cao nhất */
+body {
+    padding: 30px;
+}

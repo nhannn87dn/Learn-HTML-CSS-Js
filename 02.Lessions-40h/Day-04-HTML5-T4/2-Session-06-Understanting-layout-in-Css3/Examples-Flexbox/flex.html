@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container {
+           display: flex;
+           height: 150px;
+           max-width: 900px;
+           background-color: burlywood;
+        }
+        .item {
+            width: 200px;
+            height: 50px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item1 {
+            background-color: blue;
+            flex-grow: 1;
+        }
+        .item2 {background-color: red;
+            flex-grow: 1
+        }
+        .item3 {background: yellowgreen;
+            flex-grow: 1;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Flex box ?</h1>
+
+    <div class="flex-container">  
+        <div class="item item1">item 1</div>  
+        <div class="item item2">item 2</div>  
+        <div class="item item3">item 3</div>  
+     </div>
+</body>
+</html>

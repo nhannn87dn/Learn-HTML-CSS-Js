@@ -35,7 +35,10 @@ header {
     
     .main_nav {
         display: none;
-       }
+    }
+    .none, .md, .xl, .lg,.xxl{
+        display: none;
+    }
    
  }
 
@@ -43,6 +46,13 @@ header {
    .logo{
     color:red;
    }
+
+   .none, .md, .xl, .lg,.xxl{
+        display: none;
+    }
+    .sm {
+        display: block;
+    }
   
 }
 /* tablet */
@@ -50,13 +60,24 @@ header {
     .logo{
         color:blue;
        }
-
+    .none, .sm, .xl, .lg,.xxl{
+        display: none;
+    }
+    .md {
+        display: block;
+    }
 }
 
 /* large tablet */
 @media screen and (min-width: 991px){
     .logo{
         color:orange;
+    }
+    .none, .sm, .xl, .md,.xxl{
+        display: none;
+    }
+    .lg {
+        display: block;
     }
 }
 /* laptop 14 inch */

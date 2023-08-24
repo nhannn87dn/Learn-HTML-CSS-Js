@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header nav{
+            background-color: blueviolet;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            column-gap: 10px;
+        }
+        ul li {
+            height: 45px;
+            padding: 0 15px;
+            position: relative;
+        }
+        .nav-child {
+            position: absolute;
+            display: none;
+            top: 45px;
+            left: 0;
+            min-width: 180px;
+            background-color: #fff;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+            padding: 10px;
+        }
+        ul>li>a{
+            color: #fff;
+            text-decoration: none;
+            line-height: 45px;
+        }
+        ul>li:hover{
+            background-color: rgb(119, 29, 203);
+        }
+        ul>li:hover>a{
+            color: #fae101;
+        }
+        ul>li:hover .nav-child {
+            display: block;
+        }
+        .nav-child a{
+            display: block;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a</li>
+            <li>
+                <a href="">Services</a>
+                <div class="nav-child">
+                    <a href="">Tech</a>
+                    <a href="">Sport</a>
+                    <a href="">Fashion</a>
+                </div>
+            </li>
+            <li><a href="">Contact</a</li>
+           </ul> 
+        </nav>
+    </header>
+    <main>
+        <section></section>
+        <aside></aside>
+    </main>
+    <footer>
+        code phần footer
+    </footer>
+
+   
+</body>
+</html>
