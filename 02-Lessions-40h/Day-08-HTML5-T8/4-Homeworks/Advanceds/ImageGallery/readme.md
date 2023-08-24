@@ -1,1 +1,0 @@
-Làm theo như demo: xem video ImageGallery.wmv
