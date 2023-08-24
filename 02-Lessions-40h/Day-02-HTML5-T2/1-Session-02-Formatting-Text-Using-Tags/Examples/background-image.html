@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<body>
+<!--
+    - background-clip: 
+        + Quyết định background color đổ từ ranh rới nào trong box model
+        + border-content | padding-box | border-box default
+    - background-origin: 
+        + Quyết định background image đổ từ ranh rới nào trong box model
+        + border-content | padding-box | border-box default
+    - background-position:
+    - background-repeat: 
+    - background-size: cách hiển thị size hình ảnh contain | cover
+        + contain: hình ko bị che khuất
+        + cover: hình chiếm trọn vùng chứa
+
+
+    -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #example {
+            display: flex;
+            column-gap: 10px;
+        }
+        #example>div{
+            width: 370px;
+            height: 370px;
+            border: 1px solid red;
+        }
+        .left { background-image: url('ire.png'); }
+        .right { background-image: none; }
+    </style>
+   
+    <div id="example">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

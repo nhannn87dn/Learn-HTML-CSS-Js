@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Cách cũ */
+        /* .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-width: 500px;
+        }
+        .card>.card-head {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .card>.card-head>.card-title {
+            padding: 0;
+            margin: 0;
+        }
+        .card>.card-body {
+            padding: 5px 10px;
+        }
+        .card>.card-footer {
+            border-top: 1px solid #ddd;
+            padding: 10px;
+        } */
+
+        /* Với Nesting */
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-width: 500px;
+            
+            /* 
+                Lồng các css theo sơ đồ gia phả CHA-CON
+                Cấp 2
+            */
+            .card-head {
+                border-bottom: 1px solid #ddd;
+                padding: 10px;
+                /* cấp 3 */
+                .card-title {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .card-body {
+                padding: 5px 10px;
+            }
+
+            .card-footer {
+                border-top: 1px solid #ddd;
+                padding: 10px;
+            }
+        }/* end .card */
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-head">
+            <h3 class="card-title">Title</h3>
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis nisi hic a voluptatem consequuntur quod nobis esse quibusdam exercitationem aut, suscipit libero recusandae illum excepturi sunt! In, vero ipsum.</p>
+        </div>
+        <div class="card-footer">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>

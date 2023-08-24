@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<body>
+<!--
+    - background-clip: 
+        + Quyết định background color đổ từ ranh rới nào trong box model
+        + border-content | padding-box | border-box default
+    - background-origin: 
+        + Quyết định background image đổ từ ranh rới nào trong box model
+        + border-content | padding-box | border-box default
+    - background-position:
+    - background-repeat: 
+    - background-size: cách hiển thị size hình ảnh contain | cover
+        + contain: hình ko bị che khuất
+        + cover: hình chiếm trọn vùng chứa
+
+
+    -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #example {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        #example>div{
+            width: 370px;
+            height: 370px;
+            border: 1px solid red;
+            background-image: url('ire.png');
+        }
+        .top-outer-left { background-repeat: repeat-x; }
+        .top-inner-left { background-repeat: repeat-y; }
+        .top-inner-right { background-repeat: repeat; }
+        .top-outer-right { background-repeat: space; }
+
+        .bottom-outer-left { background-repeat: round; }
+        .bottom-inner-left { background-repeat: no-repeat; }
+        .bottom-inner-right { background-repeat: space repeat; }
+        .bottom-outer-right { background-repeat: round space; }
+    </style>
+   
+    <div id="example">
+        <div class="top-outer-left">repeat-x</div>
+        <div class="top-inner-left">repeat-y</div>
+        <div class="top-inner-right">repeat</div>
+        <div class="top-outer-right">space</div>
+
+        <div class="bottom-outer-left">round</div>
+        <div class="bottom-inner-left">no-repeat</div>
+        <div class="bottom-inner-right">space repeat</div>
+        <div class="bottom-outer-right">round space</div>
+    </div>
+</body>
+</html>

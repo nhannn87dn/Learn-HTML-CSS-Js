@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <button id="get" type="button">GET</button>
+
+    <input type="text" name="title" id="title">
+    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    <button id="post" type="button">POST</button>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //Gọi API với phương thức AJAX GET
+        $("button#get").on('click', function(){
+            $.get('https://jsonplaceholder.typicode.com/users', function(data, status){
+                console.log(data, status);
+                let limit = data.length;
+                let html = '<ul>';
+                for (let index = 0; index < limit; index++) {
+                    html += `<li>ID: ${data[index].id} - Name: ${data[index].name}</li>`;
+                }
+                html += '</ul>';
+
+                $("#result").html(html);
+            });
+        });
+        
+        $("button#post").on('click', function(){
+
+            let title = $("#title").val();
+            let content = $("#content").val();
+
+            $.post('https://jsonplaceholder.typicode.com/posts',
+            {
+                title: title,
+                body: content,
+                userId: 1
+            }, 
+            function(data, status){
+                console.log(data, status);
+               
+            });
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" id="customer_form">
+        <input type="text" name="name" id="name">
+        <input type="email" name="email" id="email">
+        <input type="tel" name="mobile" id="mobile">
+        <input type="number" name="age" id="age">
+        <input type="text" name="address" id="address">
+        <label for="">
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label for="">
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <select name="province" id="province">
+            <option value="">Vui long chon</option>
+            <option value="ha-noi">Ha Noi</option>
+            <option value="da-nang">Da Nang</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $("#customer_form").submit(function(event){
+            event.preventDefault(); //=> Ngăn không cho form submit, để trang không bị F5
+
+            console.log('submit');
+
+            let name = $("#name").val();
+            //Để lấy radio / checkbox đã check
+            let gender = $("input[name='gender']:checked").val();
+
+
+            let province = $("#province").val();
+
+            console.log(name,gender,province);
+
+            //Kiểm tra all có được điền chưa
+
+            if(name === '' || gender === '' || province === ''){
+                alert('vui lòng điền đầy đủ thông tin')
+            }
+            else{
+
+                let user = {name, province, gender}; //object
+                //convert to json string
+                localStorage.setItem('user', JSON.stringify(user));
+
+            }
+        })
+
+    </script>
+</body>
+</html>
