@@ -3,7 +3,11 @@
 
 ## ✅ Heading là gì
 
-Thẻ Heading hay còn gọi là các thẻ H1, H2, H3, H4, H5, H6. Đây là thứ tự ưu tiên của các chuyên mục trong bài viết theo mức độ giảm dần từ H1 -> H6.
+Chữ "h" viết tắc của từ "headings" nghĩa là đề mục, hoặc tiêu đề.
+
+Sử dụng để định nghĩa tiêu đề cho nội dung HTML, giúp cho trình duyệt nhận biết được tiêu đề của một nội dung.
+
+Thẻ Heading có giá trị H1 đến H6. Đây là thứ tự ưu tiên của các chỉ mục trong bài viết theo mức độ giảm dần từ H1 -> H6.
 
 Thông thường có 3 thẻ được sử dụng nhiều nhất trong việc tối ưu website đó là H1, H2, H3. Các heading được dùng để nhấn mạnh nội dung của chính chủ đề đang được nói đến.
 
@@ -18,13 +22,19 @@ Thông thường có 3 thẻ được sử dụng nhiều nhất trong việc t�
 Cách sử dụng thẻ Heading
 
 ```html
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+<body>
+<h1>Đây là tiêu đề quan trọng nhất (lớn nhất)</h1>
+<h2>Đây là tiêu đề quan trọng thứ nhì (lớn thứ nhì)</h2>
+<h3>Đây là tiêu đề quan trọng thứ ba (lớn thứ ba)</h3>
+<h4>Đây là tiêu đề quan trọng thứ tư (lớn thứ tư)</h4>
+<h5>Đây là tiêu đề quan trọng thứ năm (lớn thứ năm)</h5>
+<h6>Đây là tiêu đề ít quan trọng nhất (nhỏ nhất)</h6>
+</body>
 ```
+
+Hiển thị ra trình duyệt
+
+![heading](img/heading.png)
 
 ## ✅ Định dạng text với các thẻ cơ bản
 
