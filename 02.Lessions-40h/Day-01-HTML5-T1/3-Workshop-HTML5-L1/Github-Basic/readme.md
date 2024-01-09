@@ -62,22 +62,31 @@ git config --global user.email "username@gmail.com"
    - Đặt tên cho repository, chọn các cài đặt khác (public/private) và nhấp vào nút "Create repository".
 
 ### IV. Các lệnh cơ bản của Git
+
+1. `git init`: Tạo kho lưu trữ cục bộ
 1. `git add <file>`: Thêm file vào staging area để chuẩn bị commit.
+1. `git add .`: Thêm tất cả các file vào staging area để chuẩn bị commit.
 2. `git commit -m "<message>"`: Tạo một commit với message mô tả thay đổi đã thực hiện.
 3. `git push`: Đẩy (push) các commit lên repository từ máy cục bộ lên repository trên máy chủ từ xa (ví dụ: GitHub).
 4. `git pull`: Lấy (pull) các commit mới nhất từ repository trên máy chủ từ xa về máy cục bộ.
 5. `git clone <url của repository>`: Sao chép (clone) một repository từ máy chủ từ xa về máy cục bộ.
 6. `git status`: Hiển thị trạng thái hiện tại của repository.
 7. `git log`: Hiển thị danh sách các commit đã thực hiện.
+8. `git remote add origin <url của repository>`: Tạo URL kết nối giữa máy chủ cục bộ và máy chủ từ xa
+9. `git remote set-url origin <url của repository>`: Thay đổi URL kết nối giữa máy chủ cục bộ và máy chủ từ xa
+10. `git remote -v` : Kiểm tra phiên bản URL hiện tại
 
 ## V. Các phương thức làm việc với nhánh (branching)
+
 1. `git branch`: Liệt kê các nhánh hiện có trong repository.
 2. `git branch <branch_name>`: Tạo một nhánh mới với tên là `<branch_name>`.
 3. `git checkout <branch_name>`: Chuyển đổi sang nhánh có tên là `<branch_name>`.
 
 4. `git merge <branch_name>`: Hợp nhất (merge) các thay đổi từ nhánh `<branch_name>` vào nhánh hiện tại.
 
-5. `git push origin <branch_name>`: Đẩy (push) một nhánh lên repository từ máy cục bộ lên máy chủ từ xa.
+5. `git push origin <branch_name>`: Đồng bộ thay đổi (push) một nhánh từ máy cục bộ lên máy chủ từ xa.
+
+6. `git pull origin <branch_name>`: Đồng bộ thay đổi (pull) một nhánh từ máy chủ từ xa xuống máy cục bộ.
 
 ## VI. Các quy trình làm việc với Git
 
