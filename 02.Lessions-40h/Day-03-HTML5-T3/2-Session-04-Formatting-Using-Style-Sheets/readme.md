@@ -1,4 +1,4 @@
-# Session 6 - Định dạng sử dụng CSS
+# Session 4 - Định dạng sử dụng CSS
 
 ## ⭐ 1.Kiểu chữ và Font chữ
 

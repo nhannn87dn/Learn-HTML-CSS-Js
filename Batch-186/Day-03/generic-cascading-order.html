@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /** universal selector */
+      * {
+        color: yellow;
+      }
+      /** ID selector */
+      #heading1 {
+        color: purple !important;
+      }
+      /** class selector */
+      .heading1 {
+        color: black;
+      }
+      /** tag name selector */
+      h1 {
+        color: blue;
+      }
+      h1 {
+        color: red;
+      }
+
+      /**
+        THỨ TỰ ƯU TIÊN
+        - Nếu cùng loại selector: Cái nào mà gần element hơn thì nó lấy
+        - Nếu cùng loại selector: thì lấy theo thứ tự tăng dần sau
+         1. universal
+         2. tag name
+         3. class
+         4. ID
+         5. Inline CSS
+         6. !important là cú pháp để cướp quyền ưu tiên
+      */
+    </style>
+  </head>
+  <body>
+    <h1 style="color: crimson" class="heading1" id="heading1">Hello CSS3</h1>
+  </body>
+</html>

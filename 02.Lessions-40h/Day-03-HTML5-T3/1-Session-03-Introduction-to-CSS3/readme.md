@@ -1,4 +1,4 @@
-# Session 5 - Introduction to CSS3
+# Session 3 - Introduction to CSS3
 
 git pull origin main
 
