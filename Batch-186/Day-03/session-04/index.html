@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        /* Đặt tên cho cái Font */
+        font-family: "UTM Rockwell";
+        /* Khai báo đường dẫn đến vị trí đặt font */
+        src: url("fonts/UTM-Rockwell.ttf") format("ttf");
+      }
+
+      .title {
+        color: red;
+        text-align: center;
+        /* text-decoration: line-through; */
+        font-weight: bold;
+        /* text-transform: lowercase; */
+        font-family: "Arial", sans-serif;
+        /*
+        Lấy font Aria có trên máy tính của người đang xem
+        để hiển thị.
+        nếu Aria ko có, thì nó lấy font tiếp theo sau nó
+        - Làm sao để cho tất cả mọi người đều hiển thị được font Roboto ?
+        + Import font vào code
+        + Import font từ google font
+        */
+      }
+      a {
+        text-decoration: none;
+        font-size: 40px;
+        font-style: italic;
+      }
+      .content {
+        text-indent: 40px;
+        word-spacing: 30px;
+      }
+      .heading1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+      }
+      .heading3 {
+        font-family: "UTM Rockwell", sans-serif;
+      }
+      .box {
+        border-top: 1px solid red;
+        border-bottom: 5px double red;
+        background-color: yellow;
+        width: 500px;
+        /*
+        border-top: viền bên trên
+        1px: độ dày
+        solid: kiểu đường viền
+        red: màu đường viền
+        */
+      }
+      .box_span {
+        border-top: 1px solid red;
+        background-color: blue;
+        width: 200px;
+        display: inline-block;
+      }
+      .box2 {
+        /* border-top: 1px solid blue;
+        border-right: 1px solid blue;
+        border-bottom: 1px solid blue;
+        border-left: 1px solid blue; */
+        /* cú pháp short hand */
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading1">This is Roboto Font</h1>
+    <h2 class="title">Học lập trình với HTML và CSS</h2>
+    <h3 class="heading3">Display UTM-Rockwell font</h3>
+    <a href="sdsd">link</a>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex
+      obcaecati nesciunt magnam consectetur ducimus explicabo maiores sit
+      provident eum minus ea culpa, corporis dolor possimus, aliquid laboriosam
+      nostrum quos!
+    </p>
+    <h2>Hình thức hiển thị của một thẻ HTML</h2>
+    <div class="box">
+      Đây là thẻ div <span class="box_span">Đây là span</span>
+    </div>
+    <p class="box2">Đây là thẻ p</p>
+  </body>
+</html>
