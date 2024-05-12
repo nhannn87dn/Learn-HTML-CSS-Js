@@ -11,6 +11,30 @@
 
 Công cụ chỉnh sửa ảnh Online: <https://pixlr.com>
 
+
+## 🌻 padding
+
+Tạo vùng đệm giữa phần nội dùng và border của element
+
+Syntax
+
+```css
+
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 1em;
+padding-bottom: 1em;
+
+/* Short Hand ==> Apply to all four sides */
+padding: 1em;
+/* top and bottom | left and right */
+padding: 5% 10%;
+/* top | left and right | bottom */
+padding: 1em 2em 2em;
+/* top | right | bottom | left */
+padding: 5px 1em 0 2em;
+```
+
 ## ⭐ 2. CSS3 Animation
 
 ### 2.1 Transition
