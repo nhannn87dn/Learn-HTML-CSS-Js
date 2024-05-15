@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.process_bar {
+    display: flex;
+    margin: 10px 0;
+}
+
+.process_bar .label {
+    width: 100px;
+}
+
+.process_bar>div {
+    color: #fff;
+}
+.process_bar>div.bar {
+    width: calc(100% - 100px);
+    display: flex;
+    background-color: #ddd;
+}
+.red_bar .label {
+    background-color: #E54D4C;
+    padding: 10px;
+}
+
+.red_bar .percent {
+    padding: 10px;
+    background-color: #F75354;
+}
+
+.cycan_bar .label {
+    background-color: #2DB8CD;
+    padding: 10px;
+}
+
+.cycan_bar .percent {
+    padding: 10px;
+    background-color: #31C8DD;
+}
