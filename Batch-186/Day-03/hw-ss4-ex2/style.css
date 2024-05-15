@@ -1,0 +1,42 @@
+.support_wrapper {
+    padding: 10px;
+    border: 1px solid #ddd
+}
+.support_wrapper ul {
+    padding: 0;
+    margin: 0;
+}
+.support_wrapper ul li {
+    display: inline-block;
+     width: 33%;
+   /* width: calc( 100% / 3); */
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.support_wrapper ul li:last-child {
+    border-right: none;
+}
+.support_wrapper ul li>div {
+    display: inline-block;
+    text-align: left;
+}
+/*
+Đi tìm thẻ div có class content, rồi tìm thẻ h3 bên trong nó
+*/
+.support_wrapper ul li>div.content h3{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.support_wrapper ul li>div.content p{
+    margin: 0;
+    padding: 0;
+}
+.support_wrapper ul li>div.icon{
+    margin-right: 10px;
+}
+.support_wrapper ul li>div.icon i{
+    font-size: 35px;
+}
