@@ -1,7 +1,5 @@
 # Session 3 - Introduction to CSS3
 
-git pull origin main
-
 CSS là chữ viết tắt của Cascading Style Sheets, nó là một ngôn ngữ được sử dụng để tìm và định dạng lại các phần tử được tạo ra bởi các ngôn ngữ đánh dấu (HTML). Nói ngắn gọn hơn là ngôn ngữ tạo phong cách cho trang web. Bạn có thể hiểu đơn giản rằng, nếu HTML đóng vai trò định dạng các phần tử trên website như việc tạo ra các đoạn văn bản, các tiêu đề, bảng,…thì CSS sẽ giúp chúng ta có thể thêm style vào các phần tử HTML đó như đổi bố cục, màu sắc trang, đổi màu chữ, font chữ, thay đổi cấu trúc…
 
 ## ⭐ Cú pháp CSS
@@ -24,6 +22,44 @@ h1 {
 Hiểu đơn giản CSS Selector là thứ cho phép bạn nhắm mục tiêu tới các phần tử HTML để áp dụng các thuộc tính CSS cho chúng.
 
 CSS Selector giống như là đường đẫn, chỉ định để cho CSS biết bạn đang muốn điều chỉnh, tạo kiểu cho phần tử HTML nào vậy.
+
+```html
+<style>
+    /*
+    Universal selector
+     */
+    * {
+        font-family: "Aria";
+    }
+    /*
+    Tô màu cho thẻ h1
+    Lấy chính tên thẻ để làm tên selector
+    ==> Gọi là: tag name selector
+    */
+    h1 {
+        color: red;
+    }
+    /*
+    Tô màu cho thẻ h1
+    Lấy chính giá trị của class làm tên selector
+    ==> Gọi là: class selector
+    */
+    .heading {
+        color: green;
+    }
+    /*
+    Tô màu cho thẻ h1
+    Lấy chính giá trị của ID làm tên selector
+    ==> Gọi là: class selector
+    */
+    #heading1 {
+        color: green;
+    }
+</style>
+<body>
+    <h1 id="heading1" class="heading">Hello Css </h1>
+</body>
+```
 
 Có 5 nhóm Selector cơ bản:
 
