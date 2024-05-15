@@ -99,7 +99,7 @@ Ví dụ xem ở Folder Examples của session 5
 | tag | 1 |
 | * | 0 |
 
-Khi bạn chống chéo cá Rule với nhau, cái nào nhiều điểm hơn thì Css của cái đó được ưu tiên.
+Khi bạn dùng nhiều các `selector` cùng một lúc với nhau, cái nào nhiều điểm hơn thì Css của cái đó được ưu tiên.
 
 Ví dụ: cùng một lúc thẻ `p` có đến 5 loại selector css áp dụng
 
