@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f3f3f3;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .form_item {
+        margin: 20px 0;
+      }
+      /* nhiều thẻ cùng dùng chung 1 kiểu css */
+      form input,
+      form select,
+      form textarea,
+      form button {
+        background-color: #fff;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        outline: none;
+      }
+      form input[type="submit"] {
+        background-color: #80c;
+        color: #fff;
+        cursor: pointer;
+      }
+      form input[type="submit"]:hover {
+        background-color: rgb(120, 1, 179);
+      }
+      form button {
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #f3f3f3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tạo Form trong HTML5</h1>
+      <p>Tạo form đăng ký</p>
+      <form action="">
+        <input type="hidden" name="user_id" value="123456" />
+        <div class="form_item">
+          <label>Name</label>
+          <input required="true" type="text" name="name" id="" />
+        </div>
+        <div class="form_item">
+          <label>Email</label>
+          <input
+            placeholder="Ví dụ: yourname@gmail.com"
+            type="email"
+            name="email"
+            id=""
+          />
+        </div>
+        <div class="form_item">
+          <label>Password</label>
+          <input
+            placeholder="mật khẩu tối thiểu 6 kí tự"
+            required
+            type="password"
+            name="password"
+            id=""
+          />
+        </div>
+        <div class="form_item">
+          <label>Số điện thoại</label>
+          <input type="tel" name="mobile" id="" />
+        </div>
+        <div class="form_item">
+          <label>Tuổi</label>
+          <input type="number" name="age" id="" />
+        </div>
+        <div class="form_item">
+          <label>Tỉnh/TP</label>
+          <select name="province">
+            <option value="1">Hà Nội</option>
+            <option value="2">Đà Nẵng</option>
+            <option value="3">TP Hồ chính minh</option>
+          </select>
+        </div>
+        <div class="form_item">
+          <label>Giới thiệu bản thân</label>
+          <textarea rows="10" cols="100" name="content" id=""></textarea>
+        </div>
+        <div class="form_item">
+          <label>Giới tính</label>
+          <div>
+            <label>
+              <input type="radio" name="gender" value="0" /> Bí mật
+            </label>
+
+            <label> <input type="radio" name="gender" value="1" /> Nam </label>
+            <label> <input type="radio" name="gender" value="2" /> Nữ </label>
+          </div>
+        </div>
+        <div class="form_item">
+          <label>Giới tính</label>
+          <div>
+            <label>
+              <input type="checkbox" name="sothich" value="sport" /> Sport
+            </label>
+            <label>
+              <input type="checkbox" name="sothich" value="movie" /> Movile
+            </label>
+          </div>
+        </div>
+        <div class="form_item">
+          <input type="submit" value="Register" />
+          <button type="button">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

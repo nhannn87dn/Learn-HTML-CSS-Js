@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f3f3f3;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      header {
+        min-height: 80px;
+      }
+      header h1 {
+        margin-bottom: 20px;
+      }
+      main {
+        min-height: 500px;
+        display: flex;
+        margin: 20px 0;
+      }
+      footer {
+        background-color: #212121;
+        min-height: 200px;
+        color: #fff;
+      }
+      main > aside {
+        width: 220px;
+        background-color: #ddd;
+      }
+      main > section {
+        width: calc(100% - 220px);
+      }
+
+      .navigation ul {
+        display: flex;
+        list-style: none;
+        column-gap: 20px;
+        background-color: #fff;
+        align-items: center;
+        height: 48px;
+      }
+      .navigation ul li {
+        position: relative;
+        height: 48px;
+      }
+      .navigation ul > li > a {
+        text-decoration: none;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 48px;
+      }
+      .navigation ul > li > a:hover {
+        color: #08c;
+      }
+
+      .navigation ul li.current a {
+        color: #08c;
+      }
+
+      .navigation ul li .child {
+        display: none;
+      }
+      .navigation ul li:hover .child {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: #fff;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: 48px;
+      }
+      .navigation ul li.has_child > a::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 5px solid #111;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+      .navigation ul li .child a {
+        display: block;
+        min-width: 120px;
+        text-decoration: none;
+        color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Header</h1>
+        <nav class="navigation">
+          <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li class="has_child">
+              <a href="#">Categories</a>
+              <div class="child">
+                <a href="#">Child 1 </a>
+                <a href="#">Child 2</a>
+                <a href="#">Child 3</a>
+                <a href="#">Child 4</a>
+              </div>
+            </li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <aside>sidebar</aside>
+        <section>
+          main content
+          <section>section con</section>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="container">footer</div>
+    </footer>
+  </body>
+</html>
