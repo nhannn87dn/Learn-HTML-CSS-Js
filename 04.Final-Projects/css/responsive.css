@@ -1,0 +1,110 @@
+
+@media screen and (max-width: 1025px) {
+    .container {
+        max-width: 100%;
+        width:100%;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+    .header-main {
+        flex-direction: column;
+    }
+    #page_index .section_one {
+        flex-direction: column-reverse;
+    }
+    #page_index .section_one_img, #page_index .section_one_content {
+        width: 100%;
+    }
+    #page_index .homeproduct {
+        padding: 0 10px;
+    }
+
+    #page_index .homeproduct li {
+        width: calc((100% - 40px) / 2);
+    }
+    #page_index .subscribe_form {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        margin: 30px 20px 0;
+    }
+    #page_index .subscribe_form>*{
+        width: calc((100% - 30px) / 2);
+    }
+    .footer-row {
+        flex-wrap: wrap;
+    }
+    .footer-row .footer-col {
+        width: 50%;
+    }
+
+    .main_wrapper {
+        flex-direction: column;
+    }
+    .main_wrapper>*{
+        width: 100% !important;
+    }
+    .main_wrapper .col_sidebar {
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width:480px) {
+    .sections {
+      padding: 30px 0;
+    }
+   .section_desc, .section_title, .section_subtitle_two, .section_subtitle  {
+    padding: 0 20px
+   }
+   .header-main {
+        flex-direction: row;
+            align-items: center;
+    }
+    #toggle_nav {
+        display: inline-flex;
+    }
+    #toggle_nav i{
+        color: #fff;
+        font-size: 22px;
+    }
+   .header-nav>ul {
+    display: none;
+   }
+   #page_index .homeproduct li {
+        width: 100%;
+    }
+    #page_index .homeproduct li .section_desc{
+        padding: 0;
+    }
+    #page_index .subscribe_form>* {
+        width: 100%;
+    }
+    .footer-row {
+        row-gap: 30px;
+    }
+    .footer-row .footer-col {
+        width: 100%;
+    }
+    #page_index .section_one_content {
+        padding: 40px 0 0 0;
+    }
+    #page_index .section_about_hotline {
+        padding: 0 20px;
+    }
+
+    #page_blog .article_list article {
+        flex-direction: column;
+    }
+    #page_blog .article_list article img,
+    #page_blog .article_list article .content{
+        width: 100%;
+    }
+    #page_blog .article_list article .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #page_blog .article_list article .section_desc {
+        padding: 0;
+    }
+
+
+}

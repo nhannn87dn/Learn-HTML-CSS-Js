@@ -13,9 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/global.local.css" />
-    <link rel="stylesheet" href="css/index.local.css" />
-    <link rel="stylesheet" href="css/responsive.local.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body id="page_index">
     <header>
@@ -26,8 +26,8 @@
           </div>
           <nav class="header-nav inline-flex">
             <ul class="flex">
-              <li ><a href="#">Home</a></li>
-              
+              <li><a href="#">Home</a></li>
+
               <li class="has-child actived">
                 <a href="blog.html">Blog</a>
                 <div class="nav-child">
@@ -39,14 +39,13 @@
               <li><a href="#">Shop</a></li>
               <li><a href="product.html">Product</a></li>
               <li><a href="#">About Us</a></li>
-              
             </ul>
             <div class="header-cart">
               <i class="fa fa-shopping-cart"></i>
               <span>0</span>
             </div>
           </nav>
-          
+
           <div id="toggle_nav">
             <i class="fa fa-bars"></i>
           </div>
@@ -172,9 +171,14 @@
           </p>
           <form class="subscribe_form flex" action="" method="GET">
             <input required type="text" placeholder="Your name" name="name" />
-            <input required type="text" placeholder="Your Mobile phone" name="mobile" />
             <input
-            required
+              required
+              type="text"
+              placeholder="Your Mobile phone"
+              name="mobile"
+            />
+            <input
+              required
               type="email"
               placeholder="Your email address"
               name="email"

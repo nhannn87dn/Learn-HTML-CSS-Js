@@ -1,0 +1,41 @@
+.main_wrapper {
+    align-items: center;
+    height: 100vh;
+}
+.login_wrapper {
+    max-width: 360px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login_wrapper h2{
+    display: block;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.login_wrapper input{
+    width: 100%;
+    padding: 12px 10px;
+    margin: 5px 0;
+}
+
+.login_wrapper button{
+    width: 100%;
+    padding: 12px 10px;
+    margin-top: 10px;
+}
+
+.login_wrapper .note{
+    margin-top: 20px;
+}
+
+.login_wrapper .term {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
