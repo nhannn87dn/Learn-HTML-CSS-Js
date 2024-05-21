@@ -28,7 +28,7 @@ Intro: <https://www.w3schools.com/js/js_versions.asp>
 
 ## 6. What Built-in Functions ?
 
-- alert(), confirm(), parseInt(), eval(), prompt()...
+- alert(), confirm(), parseInt(), eval(), prompt(), console.log...
 
 ## 7. JavaScript Events and Event Handlers
 

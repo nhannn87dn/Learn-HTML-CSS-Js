@@ -25,3 +25,9 @@ Với x, y là kết quả phép tính
 - Sử dụng hàm prompt() để lấy giá trị đầu vào của cho biến getInput
 - Kiểm tra xem getInput có phải là số không
 
+
+## Task 4
+
+- Sử dụng hàm confirm() để lấy kết quả xác nhận của người dùng.
+Bạn có muốn xóa không ?
+- In ra kết quả người dùng xác nhận ra cửa sổ console của trình duyệt,
