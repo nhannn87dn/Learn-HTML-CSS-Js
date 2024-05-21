@@ -10,27 +10,26 @@ Tạo một bảng với giao diện như hình dưới đây, để làm bảng
 
 ## Task 1: Thực hành lại kiến thức Javascript
 
-- Khai báo biến:
+1. Khai báo biến `myAge` bằng tuổi của bạn và in ra màn hình.
 
-- Có 2 biến a và b
-- Gán giá trị cho biến đó
-- Xuất ra màn hình / console giá trị của biến: a*b, a+b, a-b, a/b
-- Thay đổi giá trị của biến a, b thành giá trị khác
-- Xuất ra màn hình / console giá trị của biến: a*b, a+b, a-b, a/b
+1. Khai báo biến `myName` bằng tên của bạn và in ra màn hình.
+
+1. Khai báo biến `isStudent` để thể thiện bạn có phải là một sinh viên không. Nếu có cho giá trị `true` còn ngược lại `false`
+
+1. Khai báo biến `myGender`. Nếu là Name thì `true`, Nữ là `false` hoặc trường hợp còn lại là `null`
+
+1. Khai báo biến `myAddress` bằng địa chỉ nơi bạn ở.
+
+1. In ra màn hình dòng chữ dựa trên các biến mà bạn đã định nghĩa.
+ Ví dụ: Tôi tên là xxx,  tôi đã yyy tuổi, Nhà tôi ở zzz.
 
 ## Task 2
 
 - Sử dụng hàm prompt() để lấy giá trị đầu vào cho 2 biến x, y
 - Xuất ra màn hình / console giá trị của biến: x*y, x+y, x-y
 
+
 ## Task 3
 
-- Sử dụng HTML tạo ra một Button, sử dụng JavaScript để bắt sự kiện onclick và in ra màn hình console một message 'Bạn đã Click'
-
-## Task 4
-
-Có một sinh viên tên là Nguyễn Văn A, Tuổi là 20, Giới tính: True là Nam, False Nữ, Quê: Hà Nội.
-
-- Các bạn tạo biến để thể hiện thông tin trên.
-- Xuất ra màn hình / console giá trị của biến
-
+- Sử dụng hàm prompt() để lấy giá trị đầu vào là tên của bạn.
+- Xuất ra màn hình / console: Xin chào, [yourName] !
