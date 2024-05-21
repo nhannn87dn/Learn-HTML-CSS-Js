@@ -25,11 +25,11 @@ Tạo một bảng với giao diện như hình dưới đây, để làm bảng
 
 ## Task 2
 
-- Sử dụng hàm prompt() để lấy giá trị đầu vào cho 2 biến x, y
-- Xuất ra màn hình / console giá trị của biến: x*y, x+y, x-y
+- Sử dụng hàm `prompt()` để lấy giá trị đầu vào cho 2 biến x, y
+- Xuất ra màn hình `document.write` / `console` giá trị của biến: x*y, x+y, x-y
 
 
 ## Task 3
 
-- Sử dụng hàm prompt() để lấy giá trị đầu vào là tên của bạn.
-- Xuất ra màn hình / console: Xin chào, [yourName] !
+- Sử dụng hàm `prompt()` để lấy giá trị đầu vào là tên của bạn.
+- Xuất ra màn hình `document.write` / `console`: Xin chào, [yourName] !
