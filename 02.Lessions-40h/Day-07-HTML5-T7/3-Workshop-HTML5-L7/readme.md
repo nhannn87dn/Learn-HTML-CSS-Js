@@ -16,16 +16,18 @@
   - Nếu 7 hoặc 8 hôm nay là cuối tuần
   - Các trường hợp còn lại là không hợp lệ
 
+
+
 ## Task 3
 
-Cho một mảng sau:
+- Tạo ra một button Thêm vào giỏ hàng
+- Khi kích chuột lên nó hãy hiển thị một lới nhắn thông báo: "Bạn đã thêm vào giỏ hàng thành công !"
 
-```js
-let myArr = ['Thứ 2', 'Thứ y', 'Thứ 3', 'Thứ x', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
-```
 
-* Thêm vào mảng trên ngày: 'Chủ nhật' ở cuối mảng
-* Sửa ngày: `Thứ x` lại thành tên đúng là  `Thứ 4`
-* Xóa ngày `Thứ y` ra khỏi mảng trên.
-* Hiển thị danh sách các ngày trên ra màn hình.
+## Task 4
+
+- Tạo ra một Input có type là text
+- Khi nhập nội dung vào input này hãy bắt sự kiện người dùng nhấn phím onkeypress, onkeyup, onkeydown
+- Hiển thị ra console.log() nội dung tương ứng ý nghĩa của mỗi sự kiện trên
+(hoặc dễ hiểu hơn là khác nhau thế nào)
 
