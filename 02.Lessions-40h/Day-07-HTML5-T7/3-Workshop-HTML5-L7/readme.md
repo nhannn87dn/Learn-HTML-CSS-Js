@@ -22,9 +22,9 @@
 
 ## Task 4
 
-- Sử dụng prompt() để nhận đầu vào
+- Sử dụng prompt() để nhận đầu vào cho biến `day`
 - Cho các ngày trong tuần là 2,3,4,5,6,7,8  
-- Check xem số nhập vào:
+- Check xem `day`vừa nhập vào:
   - Nếu 2 hoặc 3 thì in ra hôm nay là đầu tuần
   - Nếu 4 hoặc 5 hoặc 6 thì in ra hôm nay là giữa tuần
   - Nếu 7 hoặc 8 hôm nay là cuối tuần
