@@ -151,24 +151,53 @@ console.log(false || false); // false
 
 ## ⭐ Regular Expression
 
-Regular Expression (hay còn gọi là regex hoặc regexp) là một chuỗi ký tự đặc biệt được sử dụng để tìm kiếm và khớp các mẫu trong các chuỗi văn bản. Nó cung cấp một cách mạnh mẽ và linh hoạt để thực hiện các tác vụ như tìm kiếm, thay thế, trích xuất thông tin, kiểm tra định dạng và xử lý dữ liệu.
+Doc: <https://www.w3schools.com/js/js_regexp.asp>
 
-JavaScript, cũng như nhiều ngôn ngữ lập trình khác, hỗ trợ sử dụng biểu thức chính quy thông qua đối tượng RegExp và các phương thức tương ứng như test(), exec(), match(), replace(), và search().
+Regular Expression (Regex) là một công cụ mạnh mẽ trong lập trình được sử dụng để tìm kiếm và xác định các mẫu (pattern) trong chuỗi ký tự. Regex cho phép bạn tạo ra các quy tắc linh hoạt để tìm kiếm, so khớp và thay thế các chuỗi dựa trên các tiêu chí nhất định.
 
-Ví dụ sử dụng biểu thức chính quy trong JavaScript:
+Cú pháp chung của một biểu thức chính quy trong JavaScript là `/pattern/`, trong đó `pattern` là mẫu bạn muốn tìm kiếm. Dưới đây là một số ký hiệu và ví dụ về cách sử dụng regex trong JavaScript:
 
-- <https://www.w3schools.com/js/js_regexp.asp>
-
-```js
-const regex = /hello/;
-const text = "Hello, world!";
-
-console.log(regex.test(text));    // true
-console.log(text.match(regex));   // ["hello"]
-console.log(text.replace(regex, "hi"));  // "Hi, world!"
+1. **Tìm một từ trong chuỗi**: Bạn có thể sử dụng regex để tìm kiếm một từ cụ thể trong một chuỗi.
+```javascript
+var str = "Hello, welcome to JavaScript.";
+var pattern = /welcome/;
+var result = str.match(pattern);
+console.log(result); // Output: ["welcome"]
 ```
 
-Biểu thức chính quy /hello/ trong ví dụ trên được sử dụng để tìm kiếm chuỗi "hello" trong văn bản "Hello, world!". Kết quả là true vì chuỗi "hello" được tìm thấy.
+2. **Tìm kiếm theo mẫu**: Regex cho phép bạn tìm kiếm các ký tự hoặc chuỗi theo một mẫu cụ thể.
+```javascript
+var str = "Hello, 12345 is a number.";
+var pattern = /\d+/;
+var result = str.match(pattern);
+console.log(result); // Output: ["12345"]
+```
+
+3. **So khớp một nhóm ký tự**: Regex cho phép bạn so khớp với một nhóm ký tự cụ thể bằng cách sử dụng các ký hiệu như `[]`.
+```javascript
+var str = "Hello, my name is John.";
+var pattern = /[aeiou]/;
+var result = str.match(pattern);
+console.log(result); // Output: ["e", "o", "a", "e", "i", "o"]
+```
+
+4. **Thay thế các chuỗi**: Regex cũng cho phép bạn thay thế các chuỗi dựa trên một mẫu.
+```javascript
+var str = "Hello, my name is John.";
+var pattern = /John/;
+var result = str.replace(pattern, "Alice");
+console.log(result); // Output: "Hello, my name is Alice."
+```
+
+5. **Kiểm tra định dạng Email**: Regex rất hữu ích để kiểm tra xem một chuỗi có phù hợp với định dạng email hay không.
+```javascript
+var email = "example@example.com";
+var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var isValid = pattern.test(email);
+console.log(isValid); // Output: true
+```
+
+Trên đây chỉ là một số ví dụ đơn giản về cách sử dụng regex trong JavaScript. Regex rất mạnh mẽ và linh hoạt, cho phép bạn tạo ra các mẫu phức tạp hơn để tìm kiếm, so khớp và thay thế các chuỗi theo nhu cầu của bạn.
 
 ## ⭐ if Statement
 
