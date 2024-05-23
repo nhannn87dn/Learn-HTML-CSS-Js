@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: yellow;
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="console.log('Bạn đa submit form')" action="">
+      <input
+        onkeyup="console.log('bạn vừa nhấn phím')"
+        placeholder="username"
+        name="username"
+        type="text"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <div
+      onmouseleave="console.log('Da da roi khoi the div')"
+      onmouseover="console.log('Bạn đã rê chuột lên div')"
+      class="box"
+    >
+      box
+    </div>
+    <button onclick="addToCart()">Add to Cart</button>
+    <script>
+      function addToCart() {
+        console.log("<<=== 🚀 addToCart ===>>");
+      }
+    </script>
+  </body>
+</html>

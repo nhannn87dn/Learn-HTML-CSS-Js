@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Biểu thức chính quy
+      //VD1: Kiểm tra xem số điện thoại đã cho
+      //có bắt đầu = số 0, đủ 10 chữ số ko.
+      const mobile = "0988777666";
+      const pattern = /^0([0-9]+){9}/;
+      const result = pattern.exec(mobile);
+      console.log(result);
+
+      //check định dạng email
+      const regexEmail =
+        /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+      const resultEmail = regexEmail.test("nhan@softech.vn");
+      console.log(resultEmail);
+
+      //Check mật khẩu đủ mạnh
+      const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+      /* 
+        /^
+        (?=.*\d)          // should contain at least one digit
+        (?=.*[a-z])       // should contain at least one lower case
+        (?=.*[A-Z])       // should contain at least one upper case
+        [a-zA-Z0-9]{8,}   // should contain at least 8 from the mentioned characters
+        $/
+        */
+      const resultPassword = regexPassword.test("demo123456");
+      console.log(resultPassword);
+    </script>
+  </body>
+</html>
