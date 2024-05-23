@@ -80,7 +80,45 @@ Cho một biến danh sách hãng xe hơi
 
 ```
 
-Hãy hiển thị danh sách hãng xe ra màn hình bằng thẻ ul li với document.write và console.log()
+Hãy hiển thị danh sách hãng xe ra màn hình bằng thẻ ul li với `document.write` và `console.log()`
+
+
+## Task 8 - Tạo và truy cập mảng
+
+1. Tạo một mảng chứa tên của năm thành phố.
+2. In ra tên của thành phố đầu tiên và cuối cùng trong mảng.
+
+
+## Task 9 - Thêm và xóa phần tử trong mảng
+
+1. Tạo một mảng chứa các số từ 1 đến 5.
+2. Thêm số 6 vào cuối mảng.
+3. Thêm số 0 vào đầu mảng.
+4. Xóa phần tử đầu tiên và phần tử cuối cùng của mảng.
+5. In ra mảng kết quả.
+
+
+## Task 10 - Duyệt và thao tác trên mảng
+
+1. Tạo một mảng chứa các số nguyên từ 1 đến 10.
+2. Sử dụng vòng lặp để tính tổng các số trong mảng.
+3. In ra tổng các số trong mảng.
 
 
 
+## Task 11 - Sử dụng phương thức mảng
+
+1. Tạo một mảng chứa các chuỗi ký tự: "apple", "banana", "cherry", "date".
+2. Sử dụng phương thức mảng để:
+   - Sắp xếp mảng theo thứ tự bảng chữ cái.
+   - Tìm phần tử "cherry" trong mảng và in ra chỉ số của nó.
+   - Tạo một mảng mới chứa các phần tử từ chỉ số 1 đến chỉ số 3 của mảng ban đầu.
+
+
+
+## Task 12 - Sử dụng phương thức `map`, `filter`, `reduce`
+
+1. Tạo một mảng chứa các số từ 1 đến 10.
+2. Sử dụng phương thức `map` để tạo một mảng mới mà mỗi phần tử là bình phương của phần tử trong mảng gốc.
+3. Sử dụng phương thức `filter` để tạo một mảng mới chỉ chứa các số chẵn từ mảng gốc.
+4. Sử dụng phương thức `reduce` để tính tổng các phần tử trong mảng gốc.
