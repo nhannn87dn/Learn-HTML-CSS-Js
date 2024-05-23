@@ -14,7 +14,36 @@
 - Nếu Cancle Hủy thì hiển thị console.log: "Không xóa"
 
 
-## Task 3 - Tìm hiểu về Mảng
+## Task 3
+
+Cho biết anh Nguyễn Văn A, quê ở Đà Nẵng, 45 tuổi. Đợt 30/4 rồi anh ta có đi Bana Hill chơi cùng với con trai 6 tuổi. Giá vé cho người Đà Nẵng là 350.000/1 người lớn, 200.000/ 1 trẻ em trên 5 tuổi.
+
+Trong vai trò là người lập trình phần mềm bán vé. Hãy code cách thức tính tiền thanh toán cho nghiệp vụ nói trên.
+
+Gợi ý:
+
+- Đặt các biến cần thiết
+- Dùng if để kiểm tra, và dùng các toán tử toán học để tính toán.
+
+
+## Task 4 - Bill tính tiền
+
+**Yêu cầu:**
+
+- Tính huống thực tế có một danh sách sản phẩm khách hàng đã mua: 
+
+    + Áo bull Size M, 2 sản phẩm, giá 160.000đ
+    + Áo khoác gió NorthFace Size L, 1 sản phẩm - giá 
+    600.000đ
+    + Quần Jean Nam Size 30 , 1 sản phẩm, giá 350.
+    
+- Hãy Dùng mảng và vòng lặp để code thể hiện đơn hàng trên
+- In ra màn hình sách sản phẩm với kiểu table (Dùng `document.write()`)
+- Tạo thêm cột thành tiền cho từng dòng bằng số lượng x đơn  giá
+- In giá trị tổng tiền vào cuối bill
+
+
+## Task 5 - Tìm hiểu về Mảng
 
 * Định nghĩa một mảng đơn giản gồm 5 phần tử là số từ 1 - 5
 * Hiển thị ra console giá trị phần từ đầu tiên trong mảng trên
@@ -33,7 +62,7 @@
 */
 ```
 
-## Task 4 - Mảng với cú pháp ES6
+## Task 6 - Mảng với cú pháp ES6
 
 * Bước 1: Định nghĩa một mảng gồm 5 hãng xe hơi mà bạn biết và in kết quả ra console
 * Bước 2: Bạn hãy thay đổi tên hãng xe xếp thứ 2 trong mảng bạn vừa định nghĩa ở bước 1 và in kết quả ra console
@@ -42,7 +71,7 @@
 
 
 
-## Task 5 - Render danh sách
+## Task 7 - Render danh sách
 
 Cho một biến danh sách hãng xe hơi
 
@@ -55,18 +84,3 @@ Hãy hiển thị danh sách hãng xe ra màn hình bằng thẻ ul li với doc
 
 
 
-## Task 5 - Bill tính tiền
-
-**Yêu cầu:**
-
-- Tính huống thực tế có một danh sách sản phẩm khách hàng đã mua: 
-
-    + Áo bull Size M, 2 sản phẩm, giá 160.000đ
-    + Áo khoác gió NorthFace Size L, 1 sản phẩm - giá 
-    600.000đ
-    + Quần Jean Nam Size 30 , 1 sản phẩm, giá 350.
-    
-- Hãy Dùng mảng và vòng lặp để code thể hiện đơn hàng trên
-- In ra màn hình sách sản phẩm với thẻ table ra thẻ div#result
-- Tạo thêm cột thành tiền cho từng dòng bằng số lượng x đơn  giá
-- In giá trị tổng tiền vào cuối bill
