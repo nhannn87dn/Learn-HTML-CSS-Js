@@ -22,6 +22,12 @@
 
 ## Task 4
 
+- Sử dụng prompt() để nhận đầu vào hai số x, y
+- Tính các phép tính: x + y, x - y, x * y, x / y, x % y
+- In ra màn hình hoặc console.log lần lượt các kết quả các phép tính trên.
+
+## Task 5
+
 - Sử dụng prompt() để nhận đầu vào cho biến `day`
 - Cho các ngày trong tuần là 2,3,4,5,6,7,8  
 - Check xem `day`vừa nhập vào:
