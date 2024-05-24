@@ -1,4 +1,4 @@
-# Bài tập về toán tử
+# Bài tập về IF
 
 ## Bài tập 1
 
