@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = prompt("Nhập vào giá trị cho biến x");
+      let y = prompt("Nhập vào giá trị cho biến y");
+      /*
+        isNaN kiểm tra giá trị ko phải là số
+      */
+      if (!isNaN(x) && !isNaN(y)) {
+        x = parseInt(x);
+        y = parseInt(y);
+
+        console.log("x + y", x + y);
+      } else {
+        alert("Vui long nhap vao mot so nguyen");
+      }
+    </script>
+  </body>
+</html>

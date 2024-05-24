@@ -1,46 +1,35 @@
-# Bài tập cơ bản
+# Bài tập về toán tử
+
 
 ## Task 1
 
-* Sử dụng hàm prompt() để lấy giá trị đầu vào cho 2 biến username, password.
-* Kiểm tra nếu username bằng `aptech`, và password bằng `38yenbai` thì hiển thị ra console lời nhắn: "Bạn đã đăng nhập thành công", các trường hợp còn lại "Username hoặc mật khẩu không hợp lệ"
+Bài 4: Viết chương trình in ra màn hình như sau:
 
-
+```
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+```
 
 ## Task 2
 
-- Sử dụng HTML tạo ra một button có tên là Delete, sử dụng JavaScript để bắt sự kiện onclick, hiển thị hộp thoại xác nhận với lời nhắn: "Bạn có chắc chắn muốn xóa record này không ?"
-- Kiểm tra kết quả xác nhận: Nếu OK xóa thì, hiển thị console "Đã xóa"
-- Nếu Cancle Hủy thì hiển thị console.log: "Không xóa"
+Viết chương trình in ra bản cửu chương 2 đến 9
 
-
-## Task 3
-
-Cho biết anh Nguyễn Văn A, quê ở Đà Nẵng, 45 tuổi. Đợt 30/4 rồi anh ta có đi Bana Hill chơi cùng với con trai 6 tuổi. Giá vé cho người Đà Nẵng là 350.000/1 người lớn, 200.000/ 1 trẻ em trên 5 tuổi.
-
-Trong vai trò là người lập trình phần mềm bán vé. Hãy code cách thức tính tiền thanh toán cho nghiệp vụ nói trên.
-
-Gợi ý:
-
-- Đặt các biến cần thiết
-- Dùng if để kiểm tra, và dùng các toán tử toán học để tính toán.
-
-
-## Task 4 - Bill tính tiền
-
-**Yêu cầu:**
-
-- Tính huống thực tế có một danh sách sản phẩm khách hàng đã mua: 
-
-    + Áo bull Size M, 2 sản phẩm, giá 160.000đ
-    + Áo khoác gió NorthFace Size L, 1 sản phẩm - giá 
-    600.000đ
-    + Quần Jean Nam Size 30 , 1 sản phẩm, giá 350.
-    
-- Hãy Dùng mảng và vòng lặp để code thể hiện đơn hàng trên
-- In ra màn hình sách sản phẩm với kiểu table (Dùng `document.write()`)
-- Tạo thêm cột thành tiền cho từng dòng bằng số lượng x đơn  giá
-- In giá trị tổng tiền vào cuối bill
+```
+1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+1 x 4 = 4
+1 x 5 = 5
+1 x 6 = 6
+1 x 7 = 7
+1 x 8 = 8
+1 x 9 = 9
+1 x 10 = 10
+```
 
 
 ## Task 5 - Tìm hiểu về Mảng
