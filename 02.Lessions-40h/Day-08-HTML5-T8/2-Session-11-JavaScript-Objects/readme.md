@@ -101,11 +101,121 @@ Dưới đây là một số Browser Objects quan trọng và chức năng chín
 
 1. **Document Object**: Đối tượng Document đại diện cho cấu trúc HTML hiện tại và cho phép truy cập và thao tác các phần tử HTML trên trang.
 
-```javascript
-// Truy cập và thay đổi nội dung của một phần tử
-var element = document.getElementById("myElement");
-element.innerHTML = "New content";
+
+**Ví dụ  1: Lấy và thiết lập nội dung của phần tử**
+
+1. Tạo một tập tin HTML với một phần tử `<p>` có id là `myParagraph`.
+2. Sử dụng JavaScript để lấy nội dung hiện tại của phần tử này và in ra console.
+3. Thiết lập nội dung mới cho phần tử này.
+
+**HTML:**
+
+```html
+  <p id="myParagraph">Đây là đoạn văn ban đầu.</p>
+  <script>
+    // Lấy phần tử theo id
+  let paragraph = document.getElementById('myParagraph');
+
+  // Lấy nội dung hiện tại của phần tử
+  console.log('Nội dung ban đầu:', paragraph.innerText); // Đây là đoạn văn ban đầu.
+
+  // Thiết lập nội dung mới cho phần tử
+  paragraph.innerText = 'Nội dung đã được thay đổi.';
+
+  console.log('Nội dung mới:', paragraph.innerText); // Nội dung đã được thay đổi.
+    </script>
+
 ```
+
+
+**Ví dụ 2: Lấy và thiết lập thuộc tính**
+
+1. Tạo một tập tin HTML với một hình ảnh (`<img>`) có id là `myImage`.
+2. Sử dụng JavaScript để lấy giá trị của thuộc tính `src` của hình ảnh này và in ra console.
+3. Thiết lập giá trị mới cho thuộc tính `src` của hình ảnh này.
+
+```html
+    <img id="myImage" src="old-image.jpg" alt="Old Image">
+    <script>
+    // Lấy phần tử theo id
+  let image = document.getElementById('myImage');
+
+  // Lấy giá trị của thuộc tính src
+  console.log('Thuộc tính src ban đầu:', image.src); // old-image.jpg
+
+  // Thiết lập giá trị mới cho thuộc tính src
+  image.src = 'new-image.jpg';
+
+  console.log('Thuộc tính src mới:', image.src); // new-image.jpg
+    </script>
+
+```
+
+**Ví dụ 3: Thêm và xóa lớp CSS**
+
+1. Tạo một tập tin HTML với một phần tử `<div>` có id là `myDiv`.
+2. Sử dụng JavaScript để thêm một lớp CSS mới vào phần tử này.
+3. Sau đó, xóa lớp CSS vừa thêm ra khỏi phần tử.
+
+**HTML:**
+
+```html
+  <div id="myDiv">Đây là một div.</div>
+  <script>
+    // Lấy phần tử theo id
+let div = document.getElementById('myDiv');
+
+// Thêm lớp CSS mới
+div.classList.add('highlight');
+console.log('Lớp CSS hiện tại:', div.className); // highlight
+
+// Xóa lớp CSS vừa thêm
+div.classList.remove('highlight');
+console.log('Lớp CSS sau khi xóa:', div.className); // (rỗng)
+  </script>
+```
+
+
+**Ví dụ 4:**
+
+1. Tạo một tập tin HTML với một phần tử `<ul>` có id là `myList`.
+2. Sử dụng JavaScript để tạo một phần tử `<li>` mới và chèn nó vào danh sách `<ul>`.
+
+**HTML:**
+
+```html
+  <ul id="myList">
+      <li>Phần tử 1</li>
+      <li>Phần tử 2</li>
+  </ul>
+    <script>
+    // Lấy phần tử theo id
+  let list = document.getElementById('myList');
+
+  // Tạo phần tử <li> mới
+  let newItem = document.createElement('li');
+
+  // Thiết lập nội dung cho phần tử <li> mới
+  newItem.innerText = 'Phần tử mới';
+
+  // Chèn phần tử <li> mới vào danh sách <ul>
+  list.appendChild(newItem);
+
+  console.log('Nội dung danh sách sau khi chèn:');
+  list.querySelectorAll('li').forEach(item => console.log(item.innerText));
+  // Phần tử 1
+  // Phần tử 2
+  // Phần tử mới
+    </script>
+```
+Ngoài cách bạn sử dụng `document.getElementById` bạn có thể sử dụng:
+
+```javascript
+let list = document.querySelector('#myList'); //Selector ID
+let list = document.querySelector('.myList'); //Selector Class
+let list = document.querySelector('div'); // Tag selector
+```
+
 
 2. **Window Object**: Đối tượng Window đại diện cho cửa sổ trình duyệt và cung cấp các phương thức để tương tác với cửa sổ và trang web.
 
