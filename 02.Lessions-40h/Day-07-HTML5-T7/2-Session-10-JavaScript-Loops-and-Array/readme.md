@@ -7,6 +7,8 @@
 - Why use Array ?
 - Working with Array: <https://www.w3schools.com/js/js_arrays.asp>
 - Array Method: <https://www.w3schools.com/js/js_array_methods.asp>
+- Array Search: <https://www.w3schools.com/js/js_array_search.asp>
+- Array sort: <https://www.w3schools.com/js/js_array_sort.asp>
 - Array iteration: <https://www.w3schools.com/js/js_array_iteration.asp>
 
 Trong JavaScript, mảng (array) là một cấu trúc dữ liệu được sử dụng để lưu trữ và xử lý một tập hợp các giá trị theo thứ tự. Mảng có thể chứa các giá trị của bất kỳ kiểu dữ liệu nào, bao gồm số, chuỗi, đối tượng, mảng khác và thậm chí là hàm.

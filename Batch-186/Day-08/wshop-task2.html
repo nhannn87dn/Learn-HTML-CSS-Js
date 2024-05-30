@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="biena" placeholder="a" type="text" name="a" />
+
+    <select id="pheptinh" name="op">
+      <option value="add">Cộng</option>
+      <option value="subtract">Trừ</option>
+      <option value="multiply">Nhân</option>
+      <option value="divide">Chia</option>
+    </select>
+    <input id="bienb" placeholder="b" type="text" name="b" />
+    <button onclick="cal()">Tính kết quả</button> <span id="result">...</span>
+
+    <script>
+      function cal() {
+        console.log("clicked");
+        //Lấy các giá trị từ input
+        let a = parseInt(document.querySelector("#biena").value);
+        let b = parseInt(document.querySelector("#bienb").value);
+        let pheptinh = document.querySelector("#pheptinh").value;
+        console.log("<<=== 🚀 a ===>>", a);
+        console.log("<<=== 🚀 b ===>>", b);
+        console.log("<<=== 🚀 pheptinh ===>>", pheptinh);
+
+        let kq = 0;
+        if (pheptinh === "add") {
+          kq = a + b;
+        } else if (pheptinh === "subtract") {
+          kq = a - b;
+        }
+        //... các phép tính còn lại
+        console.log("<<=== 🚀 kq ===>>", kq);
+        //gán xuống
+        document.querySelector("#result").innerHTML = kq;
+      }
+    </script>
+  </body>
+</html>

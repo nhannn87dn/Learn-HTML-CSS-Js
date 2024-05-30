@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const product = [
+        { id: 1, name: "Iphone 14" },
+        { id: 2, name: "Iphone 15" },
+      ];
+      //1.localStorage
+      //1.1 Lưu thông tin xuống localStorage
+      //localStorage.setItem("name", "Mạnh");
+      //chấp nhận kiểu dữ liệu string
+      //localStorage.setItem("age", 18);
+
+      //localStorage.setItem("isStudent", true);
+      //localStorage.setItem("product", JSON.stringify(product));
+
+      //1.2 lấy thông tin từ localStorage lên
+      //const name = localStorage.getItem("name");
+      //console.log("<<=== 🚀 name ===>>", name);
+      //const isStudent = localStorage.getItem("isStudent");
+      //console.log("<<=== 🚀 isStudent ===>>", typeof isStudent);
+
+      //const getProduct = localStorage.getItem("product");
+      //console.log("<<=== 🚀  getProduct===>>", JSON.parse(getProduct));
+
+      //1.3 Xóa 1 key trong localStorage
+      //localStorage.removeItem("product");
+      //1.4 Xóa tất cả các key trong localStorage
+      //localStorage.clear();
+
+      //////////////////////////////////////////////////
+      //2.sessionStorage
+      //2.1 lưu xuống
+      //sessionStorage.setItem("name", "Hiệp");
+      //sessionStorage.setItem("age", 18);
+      //2.2 lấy lên
+      const name = sessionStorage.getItem("name");
+      console.log("<<=== 🚀 name ===>>", name);
+      //DBIndexStorage
+    </script>
+  </body>
+</html>

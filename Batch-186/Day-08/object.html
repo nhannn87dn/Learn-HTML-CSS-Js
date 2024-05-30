@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Cách định 1 object
+        */
+      //Cách 1: Object Literal:
+      const student = {
+        name: "Nguyen văn a",
+        age: 18,
+        email: "a@gmail.com",
+        maSinhVien: "ABC",
+        //... rất nhiều thuộc tính khác
+      };
+      /*
+      trong ví dụ trên
+      name => được gọi là key (trường /thuộc tính)
+      Nguyen văn a => được gọi là value (giá trị)
+      */
+
+      //Cách truy cập đến phần tử của object
+      //Ví dụ: In ra tên của sinh viên trên
+      console.log(student.name); //dựa vào key để lấy
+      console.log(student.email);
+      //hoặc
+      const objKey = "age";
+      console.log(student[objKey]); //in ra là 18
+
+      //Đếm số lượng phần tử có trong object
+      console.log(Object.keys(student).length);
+      //Thêm một phần tử vào object
+      console.log(student);
+      student.gender = "male"; //key gender chưa tồn tại trước đó
+      console.log(student);
+      //Thay đổi giá trị của phần tử trong object
+      //Ví dụ: thay đỏi mã sv thành SV123
+      student.maSinhVien = "SV123"; //lấy key cũ (đã tồn tại), gán giá trị mới
+      console.log(student);
+      //Xóa phần tử trong object
+      delete student.gender;
+      console.log(student);
+      //hoặc
+      const { gender, ...newStudent } = student;
+      console.log("newStudent", newStudent);
+
+      //Sử dụng  vòng lặp for in cho object
+      //Để lặp qua tất cả các phần tử của nó
+      for (key in student) {
+        console.log(key); //
+        console.log(student[key]); //lấy ra được giá trị của phần tử
+        //dựa vào key
+      }
+      /**
+      for in duyệt qua key của phần tử trong object
+      */
+    </script>
+  </body>
+</html>

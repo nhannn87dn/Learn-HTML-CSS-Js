@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        cách khai báo mảng 
+        1. giá trị của các phần tử trong mảng:
+         number, string, boolean, null, undefined, array...
+         2. Mảng như bên dưới => mảng 1 chiều
+         3. Mỗi phần tử của mảng được đánh index, bắt đầu là 0
+        */
+      let arr = [1, "Softech", true, false];
+      /* Các phương thức thao tác với m ảng */
+      //1. .length ==> lấy độ dài của mảng
+      console.log(arr.length);
+      //2. toString() --> chuyển mảng thành chuỗi
+      console.log(arr.toString());
+      //3. Thêm một phần tử vào mảng
+      arr[4] = "Phần tử thứ 5"; //thêm phần tử dựa vào index
+      console.log(arr);
+      arr.push("Phần tử thứ 6"); //thêm phần tử vào cuối mảng
+      console.log(arr);
+      //4. join(). Nối các giá trị của mảng thành một chuỗi
+      console.log(arr.join(" - "));
+
+      //* Truy cập đến phần tử của mảng */
+      //Ví dụ: lấy ra giá trị Softech
+      console.log("phần tử có index 1", arr[1]); //dựa vào index của phần tử trong mảng
+      //Thay đối giá trị của một phần tử trong mảng
+      //Ví dụ: đổi giá trị false => 'Hello Array'
+      arr[3] = "Hello Array"; //lấy giá trị dựa vào index, sau đó gán = giá trị mới
+      console.log(arr);
+      /* Xóa phần tử trong mảng */
+      //Xóa phần tử cuối cùng trong mảng
+      arr.pop();
+      console.log(arr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/**
+File global.css
+Chỉ chứa những style dùng chung cho
+tất cả các trang
+
+*/
+
+:root{
+    /* tone màu chính */
+    --main-color: #ff6700;
+    /* tone màu phụ */
+    --second-color: #303442;
+    --text-color: #7a7a7a
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    column-gap: 20px;
+}
+
+header nav ul li>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    background-color: #212121;
+    padding: 50px 0;
+    color: #a8a8a8;
+}
+.footer-bottom {
+    border-top: 1px solid #313438;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.footer-top .footer-item{
+    width: calc(100% / 4);
+}
+.footer-top .footer-item .footer-title{
+    color: #fff;
+    text-transform: uppercase;
+}
