@@ -31,6 +31,7 @@ sayHello(); // Output: "Hello!"
 ```
 
 2. **Hàm có tham số và không trả về giá trị**:
+
 ```javascript
 function greet(name) {
   console.log(`Hello, ${name}!`);
@@ -40,6 +41,7 @@ greet("John"); // Output: "Hello, John!"
 ```
 
 3. **Hàm có tham số và trả về giá trị**:
+
 ```javascript
 function add(a, b) {
   return a + b;
@@ -50,6 +52,7 @@ console.log(result); // Output: 7
 ```
 
 4. **Hàm vô danh (Anonymous Function)**:
+
 ```javascript
 var multiply = function(a, b) {
   return a * b;
@@ -60,6 +63,7 @@ console.log(result); // Output: 10
 ```
 
 5. **Hàm nặc danh (Arrow Function)** (ES6):
+
 ```javascript
 var divide = (a, b) => a / b;
 
@@ -68,6 +72,7 @@ console.log(result); // Output: 5
 ```
 
 6. **Hàm callback**:
+
 ```javascript
 function fetchData(callback) {
   // Mô phỏng việc lấy dữ liệu từ máy chủ
