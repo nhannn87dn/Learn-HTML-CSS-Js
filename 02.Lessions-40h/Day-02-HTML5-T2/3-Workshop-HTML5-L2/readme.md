@@ -13,22 +13,22 @@ I am i Heading 4
 Chuyển nội dung sau sang kiểu danh sách có kí tự đầu dòng như bên dưới và Định dạng text với các thẻ tương tương ứng.
 
 ```html
-- I am Bold tag
+- Làm cho tôi  có in đậm
 ```
 Ví dụ:
 
 ```html
 <ul>
-    <li>I am <b>Bold</b> tag</li>
+    <li>Làm cho tôi  có in  <b>đậm</b></li>
 </ul>
 ```
 
 ```html
-- I am Strong tag
-- I am Delete tag
-- I am Underline tag
-- I am Italic tag
-- I am Small tag
+- Làm cho tôi có chữ đậm mạnh hơn b
+- Làm cho tôi có gạch ngang
+- Làm cho tôi có gạch chân
+- Làm cho tôi in ngiêng
+
 ```
 
 ## Task 2: Hiển thị một công thức toán học như sau
