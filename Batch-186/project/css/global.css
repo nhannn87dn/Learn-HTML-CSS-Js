@@ -30,6 +30,61 @@ a{
     text-decoration: none;
     color: #111;
 }
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+select,
+textarea {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+}
+.select-options {
+    display: inline-flex;
+    position: relative;
+}
+.select-options::after {
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    content: '';
+    height: 5px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 5px;
+    z-index: 2;
+}
+button, .btn {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    appearance: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -39,6 +94,10 @@ a{
 header {
     background-color: var(--main-color);
     padding: 20px 0;
+    /* position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%; */
 }
 .flex {
     display: flex;
@@ -77,4 +136,93 @@ footer{
 .footer-top .footer-item .footer-title{
     color: #fff;
     text-transform: uppercase;
+}
+/* Mặc định icon toogle mobile ẩn trên các thiết bị khác ngoại trừ mobile */
+#toggle-mobile {
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px){
+    .container {
+        padding: 0 20px;
+        overflow: hidden;
+    }
+}
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 425px){
+    
+    .footer-top {
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .footer-top .footer-item {
+        width: calc((100% - 30px) / 2);
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 425px){
+    
+    header {
+        position: relative;
+    }
+    .navigation>ul{
+        display: none;
+    }
+    .navigation>ul.show{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 62px;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, .3) ;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+   
+    header nav ul li>a{
+        color: #111;
+    }
+
+    #toggle-mobile {
+        display: block;
+    }
+    #toggle-mobile>span::before,
+    #toggle-mobile>span::after,
+    #toggle-mobile>span{
+        width: 30px;
+        height: 2px;
+        display: inline-block;
+        background-color: #fff;
+    }
+    #toggle-mobile>span{
+        position: relative;
+    }
+    #toggle-mobile>span::before,
+    #toggle-mobile>span::after{
+        content: "";
+        position: absolute;
+    }
+    #toggle-mobile>span::before {
+        top: -6px
+    }
+
+    #toggle-mobile>span::after {
+        bottom: -6px
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+        column-gap: 0;
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .footer-top .footer-item {
+        width: 100%;
+    }
 }

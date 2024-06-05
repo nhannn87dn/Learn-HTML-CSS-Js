@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: #111;
+      }
+      /* 1204px < Desktop Full HD */
+
+      /* 768px < Desktop */
+      @media screen and (min-width: 768px) {
+        h1 {
+          color: orangered;
+        }
+      }
+
+      /* 575px < Tablet <= 768px */
+      @media screen and (max-width: 768px) and (min-width: 575px) {
+        h1 {
+          color: blue;
+        }
+      }
+      /* Mobile <= 575px */
+      @media screen and (max-width: 575px) {
+        h1 {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello breakpoints</h1>
+    <!-- <div class="only-desktop">Only Desktop</div>
+    <div class="only-tablet">Only Tablet</div>
+    <div class="only-mobile">Only Mobile</div> -->
+  </body>
+</html>

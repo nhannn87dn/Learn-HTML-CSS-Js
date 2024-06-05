@@ -4,27 +4,48 @@
 
 Định dạng tiêu đề Heading tương ứng với các dòng nội dung sau:
 
-- I am i Heading 1
-- I am i Heading 2
-- I am i Heading 3
-- I am i Heading 4
-
+```
+I am i Heading 1
+I am i Heading 2
+I am i Heading 3
+I am i Heading 4
+```
 Chuyển nội dung sau sang kiểu danh sách có kí tự đầu dòng như bên dưới và Định dạng text với các thẻ tương tương ứng.
 
 ```html
-✓ I am Bold tag
-✓ I am Strong tag
-✓ I am Delete tag
-✓ I am Underline tag
-✓ I am Italic tag
-✓ I am Small tag
+- I am Bold tag
+```
+Ví dụ:
+
+```html
+<ul>
+    <li>I am <b>Bold</b> tag</li>
+</ul>
 ```
 
-## Task 2: Tạo một danh sách từ 1 - 10 bài hát mà bạn yêu thích
+```html
+- I am Strong tag
+- I am Delete tag
+- I am Underline tag
+- I am Italic tag
+- I am Small tag
+```
 
-- Đánh số từ 1 - 10
+## Task 2: Hiển thị một công thức toán học như sau
 
-## Task 3: Sử dụng kiến thức session 3, 4
+```
+x + y = 5
+x + 6 = 8
+```
+
+## Task 3: Hiển thị câu châm ngôn
+
+```
+"Không ai khéo bắt chuyện với người khác hơn kẻ sắp mượn tiền bạn !"
+Jack Ma
+```
+
+## Task 4: Sử dụng kiến thức session 3, 4
 
 Tao ra một nội dung là một danh sách bằng thẻ `ol` và `li` các yêu cầu cần làm như sau: 
 
