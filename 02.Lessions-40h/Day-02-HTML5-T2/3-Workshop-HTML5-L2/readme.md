@@ -10,25 +10,22 @@ I am i Heading 2
 I am i Heading 3
 I am i Heading 4
 ```
+
 Chuyển nội dung sau sang kiểu danh sách có kí tự đầu dòng như bên dưới và Định dạng text với các thẻ tương tương ứng.
 
 ```html
-- Làm cho tôi  có in đậm
+- Làm cho tôi có in đậm
 ```
+
 Ví dụ:
 
 ```html
-<ul>
-    <li>Làm cho tôi  có in  <b>đậm</b></li>
-</ul>
+<p>- Làm cho tôi có in <b>đậm</b></p>
 ```
 
 ```html
-- Làm cho tôi có chữ đậm mạnh hơn b
-- Làm cho tôi có gạch ngang
-- Làm cho tôi có gạch chân
-- Làm cho tôi in ngiêng
-
+- Làm cho tôi có chữ đậm mạnh hơn b - Làm cho tôi có gạch ngang - Làm cho tôi có
+gạch chân - Làm cho tôi in ngiêng
 ```
 
 ## Task 2: Hiển thị một công thức toán học như sau
@@ -47,7 +44,7 @@ Jack Ma
 
 ## Task 4: Sử dụng kiến thức session 3, 4
 
-Tao ra một nội dung là một danh sách bằng thẻ `ol` và `li` các yêu cầu cần làm như sau: 
+Tao ra một nội dung là một danh sách bằng thẻ `ol` và `li` các yêu cầu cần làm như sau:
 
 Tiêu đề: Danh sách yêu cầu (dùng thẻ `h1`)
 
