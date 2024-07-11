@@ -11,7 +11,7 @@ I am i Heading 3
 I am i Heading 4
 ```
 
-Chuyển nội dung sau sang kiểu danh sách có kí tự đầu dòng như bên dưới và Định dạng text với các thẻ tương tương ứng.
+Định dạng text dưới đây với các thẻ tương tương ứng.
 
 ```html
 - Làm cho tôi có in đậm
@@ -23,9 +23,11 @@ Ví dụ:
 <p>- Làm cho tôi có in <b>đậm</b></p>
 ```
 
-```html
-- Làm cho tôi có chữ đậm mạnh hơn b - Làm cho tôi có gạch ngang - Làm cho tôi có
-gạch chân - Làm cho tôi in ngiêng
+```code
+- Làm cho tôi có chữ đậm mạnh hơn b
+- Làm cho tôi có gạch ngang
+- Làm cho tôi có gạch chân
+- Làm cho tôi in ngiêng
 ```
 
 ## Task 2: Hiển thị một công thức toán học như sau
