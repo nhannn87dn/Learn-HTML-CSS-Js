@@ -53,12 +53,11 @@ Tiêu đề: Danh sách yêu cầu (dùng thẻ `h1`)
 1. An HTML link, using an absolute URL
 2. An HTML link, using a relative URL
 3. Changing the color of an HTML link
-4. Removing the underline from HTML links
-5. Setting the target of an HTML link
-6. Using an HTML image as a link
-7. HTML links: using a bookmark
-8. An HTML a mailto link
-9. An HTML a mailto link with a subject
-10. An HTML a skype chat link
-11. An HTML a skype call link
-12. An HTML a zalo chat link
+4. Setting the target \_blank of an HTML link
+5. Using an HTML image as a link
+6. HTML links: using a bookmark
+7. An HTML a mailto link
+8. An HTML a mailto link with a subject
+9. An HTML a skype chat link
+10. An HTML a skype call link
+11. An HTML a zalo chat link

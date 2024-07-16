@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Tạo và deploy ứng dụng React App lên Github ECShop Lab2 năm trước4002 lượt
+    xem Bài viết hướng dẫn bạn cách tạo và deploy ứng dụng React lên Github một
+    cách cụ thể và nhanh chóng Chuẩn bị môi trường cho dự án Để thực hiện được
+    như trong bài viết này bạn phải cài đặt môi trường làm việc cho dự án - Cài
+    đặt NodeJs - Git cho Windows - Visual Studio Code để quản lí code dự án Tạo
+    ứng dụng React sử dụng - Bạn tạo một thư mục ReactApp rồi kéo thả vào
+    workspace của Visual Studio Code - Tiếp theo, bạn mở Terminal trên Visual
+    Studio Code bằng cách chọn View \ Terminal Đến đây, bạn đã có thể sử dụng
+    câu lệnh ngay trên Visual Studio Code. Khởi tạo project Tại Terminal Bạn sử
+    dụng câu lệnh sau để tạo mới một project create-react-app: $ npx
+    create-react-app app-name Trong đó, app-name là tên project mà bạn muốn đặt.
+    Để xem nó hoạt động như nào, bạn các chạy lệnh sau: # Di chuyển đến vị trí
+    bên trong thư mục chứa project $ cd app-name # Tạo server $ npm start Deploy
+    ứng dụng React lên Github Pages Có 5 bước để deploy ứng dụng React lên
+    Github Pages như sau: Bước 1:Tạo Github repository trên Github, giả sử đường
+    dẫn của dự án là: https://github.com/nhannn87dn/app-name.git Bước 2:Đồng bộ
+    ứng dụng React ở local lên Github repository thông qua các câu lệnh sau: #
+    Tạo mới git repository $ git init # Thêm tất cả các file vào git $ git add .
+    # Commit sự thay đổi $ git commit -m 'initial commit' # Add remote đến
+    Github repository mà bạn đã tạo $ git remote add origin
+    https://github.com/nhannn87dn/app-name.git # Push các file lên Github $ git
+    push origin -u master Bước 3:Cài đặt gh-pages sử dụng npm: $ npm install
+    --save gh-pages Bước 4:Cập nhật file package.json: package.json { "name":
+    "app-name", "version": "0.1.0", "private": true, "homepage":
+    "https://nhannn87dn.github.io/app-name/", "dependencies": { "gh-pages":
+    "^2.0.1", "react": "^16.4.2", "react-dom": "^16.4.2", "react-scripts":
+    "1.1.5" }, "scripts": { "predeploy": "npm run build", "deploy": "gh-pages -d
+    build", "start": "react-scripts start", "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom", "eject": "react-scripts eject" } }
+    Trong đó: homepage:Là địa chỉ của ứng dụng sau khi được deploy, có dạng:
+    https://[your-user-name].github.io/[your-repo-name]/ predeploy: định nghĩa
+    câu lệnh để build ứng dụng trước khi deploy. deploy:định nghĩa câu lệnh để
+    deploy ứng dụng. Bước 5:Chạy câu lệnh sau để deploy ứng dụng: $ npm run
+    deploy Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút,
+    rồi truy cập vào địa chỉ đã định nghĩa ở phần homepage trên để kiểm tra
+    thành quả của mình, ví dụ: https://nhannn87dn.github.io/app-name/ Lời kết
+    Trên đây là những bước cơ bản để tạo và deploy ứng dụng React lên Github
+    Pages với create-react-app mà mình đã thực hiện thành công
+  </body>
+</html>
