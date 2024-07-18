@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <bod>
+    <div class="header">Header</div>
+    <h1>Hello CSs3 <span>Tôi là span</span></h1>
+    <h2>Cần dùng font Lato</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+      laudantium velit perspiciatis vel harum tenetur ratione? Eveniet nemo,
+      natus officia in illo voluptatibus consequatur molestias itaque. Sapiente
+      tempore dicta libero.
+    </p>
+    <style>
+      .level1>li>span{
+        color: red;
+      }
+    </style>
+    <ul class="level1">
+      <li><span>1</span></li>
+      <li>
+        <span>2</span>
+        <ul class="level2">
+          <li><span>2.1</span></li>
+          <li><span>2.2</span></li>
+        </ul>
+      </li>
+      <li><span>3</span></li>
+      <li><span>4</span></li>
+      <li><span>5</span></li>
+      <li><span>6</span></li>
+    </ul>
+    <style>
+
+      .wrapper .left {
+        display: inline-block;
+        width: 49%;
+        box-sizing: border-box;
+      }
+      .wrapper .right {
+        display: inline-block;
+        width: 49%;
+        box-sizing: border-box;
+        
+      }
+    </style>
+    <div class="wrapper">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+  </body>
+</html>
