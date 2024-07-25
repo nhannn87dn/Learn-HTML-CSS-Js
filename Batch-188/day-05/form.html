@@ -21,6 +21,18 @@
           />
         </div>
         <div class="form_item">
+          <label for="only">Only</label>
+          <input
+            readonly
+            maxlength="160"
+            required
+            value="ready value"
+            id="only"
+            type="text"
+            name="only"
+          />
+        </div>
+        <div class="form_item">
           <label for="email">Email</label>
           <input
             placeholder="Vd: yourname@gmail.com"
@@ -107,7 +119,7 @@
         <input type="hidden" name="id" value="123" />
         <div class="form_actions">
           <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button disabled type="reset">Reset</button>
         </div>
       </form>
     </div>
