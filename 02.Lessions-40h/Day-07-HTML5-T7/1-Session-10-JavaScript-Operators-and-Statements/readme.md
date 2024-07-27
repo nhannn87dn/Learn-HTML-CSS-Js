@@ -10,7 +10,7 @@ Dưới đây là một bảng thể hiện các toán tử số học trong Jav
 | ------- | --------------- | ----------------------- |
 | +       | Cộng            | 5 + 3 (8)               |
 | -       | Trừ             | 5 - 3 (2)               |
-| \*      | Nhân            | 5 * 3 (15)              |
+| \*      | Nhân            | 5 \* 3 (15)             |
 | /       | Chia            | 6 / 3 (2)               |
 | %       | Chia lấy dư     | 7 % 3 (1)               |
 | ++      | Tăng một đơn vị | let a = 5; a++; (a = 6) |
@@ -23,14 +23,14 @@ Ví dụ sử dụng các toán tử số học trong JavaScript:
 let a = 5;
 let b = 3;
 
-console.log(a + b);      // 8
-console.log(a - b);      // 2
-console.log(a * b);      // 15
-console.log(a / b);      // 1.6666666666666667
-console.log(a % b);      // 2
-console.log(++a);        // 6 (tăng giá trị của a lên 1 đơn vị)
-console.log(--b);        // 2 (giảm giá trị của b xuống 1 đơn vị)
-console.log(2 ** 3);     // 8 (2 lũy thừa 3)
+console.log(a + b); // 8
+console.log(a - b); // 2
+console.log(a * b); // 15
+console.log(a / b); // 1.6666666666666667
+console.log(a % b); // 2
+console.log(++a); // 6 (tăng giá trị của a lên 1 đơn vị)
+console.log(--b); // 2 (giảm giá trị của b xuống 1 đơn vị)
+console.log(2 ** 3); // 8 (2 lũy thừa 3)
 ```
 
 Lưu ý rằng các toán tử số học thường áp dụng cho các giá trị số trong JavaScript. Khi sử dụng các toán tử số học với các giá trị không phải số, JavaScript sẽ cố gắng chuyển đổi chúng thành số nếu có thể.
@@ -56,14 +56,14 @@ Ví dụ sử dụng các toán tử so sánh trong JavaScript:
 const a = 5;
 const b = 3;
 
-console.log(a == b);   // false
-console.log(a === '5');  // false
-console.log(a != b);   // true
-console.log(a !== '5'); // true
-console.log(a > b);    // true
-console.log(a < b);    // false
-console.log(a >= 5);   // true
-console.log(b <= 3);   // true
+console.log(a == b); // false
+console.log(a === "5"); // false
+console.log(a != b); // true
+console.log(a !== "5"); // true
+console.log(a > b); // true
+console.log(a < b); // false
+console.log(a >= 5); // true
+console.log(b <= 3); // true
 ```
 
 Lưu ý rằng `==` so sánh giá trị của hai biến mà không quan tâm đến kiểu dữ liệu, trong khi `===` so sánh cả giá trị và kiểu dữ liệu. Khi làm việc với kiểu dữ liệu nguyên thủy (primitive types) như số, chuỗi, boolean, thì thường nên sử dụng `===` để tránh nhầm lẫn và có kết quả chính xác hơn.
@@ -87,14 +87,14 @@ Ví dụ sử dụng các toán tử logic trong JavaScript:
 const a = true;
 const b = false;
 
-console.log(a && b);       // false
-console.log(a || b);       // true
-console.log(!a);           // false
+console.log(a && b); // false
+console.log(a || b); // true
+console.log(!a); // false
 
 const value = null;
 const defaultValue = "Default Value";
 
-console.log(value ?? defaultValue);  // "Default Value"
+console.log(value ?? defaultValue); // "Default Value"
 ```
 
 Toán tử `&&` trả về `true` nếu cả hai toán hạng đều đúng, ngược lại trả về `false`. Toán tử `||` trả về `true` nếu một trong hai toán hạng đúng, trả về `false` nếu cả hai đều sai. Toán tử `!` trả về giá trị đảo ngược của toán hạng (nếu là `true` thì trả về `false` và ngược lại).
@@ -102,7 +102,6 @@ Toán tử `&&` trả về `true` nếu cả hai toán hạng đều đúng, ng�
 Toán tử `??` được sử dụng để xác định giá trị mặc định trong trường hợp toán hạng bên trái là `null` hoặc `undefined`. Nếu toán hạng bên trái không phải là `null` hoặc `undefined`, toán tử `??` trả về giá trị của toán hạng bên trái. Nếu toán hạng bên trái là `null` hoặc `undefined`, toán tử `??` trả về giá trị của toán hạng bên phải.
 
 Lưu ý rằng toán tử `&&`, `||`, và `!` thường được sử dụng để kiểm tra và điều khiển luồng điều khiển trong các biểu thức điều kiện và câu lệnh rẽ nhánh.
-
 
 ### Toán tử `&&` (Và)
 
@@ -116,9 +115,9 @@ Lưu ý rằng toán tử `&&`, `||`, và `!` thường được sử dụng đ�
 Ví dụ:
 
 ```javascript
-console.log(true && true);   // true
-console.log(true && false);  // false
-console.log(false && true);  // false
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
 console.log(false && false); // false
 ```
 
@@ -134,12 +133,11 @@ console.log(false && false); // false
 Ví dụ:
 
 ```javascript
-console.log(true || true);   // true
-console.log(true || false);  // true
-console.log(false || true);  // true
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
 console.log(false || false); // false
 ```
-
 
 ### 4. Assignment operators
 
@@ -158,6 +156,7 @@ Regular Expression (Regex) là một công cụ mạnh mẽ trong lập trình �
 Cú pháp chung của một biểu thức chính quy trong JavaScript là `/pattern/`, trong đó `pattern` là mẫu bạn muốn tìm kiếm. Dưới đây là một số ký hiệu và ví dụ về cách sử dụng regex trong JavaScript:
 
 1. **Tìm một từ trong chuỗi**: Bạn có thể sử dụng regex để tìm kiếm một từ cụ thể trong một chuỗi.
+
 ```javascript
 var str = "Hello, welcome to JavaScript.";
 var pattern = /welcome/;
@@ -166,6 +165,7 @@ console.log(result); // Output: ["welcome"]
 ```
 
 2. **Tìm kiếm theo mẫu**: Regex cho phép bạn tìm kiếm các ký tự hoặc chuỗi theo một mẫu cụ thể.
+
 ```javascript
 var str = "Hello, 12345 is a number.";
 var pattern = /\d+/;
@@ -174,6 +174,7 @@ console.log(result); // Output: ["12345"]
 ```
 
 3. **So khớp một nhóm ký tự**: Regex cho phép bạn so khớp với một nhóm ký tự cụ thể bằng cách sử dụng các ký hiệu như `[]`.
+
 ```javascript
 var str = "Hello, my name is John.";
 var pattern = /[aeiou]/;
@@ -182,6 +183,7 @@ console.log(result); // Output: ["e", "o", "a", "e", "i", "o"]
 ```
 
 4. **Thay thế các chuỗi**: Regex cũng cho phép bạn thay thế các chuỗi dựa trên một mẫu.
+
 ```javascript
 var str = "Hello, my name is John.";
 var pattern = /John/;
@@ -190,6 +192,7 @@ console.log(result); // Output: "Hello, my name is Alice."
 ```
 
 5. **Kiểm tra định dạng Email**: Regex rất hữu ích để kiểm tra xem một chuỗi có phù hợp với định dạng email hay không.
+
 ```javascript
 var email = "example@example.com";
 var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -198,6 +201,8 @@ console.log(isValid); // Output: true
 ```
 
 Trên đây chỉ là một số ví dụ đơn giản về cách sử dụng regex trong JavaScript. Regex rất mạnh mẽ và linh hoạt, cho phép bạn tạo ra các mẫu phức tạp hơn để tìm kiếm, so khớp và thay thế các chuỗi theo nhu cầu của bạn.
+
+---
 
 ## ⭐ if Statement
 
@@ -212,10 +217,10 @@ if (condition) {
   // Mã thực thi khi điều kiện là đúng (true)
 }
 ```
+
 Khi `condition` trả về `TRUE` thì khối lệnh bên trong cặp ngoặc `{}` sẽ được THỰC THI.
 
-
-Ví dụ: 
+Ví dụ:
 
 ```js
 const num = 10;
@@ -229,7 +234,6 @@ if (num > 0) {
 
 Cú pháp cơ bản của câu lệnh if else như sau:
 
-
 ```js
 if (condition) {
   // Mã thực thi khi điều kiện là đúng (true)
@@ -242,7 +246,7 @@ Khi `condition` trả về `TRUE` thì khối lệnh bên trong cặp ngoặc `{
 
 Khi `condition` trả về `FALSE` thì khối lệnh bên trong cặp ngoặc `{}` của `if` sẽ được BỎ QUA và khối lệnh bên trong `{}` của `else` sẽ được THỰC THI
 
-Ví dụ: 
+Ví dụ:
 
 ```js
 const num = 10;
@@ -256,8 +260,7 @@ if (num > 0) {
 
 ### If else if và else
 
-
-Ví dụ: 
+Ví dụ:
 
 ```js
 const num = 10;
@@ -277,18 +280,21 @@ Là một cú pháp rút gọn hơn về cách code của if else
 
 ```js
 let sex = 0;
-if(sex === 0){
-  let sexLabel = 'Nữ'
-}else{
-  let sexLabel = 'Nam'
+if (sex === 0) {
+  let sexLabel = "Nữ";
+} else {
+  let sexLabel = "Nam";
 }
 ```
+
 Thì với 3 ngôi ==> nó ngắn gọn hơn:
 
 ```js
-  let sex = 0;
-  let sexLabel = sex === 0 ? "Nữ" : 'Nam';
+let sex = 0;
+let sexLabel = sex === 0 ? "Nữ" : "Nam";
 ```
+
+---
 
 ## ⭐ switch-case
 
@@ -308,7 +314,7 @@ switch (expression) {
     // Mã thực thi khi expression có giá trị bằng value3
     break;
   default:
-    // Mã thực thi khi expression không bằng bất kỳ giá trị case nào
+  // Mã thực thi khi expression không bằng bất kỳ giá trị case nào
 }
 ```
 
@@ -342,12 +348,17 @@ switch (fruit) {
 }
 ```
 
-Trong ví dụ trên, chúng ta sử dụng câu lệnh `switch-case` để kiểm tra giá trị của biến `fruit`. 
+Trong ví dụ trên, chúng ta sử dụng câu lệnh `switch-case` để kiểm tra giá trị của biến `fruit`.
 
-- Nếu `fruit` là `"apple"`, câu lệnh `console.log("Đây là quả táo")` sẽ được thực thi. 
-- Nếu `fruit` là `"banana"`, câu lệnh `console.log("Đây là quả chuối")` sẽ được thực thi. 
-- Nếu `fruit` là `"orange"`, câu lệnh `console.log("Đây là quả cam")` sẽ được thực thi. 
+- Nếu `fruit` là `"apple"`, câu lệnh `console.log("Đây là quả táo")` sẽ được thực thi.
+- Nếu `fruit` là `"banana"`, câu lệnh `console.log("Đây là quả chuối")` sẽ được thực thi.
+- Nếu `fruit` là `"orange"`, câu lệnh `console.log("Đây là quả cam")` sẽ được thực thi.
 - Nếu `fruit` không khớp với bất kỳ giá trị case nào, câu lệnh `console.log("Không biết quả này là gì")` sẽ được thực thi.
 
-
 Lưu ý rằng switch-case chỉ phù hợp khi bạn cần so sánh giá trị cụ thể của biểu thức và không thích hợp cho việc kiểm tra các biểu thức phức tạp hoặc điều kiện logic phức tạp. Trong những trường hợp đó, câu lệnh if-else có thể là lựa chọn tốt hơn.
+
+---
+
+## ⭐ Vòng lặp và Mảng
+
+Xem [tại đây](../2-Session-10-JavaScript-Loops-and-Array/readme.md)
