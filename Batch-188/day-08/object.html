@@ -1,0 +1,55 @@
+<script>
+  let student_json = '{"name": "nguyen van a", "age": 18}';
+  //Cách 1:
+  let student = {}; // object, rỗng
+  student = {
+    name: "nguyen van a",
+    age: 18,
+    mobile: "098877766",
+    email: "mail@gmail.com",
+    isStudent: true,
+    address: {
+      street: "38 yen bai",
+      district: "hai chau",
+      provice: "da nang",
+      country: "vietnam",
+    },
+    getFullName: function () {},
+  };
+
+  //1. Truy cap vao phan tu cua object
+  console.log(student.email);
+  //2. Đếm số lượng phần tử
+  console.log(Object.keys(student).length);
+  //3. Thay đổi giá trị của một phần tử
+  student.isStudent = false; //gán lại giá trị
+  console.log(student);
+  //4.Thêm mới phần tử vào object
+  student.gender = "male";
+  console.log(student);
+
+  //Cach 2: Constructor function
+  /*
+  function Student(name, age, gender, code) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.code = code;
+  }
+  let studentA = new Student("A", 18, "nam", "SVA", "a@gmail.com");
+  console.log(studentA);
+  let studentB = new Student("B", 12, "Nu", "SVB");
+
+  let svA = {
+    name: 'nva',
+    age: 12
+  }
+
+  let svB = {
+    name: 'nvb',
+    age: 12,
+    email: 'dsd',
+    mobile: true
+  }
+    */
+</script>

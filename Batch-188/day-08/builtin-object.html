@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="head head2" id="heading">Hello <b>Object</b></h1>
+    <img
+      id="myImage"
+      src="https://cdn.tgdd.vn/content/phonne-24x24.png"
+      alt="Old Image"
+    />
+    <input id="num" type="text" value="0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      let h1_content = $("#heading").html();
+      console.log(h1_content);
+      //DOM
+      //let h1 = document.getElementsByTagName("h1");
+      let h1 = document.querySelector("#heading");
+      console.log(h1.innerText);
+      console.log(h1.classList);
+      console.log(h1.id);
+      h1.style.color = "red";
+      h1.style.backgroundColor = "yellow";
+
+      let img = document.querySelector("#myImage");
+      console.log(img.src, img.alt);
+      img.alt = "alt mới";
+
+      let input = document.querySelector("#num");
+      console.log(input.value);
+      input.value = 123;
+    </script>
+  </body>
+</html>

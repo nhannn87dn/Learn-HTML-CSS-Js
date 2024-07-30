@@ -1,0 +1,49 @@
+<script>
+  /* 1. Hàm ko có tham số */
+  function log() {
+    console.log("Câu lệnh 1");
+    console.log("Câu lệnh 2");
+    console.log("Câu lệnh 3");
+  }
+  //Gọi hàm --> để thực thi câu lệnh bên trong khối
+  log();
+  /* 2. Hàm có tham số */
+  function sayHello(name, age) {
+    console.log("Xin chào: ", name, age);
+  }
+  //Gọi hàm có tham số
+  sayHello("Tuấn", 18);
+  // Tại sao là cần đến hàm ?
+
+  function tinhTong(number_one, number_two) {
+    tong = number_one + number_two;
+    console.log(tong);
+  }
+
+  tinhTong("5", "2");
+  tinhTong(6, 4);
+  tinhTong(8, 3);
+
+  /* 3. Hàm có return */
+  function tinhTongV2(number_one, number_two) {
+    console.log("tinhTongV2 đang chạy");
+    tong = number_one + number_two;
+    return tong;
+    //Khi nào thì dùng return ?
+    //Khi bạn cần tính toán logic --> sau trả về một kết quả
+  }
+
+  //gọi hàm
+  const kq = tinhTongV2(6, 4);
+  console.log("kq", kq);
+
+  const first_name = "nguyen";
+  const last_name = "nhan";
+
+  // Mong muốn có được một định dạng full_name:
+  function getFullname(firstName, lastName) {
+    return firstName + " " + lastName;
+  }
+  const fname = getFullname("nguyen", "nhan");
+  console.log(fname);
+</script>
