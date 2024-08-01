@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        id: 1,
+        name: "iphone 16 ",
+        price: 8000,
+      };
+      //chuyen object thanh chuoi JSON
+      //const productJSON = JSON.stringify(product);
+      //localStorage.setItem("product", productJSON);
+
+      const getProduct = localStorage.getItem("product");
+      const object_product = JSON.parse(getProduct); // json to object
+      console.log(object_product.price);
+
+      //1. Luu thong in
+      //localStorage.setItem("name", "Nhan");
+      //localStorage.setItem("age", "36");
+
+      //2. Lay thong tin
+      //const name = localStorage.getItem("name");
+      //const age = localStorage.getItem("age");
+      //console.log(name, age);
+      //3. xoa 1 key
+      //localStorage.removeItem("age");
+      //4. xoa all
+      //localStorage.clear();
+    </script>
+  </body>
+</html>

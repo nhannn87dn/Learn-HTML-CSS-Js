@@ -1,0 +1,67 @@
+.product_list {
+    column-gap: var(--product-gap);
+}
+
+.product_list .item{
+    width: calc((100% - var(--product-gap)*4) / 5);
+    background-color: #fff;
+    position: relative;
+}
+.product_list .item a{
+    display: block;
+    padding: 20px;
+}
+.product_list .item a:hover{
+    color: var(--dark-color);
+}
+.product_list .item .product-name{
+    margin: 15px 0;
+    font-weight: normal;
+}
+.product_list .item .promo-price{
+    font-size: 18px;
+}
+.product_list .item .product-price del{
+    color: #666;
+    font-size: 12px;
+}
+.product-price del:after,
+.product-price strong:after {
+    content: "₫";
+}
+
+.product_list .item .product-thumb{
+    overflow: hidden;
+}
+.product_list .item .product-thumb img{
+    width: 100%;
+    height: auto;
+}
+.product_list .item .tags-list {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: flex;
+    column-gap: 5px;
+}
+
+.product_list .item .tags-list span{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.product_list .item .tags-list span.tag_best {
+    background-color: #fbdddd;
+    color: #eb5757;
+}
+.product_list .item .tags-list span.tag_tragop {
+    background-color: #C9E4FD;
+    color: #6E9AC4;
+}
+/* custom item for flash sale */
+#flash-sale .product_list .item {
+    width: calc((100% - var(--product-gap)*3) / 4);
+}

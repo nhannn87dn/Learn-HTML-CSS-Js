@@ -1,0 +1,35 @@
+main{
+    margin: 20px 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+.card {
+    display: block;
+}
+
+.section-title {
+    margin: 30px 0;
+}
+
+#article_list {
+    margin: 30px 0;
+}
+.article_list {
+    column-gap: 20px;
+}
+.article_tiele {
+    font-weight: normal;
+}
+.article_item {
+    width: calc((100% - 60px) / 4);
+}
+
+.article_item .article_thumb img{
+    width: 100%;
+    border-radius: 10px;
+}
+.article_thumb {
+    border-radius: 10px;
+    overflow: hidden;
+}
