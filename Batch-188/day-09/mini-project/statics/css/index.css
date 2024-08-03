@@ -7,7 +7,10 @@ body{
 .card {
     display: block;
 }
-
+.main-banner img{
+    width: 100%;
+    height: auto;
+}
 .section-title {
     margin: 30px 0;
 }

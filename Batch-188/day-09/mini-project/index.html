@@ -9,6 +9,7 @@
     <!-- CSS RIÊNG CHO PAGE INDEX -->
     <link rel="stylesheet" href="statics/css/index.css" />
     <link rel="stylesheet" href="statics/css/product_list.css" />
+    <link rel="stylesheet" href="statics/css/responsive.css" />
   </head>
   <body>
     <header>
@@ -34,6 +35,9 @@
                 <li><a href="">Mi sound</a></li>
                 <li><a href="">Mi Care</a></li>
               </ul>
+              <div onclick="toggleMobile()" id="toggle-mobile">
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
@@ -258,5 +262,14 @@
         <p class="copyright text-white text-center">Copyright © 2024 Softech</p>
       </div>
     </footer>
+
+    <script>
+      function toggleMobile() {
+        console.log("toggleMobile");
+        let ul = document.querySelector("div.navigation>ul.flex");
+        //ul.style.display = "flex";
+        ul.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

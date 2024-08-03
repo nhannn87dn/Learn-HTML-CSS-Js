@@ -80,6 +80,7 @@ header {
 .header-middle{
     background-color: var(--header-middle-bg);
     padding: 20px 0;
+    position: relative;
 }
 .navigation ul{
     column-gap: 20px;
@@ -113,3 +114,4 @@ footer .footer-wrapper{
     column-gap: 30px;
 }
 /* === end css FOOTER === */
+
