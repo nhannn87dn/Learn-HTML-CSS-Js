@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <!-- vertical_form -->
+    <div class="container">
+      <form class="horizontal_form" action="" method="get">
+        <div class="form_item">
+          <label for="full_name">Full name</label>
+          <input
+            maxlength="160"
+            required
+            id="full_name"
+            type="text"
+            name="full_name"
+          />
+        </div>
+        <div class="form_item">
+          <label for="only">Only</label>
+          <input
+            readonly
+            maxlength="160"
+            required
+            value="ready value"
+            id="only"
+            type="text"
+            name="only"
+          />
+        </div>
+        <div class="form_item">
+          <label for="email">Email</label>
+          <input
+            placeholder="Vd: yourname@gmail.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+          />
+        </div>
+        <div class="form_item">
+          <label for="age">Age</label>
+          <input
+            placeholder="Từ 18 - 120 tuổi"
+            min="13"
+            max="120"
+            id="age"
+            type="number"
+            name="age"
+          />
+        </div>
+        <div class="form_item">
+          <label for="mobile">mobile</label>
+          <input
+            maxlength="10"
+            minlength="10"
+            id="mobile"
+            type="text"
+            name="mobile"
+            pattern="^0([0-9]+){9}"
+          />
+        </div>
+        <div class="form_item">
+          <label for="country">country</label>
+          <select name="country" id="country">
+            <option value="">--Chon tinh/TP ---</option>
+            <option value="0">Ha Noi</option>
+            <option value="1" selected>Da Nang</option>
+            <option value="2">TP HCM</option>
+          </select>
+        </div>
+        <div class="form_item">
+          <label for="country">Gender</label>
+          <div class="input-radio">
+            <label>
+              <input type="radio" name="gender" checked value="0" /> Nu
+            </label>
+            <label><input type="radio" name="gender" value="1" /> Nam</label>
+          </div>
+        </div>
+
+        <div class="form_item">
+          <label for="country">Gender</label>
+          <div class="input-checkbox">
+            <label><input type="checkbox" name="sport" />Sport</label>
+            <label><input type="checkbox" checked name="movie" />Movie</label>
+            <label><input type="checkbox" name="travel" />Travel</label>
+            <label><input type="checkbox" name="camping" />Camping</label>
+          </div>
+        </div>
+        <div class="form_item">
+          <label for="content">content</label>
+          <textarea
+            placeholder="Vui lòng nhập vào tiếng việt có dấu, tối thiểu là 4 kí tự"
+            rows="3"
+            cols="20"
+            name="content"
+            id="content"
+          ></textarea>
+        </div>
+        <div class="form_item">
+          <label for="upload">Upload</label>
+          <input type="file" name="upload" id="upload" />
+        </div>
+        <div class="form_item">
+          <label for="password">password</label>
+          <input
+            placeholder="Mật khẩu tối thiểu 8 kí tự"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+
+        <input type="hidden" name="id" value="123" />
+        <div class="form_actions">
+          <button type="submit">Submit</button>
+          <button disabled type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      /*
+        ARRAY ==> Mảng ==> một kiểu dữ liệu
+        */
+      let fruits = []; // gọi là mảng rỗng
+      fruits = ["orange", "banana", "watermelon"]; //Mảng có phần tử
+      //Các phần tử trong mảng sẽ được đánh số thứ tự (index) cố định
+      // Phần tử đầu tiên là số 0. index = 0
+      let complex_array = [1, "string", true, false, null];
+      // Các phần tử trong mảng có thể chứa nhiều kiểu dữ liệu khác nhau
+
+      //1. Truy cập vào phần tử của mảng
+      console.log(fruits[1]);
+      //2. Đếm số lượng phần tử của mảng
+      console.log(fruits.length);
+      //3. làm sao để thay đổi giá trị của phần tử trong Mảng
+      // Đổi banana thành kiwi
+      fruits[1] = "kiwi";
+      console.log(fruits);
+      //4. Thêm phần tử  vào mảng
+      fruits[3] = "apple"; // thêm dựa vào index, khi mảng đó ít phần tử
+      fruits.push("apple"); //Thêm phần tử vào cuối mảng mà ko quan tâm đến index
+      console.log(fruits);
+
+      //5. Các phương thức tương tác với Mảng
+      //https://www.w3schools.com/js/js_array_methods.asp#mark_pop
+
+      //6. Sử dụng mảng với vòng lặp
+      let arrs = [1, 2, 3, 4, 5];
+      //In ra từng phần tử của mảng
+      console.log(arrs[0]);
+
+      max_number = arrs.length;
+
+      for (i = 0; i < max_number; i++) {
+        console.log(arrs[i]);
+      }
+    </script>
+  </body>
+</html>

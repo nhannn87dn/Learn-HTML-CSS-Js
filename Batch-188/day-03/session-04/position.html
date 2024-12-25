@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .parent {
+        background-color: black;
+        position: relative;
+        width: 200px;
+        height: 200px;
+      }
+      .child {
+        position: absolute;
+        display: inline-block;
+        background-color: yellow;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+      }
+      header {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #555;
+        border-top: 1px solid #555;
+        position: sticky;
+        top: 0;
+        z-index: 99999;
+      }
+      .container {
+        height: 1200px;
+      }
+      .support {
+        position: fixed;
+        z-index: 9;
+        left: 50px;
+        bottom: 50px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 80px">flkfldfkdl</div>
+    <header>header</header>
+    <div class="container">
+      <div class="parent">
+        <span class="child">Box</span>
+      </div>
+    </div>
+    <div class="support">Chat Now</div>
+  </body>
+</html>

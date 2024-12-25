@@ -1,12 +1,10 @@
 # Thực hành bài học tại Lab
 
-## Task 0: 
+## Task 0:
 
-Tạo một bảng với giao diện như hình dưới đây, để làm bảng thông số  cho sản phẩm.
+Tạo một bảng với giao diện như hình dưới đây, để làm bảng thông số cho sản phẩm.
 
 ![table](table-params.png)
-
-
 
 ## Task 1: Thực hành lại kiến thức Javascript
 
@@ -21,15 +19,14 @@ Tạo một bảng với giao diện như hình dưới đây, để làm bảng
 1. Khai báo biến `myAddress` bằng địa chỉ nơi bạn ở.
 
 1. In ra màn hình dòng chữ dựa trên các biến mà bạn đã định nghĩa.
- Ví dụ: Tôi tên là xxx,  tôi đã yyy tuổi, Nhà tôi ở zzz.
+   Ví dụ: Tôi tên là xxx, tôi đã yyy tuổi, Nhà tôi ở zzz.
 
 ## Task 2
 
-- Sử dụng hàm `prompt()` để lấy giá trị đầu vào cho 2 biến x, y
-- Xuất ra màn hình `document.write` / `console` giá trị của biến: x*y, x+y, x-y
-
+- Sử dụng hàm `prompt()` để lấy giá trị đầu vào là tên của bạn.
+- Xuất ra màn hình `document.write` / `console`: Xin chào, [yourName] !
 
 ## Task 3
 
-- Sử dụng hàm `prompt()` để lấy giá trị đầu vào là tên của bạn.
-- Xuất ra màn hình `document.write` / `console`: Xin chào, [yourName] !
+- Sử dụng hàm `prompt()` để lấy giá trị đầu vào cho 2 biến x, y
+- Xuất ra màn hình `document.write` / `console` giá trị của biến: x\*y, x+y, x-y

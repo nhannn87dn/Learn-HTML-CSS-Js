@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    border: 1px solid #333;
+    padding: 20px 0;
+}
+.wrapper .item {
+    display: inline-block;
+    width: 33.1%;
+    /* float: left; */
+    text-align: center;
+    border-right: 1px solid #333
+}
+
+.wrapper .item:last-child {
+    border-right: none;
+}
+
+.wrapper .item .icon,
+.wrapper .item .content 
+{
+    display: inline-block;
+}
+.wrapper .item .content {
+    text-align: left;
+    margin-left: 10px;
+}
+.wrapper .item h3 {
+    text-transform: uppercase;
+}
+
+.wrapper .item .icon i{
+    font-size: 38px;
+}

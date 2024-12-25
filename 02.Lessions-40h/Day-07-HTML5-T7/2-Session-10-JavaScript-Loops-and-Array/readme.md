@@ -1,6 +1,5 @@
 # JavaScript-Loops-and-Array
 
-
 ## ⭐ 1. Array
 
 - Array?
@@ -39,7 +38,6 @@ console.log(numbers[2]); // Output: 3
 
 Mảng là một phần quan trọng của JavaScript và rất hữu ích trong việc lưu trữ và xử lý dữ liệu. Bạn có thể tìm hiểu thêm về các phương thức và thuộc tính khác của mảng trong JavaScript trong tài liệu chính thức của JavaScript.
 
-
 Trong JavaScript, các giá trị trong mảng có thể là bất kỳ kiểu dữ liệu nào, bao gồm:
 
 1. Số (Number): Ví dụ: `1`, `3.14`, `-5`.
@@ -63,7 +61,18 @@ Trong JavaScript, các giá trị trong mảng có thể là bất kỳ kiểu d
 Ví dụ, dưới đây là một mảng chứa các giá trị của các kiểu dữ liệu khác nhau:
 
 ```javascript
-const values = [1, 'hello', true, { name: 'John' }, [1, 2, 3], null, undefined, function() { console.log('Hello!'); }];
+const values = [
+  1,
+  "hello",
+  true,
+  { name: "John" },
+  [1, 2, 3],
+  null,
+  undefined,
+  function () {
+    console.log("Hello!");
+  },
+];
 ```
 
 Trong ví dụ trên, mảng `values` chứa các giá trị số `1`, chuỗi `'hello'`, giá trị boolean `true`, đối tượng `{ name: 'John' }`, mảng `[1, 2, 3]`, giá trị null, giá trị undefined và một hàm in ra chuỗi `'Hello!'`.
@@ -88,8 +97,8 @@ console.log(numbers); // Output: [1, 2, 3, 4, 5, 6]
 2. Gán giá trị cho chỉ số không tồn tại: Bạn có thể gán giá trị cho một chỉ số không tồn tại trong mảng, và JavaScript sẽ tự động mở rộng mảng và thêm phần tử mới vào vị trí đó. Ví dụ:
 
 ```javascript
-const fruits = ['apple', 'banana'];
-fruits[2] = 'orange';
+const fruits = ["apple", "banana"];
+fruits[2] = "orange";
 console.log(fruits); // Output: ['apple', 'banana', 'orange']
 ```
 
@@ -122,8 +131,8 @@ Trong JavaScript, bạn có thể thay đổi giá trị của một phần tử
 1. Gán giá trị mới cho chỉ số của phần tử: Bạn có thể gán giá trị mới cho chỉ số của phần tử trong mảng bằng cách sử dụng toán tử gán (=). Ví dụ:
 
 ```javascript
-const fruits = ['apple', 'banana', 'orange'];
-fruits[1] = 'grape';
+const fruits = ["apple", "banana", "orange"];
+fruits[1] = "grape";
 console.log(fruits); // Output: ['apple', 'grape', 'orange']
 ```
 
@@ -141,14 +150,13 @@ Trong ví dụ trên, `splice(2, 1, 10)` sẽ thay thế phần tử tại chỉ
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
-const updatedNumbers = numbers.map(num => num * 2);
+const updatedNumbers = numbers.map((num) => num * 2);
 console.log(updatedNumbers); // Output: [2, 4, 6, 8, 10]
 ```
 
 Trong ví dụ trên, `map()` được sử dụng để nhân mỗi phần tử trong mảng `numbers` với 2 và tạo ra một mảng mới `updatedNumbers` chứa các giá trị mới.
 
 Lưu ý rằng các phương thức `splice()` và `map()` không thay đổi trực tiếp mảng gốc, mà tạo ra một mảng mới hoặc thay đổi mảng theo yêu cầu.
-
 
 ### Xóa phần tử trong Array
 
@@ -186,6 +194,7 @@ Trong ví dụ trên, `splice(2, 2)` sẽ xóa 2 phần tử từ chỉ số 2 t
 Lưu ý rằng cả `pop()`, `shift()` và `splice()` đều thay đổi trực tiếp mảng gốc.
 
 Đây chỉ là một số phương thức và phép toán thường được sử dụng để xóa phần tử khỏi mảng trong JavaScript. Có nhiều cách khác nhau để thao tác với mảng, bạn có thể tìm hiểu thêm trong tài liệu chính thức của JavaScript.
+
 ## ⭐ 2. Loops - Vòng lặp
 
 ### 2.1 For loop
@@ -285,7 +294,7 @@ Dưới đây là một ví dụ để giải thích vòng lặp `for...in`:
 const person = {
   name: "John",
   age: 30,
-  gender: "male"
+  gender: "male",
 };
 
 for (let key in person) {
