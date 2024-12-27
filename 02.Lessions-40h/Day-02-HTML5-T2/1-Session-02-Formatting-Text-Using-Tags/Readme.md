@@ -265,6 +265,8 @@ Builder Online: <https://cssgenerator.org/gradient-css-generator.html>
 
 **background-image**
 
+Xem thêm: https://www.w3schools.com/html/html_images_background.asp
+
 Thuộc tính background-image định nghĩa cho hình nền của một thành phần. Nó là giá trị được định nghĩa bằng một đường dẫn hình ảnh với ký hiệu url(). Giá trị non có thể được sử dụng, nó được tính là một lớp.
 
 ```css
