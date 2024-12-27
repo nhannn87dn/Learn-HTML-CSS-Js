@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* 
+        * --> universal selector
+        Phạm vi tác động: 
+        toàn bộ các thẻ trong trang web
+         */
+        * {
+            margin: 0;
+            padding: 0;
+            /* toàn bộ chữ trong trang web 
+            sẽ được hiển thị bằng font Arial */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* 
+        h1 --> tag name (tên của thẻ) selector
+        Phạm vi: chỉ tác động đến các thẻ h1
+        */
+        h1 {
+            color: red;
+        }
+        /* .heading --> class selector 
+        Phạm vi: chỉ tác động đến các thẻ có class là heading
+        */
+        .heading {
+            color: blue;
+        }
+        /* #title --> id selector 
+        Phạm vi: chỉ tác động đến thẻ có id là title
+        */
+        #title {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selector 1</h1>
+    <h1>Selector 2</h1>
+    <h1 class="heading">Heading 2</h1>
+    <h1 id="title">Heading 3</h1>
+</body>
+</html>

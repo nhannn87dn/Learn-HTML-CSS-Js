@@ -103,6 +103,12 @@ Thường sử dụng nhất: px, %, rem, em
 - External: Css được đặt ở bên ngoài file dùng nó và được nhúng vào bằng thẻ `<link rel="stylesheet" type="text/css" href="style.css" />`
 - Inline: Css được đặt ngay trên thẻ mở của element `<h1 style="display:inline">`
 
+### Khi nào thì dùng loại nào ?
+
+- Internal: Dùng khi bạn muốn phần CSS đó chỉ áp dụng trong 1 file .html cụ thể.
+- External: Dùng khi bạn muốn phần CSS đó áp dụng cho nhiều file .html khác nhau.
+- Inline: Dùng khi bạn muốn CSs đó chỉ áp dụng cho element hiện tại.
+
 ## ⭐ Generic Cascading Order
 
 Hay được gọi là thứ tự ưu tiên của Css.
