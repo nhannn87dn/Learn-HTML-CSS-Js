@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* khi rê chuột vào thẻ a */
+        a:hover{
+            color: blue;
+        }
+        /* khi rê chuột vào thẻ a 
+        và click vào thẻ a nhưng chưa thả
+        chuột ra */
+        a:active{
+            color: red;
+        }
+        /*
+        Khi link đã click rồi
+        */
+        a:visited{
+            color: green;
+        }
+        /*
+        Nhắm tới kí tự đầu tiên
+        của thẻ p mà có class là desc
+        ==> Xác định phạm vi tác động
+        */
+        p.desc::first-letter{
+            font-size: 40px;
+            color: red;
+        }
+        /*
+        Nhắm tới dòng đầu tiên
+        của element có class là paragraph
+        */
+        .paragraph::first-line{
+            font-size: 20px;
+            color: blue;
+        }
+        /**
+         * Nhắm tới thẻ li đầu tiên 
+         * của thẻ ol
+         */
+        ol li:first-child{
+            color: red;
+        }
+        /**
+         * Nhắm tới thẻ li cuối cùng
+         * của thẻ ol
+         */
+         ol li:last-child{
+            color: blue;
+        }
+        /**
+         * Nhắm tới thẻ li thứ 3
+         * của thẻ ol
+         */
+        ol li:nth-child(3){
+            color: green;
+        }
+        /**
+         * Nhắm tới thẻ li có số lẻ
+         * của thẻ ul
+         */
+          /** ul li:nth-child(2n + 1) */
+        ul li:nth-child(odd)
+        {
+            color: red;
+        }
+        /**
+         * Nhắm tới thẻ li có số chẳn
+         * của thẻ ul
+         */
+        /** ul li:nth-child(2n + 2) */
+        ul li:nth-child(even)
+        {
+            color: blue;
+        }
+        /**
+         * Thêm nôi dung vào
+         trước thẻ h3
+         */
+        h3::before{
+            /* nội dung cần thêm */
+            content: "---";
+            /* màu chữ cho phần content */
+            color: red;
+        }
+        /**
+         * Thêm nôi dung vào
+         sau thẻ h3
+         */
+        h3::after{
+            content: "---";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.thegioididong.com/dtdd/xiaomi-redmi-a3?utm_flashsale=1">Pseudo</a>
+    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid harum, soluta optio architecto veritatis blanditiis suscipit? Provident, sint ad corporis quaerat vero blanditiis ab voluptatum fugiat aspernatur, facilis, dolorum voluptas.</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nisi et perferendis harum, quidem facere commodi eius fugiat reiciendis dignissimos maiores libero facilis magni rem qui quisquam dicta quibusdam ipsum.</p>
+    <ol>
+        <li>Giặt đồ</li>
+        <li>Xem phim</li>
+        <li>Học bài</li>
+        <li>Đi ngủ</li>
+        
+    </ol>
+    <hr>
+    <ul>
+        <li>Giặt đồ 1</li>
+        <li>Xem phim 2</li>
+        <li>Học bài 3</li>
+        <li>Đi ngủ 4</li>
+        <li>Học bài 5</li>
+        <li>Đi ngủ 6</li>
+    </ul>
+    <h3>Before và After</h3>
+</body>
+</html>
