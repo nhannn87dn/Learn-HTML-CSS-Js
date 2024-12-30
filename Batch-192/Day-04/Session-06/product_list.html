@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f3f3f3;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product{
+            display: flex;
+            /*
+Lấy 20px nhét vào giữa các item
+            */
+            column-gap: 20px;
+            /* nhét khoảng trống theo giữa các hàng */
+            row-gap: 20px;
+            flex-direction: row;
+            /*
+            nếu mã item ko đủ chỗ thì phải rớt hàng
+            nếu set ==> flex-wrap: wrap;
+            */
+            flex-wrap: wrap;
+    
+        }
+        .product .item{
+            width: calc((100% - 80px) / 5);
+            background-color: #fff;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+    </div>
+</body>
+</html>

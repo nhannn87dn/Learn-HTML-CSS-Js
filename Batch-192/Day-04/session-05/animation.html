@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: red; 
+             /* thời gian diễn ra hoạt cảnh */
+            animation-duration: 4s;
+            /* tên của kịch bản */
+            animation-name: ten_hoat_canh;
+            /*
+             tần suất diễn ra 
+             là một con số
+             hoặc là infinite = vô hạn
+            */
+            animation-iteration-count: infinite;
+        }
+        /* Kịch bản hoạt cảnh */
+        @keyframes ten_hoat_canh {
+            0% {
+                /* muốn thay đổi thuộc tính gì 
+                code ở đây */
+                background-color: red;
+            }
+            20% {
+                background-color: blue;
+            }
+            40% {
+                background-color: yellow;
+            }
+            60% {
+                background-color: green;
+            }
+            80% {
+                background-color: purple;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
