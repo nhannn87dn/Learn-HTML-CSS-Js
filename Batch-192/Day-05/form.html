@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        select,
+        textarea {
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            padding: 8px 10px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            background-color: #007bff;
+            cursor: pointer;
+            color: #fff;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <div>
+            <label for="">Username</label>
+            <input minlength="4" required="true" placeholder="Username" type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input minlength="6" required="true"  placeholder="Password" type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input placeholder="Email" type="email" name="email" id="email">
+        </div>
+        <div class="tel">
+            <label for="">Phone</label>
+            <input placeholder="Phone" type="tel" name="phone" id="phone">
+        </div>
+        <div class="age">
+            <label for="">Age</label>
+            <input min="18" placeholder="Age" type="number" name="age" id="age">
+        </div>
+        <div class="birthday">
+            <label for="">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div class="upload">
+            <label for="">Upload</label>
+            <input type="file" name="upload" id="upload">
+        </div>
+        <div class="radio">
+            <input type="radio" checked id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </div>
+        <div>
+            <select name="country" id="">
+                <option value="Bangladesh">Bangladesh</option>
+                <option selected value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+            </select>
+        </div>
+        <div class="content">
+            <textarea name="content" id="" cols="30" rows="5"></textarea>
+        </div>
+        <input type="hidden" name="id" value="123">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; /* canh giữa */
+}
+
+.article-head {
+    display: flex;
+    justify-content: space-between;
+}
+.article-body{
+    display: flex;
+    /* nhét  20px giữa các cột */
+    column-gap: 20px;
+    /* justify-content: space-between; */
+}
+.article-item{
+    width: calc((100% - 60px) / 4);
+}
+
+.article-item img{
+    width: 100%;
+    height: auto;
+}
