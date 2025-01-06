@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table tr td,
+        table tr th
+        {
+            border: 1px solid #333;
+            padding: 5px 10px 5px 10px;
+        }
+
+        table tr th{
+            background-color: #f2f2f2;
+        }
+
+        table tr td:first-child{
+            text-align: center;
+            width: 40px;
+        }
+        table tr td:nth-child(3){
+            width: 80px;
+        }
+        .canh_doc {
+            vertical-align: bottom ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table in HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Ho va Ten</th>
+                <th>Khoa Hoc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Van Dung</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyen Van Thao</td>
+                <td class="canh_doc" rowspan="2">CSS</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyen Van Tuan</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tran Xuan Son</td>
+                <td>HTML</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>
