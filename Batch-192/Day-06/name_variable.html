@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quy tắc đặt tên biến</h1>
+    <ol>
+        <li>Phải bắt đầu bằng ký tự chữ hoặc dấu _ (gạch dưới)</li>
+        <li>Không bắt đầu bằng kí tự số</li>
+        <li>Không chưa kí tự đặc biệt, ngoại trừ _</li>
+        <li>Không trùng với từ khóa của javascript</li>
+    </ol>
+    <script>
+        var myName = 'John Doe';
+        var my_Age = 30;
+        var _dash = 'This is a variable';
+        var $specialChar = 'This is a variable with $';
+        //var 45544Bala = 1;
+        // Không nên dùng kí tự đặc biệt và từ khóa của javascript trong tên biến
+        //var var = 1; // Error: Tên biến không hợp lệ
+        //var break = 'This is a variable'; // Error: Tên biến không h��p lệ
+        
+        //PHONG CÁCH ĐẶT TÊN BIẾN
+        /*camelCase: myName, productList
+        -> Từ đầu tiên viết thường, Kí tự đầu tiên của từ thứ hai
+         trở đi là biết HOA
+        */
+        /* 
+        PascalCase: MyName, ProductList
+        -> Kí tự đầu tiên của mỗi từ là viết HOA
+        */
+
+        /*
+        snake_case: my_name, product_list
+        -> viết thường
+        -> mỗi từ cách nhau bằng dấu gạch dưới
+        */
+    
+    </script>
+</body>
+</html>
