@@ -1,0 +1,17 @@
+<script>
+    var str = "Hello, welcome to JavaScript.";
+    var pattern = /welcome/; //Khuôn mẫu
+    var result = str.match(pattern);
+    //hàm match đi so khớp khuôn mẫu với chuỗi ban đầu
+    console.log(result); // Output: ["welcome"]
+
+    let myMobile = '9988777666'
+    let patternMobile = /0([0-9]+){9}$/
+    let resultMobile = patternMobile.test(myMobile);
+    console.log(resultMobile);
+
+    let myEmail = 'ahc@gmail.vn';
+    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    console.log(regex.test(myEmail));
+</script>

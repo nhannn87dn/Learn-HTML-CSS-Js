@@ -1,0 +1,30 @@
+<script>
+    //switch/case
+    // So sánh cùng 1 lúc chỉ 1 điều kiện
+    /*
+        - Nếu là khách hàng VIP ==> giảm 10%
+        - Nếu là khách hàng GOLD ==> giảm 7%
+        - Nếu là khách hàng SILVER ==> giảm 5%
+        - Nếu là khách hàng MEMBER ==> giảm 2%
+        - Còn lại thì giảm 0%
+    */
+    const level = 'VIP';
+    switch (level) {
+        //Case = trường hợp
+        case 'VIP':
+            console.log('10%');
+            break; // dừng câu lệnh phía sau nó
+        case 'GOLD':
+            console.log('7%');
+            break;
+        case 'SILVER':
+            console.log('5%');
+            break;
+        case 'MEMBER':
+            console.log('2%');
+            break;
+        default: // giá trị mặc định
+            console.log('0%');
+            break;
+    }
+</script>
