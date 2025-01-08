@@ -1,0 +1,33 @@
+<script>
+    //Toán tử LOGIC
+    /**
+    LOGIC: 1 đúng hai là sai
+
+    && ==> toán tử Và ~ AND
+    ! -> NOT, phủ định
+    || ==> toán tử Hoặc ~ OR
+
+    Kết quả: Boolean = True/false
+    */
+
+    let x = 5;
+    let y = 2;
+    
+    //Toán tử AND
+    console.log(x > 2 && y > 0);
+    //            TRUE && TRUE = TRUE
+    let z = 0;
+    console.log(z > 5 && x > 2 && y > 0); // FALSE
+
+    //TOÁN TỬ OR ||
+    console.log(x > 2 || y > 0);
+    //          TRUE || TRUE = TRUE
+     console.log(x > 7 || y > 0);
+    //          FALSE || TRUE = TRUE
+     console.log(x > 7 || y > 3);
+    //          FALSE || FALSE = FALSE
+
+    //Phủ định !
+    console.log(!(x > 0)); // ==> false
+    
+</script>
