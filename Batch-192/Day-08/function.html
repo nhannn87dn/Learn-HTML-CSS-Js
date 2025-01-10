@@ -1,0 +1,66 @@
+<script>
+    // 1. Cách định nghĩa hàm
+    /**
+        tên hàm:  như quy tắc đặt tên biến
+        - Nên đặt tên hàm có ý nghĩa
+
+        tác dụng của hàm:
+        - Tái sử dụng
+        - Dễ bảo trì code
+    */
+    function ten_ham(){
+        // Các lệnh xử lý
+        console.log('Hello Function 1');
+        console.log('Hello Function 2');
+    }
+
+    //2. Cách chạy/ gọi hàm
+    ten_ham(); //Khi gọi thì các lệnh bên trong hàm sẽ chạy
+
+    //3. Các biến thể của hàm
+    //3.1 hàm không có tham số
+    function ham_khong_tham_so(){
+        console.log('Hello Function Không Tham Số');
+    }
+    ham_khong_tham_so();
+    //3.2 hàm có tham số
+    /**
+    ten, tuoi => là tham số (parameter)
+    Mỗi tham số, cách nhau bởi dấy phẩy
+    */
+    function sayHello(ten, tuoi){
+        console.log(`Hello ${ten}, bạn ${tuoi} tuổi`);
+    }
+    /**
+    'Nhan', 37 ==> gọi đối số (argument)
+    Khi đó: 
+    + ten ==> tham chiếu tới 'Nhan'
+    + tuoi ==> tham chiếu tới 37
+    */
+    sayHello('Nhan', 37);
+
+    //3.3 hàm có tham số mặc định
+    /** Tham số mặc định bắt buộc phải khai sau tham số ko có giá trị mặc định */
+    function getDiscount(level, discount = 0){
+        if(level === 'VIP'){
+            console.log('discount', discount);
+        }
+        else{
+            console.log('discount', discount);
+        }
+    }
+    getDiscount('VIP'); //output: 0 ==> ko ko truyền đối số, thì lấy giá trị mặc định
+    getDiscount('VIP',20); //output: 20
+    getDiscount('GOLD'); //output: 0
+    getDiscount('GOLD',20); //output: 20
+
+    //3.4 hàm có tham số và trả về kết quả
+    function tinhTong(a, b){
+        return a + b; // có từ khóa return để trả về 1 giá trị
+    }
+    console.log(tinhTong(5, 10)); // output: 15
+    //hoặc đặt một biến = gọi hàm()
+    const ket_qua = tinhTong(5, 10);
+    console.log(ket_qua); // output: 15
+
+</script>

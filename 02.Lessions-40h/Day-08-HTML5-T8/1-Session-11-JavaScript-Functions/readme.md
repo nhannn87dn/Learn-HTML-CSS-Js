@@ -73,21 +73,23 @@ console.log(result); // Output: 5
 
 6. **Hàm callback**:
 
+6.1 Callback là gì ?
+
+Callback là một hàm được truyền làm đối số cho một hàm khác và được gọi lại (callback) bên trong hàm đó
+
+6.2 Tại sao cần Callback ?
+
+Tìm hiểu qua một ví dụ:
+
 ```javascript
-function fetchData(callback) {
-  // Mô phỏng việc lấy dữ liệu từ máy chủ
-  var data = "Data from server";
-  callback(data);
-}
+/**
+ * Có một sự việc cần xả ra tuần tự:
+ * 1.Bắt đầu sửa
+ * 2. Sửa xong
+ * 3. Gọi báo đã sửa xong
+ */
 
-function processData(data) {
-  console.log("Processing data:", data);
-}
-
-fetchData(processData); // Output: "Processing data: Data from server"
 ```
-
-Trên đây là một số kiểu hàm phổ biến trong JavaScript. Hàm cho phép bạn tái sử dụng mã, tạo các tác vụ độc lập và tổ chức mã của mình một cách hiệu quả.
 
 ---
 
