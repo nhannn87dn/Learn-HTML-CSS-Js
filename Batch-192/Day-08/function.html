@@ -63,4 +63,40 @@
     const ket_qua = tinhTong(5, 10);
     console.log(ket_qua); // output: 15
 
+    //3.5 hàm mủi tên --> arrow function
+    const tinhTongV2 = (a,b)=>{
+        return a + b;
+    }
+    /**
+    Khi mà khối lệnh của arrow function chỉ có 1 câu lệnh
+    thì có thể rút gọn lại như sau:
+    */
+    const tinhTongV3 = (a,b)=> a + b;
+
+    //3.6 hàm callback ( gọi lại)
+    // Tại sao là cần callback ?
+    /**
+    Sự việc xảy ra tuần tự
+    1. Bắt đầu làm
+    2. Tiến hành làm
+    3. Kết thúc làm
+    */
+    function startWork(){
+        console.log('1. Bắt đầu làm');
+    }
+    function doWork(callback){
+        //Việc làm nó mất 3  giây mới xong
+        setTimeout(()=>{
+            console.log('2. Tiến hành làm');
+            callback();
+        }, 3000)
+       
+    }
+    function endWork(){
+        console.log('3. Kết thúc làm');
+    }
+    console.log("=================================");
+    startWork();
+    doWork(endWork); // cách để pass một function như là một tham số --> callback
+    //endWork();
 </script>
