@@ -1,0 +1,23 @@
+<script>
+    let n = prompt('Nhập vào một số: ');
+    //TH không phải là số
+    if(isNaN(n)){
+        alert('Vui lòng nhập vào giá trị là số')
+    }
+    //TH đã là số
+    else{
+        //Kiểm tra xem là số âm/dương
+        //n là một con số ở dạng string
+        // console.log(typeof n)
+        n = parseInt(n); // convert string to number
+        if(n < 0){
+            alert('Số bạn vừa nhập là số âm')
+        }
+        else if(n > 0){
+            alert('Số bạn vừa nhập là số dương')
+        }
+        else{
+            alert('Số bạn vừa nhập là số 0')
+        }
+    }
+</script>
