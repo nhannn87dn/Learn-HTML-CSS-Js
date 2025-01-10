@@ -84,11 +84,63 @@ Tìm hiểu qua một ví dụ:
 ```javascript
 /**
  * Có một sự việc cần xả ra tuần tự:
- * 1.Bắt đầu sửa
- * 2. Sửa xong
- * 3. Gọi báo đã sửa xong
+  1. Bắt đầu làm
+  2. Tiến hành làm
+  3. Kết thúc làm
  */
+//Code như sau:
+function startWork(){
+    console.log('1. Bắt đầu làm');
+}
+function doWork(){
+    console.log('2. Tiến hành làm');
+}
+function endWork(){
+    console.log('3. Kết thúc làm');
+}
+startWork();
+doWork();
+endWork();
+//Kết quả xảy ra tuần tự
+```
 
+Nhưng thực tế `doWork` có thể mất nhiều thời gian mới xong
+
+```js
+function doWork(callback){
+        //Việc làm nó mất 3  giây mới xong
+        setTimeout(()=>{
+            console.log('2. Tiến hành làm');
+        }, 3000)
+       
+    }
+
+startWork();
+doWork();
+endWork();
+//Kết quả xảy ra không tuần tự
+```
+
+Để tác vụ xảy ra tuần tự thì bắt `doWork` chạy xong thì `endWork` mới chạy. Khi đó ta cần khái niệm gọi là ` Xử lý bất đồng bộ `, tức là các tác vụ không chạy đồng thời nữa mà phải chờ nhau.
+
+```js
+    function startWork(){
+        console.log('1. Bắt đầu làm');
+    }
+    function doWork(callback){
+        //Việc làm nó mất 3  giây mới xong
+        setTimeout(()=>{
+            console.log('2. Tiến hành làm');
+            callback();
+        }, 3000)
+       
+    }
+    function endWork(){
+        console.log('3. Kết thúc làm');
+    }
+    console.log("=================================");
+    startWork();
+    doWork(endWork); // cách để pass một function như là một tham số --> callback
 ```
 
 ---
