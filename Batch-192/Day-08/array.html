@@ -1,0 +1,59 @@
+<script>
+    //1. Mảng là gì ?
+    //2. Tại sao lại cần đến mảng ?
+    /*
+    in ra cho tôi 1000 dòng "Hello JS"
+    */
+    //console.log('hello js');
+    //Lặp lại 1000 lần
+    //3. Cấu trúc một mảng
+    /**
+    Các phần tử nằm trong [], mỗi phần tử cách nhau 1 dấu phẩy
+    phần tử của mảng có thể chấp nhận bất kỳ kiểu dữ liệu nào
+    */
+    const arr = [1,'hai', true, false, null, undefined];
+    //Mỗi phần tử sẽ được đánh số thứ tự (index) từ trái --> phải, bắt đầu là 0
+    //4. Truy cập vào phần tử của mảng
+    //Ví dụ: in giá phần tử thứ 2: arrayName[index]
+    console.log(arr[3]);
+
+    //5. Thêm phần tử vào mảng
+    let fruits = ['orange', "kiwi"];
+    //Muốn thêm banana vào thì làm sao ?
+    //+ Thêm vào cuối mảng:
+    fruits[2] = 'banana'; //dựa vào index
+    fruits.push('apple'); // dùng hàm push
+    console.log(fruits);
+    //+ Thêm vào ở chèn vào ở giữa
+    fruits.splice(1, 0, 'lemon'); //splice(index, deleteCount, item1, item2,...)
+    console.log(fruits);
+    //6. Xóa phần tử của mảng
+    //6.1 Xóa phần cuối mảng  --> pop()
+    //6.2 Xóa phần tử đầu mảng --> shift()
+
+    //7. Thay đổi giá trị của phần tử trong mảng
+    let fruits2 = ['orange', "kiwi"];
+    //Thay đổi kiwi thành banana
+    fruits2[1] = 'banana'; //dựa vào index
+    console.log(fruits2);
+
+    //8 Làm sao biết 1 mảng có bao nhiêu phần tử ? arr.length
+    console.log('Số phần tử:', fruits2.length);
+
+    //9. Tìm kiếm trong mảng
+    //Vd: Tìm trong mảng xem có phần tử nào là orange không
+    console.log(fruits2.includes('lemon')); //return true/false
+
+    // Tìm kiếm và trả về phần tử được tìm thấy, và undefined nếu ko thấy
+    const result = fruits2.find((c)=> c === 'kiwi');
+    console.log('result',result);
+
+    //10. sắp xếp mảng
+    //Sắp xếp tăng dần
+    const fruits3 = ['orange', "kiwi", "banana", "lemon"];
+    console.log('Sắp xếp tăng dần:', fruits3.sort()); // theo alphabet
+    //Sắp xếp giảm dần
+    console.log('Sắp xếp giảm dần:', fruits3.sort().reverse());
+
+
+</script>
