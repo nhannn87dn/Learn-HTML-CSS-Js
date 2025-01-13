@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cần hiển thị danh sách User ra chỗ thẻ div#root</p>
+    <div id="root"></div>
+
+
+    <script>
+        async function fetchData() {
+            // Code xử lý bất đồng bộ
+            //fetch là  một Promise
+            const response = await fetch('https://jsonplaceholder.typicode.com/users');
+            const data = await response.json();
+           
+            console.log(data);
+            // Hiển thị dữ liệu ra ch�� th�� div#root
+            document.getElementById('root').innerHTML = data.map(user => `
+                <p>ID: ${user.id} - Name: ${user.name}</p>
+            `).join('');
+        }
+        fetchData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //localStorage
+        /**
+        setItem(key, value) dùng lưu trừ 1 key: value xuống local
+        */
+        //localStorage.setItem("name", "John Doe");
+        //localStorage.setItem("age", 30);
+
+        //Đọc được các key: giá trị trả về là string
+        //let name = localStorage.getItem("name");
+        //let age = localStorage.getItem("age");
+        //console.log(name,typeof age);
+
+        //Xóa 1 key
+        //localStorage.removeItem("age");
+
+        //Xóa tất cả các key
+        //localStorage.clear();
+
+
+        //Lưu một object xuống Local
+        let person = {
+            name: "John Doe",
+            age: 30,
+            email: "johndoe@example.com"
+        };
+        //stringify ==> convert Object to JSON string
+        //localStorage.setItem("person", JSON.stringify(person));
+        
+        //Lấy dữ liệu từ Local
+        let jsonPerson = localStorage.getItem("person");
+        //covert JSOn string to Object lại
+        let objectPerson = JSON.parse(jsonPerson); // parse ==> convert JSON string to Object
+        console.log(typeof objectPerson, objectPerson);
+    
+    </script>
+</body>
+</html>
