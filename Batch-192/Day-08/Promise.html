@@ -1,0 +1,27 @@
+<script>
+    let myPromise = new Promise(function(myResolve, myReject) {
+      
+      
+      // The producing code (this may take some time)
+        
+        let isSuccess = false;
+        if (isSuccess == true) {
+            // The promise is fulfilled
+            console.log("Promise fulfilled");
+            myResolve("OK");
+        } else {
+            // The promise is rejected
+            console.log("Promise rejected");
+           myReject("Error");
+        }
+      });
+
+      myPromise.then(
+        function(value) {myDisplayer(value);},
+        function(error) {myDisplayer(error);}
+        );
+
+        function myDisplayer(some) {
+            console.log(some);
+          }
+</script>

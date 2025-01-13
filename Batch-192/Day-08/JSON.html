@@ -1,0 +1,25 @@
+<script>
+    //JSON là một string
+    // có cấu trúc gần giống với Object
+    //Nó khác là các key đều được bọc trong dấu nháy đôi
+    const user = '{"name": "Nhan", "age": 37}';
+    console.log(user);
+    //Nếu gẫn Object thì dùng như Object không ?
+    //Trả lời có thể. Nhưng cần convert nó sang object
+    //Sử dụng hàm JSON.parse()
+    console.log(typeof user);
+    const userObject = JSON.parse(user); // string JSOn --> Object
+    console.log(typeof userObject);
+
+    //Thay đổi cấu trúc của JSON
+    userObject.gender = "Male";
+    userObject.age = 36
+    console.log(userObject);
+
+    //Chuyển Object về String JSON
+    const userJson = JSON.stringify(userObject);
+    console.log(typeof userJson);
+    console.log(userJson);
+
+
+</script>
