@@ -1,0 +1,9 @@
+1. Html là gì ?
+2. Element là gì ?
+3. Tag là gì ?
+4. Attribute là gì ?
+5. Container / Standalone tag là gì?
+6. Cấu trúc cơ bản của một tập tin HTML ?
+===========
+Practice your self: Học và nắm các nhiều thẻ html càng tốt.
+Cần biết thuộc tính (Attributes) cơ bản của một element là gì ?
