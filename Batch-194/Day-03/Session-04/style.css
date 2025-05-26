@@ -1,0 +1,43 @@
+body{
+    font-size: 16px;
+    color: #333;
+}
+h1{
+    text-align: right;
+    
+}
+em{
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+.article-item {
+    clear: both;
+    width: 1000px;
+}
+.article-item .thumbnail,
+.article-item  .content{
+
+    display: inline-block;
+}
+
+.article-item .thumbnail {
+    width: 200px;
+    float: left;
+}
+
+.article-item  .content {
+    width: calc(100% - 200px);
+    float: left;
+}
+
+.article-item .thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+/*
+totalwith = width + padding + border
+*/

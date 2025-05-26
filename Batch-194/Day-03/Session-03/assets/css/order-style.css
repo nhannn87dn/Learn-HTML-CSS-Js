@@ -1,0 +1,48 @@
+p{
+    color: red;
+}
+
+.desc {
+    color: palevioletred !important;
+}
+
+#desc{
+    color: chocolate;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: rgb(178, 2, 96);
+}
+a:visited{
+    color: #888;
+}
+
+ol>li:first-child{
+    color: blue;
+}
+ol>li:last-child{
+    color: red;
+}
+ol>li:nth-child(3){
+    color: greenyellow;
+}
+/* tô chẳn , lẻ */
+ul{
+    list-style: none;
+}
+ul>li::before{
+    content: "•";
+}
+ul>li:nth-child(even)
+{
+    color: red;
+}
+blockquote::before,
+blockquote::after{
+    content:'"';
+}

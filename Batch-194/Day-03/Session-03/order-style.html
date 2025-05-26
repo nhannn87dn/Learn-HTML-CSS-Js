@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thứ tự ưu tiên của CSS</title>
+    <style>
+        p{
+        color: blue;
+        }
+        p::first-letter{
+            color: black;
+            font-size: 40px;
+        }
+        p::first-line {
+            color: greenyellow;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css/order-style.css">
+</head>
+<body>
+    <p class="desc" id="desc" style="color: black">Đây là thẻ p</p>
+    <a href="index.html">Trang chủ</a>
+    <a href="https://www.thegioididong.com/dtdd/iphone-16-pro-max-512gb?utm_recommendation=1">The gioi dd</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque corrupti aut inventore sed. Illo alias, sit voluptate est aspernatur consectetur eos officia, nisi inventore voluptatibus, aliquid maxime quo cum!</p>
+    <ol>
+        <li>Nấu cơm</li>
+        <li>Giặt đồ</li>
+        <li>Học bài</li>
+        <li>
+            <ol>
+                <li>Child 1</li>
+                <li>Child 1</li>
+            </ol>
+        </li>
+        <li>Đi ngủ</li>
+    </ol>
+
+    <ul>
+    <li>Nấu cơm</li>
+    <li>Giặt đồ</li>
+    <li>Học bài</li>
+    
+    <li>Đi ngủ</li>
+    <li>dsds</li>
+    <li>skdljfkdfjdkfjk</li>
+
+    <blockquote>Tôi rất thích học lập trình</blockquote>
+</ul>
+</html>

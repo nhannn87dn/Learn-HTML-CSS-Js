@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal selector --> * element bất kỳ --> ghi chú */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Type selector - tag name selector*/
+        h1 {
+            color:red
+        }
+        /* Class sector */
+        .desc_one {
+            color: blue
+        }
+        /* ID selector */
+        #desc_one {
+            color: rgb(18, 252, 18)
+        }
+        /* group selector */
+        i, em {
+            color: palevioletred;
+        }
+        /* dấu > element con liền kề */
+        /* div.section>span{
+            color: red;
+        } */
+        /* span là con cháu của section */
+        
+        /* div.section span{
+            color: red;
+        }*/
+        div.section span.kid{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p class="desc_one">Đây là thẻ p 1</p>
+    <p>Đây là thẻ p 2</p>
+    <p class="desc_one">Đây là thẻ p 3</p>
+    <div id="desc_one">Đây là thẻ div 1</div>
+    <div id="title">Đây là thẻ div 2</div>
+    <i>Đây là thẻ i</i>
+    <em>Đây là thẻ em</em>
+    <div class="section">
+        <span>Đây là thẻ span bên trong div.section</span>
+        <p>Đây là đoạn văn <span class="kid">rất ngắn</span></p>
+    </div>
+</body>
+</html>
