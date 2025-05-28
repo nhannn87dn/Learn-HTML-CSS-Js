@@ -1,0 +1,70 @@
+.parent {
+    width: 800px;
+    height: 100px;
+    background-color: brown;
+
+    display: flex;
+    flex-direction: row;
+    /* Canh item theo trục x - */
+    justify-content: space-around;
+}
+
+.item {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid yellow;
+    color: #000;
+}
+
+.item1{
+    order: 4;
+}
+.item2{
+    order: 2;
+}
+.item3{
+    order: 3;
+}
+.item4{
+    order: 1;
+}
+
+.article_item {
+    display: flex;
+    column-gap: 20px;
+}
+.product_list {
+    display: flex;
+    /* justify-content: space-between; */
+    
+    column-gap: 20px;
+    row-gap:20px;
+
+    /* gap: 20px short hand */;
+
+    flex-wrap: wrap;
+}
+.product_item {
+    background-color: #f3f3f3;
+    height: 200px;
+    width: calc((100% - 60px) / 4);
+   
+}
+.category_layout {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar, 
+.main_content {
+ background-color: #f3f3f3;
+}
+.sidebar {
+    width: 280px;
+}
+
+.main_content {
+    width: calc(100% - 300px);
+}

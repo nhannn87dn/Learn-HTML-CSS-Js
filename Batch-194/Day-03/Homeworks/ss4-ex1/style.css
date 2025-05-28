@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.popular_tags{
+    background-color: #212121;
+    color:#fff;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.popular_tags_title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.popular_tags_list {
+    list-style: none;
+   
+}
+
+.popular_tags_list li{
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.popular_tags_list li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 8px;
+}
+
+.hot_points {
+    border: 1px solid #ddd;
+    margin: 40px 0;
+    padding: 15px 0;
+}
+
+.hot_points .item{
+    display: inline-block;
+    text-align: center;
+    width: calc((100% - 10px) / 3);
+    border-right: 1px solid #ddd;
+}
+.hot_points .item:last-child{
+    border-right: none;
+}
+
+.hot_points .item>div{
+    display: inline-block;
+}
+.hot_points .item>div.content{
+    text-align: left;
+}
+.hot_points .item>div.content strong{
+    text-transform: uppercase;
+}
+.hot_points .item .icon{
+    margin-right: 8px;
+}
+.hot_points .item i{
+    font-size: 34px;
+}
+.hot_points .item svg{
+    width: 30px;
+    height: 30px;
+}
