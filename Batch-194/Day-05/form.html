@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form_register" action="" method="">
+        <label for="user_name">Username</label>
+        <input required minlength="4" maxlength="6" id="user_name" type="text" name="user_name">
+
+        <label for="password">Password</label>
+        <input  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" id="password" type="text" name="password">
+        
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+        
+        <label for="age">Age</label>
+        <input min="13" max="200" id="age" type="number" name="age">
+
+        <label for="mobile">Mobile</label>
+        <input required pattern="^0\d{9}$" id="mobile" type="tel" name="mobile">
+        <br>
+         <label for="bref">Bref</label>
+        <textarea rows="10" cols="40" name="bref" id="bref"></textarea>
+         <br>
+         <select name="province" id="province">
+            <option value="">Chọn Tỉnh/TP</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Đà Nẵng</option>
+            <option value="3">TP HCM</option>
+         </select>
+          <br>
+          <label for="">
+            <input type="radio" name="married" value="0"> Chưa
+          </label>
+          <label for="">
+            <input type="radio" name="married" value="1"> Đã kết hôn
+          </label>
+         <br>
+          <label for="">
+            <input type="checkbox" name="fav" value="movie"> movie
+          </label>
+          <label for="">
+            <input type="checkbox" name="fav" value="camp"> Camping
+          </label>
+          <label for="">
+            <input type="checkbox" name="fav" value="travel"> Travel
+          </label>
+         <br>
+         <input type="file">
+          <br>
+          <input type="date">
+        <button type="submit">Register</button>
+        <button type="button">Reset</button>
+    </form>
+</body>
+</html>
