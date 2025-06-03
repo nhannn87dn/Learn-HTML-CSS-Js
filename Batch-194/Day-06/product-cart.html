@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+        .item{
+            width: 285px;
+        }
+        .thumbnail {
+            overflow: hidden;
+            width: 285px;
+            height: 285px;
+            position: relative;
+        }
+        .item img{
+            width: 100%;
+            height: auto;
+        }
+        .item_action {
+            position: absolute;
+            left: 0;
+            bottom: -40px;
+            z-index: 2;
+            height: 40px;
+            background-color: #fff;
+            width: 70%;
+            transition: all 0.2s linear;
+            opacity: 0;
+        }
+        .item:hover .item_action{
+            bottom: 0;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+        <div class="thumbnail">
+            <img src="https://htmldemo.net/lukani/lukani/assets/img/product/product1.jpg" alt="">
+            <div class="item_action">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+            </div>
+        </div>
+        <h3>commodo augue nisi</h3>
+        <div class="sprice flex">
+            <strong>70</strong>
+            <del>80</del>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

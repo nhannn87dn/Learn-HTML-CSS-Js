@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        table td,
+        table th{
+            border-right: 1px solid #333;
+            border-left: 1px solid #333;
+            padding: 5px 8px;
+        }
+
+        table tbody td{
+            border-top: 1px dashed #333
+        }
+        
+        table tr td:first-child{
+            width: 50px;
+            text-align: center;
+        }
+        table tbody tr:nth-child(2n+1){
+           background-color: #f8f8f8;
+        }
+        .merge {
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GtU_W8068ZY?si=sNnTcMg-AzeJjG4G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <table>
+        <thead>
+            <tr>
+            <th>STT</th>
+            <th>HỌ tên</th>
+            <th>Khóa học</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>Nguyễn Quốc Chương</td>
+            <td>.Net fullstack</td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Trần Duy Nhật Phương</td>
+            <td rowspan="2" class="merge">M.E.R.N</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lê Huỳnh Ngọc Anh</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Phạm Minh Hiếu</td>
+            <td>ADSE</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Nguyễn Minh Quang</td>
+            <td>.Net fullstack</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">Tổng danh sách</td>
+            <td>5</td>
+        </tfoot>
+    </table>
+</body>
+</html>
