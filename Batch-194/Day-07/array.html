@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //Dữ liệu kiểu mảng
+        // Phần của mảng có thể chấp nhận nhiều kiểu giá trị
+        let arr = [1,'text',true,false,undefined, null] // mảng gồm nhiều giá trị
+        console.log('<<=== 🚀 arr ===>>',arr);
+        //các phần tử trong mảng được sắp xếp theo thứ tự
+        //từ trái phải bắt đầu là 0.
+        
+        //1. IN ra giá trị của một phần tử trong mảng
+        //Dựa vào vị trí index của phần tử đó
+        console.log(arr[2]);
+        //2. Đếm tổng số phần tử của mảng
+        console.log(arr.length);
+        //3. Thêm phần tử mới vào mảng
+        //3.1 Thêm vào đầu mảng unshift()
+        //3.2 Thêm vào cuối mảng push()
+        //3.3 Xen phần tử vào giữa mảng splice()
+        //3.4 Dựa vào index
+
+        //4.Thay đổi giá trị của phần tử ?
+        arr[1] = 'javascript';
+        console.log(arr);
+
+        //5. Xóa bớt phần tử trong mảng
+        //dùng splice()
+    </script>
+</body>
+</html>

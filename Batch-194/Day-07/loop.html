@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //In ra các giá trị 1 đến 5
+        /**
+        initialization; condition; iteration
+        -Khối lệnh trong for chạy khi condition = true
+        -Sau đó nó tăng giá trị khởi tạo lên 1 đơn vị
+        lưu ý: luôn xác định phạm vi để kết thúc vòng lặp
+        để tránh lặp vô hạn
+        */
+       for (let i = 0; i < 5; i++){
+            console.log(i);
+       }
+       //For hay đi kèm với mảng
+       const carBrands = [
+            "Toyota",
+            "Honda",
+            "Ford",
+            "BMW",
+            "Mercedes-Benz",
+            "Chevrolet",
+            "Audi",
+            "Hyundai",
+            "Kia",
+            "Nissan"
+        ];
+       const maxCount = carBrands.length
+       for(c = 0; c < maxCount; c++){
+            console.log(carBrands[c]);
+       }
+       
+       const cars = ["BMW", "Volvo", "Mini"];
+       for (let x in cars) {
+            console.log(x);
+        }
+
+
+        let count = 10;
+        //Kiểm tra điều ngay khi chạy
+        while (count < 5) {
+            console.log(count);
+            count++;
+        }
+
+        //
+        let countV = 10;
+        do {
+            console.log(countV);
+            countV++;
+        } while (countV < 5);
+
+
+    </script>
+</body>
+</html>

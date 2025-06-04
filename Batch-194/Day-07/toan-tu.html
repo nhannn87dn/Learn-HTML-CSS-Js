@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Các toán tử cơ bản trong JS
+        /*
+        1. Toán tử số học: + - * (Nhân) / (chia) % (chia lấy dư)
+        2. Toán tử so sánh
+        3. Toán tử logic
+        */
+        //1. Toán tử số học
+        let x = 5; //number
+        let y = '5'; //string
+        let z = 1;
+        console.log( 'x * y = ', x * y)
+        console.log( 'x % y = ', x % y)
+        //2. Toán tử so sánh: >, <, >=, <=, == (bằng),  != (ko bằng)
+        //Kết quả của phép so sánh ==> trả về boolean: true/false
+        
+        //SS 2 dấu = : Chỉ so sánh về giá trị
+        console.log('x == y', x == y)
+        //===: ss cả giá trị + kiểu dữ liệu ==> ss tuyệt đối
+        console.log('x === y', x === y) 
+        console.log(x !== z); 
+        //3. Toán tử logic 
+        //x = 5, z=1
+        //Toán tử && --> thõa mã all các vế
+        console.log(x > 6 && z > 0);  //false
+        console.log(x > 1 && z > 0); // true
+        //Toán tử || hoặc
+        console.log(x > 6 || z > 0); //true
+        //Toán tử phủ định (ngược lại) ! (NOT)
+        console.log(!(x > 6));
+        //4. Toán tử gán
+        let i = 1;
+        i += 1; //Bằng chính nó + 1 ==> i = i + 1
+        console.log('<<=== 🚀 i ===>>',i);
+        let html = '<b>';
+        html += 'Tôi là thẻ b';
+        html += '</b>';
+        // Gọi cách này ==> nối chuỗi
+        console.log(html);
+        //
+        console.log(1,2,3,4,)
+    </script>
+</body>
+</html>

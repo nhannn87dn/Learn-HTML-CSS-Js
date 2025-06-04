@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Sử dụng prompt để nhận giá trị đầu vào từ người dùng.
+        Sau đó gán cho 2 biến email và password.
+        Kiểm tra. Nếu email = "admin@gmail.com" và password: 123
+        thì alert('Đăng nhập thành công'), còn ngược lại
+        in ra Sai email hoặc mật khẩu.
+        */
+        //const email = prompt('Email của bạn:')
+        //const password = prompt('Password của bạn:')
+        //console.log('<<=== 🚀 email ===>>',email);
+        /**
+            Sử dụng prompt nhận giá trị nhập vào cho 2 biến
+            x và y.
+            Sau đó in ra: Tổng của x và y. Ví dụ x = 5, y = 2;
+            Mong muốn kết quả là 7;
+            nếu nhập vào không phải là số --báo: Vui lòng nhập
+            vào kí tự số.
+        */
+        //isNaN kiểm tra biến ko phải là số 
+        //isNaN('hello')//true
+        //(isNaN('2')//false
+        //isNaN(132)//false
+        let x = prompt('x:')
+        let y = prompt('y:')
+       //Kiểm tra dữ liệu đầu vào
+       if(isNaN(x) || isNaN(y)){
+         alert('Vui lòng nhập vào giá trị số');
+       }else{
+         console.log('x và y hợp lệ');
+         console.log(typeof x, typeof y);
+         console.log('Tổng: ', parseInt(x) + parseInt(y));
+       }
+
+       /*
+       Sử dụng prompt nhận giá trị nhập vào cho biến z. 
+       Nếu z là số chẳn thì in ra z là số chẳn, ngược
+        lại z là số lẻ.
+       */
+       let z = prompt('Nhập giá trị của biến z');
+        let check_z = z % 2;
+        
+        if(isNaN(z)){
+            console.log('Vui lòng nhập giá trị số');
+        }else {
+            if(check_z == 0){
+                console.log('z là số chẵn');
+            }
+            else console.log('z là số lẻ');
+        }
+    </script>
+</body>
+</html>

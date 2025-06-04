@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        //Nếu x > 0 thì In ra: "x là số dương"
+        if (x > 0) 
+        // biểu thức trong ngoặc tròn true
+        // thì khối lệnh trong if mới thực thi
+        {
+            console.log("x là số dương");
+        }
+        console.log('next');
+       //Nếu trời mưa thì học online ở nhà.
+       let weather = 'sunny';
+       if(weather == 'rain'){
+         console.log('Học online');
+       }
+
+       let y = 7;
+       /*
+       Nếu y > 0 thì in ra: y là số dương, ngược là số âm.
+       */
+       if(y > 5){
+        console.log('y là số dương');
+       }
+       else{
+        console.log('y là số âm');
+       }
+
+       console.log(y > 5 ? 'y la duong' : 'y la am');
+
+       /*
+        Nếu DTB >= 9 thì xếp loại Xuất sắc
+        Nếu DTB >= 8 và < 9 thì  Giỏi
+        Nếu DTB >= 6.5 và < 8 thì  Khá
+        Nếu DTB >= 5 và < 6.5 thì  TB
+        Còn lại yếu
+       */
+       const diemTB = 7.5;
+       if(diemTB >= 9){
+        console.log('Xuất sắc');
+       }
+       else if(diemTB >= 8 && diemTB < 9){
+        console.log('Giỏi');
+       }
+       else if(diemTB >= 6.5 && diemTB < 8){
+        console.log('Khá');
+       }
+       else if(diemTB >= 5 && diemTB < 6.5){
+        console.log('TB');
+       }else{
+        console.log('yếu');
+       }
+
+       //Toán tử 3 ngôi
+
+    </script>
+</body>
+</html>

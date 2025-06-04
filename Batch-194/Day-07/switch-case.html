@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        nếu thành viên hạng: VIP thì discount 7%
+        Nếu thành viên hạng; GOLD thì discount 5%
+        còn lại: thì discount 0%
+        */
+        const level = 'GOLD'
+        switch(level){
+            case 'VIP': //case so sánh bằng
+                console.log('discount 7%');
+            break; //ngưng chạy câu lệnh phía sau
+            case 'GOLD':
+                console.log('discount 5%');
+            break;
+            default: // tương đương else
+                console.log('discount 0%');
+                break;
+        }
+    </script>
+</body>
+</html>
