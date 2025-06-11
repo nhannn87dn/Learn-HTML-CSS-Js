@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.navbar {
+  background: #ff6600;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.menu {
+  float: right;
+  margin-right: 20px;
+}
+
+.menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: white;
+  padding: 40px 0;
+}
+
+.hero-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-content img {
+  max-width: 50%;
+  border-radius: 8px;
+}
+
+.hero-text h4 {
+  color: #ff6600;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.phone {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.services {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  flex: 1;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.newsletter {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  width: 200px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #222;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}

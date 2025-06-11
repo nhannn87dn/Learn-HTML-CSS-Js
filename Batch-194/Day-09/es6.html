@@ -1,0 +1,60 @@
+<script>
+    //1. Arrow function
+    function sayHello(name){
+        console.log('Xin chao' + name);
+    }
+    //Arrow function
+    const sayHelloV2 = (name)=>{
+        console.log('Xin chao' + name);
+    }
+    sayHelloV2('Nhan')
+    //Cach code 1
+    const tinhTong = (a,b)=>{
+        return a + b;
+    }
+    //Cach code 2: Khi khối lệnh chỉ có 1 dòng
+    const tinhTongV2 = (a,b)=> a + b;
+    const sayHelloV3 = (name)=>console.log('Xin chao' + name);
+    //2. Destructuring in JavaScript
+    let user = {
+        id: 1,
+        name: 'nguyen van A',
+        age: 18
+    }
+    //console.log(user.name);
+    const {name, age} = user;
+    //console.log('name, age', name, age);
+
+    let fruits = ["orange", "kiwi", "lemon"];
+    console.log(fruits[1]);
+    //const kw = fruits[1];
+    const [,kw,lm] = fruits;
+    console.log('kw', kw, lm);
+    //3. Spread (...) Operator
+    let car = {
+        brand: 'Toyota',
+        wheels: 4,
+        color: 'black'
+    }
+    //thêm vào model: 2025
+    //car.model = 2025;
+    car = {
+        ...car, 
+        model: 2025 //Bổ sung thuộc tính mới nếu chưa có key
+        }
+    console.log('<<=== 🚀 car 1 ===>>',car);
+    //Update color: 'white'
+    //car.color = 'white';
+    car = {...car, color: 'white'}
+    console.log('<<=== 🚀 car 2 ===>>',car);
+    
+    // 4. Rest Parameter
+    // Tách password ra khỏi myInfo
+    const myInfo = {
+        id: 1,
+        email: 'abc@gmail.com',
+        password: '12345'
+    }
+    const {password, ...myInfoNew} = myInfo;
+    console.log('<<=== 🚀 myInfoNew ===>>',myInfoNew);
+</script>
