@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        const cars = ["Toyota", "Honda", "Kia", "BMW", "Audi", "Mitsubishi"];
+        let html = '<ul>';
+        const totalArr = cars.length;
+        for (let index = 0; index < totalArr; index++) {
+           html += `<li>${cars[index]}</li>`
+        }
+        html += '</ul>';
+        //in ra trình duyệt
+        document.writeln(html)
+   </script> 
+</body>
+</html>

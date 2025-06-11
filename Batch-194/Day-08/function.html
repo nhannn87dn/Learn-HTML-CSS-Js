@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Cách định nghĩa 1 hàm
+        function tenHam(){
+            //Các lệnh mà bạn muốn thực thi
+            console.log('Hello Đây là lệnh bên trong hàm tenHam');
+            //alert('dsds');
+            console.log('skdkjskdjsk');
+        }
+        //2. Cách gọi --> chạy 1 hàm
+        tenHam(); //hàm ko có tham số
+        //3. Khi nào thì cần tạo hàm
+        /* Khi nhận một logic lặp đi lặp lại nhiều lần */
+        // const x = 2;
+        // const y = 5;
+        // console.log(x + y);
+
+        // //
+        // const i = 1;
+        // const j = 8;
+        // console.log(i + j);
+        /**
+         * tinhTong = tên của hàm
+         * hàm có tham số
+         * so1, so2: được gọi là tham số, ... có thể có n tham số
+         * */
+        function tinhTong(so1, so2){
+            //Quy tắc code first --> đi xử lý lỗi trước
+            if(isNaN(so1) || isNaN(so2)){
+                console.log('Vui lòng nhập vào giá trị số');
+                return;
+            }
+            // Nếu hợp lệ rồi thì tính tổng
+            console.log(so1 + so2);
+        }
+        //Cách chạy 1 hàm có tham số
+        tinhTong(2, 5);
+        tinhTong(1,8);
+        tinhTong('a', 1)
+        /**
+        2, 5
+        1,8 ==> giá trị truyền vào khi gọi hàm --> gọi là đối số.
+
+        */
+        function sayHello(name){
+            console.log('Xin chao,' + name);
+        }
+        sayHello('Tuan');
+        sayHello('Manh');
+        sayHello();
+        //Hàm với tham số mặc định
+        function sayHelloV2(name='Nobody'){
+            console.log('Xin chao,' + name);
+        }
+        sayHelloV2();//gọi mà ko cần truyền đối số
+        sayHelloV2('Minh') //Nếu có truyền thì lấy
+        //Lưu ý: Tham số mặc định --> luôn để cuối cùng
+        //Ví dụ: Xin chào [Minh], hôm nay trời [nắng]
+        //status chính là tham số tùy chọn, --> đặt sau name
+        function sayHelloWithWeather(name, status="Nắng"){
+            console.log(`Xin chào ${name}, hôm nay trời ${status}`);
+        }
+        sayHelloWithWeather('Minh');
+        sayHelloWithWeather('Minh', 'Mưa');
+        
+        //Hàm có return ==> trả về giá trị
+        function sum(x, y){
+            //Quy tắc code first --> đi xử lý lỗi trước
+            if(isNaN(x) || isNaN(y)){
+                console.log('Vui lòng nhập vào giá trị số');
+                return;
+            }
+            // Nếu hợp lệ rồi thì tính tổng
+            return  x + y;
+        }
+        //Cách dùng hàm có return;
+        const result = sum(2,4); // đặt biến phụ để hứng kết quả
+        console.log(result);
+        console.log(sum(2,4));//ko cần đặt biến phụ
+    </script>
+</body>
+</html>

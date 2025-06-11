@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="p1">Hello Heading</h1>
+    <div class="root"></div>
+    <p class="desc">class 1</p>
+    <p class="desc">class 2</p>
+    <input id="quantity" type="text" value="0">
+    <form>
+        <input type="text" id="email">
+        <input type="text" id="password">
+        <button type="button" onclick="validateForm()">Login</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //lấy giá trị id trong thẻ h1
+        const h1 = document.querySelector('h1#p1');
+        console.log(h1.id, h1.innerHTML);
+        h1.style.color = "red";
+        h1.style.fontSize = "20px";
+        h1.classList.add('heading');
+        //trả về DOM đầu tiên tìm thấy
+        const paras = document.querySelector('p.desc');
+        console.log(paras.innerHTML);
+        //lấy value hiện tại của input
+
+        //thay đổi value của input
+        document.querySelector("#quantity").value = 10;
+        function validateForm(){
+            const email = document.getElementById('email');
+            const password = document.querySelector('#password');
+            //test xem lấy có được ko
+            console.log('<<=== 🚀email, password  ===>>',email.value, password.value);
+            //xem có nhập hay chưa
+            if(email.value.length === 0 || password.value.length ===0){
+                alert('Vui lòng nhập email và mật khẩu')
+            }
+        }
+
+        const cars = ["Toyota", "Honda", "Kia", "BMW", "Audi", "Mitsubishi"];
+        let html = '<ul>';
+        const totalArr = cars.length;
+        for (let index = 0; index < totalArr; index++) {
+           html += `<li>${cars[index]}</li>`
+        }
+        html += '</ul>';
+        console.log(html);
+        //js thuần commonjs
+        //document.querySelector('div.root').innerHTML = html;
+        //jquery
+        $('div.root').html(html);
+    </script>
+</body>
+</html>

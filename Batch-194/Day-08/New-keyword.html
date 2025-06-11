@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //tạo object sử dụng new Object()
+    //bằng cách sử dụng Constructor Function
+    //Tên hàm viết Hoa kí tự đầu
+    function Student(name, email, mobile){
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+    }
+    //Khởi tạo object từ hàm Constructor
+    let studentA = new Student('Minh', 'minh@gmail.com', '0988777666')
+    console.log('<<=== 🚀 studentA ===>>',studentA);
+    console.log(studentA.email, studentA['mobile']);
+   let studentB = new Student('Tuan', 'tuanh@gmail.com', '0988777555', 18)
+   console.log('<<=== 🚀 studentB ===>>',studentB);
+
+   //task 5 workshop
+   const userProfile = {
+    id: 1, 
+    name: 'nguyễn van A', 
+    email: 'a@gmail.com', 
+    gender: 'male'
+   }
+   console.log(userProfile);
+   //2
+   userProfile.name = 'Nguyễn Văn A';
+   console.log(userProfile);
+   const newUser = {...userProfile, role: 'admin'}
+   console.log('<<=== 🚀 newUser ===>>',newUser);
+   </script> 
+</body>
+</html>

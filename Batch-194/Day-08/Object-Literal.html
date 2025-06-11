@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Cách tạo object với Object Literal
+        //bằng cách sử dụng cặp ngoặc nhọn
+        let cars = {
+            brandName: 'Kia',
+            color: 'Black',
+            seats: 4,
+            brake: ()=>{
+                //phanh
+            },
+            driver: ()=>{
+                //
+            }
+        }
+        //Thêm thuộc tính/phương thức mới cho Object
+        cars.model = '2025';
+        console.log('<<=== 🚀 cars ===>>',cars);
+        cars.otherMethod = ()=>{
+            console.log('function');
+        }
+        console.log('<<=== 🚀 cars ===>>',cars);
+        //Lưu ý: giá trị có thể bất kỳ kiểu dữ liệu nào trong js
+        //2. Thay đổi giá trị của thuộc tính trong object
+        cars.model = 2022;
+        console.log(cars);
+        //3.Truy cập phần tử của object
+        console.log(cars.model);
+        console.log(cars['model']);
+        for (var key in cars) {
+            console.log(key, cars[key]);
+        }
+
+        //Khai một objecb rỗng
+        let user ={};
+        console.log('before', user);
+        user.name = 'Nhan';
+        user.age = 38;
+         console.log('after', user);
+
+         const studentA = {
+            name: 'a',
+            email: 'a@gmail.com'
+         }
+         const studentB = {
+            name: 'ab',
+            email: 'b@gmail.com',
+            mobile: '09987878',
+            age: 18
+         }
+    </script>
+</body>
+</html>

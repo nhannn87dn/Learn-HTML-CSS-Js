@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Người dùng nhập vào số lượng vé người lớn + trẻ em
+        const adult_quantity = prompt('Số người lớn:')
+        const kid_quantity = prompt('Số trẻ em:')
+        console.log(adult_quantity, kid_quantity);
+        //2. Tính số tiền cần thanh toán
+        //2.1 Validate dữ liệu đầu vào. Số lượng phải là số
+        if(isNaN(adult_quantity) || isNaN(kid_quantity)) {
+            alert('Vui lòng nhập vào giá trị là số')
+        }
+        else{
+            const price_adult =350000;
+            const price_kid = 200000;
+           const amount_adult = parseInt(adult_quantity) * price_adult;
+           const amount_kid = parseInt(kid_quantity) * price_kid;
+           const totalAmount = amount_adult + amount_kid;
+           //3. In ra số tiền cần thanh toán
+        document.writeln('So tien can thanh toan: '+ totalAmount)
+        }
+        
+    </script>
+</body>
+</html>
