@@ -23,6 +23,11 @@
                 <li><a href="#">item 3</a></li>
                 <li><a href="#">item 4</a></li>
             </ul>
+            <span onclick="toggleMobile()" class="toogle_mobile">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
          </nav>
          </div>
        </div>
@@ -32,7 +37,7 @@
             <div class="container">
                 <div class="our_services_wrapper flex">
                     <div class="our_services_photo">
-                        img
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/e8/e1/e8e182cf81dff9d70fc9017070c848c5.png" alt="">
                     </div>
                     <div class="our_services-content">
                         <h2 class="section-title">
@@ -50,6 +55,11 @@
                 <h2 class="section-title text-center">
                     What We Offer
                 </h2>
+                <div class="we_offer_list flex">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
             </div>
         </section>
         <section class="section subscribe">
@@ -60,6 +70,21 @@
                 <p class="section-desc text-center">
                     Do not want to miss news, updates, note and any offer on our products, then please subscriber to our mailling list.
                 </p>
+                <form class="flex form_subcriber">
+                    <div class="input_field">
+                        <input type="text" placeholder="Tên">
+                    </div>
+                    <div class="input_field">
+                        <input type="text" placeholder="Email">
+                    </div>
+                     <div class="input_field">
+                        <input type="text" placeholder="Số điện thoại">
+                    </div>
+                     <div class="input_field">
+                        <button>Submit</button>
+                     </div>
+                    
+                </form>
             </div> 
         </section>
     </main>
@@ -84,5 +109,17 @@
         </div>
         </div>
     </footer>
+    <div id="nav_bottom">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <script>
+        function toggleMobile(){
+            document.querySelector('ul.main-nav').classList.toggle('show')
+        }
+    </script>
 </body>
 </html>

@@ -65,8 +65,13 @@ footer{
 .footer-bottom {
     margin-top: 40px;
 }
+.footer-top {
+    gap: 20px;
+}
 .footer-item {
     width: calc((100% - 60px) / 4);
+    background-color: #555;
+    min-height: 100px;
 }
 /* END footer */
 
@@ -86,8 +91,151 @@ footer{
 .we_offer {
     background-color: #f3f3f3;
 }
-
+.our_services_wrapper  {
+    column-gap: 30px;
+}
 .our_services_photo,
 .our_services-content {
-    width: 50%;
+    width: calc((100% - 30px) / 2);
+}
+.our_services_photo {
+    max-height: 200px;
+    overflow: hidden;
+}
+.our_services_photo img{
+    width: 100%;
+    height: auto;
+}
+
+.we_offer_list {
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.we_offer_list .item{
+    width: calc((100% - 60px) / 3);
+    min-height: 100px;
+    background-color: #fff;
+}
+.form_subcriber {
+    gap: 10px;
+    justify-content: center;
+}
+input {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #f80;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+#nav_bottom {
+    display: none;
+}
+/* responsive Begin here */
+/* tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .our_services_wrapper {
+        flex-direction: column;
+        row-gap: 30px
+    }
+    .our_services_photo, .our_services-content {
+        width: 100%;
+    }
+    .we_offer_list {
+        flex-wrap: wrap;
+    }
+    .we_offer_list .item {
+        width: calc((100% - 30px) / 2);
+    }
+    .form_subcriber {
+        flex-wrap: wrap;
+    }
+    .input_field {
+        width: calc((100% - 10px) / 2);
+    }
+    .input_field input{
+        width: 100%;
+    }
+    .footer-top {
+        flex-wrap: wrap;
+    }
+    .footer-item {
+        width: calc((100% - 20px) / 2);
+    }
+}
+@media screen and (max-width: 425px) {
+    .footer-item {
+        width: 100%
+    }
+
+    .we_offer_list .item{
+        width: 100%
+    }
+    .main-nav {
+        display: none;
+    }
+    .main-nav.show{
+        display: flex;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+    .main-nav a {
+        color: #333;
+    }
+    .toogle_mobile {
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2px;
+        align-items: center;
+    }
+    .toogle_mobile i{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+    header{
+        position: relative;
+        height: 48px;
+    }
+    #nav_bottom {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .input_field {
+        width: 100%;
+    }
+    .input_field button{
+        width: 100%;
+    }
 }
