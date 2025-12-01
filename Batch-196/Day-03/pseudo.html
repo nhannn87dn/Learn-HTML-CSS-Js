@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        /* màu link mặc định */
+        a:link {
+            color: #111;
+            text-decoration: none;
+        }
+        /* khi rê chuột lên element */
+        a:hover{
+            color: blue
+        }
+       
+        /* p::first-letter{
+            font-size: 50px;
+            color: red
+        } */
+
+        /* p::first-line {
+            color: blue
+        } */
+
+        /* Combination CSS Selectors */
+        ol.parent>li:first-child {
+            color: red
+        }
+
+        ol.parent>li:last-child {
+            color: blue
+        }
+
+        /* phần tử con thứ n */
+        ol li:nth-child(3){
+            color: violet
+        }
+        
+        ul li:nth-child(2n + 2){
+            color: red
+        }
+        ul li:nth-child(2n + 1){
+            color: blue
+        }
+
+        div.box > p.child{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ol class="parent">
+        <li>
+            Giặt đồ
+            <ol class="child">
+                <li>Giặt tất</li>
+                <li>Giặt á<ol></ol></li>
+            </ol>
+        </li>
+        <li>Nấu cơm</li>
+        <li>Học bài</li>
+        <li>Xem tivi</li>
+        <li>Đi ngủ</li>
+    </ol>
+    <ul>
+        <li>Giặt đồ</li>
+        <li>Nấu cơm</li>
+        <li>Học bài</li>
+        <li>Xem tivi</li>
+        <li>Đi ngủ</li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ea ducimus ipsa, illo harum voluptate nostrum cum quaerat commodi, eveniet atque labore porro facere id doloremque nisi mollitia quibusdam quod.</p>
+    <a href="https://tinhte.vn/thread/hinh-anh-gau-bac-cuc-dinh-cu-o-tram-nghien-cuu-bo-hoang-tren-dao-kolyuchin-cua-nga.4077903/">Hình ảnh: Gấu Bắc cực định cư ở trạm nghiên cứu bỏ hoang trên đảo Kolyuchin của Nga</a>
+
+    <div class="box">
+        <p class="child">
+           <span>p1</span>
+        </p>
+        <div>
+            <p class="child">
+                <span>p2</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
