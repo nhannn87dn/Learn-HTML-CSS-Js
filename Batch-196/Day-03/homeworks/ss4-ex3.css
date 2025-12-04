@@ -1,0 +1,49 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     font-size: 14px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #111;
+ }
+
+ a {
+     text-decoration: none;
+     color: #111;
+ }
+
+ .container{
+    width: 1200px;
+    margin: 0 auto;
+ }
+
+ .article-thumbnail,
+ .article-content {
+    display: inline-block;
+    float: left;
+ }
+
+ .article-thumbnail {
+    width: 200px;
+    margin-right: 30px;
+ }
+
+  .article-thumbnail img{
+    width: 100%;
+  }
+
+  .article-content {
+    width: calc(100% - 230px);
+  }
+
+  .article-desc {
+    margin: 15px 0;
+    color: #444
+  }
+
+  .article-extra {
+    color: #888;
+    font-size: 12px;
+  }
