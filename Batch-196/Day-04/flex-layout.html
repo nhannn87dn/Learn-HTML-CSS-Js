@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f3f3f3;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto
+        } 
+
+        .section{
+            display: flex;
+            background-color: #fff;
+        }
+        .categories {
+            width: 200px;
+        }
+        .banner-main {
+            width: 720px;
+        }
+        .two-banners {
+            /* flex: 1 */
+            width: calc( 100% - (200px + 720px));
+
+        }
+        .flex{
+            display: flex;
+        }
+        .article-list {
+            /* justify-content: space-between; */
+            margin: 30px 0;
+            flex-wrap: wrap;
+            column-gap: 10px; /* khoảng trống giữ mỗi cột */
+            row-gap: 10px;
+        }
+        .article-item {
+            width: calc((100% - 30px) / 4);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+        <div class="categories">
+            categories
+        </div>
+        <div class="banner-main">
+            banner-main
+        </div>
+        <div class="two-banners">
+            two-banners
+        </div>
+    </div>
+
+        <div class="article-list flex">
+            <div class="article-item">1</div>
+            <div class="article-item">2</div>
+            <div class="article-item">3</div>
+            <div class="article-item">4</div>
+            <div class="article-item">5</div>
+             <div class="article-item">6</div>
+        </div>
+    </div>
+</body>
+</html>

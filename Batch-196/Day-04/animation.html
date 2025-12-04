@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+
+            animation-name: kichban;
+            animation-duration: 4s; 
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes kichban {
+            0%{
+                border-radius: 100%;
+                background-color: rgb(229, 145, 145);
+            }
+            50%{
+                background-color: blue;
+                width: 20px;
+                height: 20px;
+            }
+            80%{
+                background-color: orange;
+                width: 200px;
+            }
+            100%{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

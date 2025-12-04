@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+
+            /* transition-property: height, top;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 3s; */
+            transition: all 0.3s linear;
+        }
+        .box:hover{
+            /* height: 100px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            position: relative;
+            top: -5px;
+        }
+
+        a{
+            color: #111;
+            text-decoration: none;
+
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <a href="">Tinhte.vn</a>
+</body>
+</html>
