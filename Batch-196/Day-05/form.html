@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register new Customer</h1>
+        <form action="">
+            <div class="input-item">
+                <label for="">First name</label>
+                <input type="text" name="first_name">
+            </div>
+            <div class="input-item">
+                <label for="">Last name</label>
+                <input type="text" name="last_name">
+            </div>
+            <div class="input-item">
+                <label for="">Mobile</label>
+                <input type="text" name="mobile">
+            </div>
+            <div class="input-item">
+                <label for="">Phone</label>
+                <input type="tel" name="phone">
+            </div>
+            <div class="input-item">
+                <label for="">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="input-item input-radio">
+                gender
+                <label for="male">
+                    <input type="radio" id="male" name="gender"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender"> Female
+                </label>
+            </div>
+            <div class="input-item input-checkbox">
+                <label>
+                    <input type="checkbox" name="favourites"> Sport
+                </label>
+                <label>
+                    <input type="checkbox"  name="favourites"> Movie
+                </label>
+                 <label>
+                    <input type="checkbox"  name="favourites"> Travel
+                </label>
+            </div>
+            <div class="input-item">
+                <select name="country" id="">
+                    <option value="">---Please choose country</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Đà Nẵng</option>
+                </select>
+            </div>
+            <div class="input-item">
+                <textarea cols="100" rows="5" name="short_brief" id=""></textarea>
+            </div>
+            <div class="input-item">
+                <input type="file" name="photo">
+            </div>
+
+            <div class="input-item">
+                <input type="hidden" value="123">
+                <button type="submit">Submit</button>
+                 <button disabled type="submit">Submit</button>
+                  
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
