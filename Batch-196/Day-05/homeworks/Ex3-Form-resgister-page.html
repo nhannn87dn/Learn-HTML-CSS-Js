@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ex3-Form-resgister-page.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-layout flex">
+            <div class="register-left flex justify-center">
+                <div class="left_content">
+                    <h2>Set Your Partner Auto Pilot</h2>
+                    <img src="images/bg-register.png" alt="">
+                </div>
+            </div>
+            <div class="register-right">
+                <div class="right_content">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="text-primary">Sign up</h2>
+                    <div class="sign_up_desc">
+                        <h5>Signup for new account</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <form class="register-form vertical-form">
+                        <div class="form-item">
+                            <label for="fullname">FullName</label>
+                            <input minlength="4" required autofocus type="text" tabindex="1" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email</label>
+                            <input required type="email" id="email" tabindex="3" name="email">
+                        </div>
+                        <div class="form-item">
+                            <label for="phone">Phone</label>
+                            <input minlength="10" maxlength="10" required type="text" id="phone" tabindex="2" name="phone">
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password</label>
+                            <input  minlength="6" required type="password" id="password" tabindex="4" name="password">
+                        </div>
+                        <div class="form-item">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"  required type="password" id="confirm-password" tabindex="5" name="confirm-password">
+                            <p class="note">
+                                Password must contain at least 8 characters, including 2 uppercase letters, 3 lowercase letters, 2 numbers and 1 special character.
+                            </p>
+                        </div>
+                        <div class="form-item">
+                            <label>
+                                <input required class="agree" type="checkbox" tabindex="6" value="1">
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <button type="submit" tabindex="7" class="btn-submit bg-primary">Sign Up</button>
+                            <p class="form-footer">Already have an account? <a href="#" class="text-primary">Login here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

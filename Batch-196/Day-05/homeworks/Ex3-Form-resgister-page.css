@@ -1,0 +1,106 @@
+:root{
+    --primary-color:#C63018;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+    background-color: #D2E4ED;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.register-layout {
+    margin: 40px auto;
+}
+.register-left{
+    background-color: #ECF1F4;
+    width: calc(100% - 400px);
+    padding: 50px 0;
+}
+
+.register-right {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 50px;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+.bg-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-item {
+    display: flex;
+}
+
+.vertical-form .form-item {
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.btn-submit:hover {
+    background-color: #A5280F;
+}
+
+.form-footer {
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: #666;}
+
+.agree:checked {
+    accent-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+form .note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
