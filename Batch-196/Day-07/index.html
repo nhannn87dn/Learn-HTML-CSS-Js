@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input 
+    onkeypress="console.log('ban da nhan phim')" 
+    onchange="sayHello()" type="text" name="email">
+    <button 
+    onmouseleave="sayHello()"
+    onmouseenter="console.log('Da re chuot len')"
+    onclick="console.log('Ban da click chuot len toi')"
+    >Login</button>
+    
+    <script>
+        //internal js
+        function sayHello(){
+            console.log('Hello, ban da re chuot re khoi button')
+        }
+    </script>
+    <!-- external js -->
+    <script src="main.js"></script>
+</body>
+</html>

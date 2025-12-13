@@ -1,0 +1,41 @@
+<script>
+    //1
+
+    // var str = "Hello, welcome to JavaScript.";
+    // var pattern = /welcome/; //regex
+    // // sử dụng phương thức match
+    // var result = str.match(pattern);
+    // //Nếu tìm thấy thì nó trả mảng
+    // console.log(result); // Output: ["welcome"]
+
+    //Tìm kiếm trong chuỗi trên có kí tự số không ?
+
+    // var str = "Hello, 12345 is a number.";
+    // var pattern = /\d+/;
+    // var result = str.match(pattern);
+    // console.log(result); // Output: ["12345"]
+
+
+//     var str = "Hello, my name is John.";
+// var pattern = /John/;
+// var result = str.replace(pattern, "Alice");
+// console.log(result); // Output: "Hello, my name is Alice."
+
+// //Cần kiểm tra chuỗi sau có đúng định dạng email không ?
+// var email = "example@example.com";
+// //pattern để kiểm tra email
+// var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+// var isValid = pattern.test(email);
+// console.log(isValid); // Output: true
+
+
+ let pass = prompt('Nhập vào mk của bạn: ');
+
+ const strongPasswordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}$/;
+
+  // true
+ const isValid = strongPasswordRegex.test(pass);
+ console.log(isValid); 
+
+
+</script>

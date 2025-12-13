@@ -1,0 +1,100 @@
+<script>
+    //Cấu trúc điều khiển rẻ nhánh if else
+
+    const weather = 'rain';
+    //phát biểu thứ 2: 
+    // Nếu trời mưa thì in ra học Online 
+    // CÒN không thì học offline
+    //IF ELSE
+    // if(weather == 'rain'){
+    //     console.log('Học Online');
+    // }
+    // //Còn không
+    // else{
+    //     console.log('Offline');
+    // }
+
+
+    //phát biểu 1: Nếu trời mưa thì in ra học Online
+    //IF ĐƠN
+    // if (weather == 'rain'){
+    //     //Khối lệnh
+    //     console.log('Học Online')
+    // }
+
+    //Phát biểu thứ 3:
+    /*
+     * DTB  = 7.5
+     * - Nếu DTB >=9 thì in ra xuất sắc
+     * - Nếu DTB >=8 và < 9 thì in ra Giỏi
+     * - Nếu DTB > 6.5 và < 8 thì in ra Khá
+     * - Nếu DTB > 5 và < 6.5 thì in ra Trung Bình
+     * - Còn lại là Yếu.
+     * 
+     */
+//    const dtb = 8.5;
+//    if(dtb>=9){
+//      console.log('Xuất sắc');
+//    }
+//    else if(dtb >=8 && dtb <9){
+//     console.log('Giỏi');
+//    }
+//    else if(dtb >= 6.5&& dtb < 8){
+//     console.log('Khá');
+//    }
+//    else if(dtb >= 5&& dtb < 6.5){
+//     console.log('TB');
+//    }
+//    else{
+//     console.log('yếu');
+//    }
+
+//Nested if -- if lồng vào nhau
+// const level = 'VIP'
+// const orderAmount = 200;
+// //Nếu là KH VIP và hoá đơn mua hàng >= 500$ thì được discount  10%
+// //Còn lại thì không
+
+// if(level === 'VIP'){
+//     console.log('is VIP');
+//     if(orderAmount >= 500){
+//         console.log('discount 10%');
+//     }
+// }
+// let discount = 0;
+// if(level === 'VIP' && orderAmount >= 500){
+//     discount = 10;
+// }
+
+//Sử dụng toán tử 3 ngôi: short hand if else
+// const discount = level === 'VIP' && orderAmount >= 500 ? 10 : 0;
+// console.log(discount);
+
+
+const level = 'VIP'
+//Nếu là KH VIP thì được discount  10%
+//Nếu là KH GOLD thì được discount  7%
+//Nếu là KH SIlVER thì được discount  5%
+//Nếu là KH MEMBER thì được discount  2%
+//Còn lại thì không
+
+let discount = 0;
+switch (level){
+    case 'VIP':
+        discount = 10;
+    break;
+    case 'GOLD':
+        discount = 7;
+    break;
+    case 'SILVER':
+        discount = 5;
+    break;
+    case 'MEMBER':
+        discount = 2;
+    break;
+    default:
+        discount = 0
+    break;
+}
+
+</script>

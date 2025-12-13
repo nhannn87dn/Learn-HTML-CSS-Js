@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="email" type="text" name="email">
+    <button id="button" onclick="getEmail()">get Email</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            $("#button").click(function() {
+                // Get the value from the input field with id="myInput"
+                const email = $("#email").val();
+                console.log(email);
+               
+            });
+            });
+
+        // function getEmail(){
+        //    let email =  document.getElementById('email').value;
+        //    console.log(email);
+        // }
+        
+        /*
+         * //jquery ra đời:
+         * 1. Giúp dev code js ngắn gọn hơn
+         * 2. Giúp đồng nhất code để js chạy được trên nhiều trình duyệt.
+         * 
+         * 
+         */
+    </script>
+</body>
+</html>
