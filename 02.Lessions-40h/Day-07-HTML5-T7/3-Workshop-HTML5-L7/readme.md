@@ -1,17 +1,5 @@
 # Thực hành bài học tại Lab
 
-## Task 1
-
-- Tạo ra một button Thêm vào giỏ hàng
-- Khi kích chuột lên nó hãy hiển thị một lới nhắn thông báo: "Bạn đã thêm vào giỏ hàng thành công !"
-
-## Task 2
-
-- Tạo ra một Input có type là text
-- Khi nhập nội dung vào input này hãy bắt sự kiện người dùng nhấn phím onkeypress, onkeyup, onkeydown
-- Hiển thị ra console.log() nội dung tương ứng ý nghĩa của mỗi sự kiện trên
-  (hoặc dễ hiểu hơn là khác nhau thế nào)
-
 ## Task 3
 
 - Sử dụng prompt() để nhận đầu vào biến n
@@ -34,3 +22,16 @@
   - Nếu 4 hoặc 5 hoặc 6 thì in ra hôm nay là giữa tuần
   - Nếu 7 hoặc 8 hôm nay là cuối tuần
   - Các trường hợp còn lại là không hợp lệ
+
+## Task 6
+
+Cho một mảng như sau:
+
+```js
+ let fruits = ["Banana", "Orange", "Apple", "Mango"];
+```
+
+Hãy code theo yêu sau:
+- In ra `Apple`
+- Thêm vào mảng trên `Kiwi` vào sao `Orange`
+- Xoá `Banana` ra khỏi mảng
