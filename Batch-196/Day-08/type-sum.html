@@ -1,0 +1,67 @@
+<script>
+    //Các biến thể của hàm
+    //1. Hàm ko có tham số, ko có return
+    function sayHello(){
+        console.log('Say Hello');
+    }
+    //gọi hàm
+    //sayHello()
+
+    //2. hàm có tham số, ko có return
+
+    //2.1 hàm có tham số bắt buộc
+    /**
+     * x và y được gọi là parameter (tham số)
+     * 
+     */
+    function sum(x, y){
+        console.log(x + y);
+    }
+    //sum(2, 5) //2 và 5 được gọi argument (đối số)
+
+    //2.2 hàm có tham số tuỳ chọn
+    //pt là tham số tuỳ chọn, mặc định = +
+    //đối tham số tuỳ chọn thì bắt buộc phải để sau cùng
+    // sau x và y.
+    function cal(x, y, pt="*"){
+        if(pt == "+"){
+            console.log(x + y);
+        }
+        else if(pt == '-'){
+            console.log(x - y);
+        }
+        else if(pt == '*'){
+            console.log(x * y);
+        }
+        else if(pt == '/'){
+            console.log(x / y);
+        }else{
+            console.log('Loi');
+        }
+    }
+    // Gọi mà ko cần truyền pt
+    // cal(5,8)
+    // cal(2,8, "*")
+
+    function getDiscount(level = 'MEMBER'){
+        if(level == 'VIP'){
+            console.log(10);
+        }
+        else if(level == 'GOLD'){
+            console.log(7);
+        }
+        else{
+            console.log(0);
+        }
+    }
+
+    //getDiscount('GOLD')
+
+    //3. Hàm có return
+    function sumV2(x, y){
+        return x + y
+    }
+    //console.log(sumV2(5,2));
+    const result = sumV2(5,2);
+    console.log(result);
+</script>

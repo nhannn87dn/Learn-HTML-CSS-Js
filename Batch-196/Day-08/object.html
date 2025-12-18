@@ -1,0 +1,33 @@
+<script>
+    //1. Định nghĩa 1 object đơn giản
+    const user = {
+        id: 1,
+        name: 'nguyen van a',
+        age: 40,
+        email:'nguyenvana@gmail.com'
+    }
+    /*
+    id, name, age, email là các keys (thuộc tính)
+    phần sau dấu: là giá trị của key đó
+    */
+
+   //2.Truy cập thuộc tính của Object
+   //dựa vào tên của thuộc tính
+    console.log(user.name);
+    console.log(user['name']);
+
+    //3. Thêm thuộc tính mới vào object
+    user.mobile =  '09888777666'
+    //tự đặt một tuộc tính mới => gán giá trị
+    console.log('user', user);
+    //4. Thay đổi giá trị của thuộc tính
+    user.age = 38;//gán lại giá trị mới cho thuộc tính
+     console.log('user', user);
+     //5. Có thể sử dụng vòng lặp for in để duyệt qua phần tử
+    for (let key in user) {
+        console.log('key', key);
+        console.log('val', key,  user[key]);
+    }
+  
+
+</script>

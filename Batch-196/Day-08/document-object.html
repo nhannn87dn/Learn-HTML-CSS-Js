@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result {
+            background-color: darkslategray;
+            color:azure;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 10px;
+            width: 160px;
+            max-width: 160px;
+            display: inline-block;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head" class="heading">Hello Js</h1>
+    <input type="text" id="x" name="x" placeholder="x">
+    <input type="text" id="y" name="y" placeholder="y">
+    <select name="pt" id="pt">
+        <option value="">--Chọn--</option>
+        <option value="+">+</option>
+        <option value="*">*</option>
+    </select>
+    <button onclick="cal()">Tính</button>
+    <div>
+        <button onclick="getNumber(this)">2</button>
+        <button onclick="getCal(this)">+</button>
+        <button onclick="getNumber(this)">5</button>
+        <h2>Kết quả: <span id="result">NaN</span></h2>
+    </div>
+
+    <script>
+        let text = ""
+        function getCal(e){
+            console.log(e.innerHTML);
+            text += e.innerHTML
+            displayText(text)
+        }
+        function getNumber(e){
+            console.log(e.innerHTML);
+            text += e.innerHTML
+            displayText(text)
+        }
+
+        function displayText(text){
+            document.querySelector("#result").innerHTML = text;
+        }
+
+        function cal(){
+            console.log('cal');
+            //Lấy giá trị x
+            let x = document.querySelector("#x").value;
+            let y = document.querySelector("#y").value;
+            let pt = document.querySelector("#pt").value;
+            console.log('x', x + y, pt);
+            let result = "";
+            if(pt == '+'){
+                console.log(parseInt(x) + parseInt(y));
+                result = parseInt(x) + parseInt(y)
+            }
+
+            else if(pt == '*'){
+                console.log(parseInt(x) * parseInt(y));
+                result = parseInt(x) * parseInt(y)
+            }
+            else{
+                console.log('Chưa chọn phép tính');
+            }
+            //in ra kết quả
+            document.querySelector("#result").innerHTML = result
+        }
+
+        //Muốn lấy nội dung ở giữa thẻ h1
+        // const h1 = document.getElementsByTagName('h1')
+        // console.log(h1[0].innerHTML);
+
+        // const h1 = document.getElementById('head')
+        // console.log(h1.innerHTML);
+
+        // const h1 = document.getElementsByClassName('heading')
+        // console.log(h1[0].innerHTML);
+
+        const h1 = document.querySelector("#head")
+        console.log(h1.innerHTML);
+    </script>
+</body>
+</html>
