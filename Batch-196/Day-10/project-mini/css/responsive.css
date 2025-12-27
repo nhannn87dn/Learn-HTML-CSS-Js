@@ -1,0 +1,100 @@
+/**
+
+1024px
+768px
+452px
+được gọi là breakpoint
+
+*/
+#toggle-mobile{
+    display: none;
+}
+
+@media screen  and (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #section-banner .categories_banner {
+        flex-direction: column;
+        gap: 20px;
+    }
+     #section-banner .banner-home{
+        order: 1;
+        width: 100%;
+     }
+      #section-banner .categories-tree{
+        order: 2;
+        width: 100%;
+
+     }
+
+     .product-item , .news-item {
+        width: calc((100% - 40px) / 3);
+    }
+    .footer-top {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-item {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+
+@media screen and (max-width: 452px) {
+    .product-item , .news-item {
+        width: calc((100% - 20px) / 2);
+    }
+    .footer-item {
+        width: 100%;
+    }
+    header {
+        position: relative;
+    }
+    
+    .navigation>ul{
+        display: none;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .navigation.active>ul{
+        display: flex;
+        z-index: 999;
+        background-color: #fff;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 60px;
+    }
+    .navigation>ul>li>a {
+    color: #111;
+}
+    #toggle-mobile{
+        display: flex;
+    }
+     #toggle-mobile i.line{
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+     }
+     #toggle-mobile i.line::before,
+     #toggle-mobile i.line::after{
+        content: '';
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+     }
+     #toggle-mobile i.line::before{
+        top: -10px;
+     }
+        #toggle-mobile i.line::after{
+            top: 10px;
+        }
+}

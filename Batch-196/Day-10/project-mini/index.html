@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -16,14 +17,16 @@
                 <div class="logo">
                     SHOP
                 </div>
-                <nav class="navigation">
+                <nav class="navigation" id="navigation">
                     <ul class="flex">
                         <li><a href="">Home</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Product</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
-
+                    <span id="toggle-mobile" onclick="toggleMenu()">
+                        <i class="line"></i>
+                    </span>
                 </nav>
             </div>
         </div>
@@ -31,7 +34,7 @@
     <main>
         <section id="section-banner" class="section">
             <div class="container">
-                <div class="flex justify-between">
+                <div class="flex justify-between categories_banner">
                     <aside class="categories-tree">
                         <ul>
                             <li><a href="">1</a></li>
@@ -117,6 +120,14 @@
         </div>
 
     </footer>
+    <script>
+        //onclick
+        function toggleMenu(){
+            console.log('chuyển menu mobile');
+            //document.getElementById('navigation').classList.add("active")
+            document.getElementById('navigation').classList.toggle("active")
+        }
+    </script>
 </body>
 
 </html>
