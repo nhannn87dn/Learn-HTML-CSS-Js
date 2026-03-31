@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* tag name selector */
+        h1 {
+            color: red
+        }
+        /* class selector */
+        .heading-2 {
+            color: blue
+        }
+        .heading {
+            background-color: yellow;
+            /* color: purple */
+        }
+        /* ID selector */
+        #heading {
+            color: purple;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2 class="heading-2 heading">Heading 2</h2>
+    <p class="heading-2">Đây là thẻ p 1</p>
+    <p id="heading2"  class="heading-2">Đây là thẻ p 2</p>
+    <h3 id="heading">Heading 3</h3>
+</body>
+</html>
