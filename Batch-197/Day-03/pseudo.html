@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+        a:active {
+            color: purple;
+        }
+        a:hover{
+            color: #2a83e9;
+        }
+        a:visited{
+            color: #666;
+        }
+        input:focus{
+           outline-color: #2a83e9;
+        }
+        .decs::first-letter{
+            font-size: 40px;
+            color: red;
+        }
+        .decs::first-line {
+            color: blue;
+        }
+        ol>li:first-child{
+            color: red;
+        }
+        ol>li:last-child{
+            color: blue;
+        }
+        ol>li:nth-child(3){
+            color: blue;
+        }
+        ul>li:nth-child(2n+ 2){
+            color: red
+        }
+        .links>a::after {
+            content: "|";
+        }
+        .links>a::before {
+            content: "|";
+        }
+        
+        .feedback::after,
+        .feedback::before {
+            content: '"';
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="order.html">Order</a>
+    <input type="text">
+    <p class="decs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis eligendi exercitationem minus odit officiis, dolores itaque veritatis laborum eos sint est dignissimos veniam? Praesentium ducimus voluptate repudiandae ipsum cupiditate.</p>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <div class="links">
+        <a href="">link 1</a>  <a href="">link 2</a> <a href="">link 3</a>  <a href="">link 4</a>  <a href="">link 5</a>
+    </div>
+    <div>
+        <p class="feedback">ldksldksldksldks lk lskd ks lkdsl</p>
+    </div>
+</body>
+</html>
