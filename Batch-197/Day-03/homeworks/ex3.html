@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto
+        }
+
+        .article>div {
+            display: inline-block;
+            float: left;
+        }
+
+        .article_thumbnail {
+            width: 200px;
+            height: 111px;
+        }
+
+        .article_thumbnail img {
+            width: 100%;
+        }
+
+        .article_content {
+            width: calc(100% - 220px);
+            margin-left: 20px;
+        }
+        .article_content h3{
+            font-weight: bold;
+        }
+        .article_desc {
+            margin: 10px 0;
+            color: #555;
+        }
+        .article_extra {
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="article">
+            <div class="article_thumbnail">
+                <img src="./img/thumb.jpg" alt="">
+            </div>
+            <div class="article_content">
+                <h3 class="article_title">Ghi nhận trường hợp Galaxy S24 Ultra bị sọc màn hình chỉ sau vài ngày sử dụng
+                </h3>
+                <p class="article_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam
+                    cumque quae non? Quaerat voluptas magni dicta ipsa suscipit quae eligendi optio dolores ab magnam,
+                    dolor et consequuntur, provident in!</p>
+                <div class="article_extra">
+                    <span><i class="fa fa-user"></i> Admin</span>
+                    <span><i class="fa fa-calendar"></i>  2 days</span>
+                    <span><i class="fa fa-eye"></i>  3 views</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

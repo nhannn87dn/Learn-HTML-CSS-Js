@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: #111;
+}
+ .support {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px
+ }
+  .support::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+ .support>div{
+    display: inline-block;
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+ }
+  .item {
+    border-right: 1px solid #ccc;
+  }
+  .item:last-child {
+    border-right: none;
+  }
+ .item>div{
+    display: inline-block;
+ }
+ .item .content{
+    text-align: left;
+ }
+  .item .content .title {
+    text-transform: uppercase;
+  }
+ .item .icon i{
+    font-size: 34px;
+ }
+    </style>
+</head>
+<body>
+    <div class="support">
+        <div class="item">
+            <div class="icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="content">
+                <h3 class="title">Free shipping</h3>
+                <p class="desc">Free ship from 10$</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="content">
+                <h3 class="title">Free shipping</h3>
+                <p class="desc">Free ship from 10$</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="content">
+                <h3 class="title">Free shipping</h3>
+                <p class="desc">Free ship from 10$</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

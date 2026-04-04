@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto
+        }
+        .parent {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .child {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="child child1">1</div>
+            <div class="child child2">2</div>
+            <div class="child child3">3</div>
+        </div>
+    </div>
+</body>
+</html>
