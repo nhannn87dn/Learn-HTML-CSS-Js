@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cycle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid salmon;
+            position: relative;
+            top: 0;
+
+            animation-name: run;
+            animation-duration: 5s;
+            animation-delay: 0;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes run {
+            0% {
+                left: 0;
+            }
+
+
+            100% {
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cycle"></div>
+</body>
+</html>

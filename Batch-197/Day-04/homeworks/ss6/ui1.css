@@ -1,0 +1,32 @@
+
+.process-item {
+    margin: 10px 0
+}
+ .process-label {
+    width: 150px;
+    text-align: right;
+ }
+.process-label,
+.process-percent {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.process-bar {
+    background-color: #f3f3f3;
+    flex: 1
+}
+
+#bandwidth .process-label {
+    background-color: #E54D4C;
+}
+
+#bandwidth .process-percent {
+    background-color: #F65252;
+}
+#storage .process-label {
+    background-color: #2DB8CD;
+}
+#storage .process-percent {
+    background-color: #31C8DD;
+}

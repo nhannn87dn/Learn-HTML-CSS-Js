@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        a{
+            color: #555;
+            text-decoration: none;
+
+            transition-property: color;
+            transition-duration: 0.3s;
+        }
+        a:hover{
+            color: #2a83e9
+        }
+        .thumbnail {
+            width: 200px;
+            height: 200px;
+            background-color: #f3f3f3;
+            position: relative;
+            overflow: hidden;
+        }
+        .thumbnail img {
+            width: 100%;
+            transition: all 0.3s;
+        }
+        .thumbnail:hover img{
+            transform: scale(1.1);
+        }
+        .icon {
+            display:flex;
+            height: 40px;
+            width: 40px;
+            justify-content: center;
+            align-items:center ;
+            background-color: #fff;
+            color: #333;
+            border-radius: 50%;
+
+        }
+        .actions {
+            position: absolute;
+            right: -50px;
+            top: 30px;
+            transition: all 0.3s;
+        }
+        .thumbnail:hover .actions {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Tinhte.vn</a>
+
+    <div class="thumbnail">
+        <div class="actions">
+            <span class="icon">
+                <i class="fa fa-heart"></i>
+            </span>
+        </div>
+        <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Ffeatured%2F5.png&w=384&q=75" alt="">
+    </div>
+</body>
+</html>
