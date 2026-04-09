@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        body{
+            background-color: #212121;
+        }
+        nav{
+            background-color: #FE4A55;
+        }
+        nav>ul{
+            list-style: none;
+            column-gap: 20px;
+        }
+        nav>ul>li{
+            height: 48px;
+            padding: 0 10px;
+            position: relative;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            color: #fff;
+            line-height: 48px;
+        }
+        nav>ul>li:hover{
+            background-color: #e93b47;
+        }
+        nav .nav_sub {
+            display: none;
+            list-style: none;
+            background-color: #fff;
+        }
+        nav>ul>li:hover .nav_sub {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 48px;
+            padding: 20px 0;
+            min-width: 160px;
+        }
+        nav .nav_sub a{
+            text-decoration: none;
+            color: #333;
+            white-space:nowrap;
+        }
+        nav .nav_sub li {
+            padding: 10px;
+        }
+        nav .nav_sub li:hover{
+            background-color: #f3f3f3;
+        }
+        nav .nav_sub li:hover a{
+            color: #e93b47;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+            <ul class="nav_parent flex">
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">Blog</a>
+                    <ul class="nav_sub">
+                        <li><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></li>
+                        <li><a href="">Child 2</a></li>
+                        <li><a href="">Child 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+</body>
+</html>
