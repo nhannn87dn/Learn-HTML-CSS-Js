@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        input,
+        select,
+        textarea {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline-color: #222;
+        }
+
+        input[disabled] {
+            background-color: #eee;
+            cursor: not-allowed;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            background-color: #222;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button:disabled {
+            background-color: #eee;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+        .input_item {
+            display: flex;
+            align-items: center;
+        }
+
+        .vertical-form .input_item {
+            margin: 10px 0
+        }
+
+        .vertical-form label {
+            width: 160px;
+        }
+
+        .vertical-form input,
+        .vertical-form select,
+        .vertical-form textarea {
+            flex: 1
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="vertical-form" action="">
+            <div class="input_item">
+                <label for="user_name">Username</label>
+                <input minlength="2" maxlength="256" required type="text" id="user_name" name="user_name">
+            </div>
+            <div class="input_item">
+                <label for="email">Email</label>
+                <input placeholder="ex: yourname@example.com" required type="email" id="email" name="email">
+            </div>
+            <div class="input_item">
+                <label for="password">Password</label>
+                <input pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{6,}$"  placeholder="Mật khẩu ít nhất phải 6 kí tự" required type="password" id="password" name="password">
+            </div>
+
+            <div class="input_item">
+                <label for="age">Age</label>
+                <input disabled min="13" max="150" type="number" id="age" name="age">
+            </div>
+
+            <div class="input_item">
+                <label for="province">Province</label>
+                <select name="province" id="province">
+                    <option value="">---Vui lòng chọn Tỉnh/Thành phố---</option>
+                    <option value="0">Hà Nội</option>
+                    <option value="1">Đà Nẵng</option>
+                    <option value="2">Nghệ An</option>
+                    <!-- Add more provinces as needed -->
+                </select>
+            </div>
+            <div class="input_item">
+                <label for="short_brief">Short Brief</label>
+                <textarea placeholder="Vui lòng nhập tiếng việt có dấu, và tối đa 250 kí tự" maxlength="250" cols="50" rows="5" name="short_brief" id="short_brief"></textarea>
+            </div>
+            <div class="input_item">
+                <label for="short_brief">Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male"> 
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                </div>
+
+            </div>
+            <div class="input_item">
+                <label for="">Sở thích</label>
+                <div>
+                    <label for="sport"> <input type="checkbox" name="hobby" id="sport" value="sport"> Thể thao</label>
+                    <label for="music"> <input type="checkbox" name="hobby" id="music" value="music"> Âm nhạc</label>
+                    <label for="travel"> <input type="checkbox" name="hobby" id="travel" value="travel"> Du lịch</label>
+                </div>
+            </div>
+            <div class="input_item">
+                <label for="agree"> <input type="checkbox" name="agree" id="agree"> I agree to the terms and conditions</label>
+            </div>
+            <div class="input_item">
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+
+            <div class="input_item">
+                <label for="avatar">Avatar</label>
+                <input type="file" name="avatar" id="avatar">
+            </div>
+
+            <div class="input_item">
+                <button disabled>Print</button>
+                <input type="hidden" name="user_id" value="12345">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
