@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        body {
+            background-color: #D2E4ED;
+        }
+        .register-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .register-wrapper .right{
+            background-color: #fff;
+            width: 400px;
+            padding: 30px;
+        }
+        .register-wrapper .left {
+            flex: 1;
+            background-color: #ECF1F4;
+        }
+        .register-form {
+            width: 250px;
+            margin: 0 auto;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            row-gap: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline-color: #222;
+        }
+
+        input[disabled] {
+            background-color: #eee;
+            cursor: not-allowed;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            background-color: #222;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button:disabled {
+            background-color: #eee;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="register-wrapper flex">
+            <div class="left flex justify-center item-center">
+                <div class="left-content">
+                    <h2>Welcome Back!</h2>
+                </div>
+        </div>
+        <div class="right">
+            <form class="register-form" action="">
+                <h2>Register</h2>
+                <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="agree">
+                        <input type="checkbox" id="agree" name="agree">
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+                <div class="form-group">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
