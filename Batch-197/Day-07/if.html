@@ -1,0 +1,100 @@
+<script>
+    let x = -5;
+
+    //1. if đơn
+    // if (x < 0) {
+    //     console.log('X là số dương');
+    //     console.log('X là số dương');
+    //     console.log('X là số dương');
+    // }
+
+    //2. if else
+    //Nếu x > 0 thì in ra x là số dương
+    //còn lại thì in ra x là số âm
+
+    // if (x > 0) {
+    //     console.log('X là số dương');
+    //     console.log('X là số dương');
+    //     console.log('X là số dương');
+    // }
+    // else{
+    //     console.log('x là số âm');
+    // }
+
+//     const password_DB = '123';
+
+//     const password = prompt('Nhập vào password: ')
+//     /*
+//     Nếu đúng mật khẩu thì in ra là Login thành công
+//     Còn lại thì in ra : Sai mật khẩu
+//     */
+//    if(password === password_DB){
+//      console.log('Login thành công');
+//    }else{
+//      console.log('Sai mật khẩu');
+//    }
+
+
+    //3. nested if
+    /*
+    Nếu KH có tổng hoá đơn >500 và là thành viên VIP
+    thì được giảm giá 5%
+    còn lại thì không giảm giá.
+    */
+   const orderAmount = 600;
+   const level = 'GOLD'
+
+//    if(orderAmount > 500){
+//         console.log('Đáp được được điều kiện hoá đơn');
+//         if(level === 'VIP'){
+//             console.log('Được giảm 5%');
+//         }
+//    }else{
+//     console.log('Ko giảm');
+//    }
+
+//    if(orderAmount > 500 && level === 'VIP'){
+//         console.log('Được giảm 5%');
+//    }else{
+//     console.log('Ko giảm');
+//    }
+
+// th4: nhiều điều kiện cần đạt if else if else
+/*
+bài toán xếp loại HS
+- Nếu DTB >= 9 -- Xuất sắc
+- Nếu DTB >= 8 và < 9-- Giỏi
+- Nếu DTB >= 7 và < 8-- Khá
+- Nếu DTB >= 6 và < 7-- Trung Bình
+- Còn lại là Yếu
+*/
+const dtb = 4.5;
+
+if(dtb >= 9){
+    console.log('HS Xuất sắc');
+}
+else if(dtb >= 8 && dtb < 9){
+    console.log('Giỏi');
+}
+else if(dtb >= 7 && dtb < 8){
+    console.log('Khá');
+}
+else if(dtb >= 6 && dtb < 7){
+    console.log('TB');
+}else{
+    console.log('yếu');
+}
+ 
+
+ //th5: Toán tử 3 ngôi
+ //Nếu level là VIP thì discount = 5
+ //còn lại discount = 0;
+
+//  if(level === 'VIP'){
+//     console.log(5);
+//  }else{
+//     console.log(0);
+//  }
+ const discount = level === 'VIP' ? 5 : 0;
+console.log('discount', discount);
+</script>
