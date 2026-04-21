@@ -1,0 +1,41 @@
+<script>
+    let count = 0;
+
+    // while (count < 5) {
+    //     // if(count == 3){
+    //     //     break; // dừng vòng lặp, bỏ qua câu lệnh phía sau nó
+    //     // }
+       
+    //     count++; //tăng count lên 1 đơn vị
+    // }
+
+
+    // let i = 0;
+
+    // while (i < 10) {
+    //     i++;
+    //     if (i % 2 === 0) {
+    //         continue; // tiếp tục vòng lặp
+    //     }
+    //     console.log(i);
+    // }
+
+    // let count = 6;
+
+    // do {
+    //     console.log(count);
+    //     count++;
+    // } while (count < 5);
+
+
+    const max = 6;
+    let j = 0
+    for (let i = 0; i < max; i++) {
+        j = max - i; //trừ ngược lại
+        let line = '';
+        for (let k = 1; k <= j; k++) {
+            line += '* ';
+        }
+        console.log(line);
+    }
+</script>

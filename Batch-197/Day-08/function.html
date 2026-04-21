@@ -1,0 +1,84 @@
+<script>
+    //Cách khai báo hàm
+    function tenHam(){
+        //khối lệnh của hàm
+        console.log('1');
+        console.log('2');
+        console.log('3');
+    }
+    // gọi hàm
+    //tenHam(); //cú pháp gọi hàm
+
+    //2. cách đặt tên hàm = cách đặt tên biến
+    //- PASCAL Case: GetProductById()
+    //- Camel Case: getProductById()
+    //- Snack Case: get_product_by_id()
+
+    //type1: hàm ko có tham số
+    // function sayHi(){
+    //     console.log('Xin chào');
+    // }
+    //sayHi();
+
+    //arrow function
+    // const sayHi = ()=>{
+    //     console.log('Xin chào');
+    // }
+    const sayHi = ()=> console.log('Xin chào');
+    sayHi();
+
+    //type2: hàm có tham số
+    // name: gọi là tham số (parameter)
+    // function sayHello(name){
+    //     console.log('Chào ' + name + ' !');
+    // }
+
+    const sayHello = (name)=>{
+        console.log('Chào ' + name + ' !');
+    }
+
+    //Gọi hàm có tham số
+    //sayHello('Tuấn'); //Tuấn được gọi là đối số (Argument)
+    //sayHello('Nam')
+    //Có nhiều tham số
+     function introMe(name, age){
+        console.log('Xin Chào. Tôi là: ' + name + '. Tôi ' + age + ' tuổi.');
+    }
+    //introMe('Tuấn', 28); //Khi đó name=Tuấn, age=28
+    //hàm có tham số tuỳ chọn
+    //Note: tuỳ chọn có nghĩa truyền hoặc ko cần truyền khi gọi hàm
+    function cal(x, y, mode="+"){
+        if(mode === '*'){
+            console.log(x * y);
+        }else if(mode === '-'){
+            console.log(x - y);
+        }
+        else{
+            console.log(x + y);
+        }
+    }
+    //cal(5,6); //ko truyền thì mặc định mode=+
+    //cal(5,6, '*');
+    //Lưu ý: tham số luôn nằm cuối cùng
+
+    //type3: hàm có return;
+
+    function calV2(x, y, mode="+"){
+        if(mode === '*'){
+            return x * y;
+        }else if(mode === '-'){
+           return x - y;
+        }
+        else{
+            return x + y;
+        }
+    }
+    //console.log(calV2(5,6));
+    const result = calV2(5,6);
+    console.log('<<=== 🚀 result ===>>',result);
+    console.log('<<=== 🚀 result ===>>',result);
+    console.log('<<=== 🚀 result ===>>',result);
+    console.log('<<=== 🚀 result ===>>',result);
+
+    //type4: arrow function
+</script>
