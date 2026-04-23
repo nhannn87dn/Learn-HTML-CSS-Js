@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="product_list">NA</div>
+
+    <script>
+    //object ?
+    let student = {
+        id: 1, //key: value
+        first_name: 'nguyen',
+        last_name: 'van a',
+        email: 'a@gmail.com',
+        iStudent: true,
+        getFullName: ()=>{}
+    }
+
+    console.log(typeof student);
+
+    let studentV2 = {} // object rỗng
+
+    //Truy cập phần tử  object
+    console.log(student.last_name, student.email);
+
+
+    //Thêm phần tử vào object
+    student.age = 18;
+
+    console.log('<<=== 🚀 student ===>>',student);
+
+    //Thay đổi giá trị phần tử của object
+    student.iStudent = false;
+    console.log('<<=== 🚀 student ===>>',student);
+
+    const products = [
+        {
+            id: 1,
+            name: 'Iphone 16',
+            price: 800
+        },
+        {
+            id: 2,
+            name: 'Iphone 17',
+            price: 900
+        }
+    ];
+
+   //console.log(products[1].name);
+
+    let html = "<ul>";
+    const totalProduct = products.length;
+    for(let i = 0; i < totalProduct; i++){
+        console.log('<<=== 🚀 i ===>>',i);
+        html += '<li>'+ products[i].name +'</li>';
+    }
+
+    html += "</ul>";
+
+    document.write(html)
+    
+</script>
+</body>
+</html>

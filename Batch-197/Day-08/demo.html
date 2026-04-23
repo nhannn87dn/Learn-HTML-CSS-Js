@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+     <input placeholder="x" type="text" name="x" value="">
+    <input placeholder="y" type="text" name="y" value="">
+    <select name="pt" id="pt">
+        <option value="">--Chọn phép tính--</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="cal()">Tính</button>
+   </div>
+   <div>
+    Kết quả: <span id="result">N/A</span>
+   </div>
+   <script>
+     function cal(){
+        console.log('clicked');
+        let x = parseFloat(document.querySelector("input[name='x']").value);
+        let y = parseFloat(document.querySelector("input[name='y']").value);
+        let pt = document.querySelector("#pt").value;
+
+        console.log('<<=== 🚀 x,y,pt ===>>',x,y,pt);
+        //nếu nhập vào là chữ thì báo lỗi
+        if(isNaN(x) || isNaN(y)){
+            alert('Nhập vào giá trị số')
+            return;
+        }
+        if(pt === ''){
+            alert('Chọn phép tính');
+            return;
+        }
+        //Nếu là số thì bắt tính
+        let result  = ""
+        switch (pt) {
+            case "+":
+                result = x + y;
+                break;
+            case "-":
+                result = x - y;
+                break;
+            case "*":
+                result = x * y;
+                break;
+
+            case "/":
+                if(y === 0){
+                    result = 'Ko thể chia cho zero'
+                }else{
+                    result = x / y;
+                }
+                break;
+            default:
+                result = '';
+                break;
+        }
+
+        console.log('<<=== 🚀 result ===>>',result);
+        document.querySelector("#result").innerText = result;
+     }
+   </script>
+</body>
+</html>

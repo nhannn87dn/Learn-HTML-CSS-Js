@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p id="text" class="cl cl2"><b>Xin chào</b></p>
+    <p>dsdsd</p>
+    <input type="text" name="email" value="abc@gmail.com">
+
+    <script>
+        //TH 1. Lấy (get) info từ DOM
+
+        //1.1 Lấy nội dung ở giữa element
+        // let h = document.getElementsByTagName('h1')
+        // console.log(h[0].innerText);
+
+        // let p = document.getElementsByTagName('p')
+        // console.log(p[0].innerText);
+
+        // let el = document.getElementById('text');
+        // console.log(el.innerHTML);
+        //  //1.2 Lấy thuộc tính
+        // console.log(el.id);
+        // console.log(el.classList);
+
+        // let i = document.querySelector('input[name="email"]');
+        // console.log(i.value);
+
+        //TH 2. Lấy (set) giá trị cho DOM
+
+        document.querySelector('h1').innerText = 'Hello CSS';
+        document.querySelector('h1').style.color = "red";
+        document.querySelector('h1').style.fontSize = "14px";
+
+        document.querySelector('p#text').id = "desc";
+        document.querySelector('p#desc').classList.add('cl3');
+        document.querySelector('p#desc').classList.remove('cl')
+    </script>
+</body>
+</html>
