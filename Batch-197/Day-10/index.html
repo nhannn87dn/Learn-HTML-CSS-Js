@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/response.css">
+</head>
+
+<body>
+    <header class="bg-primary">
+        <div class="container">
+            <div class="header-middle flex justify-between align-center">
+                <div class="logo">My Logo</div>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div onclick="toggleMobile()" id="toggle_mobile">
+                        <i></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section" id="section-hero">
+            <div class="container">
+                <div class="section-content flex justify-between">
+                    <div class="categories_tree">
+                        <ul>
+                            <li><a href="#">Category 1</a></li>
+                            <li><a href="#">Category 2</a></li>
+                            <li><a href="#">Category 3</a></li>
+                            <li><a href="#">Category 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="main_banner_home">
+                        main_banner_home
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section_best-product" id="best-product">
+            <div class="container">
+                <div class="section_header flex align-center justify-between">
+                    <h2 class="section_title">Best Products</h2>
+                    <div class="section_more">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="section_body">
+                    <div class="product_list flex justify-between">
+                        <div class="product_item">1</div>
+                        <div class="product_item">2</div>
+                        <div class="product_item">3</div>
+                        <div class="product_item">4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="new-product">
+            <div class="container">
+                <div class="section_header flex align-center justify-between">
+                    <h2 class="section_title">New Products</h2>
+                    <div class="section_more">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="section_body">
+                    <div class="product_list flex justify-between">
+                        <div class="product_item">1</div>
+                        <div class="product_item">2</div>
+                        <div class="product_item">3</div>
+                        <div class="product_item">4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_wrapper flex justify-between">
+                <div class="footer_item">Footer Item 1</div>
+                <div class="footer_item">Footer Item 2</div>
+                <div class="footer_item">Footer Item 3</div>
+                <div class="footer_item">Footer Item 4</div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMobile(){
+            console.log('đã clicked');
+            document.querySelector('#main-nav>ul').classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

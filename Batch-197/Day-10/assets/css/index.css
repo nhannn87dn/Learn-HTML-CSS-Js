@@ -1,0 +1,33 @@
+.section {
+    margin: 20px  0;
+}
+.section_header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.categories_tree {
+    width: 300px;
+    min-height: 250px;
+    border: 1px solid #ddd;
+}
+.main_banner_home {
+    width: calc(100% - 320px);
+    min-height: 250px;
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+}
+
+.section_best-product {
+    background-color: #f3f3f3;
+    padding: 40px 0;
+}
+
+.product_item {
+    width: calc((100% - 60px) / 4);
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 200px;
+    background-color: #f3f3f3;
+}
