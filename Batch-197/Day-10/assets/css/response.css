@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    .product_list  {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .product_item {
+        width: calc((100% - 40px) / 3);
+    }
+    .footer_wrapper  {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .footer_item {
+        width: calc((100% - 30px) / 2);
+    }
+
+    .section-content {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .categories_tree, .main_banner_home {
+        width: 100%;
+    }
+    .categories_tree {
+        order: 2;
+    }
+     .main_banner_home {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product_item {
+        width: calc((100% - 20px) / 2);
+    }
+
+    .footer_wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .footer_item {
+        width: 100%;
+    }
+    header {
+        height: 50px;
+        position: relative;
+    }
+    .header-middle {
+        padding: 10px 0 0;
+    }
+    header nav.main-nav>ul{
+        display: none;
+    }
+
+    header nav.main-nav>ul.show {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
+    }
+    .main-nav>ul>li {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+    .main-nav>ul>li>a{
+        color: #333
+    }
+
+    #toggle_mobile i::before,
+    #toggle_mobile i::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+    #toggle_mobile i {
+        position: relative;
+        cursor: pointer;
+    }
+    #toggle_mobile i,
+    #toggle_mobile i::before,
+    #toggle_mobile i::after {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+    #toggle_mobile i::before {
+        top: -8px;
+    }
+    #toggle_mobile i::after {
+        top: 8px;
+    }
+}
