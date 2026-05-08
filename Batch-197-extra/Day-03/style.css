@@ -1,0 +1,13 @@
+/* EXTERNAL CSS */
+h4{
+    color: salmon;
+}
+
+ h1{
+          color: red;
+          background-color: yellow;
+          /* width: 400px; */
+          width: 50%;
+          height: 100px;
+
+        }
