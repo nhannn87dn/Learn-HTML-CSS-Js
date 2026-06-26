@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .task_1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .task_1 .item1,
+        .task_1 .item2{
+            width: calc((100% - 30px) / 2);
+            height: 40px;
+            background-color: #ddd;
+        }
+        .task_2 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .task_2 .item2 {
+            width: 300px;
+            height: 40px;
+            background-color: #ddd;
+        }
+        .task_2 .item1{
+            width: calc((100% - 30px - 300px));
+            height: 40px;
+            background-color: #ddd;
+        }
+        .flex {
+            display: flex;
+        }
+        .item {
+            height: 40px;
+            background-color: #ddd;
+        }
+        .task_4 .item{
+            width: calc((100% - 60px) / 3);
+        }
+        .task_5 {
+            flex-wrap: wrap;
+
+            /* column-gap: 30px;
+            row-gap: 30px; */
+            gap: 30px;
+        }
+        .task_5 .item{
+             width: calc((100% - 90px) / 4);
+        }
+        .container>div{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="task_1">
+         <div class="item1">1</div>
+         <div class="item2">2</div>
+      </div>
+      <div class="task_2">
+         <div class="item1">7</div>
+         <div class="item2">3</div>
+      </div>
+
+      <div class="task_4 flex">
+        <div class="item1 item">1</div>
+        <div class="item2 item">2</div>
+        <div class="item3 item">3</div>
+      </div>
+
+      <div class="task_5 flex">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+      </div>
+
+    </div>
+</body>
+</html>
