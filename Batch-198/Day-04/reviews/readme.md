@@ -37,3 +37,20 @@ Hình ảnh có thể vào trang https://unsplash.com/ và search với từ kho
 Cho biết 
 - font chữ mặc định là `Poppins` từ google Font
 - container với chiều rộng `1200px`
+
+Nội dung:
+
+```
+What We Offer
+
+Lighting Upgrades
+Electrical panel maintenance, therefore, should be part of your regular routine.
+
+Electrical repairs
+Electrical repairs should always be handled by a professional electrician
+
+
+Surge Protection
+An electrical surge can happen for a number of reasons, including lightning strikes.
+
+```
