@@ -37,14 +37,15 @@ Hình ảnh có thể vào trang https://unsplash.com/ và search với từ kho
 Cho biết 
 - font chữ mặc định là `Poppins` từ google Font
 - container với chiều rộng `1200px`
+- Khoảng cách giữa mỗi tin là `30px`
 
 Nội dung:
 
 ```
-What We Offer
+What We Offer --> Cở chữ 36
 
-Lighting Upgrades
-Electrical panel maintenance, therefore, should be part of your regular routine.
+Lighting Upgrades --> Cở chữ 18
+Electrical panel maintenance, therefore, should be part of your regular routine. --> Cở chữ 18
 
 Electrical repairs
 Electrical repairs should always be handled by a professional electrician
