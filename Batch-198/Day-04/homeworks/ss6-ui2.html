@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .flex {
+            display: flex;
+        }
+        .profile_wrapper {
+            width: 500px;
+        }
+        .profile_header {
+            background-image: url('./img/bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .profile_avatar {
+            width: 50px;
+            height: 50px;
+        }
+        .profile_avatar img{
+            width: 100%;
+            border-radius: 50px;
+        }
+        .profile_name {
+            color: #fff;
+        }
+        .profile_avatar_wrapper {
+            align-items: center;
+            column-gap: 20px;
+        }
+        .profile_body {
+            list-style: none;
+            border: 1px solid #ddd
+        }
+        .profile_body li{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 12px;
+        }
+        .profile_body li:last-child {
+            border-bottom: none;
+        }
+        .profile_body li .name{
+            text-transform: uppercase;
+        }
+        .profile_body li .value{
+            background-color: #333;
+            padding: 3px 5px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .profile_body li:nth-child(1) .value {
+            background-color: #F55555;
+        }
+        .profile_body li:nth-child(2) .value {
+            background-color: #35C6E3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile_wrapper">
+            <div class="profile_header ">
+                <div class="profile_avatar_wrapper flex">
+                    <div class="profile_avatar">
+                    <img src="./img/avatar.png" alt="">
+                    </div>
+                    <div class="profile_name">
+                        <strong>Jake Nackos</strong>
+                        <p>Developer Software</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="profile_body">
+                <li>
+                    <span class="name">
+                        Fllowers
+                    </span>
+                    <span class="value">1.200</span>
+                </li>
+                <li>
+                    <span class="name">
+                        Fllowers
+                    </span>
+                    <span class="value">1.200</span>
+                </li>
+                <li>
+                    <span class="name">
+                        Fllowers
+                    </span>
+                    <span class="value">1.200</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

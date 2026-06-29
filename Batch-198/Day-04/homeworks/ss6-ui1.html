@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .flex {
+            display: flex;
+        }
+        
+        .proccess_item {
+            margin: 20px 0;
+        }
+        .label {
+            width: 150px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            display: flex;
+            justify-content: flex-end;
+            /* canh theo trục x trong flex */
+            align-items: center;
+        }
+        .percent {
+             color: #fff;
+             padding: 10px 12px;
+        }
+        .process_bar {
+            /* flex: 1; */
+            width: calc((100% - 150px));
+            background-color: #f3f3f3;
+        }
+
+        #bandwidth .label{
+            background-color: #E54D4C;
+           
+        }
+        #bandwidth .percent{
+            background-color: #F65352;
+            
+        }
+
+        #storages .label{
+            background-color: #2DB8CD;
+           
+        }
+        #storages .percent{
+            background-color: #31C8DD;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="bandwidth" class="proccess_item flex ">
+            <div class="label">
+                Bandwidth
+            </div>
+            <div class="process_bar">
+                <div style="width: 20%;" class="percent">20%</div>
+            </div>
+        </div>
+
+        <div id="storages" class="proccess_item flex ">
+            <div class="label">
+                Storages
+            </div>
+            <div class="process_bar">
+                <div style="width: 50%;" class="percent">50%</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
