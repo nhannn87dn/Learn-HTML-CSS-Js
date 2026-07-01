@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Register new member</h1>
+        <div class="form_input">
+            <label for="">First name</label>
+            <input minlength="2" maxlength="20" type="text" name="fist_name">
+        </div>
+        <div class="form_input">
+            <label for="">Last name</label>
+            <input type="text" name="last_name">
+        </div>
+        <div class="form_input">
+            <label for="">Email</label>
+            <input placeholder="Ex: example@gmail.com" required type="email" name="email">
+        </div>
+        <div class="form_input">
+            <label for="">Password</label>
+            <input minlength="6" type="password" name="password">
+        </div>
+        <div class="form_input">
+            <label for="">age</label>
+            <input type="number" min="13" name="age">
+        </div>
+        <div class="form_input">
+            <label for="">
+                <input required checked type="radio" name="gender" value="0">
+                Nu
+            </label>
+            <label for="">
+                <input type="radio" name="gender" value="1">
+                nam
+            </label>
+        </div>
+         <div class="form_input">
+            <p>So thich</p>
+            <div>
+                 <label for="">
+                <input type="checkbox" name="sothich" value="sport">
+                Sport
+            </label>
+            <label for="">
+                <input type="checkbox" name="sothich" value="travel">
+                Travel
+            </label>
+             <label for="">
+                <input type="checkbox" name="sothich" value="Movies">
+                Movie
+            </label>
+            </div>
+         </div>
+         <div class="form_input">
+            <select name="province">
+                <option value="">--- Vui long chon----</option>
+                <option value="0">Ha Noi</option>
+                <option selected value="1">Da nang</option>
+                <option value="2">TP HCM</option>
+            </select>
+         </div>
+         <div class="form_input">
+            <input type="file" name="avatar">
+         </div>
+         <div class="form_input">
+            <textarea name="desc" rows="3" cols="40"></textarea>
+         </div>
+         <div class="form_input">
+            <input type="date" name="birthday">
+         </div>
+         <div class="form_input">
+            <input placeholder="dd/mm/yyyy" type="text" name="birthday">
+         </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
