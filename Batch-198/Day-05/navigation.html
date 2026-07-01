@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #212121;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .flex{
+            display: flex;
+        }
+        nav {
+            margin-top: 40px;
+            background-color: #fe4a55;
+        }
+        nav>ul{
+            list-style: none;
+        }
+        nav>ul>li{
+            padding: 0 10px;
+            height: 48px;
+            position: relative;
+        }
+         nav>ul>li:hover{
+            background-color: #e93b47;
+         }
+        nav>ul>li>a{
+            line-height: 48px;
+        }
+        .nav_sub {
+            background-color: #fff;
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 48px;
+            min-width: 160px;
+            left: 0;
+
+        }
+        .nav_sub a{
+            color: #333;
+        }
+        .nav_sub>li{
+            padding: 0 10px;
+        }
+        nav>ul>li.has_childs:hover .nav_sub {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="flex">
+                <li><a href="">Home</a></li>
+                <li class="has_childs">
+                    <a href="">Blog</a>
+                    <ul class="nav_sub">
+                        <li><a href="">Tech</a></li>
+                         <li><a href="">Sport</a></li>
+                          <li><a href="">Fashion</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">News</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

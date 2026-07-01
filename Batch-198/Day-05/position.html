@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 100px;
+            height: 100px;
+            border: 3px solid red;
+            position: relative;
+            
+        }
+        .target {
+            width: 30px;
+            height: 30px;
+            border: 2px solid blue;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .product_item {
+            width: 300px;
+        }
+        .product_item .thumbnail {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .product_item .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        .product_item .button {
+            position: absolute;
+            bottom: -48px;
+            height: 38px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            transition: all 0.6s linear;
+        }
+        .product_item .button .add_to_cart{
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 50px;
+            color: #333;
+            width: 90%;
+        }
+        .discount {
+            position: absolute;
+            z-index: 2;
+            left: 10px;
+            top: 10px;
+            display: flex;
+            background-color: #f80;
+            color: #fff;
+            border-radius: 10px;
+            padding: 2px 5px;
+
+        }
+        .product_item:hover .button {
+            bottom: 10px;
+        }
+        .support {
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="support">
+        Hotline 19008811
+    </div>
+    <div class="parent">
+        <div class="child">
+            <div class="target"></div>
+        </div>
+    </div>
+    <div style="height: 2000px;"></div>
+    <div class="product_item">
+        <div class="thumbnail">
+            <span class="discount">-20%</span>
+            <div class="button">
+                <div class="add_to_cart">Add to Cart</div>
+            </div>
+            <img src="https://themesflat.co/html/modave/images/products/womens/women-20.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
