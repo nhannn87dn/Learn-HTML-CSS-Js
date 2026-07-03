@@ -9,7 +9,7 @@
 ## Cho biết
 
 - Tên sản phẩm là h1, size 22px
-- Hình sản phẩm: 'samsung-galaxy-s21.jpg' bên trên
+- Hình sản phẩm: 'samsung-galaxy-s21.jpg' bên trên. Size hiển thị `400x400px`
 - Màu chính: `#ff6700`
 - Màu phụ: `#303442`
 - Font: `Arial`
