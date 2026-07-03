@@ -8,7 +8,29 @@ Intro: <https://www.w3schools.com/js/js_versions.asp>
 - Variable Naming Rules
 
 
-Dưới đây là một bài giảng về cách định nghĩa biến, quy tắc đặt biến, sự khác nhau giữa các cách đặt biến và tại sao cần phải đặt biến trong JavaScript:
+**Biến (Variable)** là một vùng nhớ có tên dùng để **lưu trữ dữ liệu** trong chương trình. Giá trị của biến có thể được **đọc, thay đổi hoặc cập nhật** trong quá trình chương trình chạy.
+
+Bạn có thể hình dung biến giống như một **chiếc hộp có nhãn**:
+
+* Tên biến là **nhãn** của chiếc hộp.
+* Giá trị của biến là **thứ được đặt bên trong hộp**.
+* Khi cần, bạn chỉ cần gọi tên chiếc hộp để lấy hoặc thay đổi dữ liệu.
+
+Ví dụ trong JavaScript:
+
+```javascript
+let name = "Nguyễn Văn A";
+let age = 20;
+let isStudent = true;
+```
+
+Ở đây:
+
+* `name` lưu chuỗi `"Nguyễn Văn A"`
+* `age` lưu số `20`
+* `isStudent` lưu giá trị `true`
+
+---
 
 **Cách định nghĩa biến trong JavaScript:**
 
@@ -45,17 +67,131 @@ var my-variable; // tên biến không hợp lệ (sử dụng dấu gạch ngan
 
 **Tại sao cần phải đặt biến:**
 
-Việc đặt biến trong JavaScript cho phép lưu trữ và tham chiếu đến các giá trị và đối tượng khác nhau trong quá trình thực thi mã. Điều này mang lại nhiều lợi ích quan trọng:
+Tại sao cần khai báo biến?
 
-1. Lưu trữ dữ liệu: Biến cho phép bạn lưu trữ các giá trị như số, chuỗi, mảngvà đối tượng để sử dụng và xử lý trong mã JavaScript.
+Nếu không có biến, bạn sẽ phải viết trực tiếp giá trị ở mọi nơi trong chương trình, khiến mã nguồn khó đọc, khó sửa và khó tái sử dụng.
 
-2. Đặt tên có ý nghĩa: Sử dụng biến có tên mô tả cho phép mã của bạn trở nên dễ đọc và dễ hiểu hơn. Bằng cách đặt tên biến mô tả chức năng và nội dung của chúng, bạn có thể làm cho mã của mình dễ theo dõi và bảo trì.
+Biến giúp giải quyết những vấn đề này.
 
-3. Thay đổi giá trị: Biến cho phép bạn thay đổi giá trị của chúng trong quá trình thực thi. Điều này rất hữu ích khi bạn cần lưu trữ và cập nhật thông tin trong suốt quá trình chạy chương trình.
+1. Lưu trữ dữ liệu
 
-4. Quản lý phạm vi: Biến có thể có phạm vi toàn cục hoặc cục bộ. Việc quản lý phạm vi giúp bạn kiểm soát việc truy cập và sử dụng các biến trong các phần khác nhau của mã của bạn, đồng thời tránh xung đột và lỗi không mong muốn.
+Biến giúp lưu thông tin để sử dụng nhiều lần.
 
-5. Tối ưu hóa mã: Sử dụng biến cho phép bạn lưu trữ các giá trị trung gian và kết quả tính toán. Điều này giúp tối ưu hóa mã của bạn bằng cách tránh việc tính toán lặp đi lặp lại và sử dụng kết quả đã tính toán trước đó.
+Ví dụ:
+
+```javascript
+let username = "admin";
+
+console.log(username);
+console.log("Xin chào " + username);
+```
+
+Kết quả:
+
+```
+admin
+Xin chào admin
+```
+
+Nếu không dùng biến:
+
+```javascript
+console.log("admin");
+console.log("Xin chào admin");
+```
+
+Khi đổi tên người dùng, bạn phải sửa ở nhiều nơi.
+
+---
+
+2. Dễ dàng thay đổi giá trị
+
+Ví dụ:
+
+```javascript
+let price = 100;
+
+price = 150;
+
+console.log(price);
+```
+
+Kết quả:
+
+```
+150
+```
+
+Bạn chỉ cần thay đổi giá trị của biến thay vì sửa nhiều dòng mã.
+
+---
+
+3. Giúp chương trình linh hoạt
+
+Ví dụ tính tổng:
+
+```javascript
+let a = 10;
+let b = 20;
+
+let sum = a + b;
+
+console.log(sum);
+```
+
+Nếu sau này:
+
+```javascript
+a = 100;
+b = 200;
+```
+
+Chương trình vẫn hoạt động mà không cần sửa công thức.
+
+---
+
+4. Giúp mã nguồn dễ đọc
+
+So sánh:
+
+Không dùng biến:
+
+```javascript
+console.log(15000000 * 0.1);
+```
+
+Dùng biến:
+
+```javascript
+let salary = 15000000;
+let taxRate = 0.1;
+
+console.log(salary * taxRate);
+```
+
+Đoạn mã thứ hai dễ hiểu hơn rất nhiều.
+
+---
+
+5. Tái sử dụng dữ liệu
+
+Một biến có thể được sử dụng ở nhiều nơi.
+
+```javascript
+let companyName = "ABC Company";
+
+console.log(companyName);
+console.log(companyName);
+console.log(companyName);
+```
+
+Khi đổi tên công ty:
+
+```javascript
+companyName = "XYZ Company";
+```
+
+Chỉ cần sửa một chỗ.
 
 
 ## 3. Data Types in JavaScript
