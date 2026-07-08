@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Note: Cách đặt tên function = cách đặt tên BIẾN
+
+        //Các sử dụng function
+        //1. Function không có tham số
+        //Ví dụ:
+        function sayHello(){
+            //Tập hợp các logic
+            console.log('Hello !');
+        }
+        //Cách gọi Function ko có tham số
+        sayHello();
+
+        //Q.Khi nào thì dùng kiểu này?
+        //A. Khi cần chạy một tập hợp các logic mà ko cần tham số đầu vào, và đầu ra
+
+        //2. Function có tham số
+        // name: được gọi là tham số (parameter), (dữ liệu đầu vào)
+        function sayHelloWithName(name){
+            //logic
+            //console.log('Xin chào ' + name); // toán tử nối chuỗi
+            console.log(`Xin chào ${name}`); //javascript template string
+        }
+        //Cách gọi hàm có tham số
+        sayHelloWithName('Tuấn'); // Tuấn --> được gọi đối số (Argument)
+        sayHelloWithName('Nam');
+        // bạn truyền giá trị  đầu vào ntn thì logic xử lý với dữ liệu tương ứng
+
+        //3. Function có nhiều tham số
+        //Ví dụ:
+        function printWithFormat(name, age, address){
+            console.log(`Tôi tên là ${name}, tôi ${age} tuổi, Tôi ở: ${address}`);
+        }
+        //Cách gọi với hàm có nhiều tham số.
+        printWithFormat("Nhân", 40, "Thanh khê"); // truyền đối số tuần tự từ trái sang phải
+        printWithFormat("Tuân", 18, "hải Châu");
+
+        //4. Function có tham số tuỳ chọn
+        //Ví dụ: pt --> được gọi là tham số tuỳ chọn, tham số mặc định
+        // Tham số tuỳ chọn LUÔN LUÔN đứng cuối cùng của danh sách tham số.
+        function calculate(a, b, pt="+"){
+            if(pt === "*"){
+                console.log(a * b);
+            }
+            else if(pt === '/'){
+                console.log(a / b);
+            }
+            else if(pt === '%'){
+                console.log(a % b);
+            }
+            else if(pt === '-'){
+                console.log(a - b);
+            }else{
+                 console.log(a + b);
+            }
+        }
+        //Gọi hàm có tham số tuỳ chọn mặc định
+        calculate(2,6); //output 8 ==> vì pt mặc định là phép +, pt là tham số tuỳ chọn, nên có thể ko cần truyền
+        calculate(2,6,"*"); // pt = *
+
+        //5. Function có return (có output dữ liệu đầu ra)
+        function sum(a, b){
+            // logic xử luý
+            const total = a + b
+            return total; // muốn output giá trị total ra ngoài
+        }
+        //gọi hàm 
+
+        const result = sum(3,7);
+        console.log(result, sum(3,7));
+
+        //6. Arrow function (ES6) --> hàm có dấu mũi tên
+        const sumV2 = (a,b) => {
+            return a + b
+        }
+        const res = sumV2(3, 7);
+
+        //BÀI TẬP NHANH
+        /*
+        Task 1: Hãy viết 1 hàm tính tiền bán vé Bà Nà Hill.
+        - Cho biết đơn giá vé người lớn: 800, trẻ em: 300
+        - Nếu mua > 2 vé thì được giảm 100.
+        yêu cầu:
+        - Sử dụng promt để nhập vào số vé trẻ em và người lớn
+        - Tính và in ra số tiền khi khách hàng A, mua 4 vé người lớn, 2 vé trẻ em
+        - Tính và in ra số tiền khi khách hàng B, mua 1 vé người lớn, 1 vé trẻ em
+        */
+       function tinhTien(){
+         //Bước 1: Lấy dữ liệu đầu vào là số lượng mỗi loại vé
+         const slNguoiLon = parseInt(prompt('Số vé người lớn: '));
+         const slTreEm = parseInt(prompt('Số vé trẻ em: '));
+
+         console.log('<<=== 🚀  vé ===>>',slNguoiLon, slTreEm);
+         //Tính tiền dựa trên sl vé và đơn giá
+        let tongtien = (slNguoiLon * 800) + (slTreEm * 300);
+         //Tính giảm giá dựa trên tổng số vé
+         const totalVe = slNguoiLon + slTreEm;
+         if(totalVe > 2){
+            tongtien = tongtien - 100;
+         }
+         console.log('Tổng tiền cân thanh toán: ', tongtien);
+       }
+       tinhTien();
+        
+   </script>
+</body>
+</html>
