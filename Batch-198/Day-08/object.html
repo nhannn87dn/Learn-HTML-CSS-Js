@@ -1,0 +1,40 @@
+<script>
+    //Object = Đối tượng -- Kiểu dữ liệu Object
+    //1. Cách định nghĩa 1 Object
+    let student = {
+        firstName: 'Nguyễn Văn',
+        lastName: "A",
+        email: "nguyenvana@gmail.com",
+        age: 38,
+        birthDay: '1988-01-01',
+        isTop: true,
+        getFullName: function() {
+            return this.firstName + this.lastName
+        }
+        //...
+    };
+    //Giá trị của object có thể là string, number, ...
+
+    //2. cách truy cập giá trị của phần tử trong object
+    console.log(student.birthDay);
+    console.log(student.getFullName());
+    console.log(student.age);
+
+    //3. Có thể khai báo một object rỗng
+    let user = {}; //rỗng
+    console.log('user', user);
+
+    //4. Thêm phần tử vào object
+    //thêm id = 1 vào cho user
+    user.id = 1; // dùng toán tử gán =
+    user.name = "Tuấn"; // dùng toán tử gán =
+    user.isAdmin = false;
+    console.log('user', user);
+
+    //5. Thay đổi giá trị phần tử trong object
+    user.isAdmin = true; //gán lại giá trị mới cho key
+    console.log('user', user);
+
+    //6. Kiểm tra độ dài phần (số lượng phần tử)
+    console.log( Object.keys(user).length);
+</script>

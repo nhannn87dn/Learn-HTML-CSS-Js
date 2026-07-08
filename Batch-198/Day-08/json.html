@@ -1,0 +1,11 @@
+<script>
+    //JSON là gì ? là chuỗi có cấu trúc
+    const str = '{"name":"John", "age":30, "car":null}';
+    console.log(typeof str);
+    // Có thể convert JSON thành Object
+    let obj = JSON.parse(str);
+    console.log(obj, typeof obj);
+    // covert Object thành JSON string
+    let json =JSON.stringify(obj)
+    console.log(json, typeof json);
+</script>
