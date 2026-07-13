@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Mặc định là desktop */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+        }
+        .categories {
+            background-color: yellow;
+            height: 200px;
+            width: 250px;
+        }
+        .banner {
+            flex: 1;
+            background-color: aqua;
+        }
+        .product-list {
+            gap: 10px
+        }
+        .product-item {
+            width: calc((100% - 30px) / 4);
+            background-color: #f3f3f3;
+            height: 100px;
+        }
+
+        /*cho tablet */
+        @media screen and (max-width: 768px) {
+            h1 {
+                color: blue;
+            }
+
+            h2 {
+                display: none;
+            }
+            .hero-banner {
+                flex-direction: column;
+            }
+            .categories, .banner {
+                width: 100%;
+            }
+            .product-list {
+                flex-wrap: wrap;
+            }
+             .product-item {
+                width: calc((100% - 20px) / 3);
+            
+            }
+
+
+        }
+
+        /*cho mobile */
+        @media screen and (max-width: 425px) {
+            h1 {
+                color: red;
+            }
+             .product-item {
+                width: calc((100% - 10px) / 2);
+            
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Navigation
+    </h2>
+    <h1>Hello Mobile - Breakpoint</h1>
+    <section class="hero">
+        <div class="hero-banner flex">
+            <div class="categories">
+                categories
+            </div>
+            <div class="banner">
+                banner
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="product-list flex">
+            <div class="product-item">1</div>
+            <div class="product-item">2</div>
+            <div class="product-item">3</div>
+            <div class="product-item">4</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

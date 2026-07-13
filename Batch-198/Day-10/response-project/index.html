@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazines - Tin Mới</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+            <div class="logo">Magazines</div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog <span class="arrow">▼</span></a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div id="toggle_mobile" onclick="toggleMobile()">
+                    <i></i>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="news-section">
+            <div class="section-header">
+                <h2>TIN MỚI</h2>
+                <div class="section-extra">
+                    <a href="#" class="btn-more">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="card-thumb">
+                        <img src="images/thumb-1.jpg" alt="Samsung Galaxy A32 4G">
+                    </div>
+                    <div class="card-body">
+                        <h3><a href="#">Ấn tượng đầu tiên Samsung Galaxy A32 4G: Với hơn 6 triệu đã có màn hình Super
+                                AMOLED 90Hz</a></h3>
+                        <p class="card-time">5 năm trước</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-thumb">
+                        <img src="images/thumb-2.jpg" alt="Google Pixel 5a">
+                    </div>
+                    <div class="card-body">
+                        <h3><a href="#">Google Pixel 5a dự kiến sẽ được ra mắt cùng thời điểm với Android 12</a></h3>
+                        <p class="card-time">5 năm trước</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-thumb">
+                        <img src="images/thumb-3.jpg" alt="Galaxy A52 4G">
+                    </div>
+                    <div class="card-body">
+                        <h3><a href="#">Galaxy A52 4G lộ diện trên Google Play Console Xác nhận dùng chip Snapdragon
+                                720</a></h3>
+                        <p class="card-time">5 năm trước</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-thumb">
+                        <img src="images/thumb-4.jpg" alt="Galaxy A82 5G">
+                    </div>
+                    <div class="card-body">
+                        <h3><a href="#">Galaxy A82 5G chuẩn bị ra mắt với chip flagship và màn hình trượt độc đáo,
+                                Samfans gom lúa đi là vừa</a></h3>
+                        <p class="card-time">5 năm trước</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        </div>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>ABOUT US</h4>
+                    <p><strong>Electrician</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus
+                        lacus. Duis nec vestibulum magna, et dapibus lacus.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CONTACT INFO</h4>
+                    <p><strong>Address:</strong><br>123 Street Name, City, England</p>
+                    <p><strong>Phone:</strong><br>(123) 456-7890</p>
+                    <p><strong>Email:</strong><br>mail@example.com</p>
+                    <p><strong>Working Days/Hours:</strong><br>Mon - Sun / 9:00 AM - 8:00 PM</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Orders History</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Corporate Sales</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>POPPULAR TAGS</h4>
+                    <div class="tags-container">
+                        <a href="#" class="tag-link">Bag</a>
+                        <a href="#" class="tag-link">Black</a>
+                        <a href="#" class="tag-link">Blue</a>
+                        <a href="#" class="tag-link">Clothes</a>
+                        <a href="#" class="tag-link">Fashion</a>
+                        <a href="#" class="tag-link">Hub</a>
+                        <a href="#" class="tag-link">Jean</a>
+                        <a href="#" class="tag-link">Shirt</a>
+                        <a href="#" class="tag-link">Skirt</a>
+                        <a href="#" class="tag-link">Sports</a>
+                        <a href="#" class="tag-link">Sweater</a>
+                        <a href="#" class="tag-link">Winter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-container">
+                    <p>&copy; Aptech eCommerce. 2022. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+ <script>
+    function toggleMobile(){
+        console.log('ban da click vao menu 3 gạch');
+        document.querySelector("#main-nav ul").classList.toggle('show')
+    }
+ </script>
+</body>
+
+</html>

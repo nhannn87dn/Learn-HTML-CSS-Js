@@ -1,0 +1,244 @@
+/* ==========================================================================
+   1. RESET & BASE STYLES (Thiết lập cơ bản)
+   ========================================================================== */
+* {
+    box-sizing: border-box; /* Giúp tính toán kích thước padding và border chuẩn xác */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none; /* Bỏ gạch chân thẻ a */
+    color: inherit;
+}
+
+ul {
+    list-style: none; /* Bỏ dấu chấm tròn danh sách */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. HEADER STYLES (Đầu trang)
+   ========================================================================== */
+.main-header {
+    background-color: #ff6600; /* Màu cam chủ đạo từ ảnh */
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.main-nav li {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-nav li a {
+    color: #ffffff;
+}
+
+.main-nav li .arrow {
+    font-size: 10px;
+}
+
+.cart-btn {
+    background-color: #ffffff;
+    color: #ff6600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   3. MAIN CONTENT STYLES (Khối bài viết Tin Mới)
+   ========================================================================== */
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    display: table-cell;
+    font-size: 18px;
+    color: #222;
+}
+.section-extra {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-more {
+    display: table-cell;
+    text-align: right;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 4px 12px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+/* Chia lưới bài viết bằng inline-block */
+.news-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+.news-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    width: calc((100% - 60px) / 4);
+    vertical-align: top;
+    font-size: 14px; /* Khôi phục kích thước chữ */
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.news-card:last-child {
+    margin-right: 0; /* Card cuối cùng không cách lề phải */
+}
+
+.card-thumb {
+    width: 100%;
+    height: 140px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giúp ảnh không bị méo khi co giãn */
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.card-body h3 {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    height: 54px; /* Cố định chiều cao tiêu đề để các thẻ bằng đều nhau */
+    overflow: hidden;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-body h3 a:hover {
+    color: #ff6600;
+}
+
+.card-time {
+    font-size: 11px;
+    color: #cc0000; /* Màu đỏ hiển thị mốc thời gian */
+}
+
+/* ==========================================================================
+   4. FOOTER STYLES (Chân trang)
+   ========================================================================== */
+.main-footer {
+    background-color: #22252a; /* Màu xám đen từ giao diện mẫu */
+    color: #abb0b6;
+    font-size: 13px;
+    padding-top: 40px;
+}
+
+.main-footer .footer-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: calc((100% - 90px) / 4);
+}
+
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-col p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* KHỐI POPULAR TAGS */
+.tags-container {
+    font-size: 0;
+}
+
+.tag-link {
+    display: inline-block;
+    font-size: 11px;
+    color: #abb0b6;
+    border: 1px solid #3a3f45;
+    padding: 4px 8px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.tag-link:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* BẢN QUYỀN */
+.footer-bottom {
+    border-top: 1px solid #2e3238;
+    margin-top: 30px;
+    padding: 20px 0;
+    font-size: 12px;
+}
