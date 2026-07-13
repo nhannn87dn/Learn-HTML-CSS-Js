@@ -29,6 +29,15 @@ test-final-yourName
 
 ## Link nộp
 
+### Phương án 1: Deploy lên Github Page (Ưu tiên)
+
+- Tạo một repo mới, đồng bộ code lên
+- Deploy lên github page
+- Gửi link repo về email `nhannn@softech.vn`
+- Cộng 2 điểm (nếu chưa đạt điểm tối đa  khi nộp theo hình thức này)
+
+### Phương án 2: Link Driver
+
 **Kéo hết folder cấu trúc dự án trên** --> Thả vào driver link sau: https://drive.google.com/drive/folders/1Wxx8uqP2GFTG2Qhh2DHp1jGEgs1m6t7B?usp=sharing
 
 Nộp không đủ cấu trúc bị trừ 3 điểm.
